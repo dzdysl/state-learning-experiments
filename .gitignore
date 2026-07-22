@@ -1,0 +1,16 @@
+# Raw experiment artifacts are stored outside Git.
+*.log
+*.jsonl
+*.sqlite
+*.sqlite3
+*.pcap
+*.pcapng
+*.jar
+*.zip
+
+# Local scratch and generated reports
+artifacts/
+tmp/
+output/
+__pycache__/
+*.py[cod]
