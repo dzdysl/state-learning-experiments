@@ -1,0 +1,58 @@
+digraph g {
+
+	s0 [shape="circle" label="s0" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s1 [shape="circle" label="s1" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s4 [shape="circle" label="s4" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s5 [shape="circle" label="s5"];
+	s6 [shape="circle" label="s6"];
+	s7 [shape="circle" label="s7"];
+	s8 [shape="circle" label="s8"];
+	s9 [shape="circle" label="s9" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s10 [shape="circle" label="s10"];
+	s11 [shape="circle" label="s11"];
+	s12 [shape="circle" label="s12"];
+	s13 [shape="circle" label="s13"];
+	s14 [shape="circle" label="s14" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s15 [shape="circle" label="s15" color="#d32f2f" fontcolor="#d32f2f" penwidth="3"];
+	s0 -> s1 [label="[6] registrationRequest / authenticationRequest" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="6"];
+	s0 -> s4 [label="[1] registrationRequestGUTI / identityRequest" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="1"];
+	s1 -> s1 [label="[9] registrationRequest / null_action\nΔ observed mismatch" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="9"];
+	s1 -> s13 [label="deregistrationRequest / null_action"];
+	s1 -> s2 [label="authenticationResponse / securityModeCommand"];
+	s1 -> s1 [label="[8] deregistrationAccept / null_action\nΔ observed mismatch" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="8"];
+	s1 -> s1 [label="[7] identityResponse / null_action\nΔ observed mismatch" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="7"];
+	s2 -> s12 [label="deregistrationRequest / null_action"];
+	s2 -> s6 [label="securityModeReject / null_action"];
+	s2 -> s3 [label="securityModeComplete / registrationAccept"];
+	s3 -> s8 [label="registrationComplete / configurationUpdateCommand"];
+	s3 -> s10 [label="deregistrationRequest / null_action"];
+	s3 -> s5 [label="serviceRequest / serviceReject"];
+	s4 -> s9 [label="[2] identityResponse / authenticationRequest" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="2"];
+	s5 -> s1 [label="registrationRequest / authenticationRequest"];
+	s5 -> s4 [label="registrationRequestGUTI / identityRequest"];
+	s6 -> s4 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s6 -> s7 [label="deregistrationRequest / null_action"];
+	s8 -> s3 [label="registrationRequestGUTI / registrationAccept"];
+	s8 -> s5 [label="deregistrationRequest / deregistrationAccept"];
+	s9 -> s14 [label="[3] deregistrationRequest / null_action" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="3"];
+	s9 -> s2 [label="authenticationResponse / securityModeCommand"];
+	s10 -> s11 [label="registrationComplete / configurationUpdateCommand"];
+	s10 -> s5 [label="serviceRequest / serviceReject"];
+	s11 -> s3 [label="registrationRequest | registrationRequestGUTI / registrationAccept"];
+	s11 -> s5 [label="deregistrationRequest / deregistrationAccept"];
+	s11 -> s4 [label="serviceRequest / null_action"];
+	s12 -> s7 [label="securityModeReject / null_action"];
+	s12 -> s3 [label="securityModeComplete / registrationAccept"];
+	s13 -> s12 [label="authenticationResponse / securityModeCommand"];
+	s14 -> s12 [label="authenticationResponse / securityModeCommand"];
+	s14 -> s15 [label="[4] identityResponse / authenticationRequest" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="4"];
+	s15 -> s0 [label="[5] registrationRequest / null_action" color="#d32f2f" fontcolor="#d32f2f" penwidth="3" trace_step="5"];
+	s15 -> s12 [label="authenticationResponse / securityModeCommand"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+	trace_legend [shape="note" color="#d32f2f" fontcolor="#d32f2f" label="Red = model trace (9 steps)\nstep 7: Δ observed: run-1=authenticationRequest, run-2=authenticationRequest, run-3=authenticationRequest\nstep 8: Δ observed: run-1=authenticationRequest\nstep 9: Δ observed: run-2=authenticationRequest, run-3=authenticationRequest"];
+}

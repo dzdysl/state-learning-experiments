@@ -1,0 +1,42 @@
+schema_version: 1
+followup_id: baseline-vs-multiseq-mdf-20260723
+parent_failure: free5gc421-ttt-inconsistency-20260723-r14
+platform: free5gc
+status: completed_behavior_equivalence_only
+time_zone: Asia/Hong_Kong
+input:
+  path: inputs/test-50.seq
+  sequences: 50
+  bytes: 9702
+  sha256: FEE9D03997DD1F26D09840D5C3B3266448DF87E7BD78178ADDB24ED2FA1F7832
+baseline:
+  learner_commit: unknown
+  jar_sha256: unknown
+  trace:
+    path: raw/statelearner_trace_baseline.jsonl
+    bytes: 466512
+    sha256: FAAAFC83E3F52A1A09CBBB63F0724E5081453904641529C189D660D5DC5500F6
+  provenance_note: No baseline run manifest or learner artifact identity was supplied.
+multiseq_mdf:
+  run_id: 20260723T141803Z-fa605042
+  started_utc: '2026-07-23T14:18:03.436917Z'
+  learner_commit: 9ecfe8e9fddce37612ea68fe59ae71bc63b11188
+  learner_git_dirty: true
+  learner_git_status_sha256: 988397bb4edccdc640e370a125a7d318dc66955ff17a2b8eca8e4e0bd9af6072
+  jar_sha256: DF2420D0C4932DFC2E5F74862C9D0994E4DE0A5F4A8C4EAACE112EB53F7AF9AF
+  config_path: /opt/CoreCrisis/Corelearner/core_4.2.1.properties
+  config_sha256: 864e644adb7b17d41ff5581706723fd18514b174572409f17e62aef9ef72337a
+  run_archive:
+    path: raw/multiseq-mdf-run.zip
+    bytes: 7196
+    sha256: 860B1D967812447B6BBFC9FEC62B63088E4F7E8C04603878339896CCDAF97991
+  trace:
+    path: raw/statelearner_trace_multiseq-mdf.jsonl
+    bytes: 466512
+    sha256: 57B022BC61DA1DF897F1D4751ACC5CCADDD5C7B87AD6576917A01290E1636B00
+  manifest_status: running
+  core_log_present: false
+result:
+  semantic_records_compared: 470
+  semantic_differences: 0
+  fatal_inconsistency_observed: false

@@ -1,0 +1,46 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s0 -> s1 [label="registrationRequest / authenticationRequest"];
+	s0 -> s2 [label="registrationRequestGUTI / identityRequest"];
+	s0 -> s0 [label="registrationComplete / null_action"];
+	s0 -> s0 [label="deregistrationRequest / null_action"];
+	s0 -> s0 [label="serviceRequest / null_action"];
+	s0 -> s0 [label="securityModeReject / null_action"];
+	s0 -> s0 [label="authenticationResponse / null_action"];
+	s0 -> s0 [label="authenticationFailure / null_action"];
+	s0 -> s0 [label="deregistrationAccept / null_action"];
+	s0 -> s0 [label="securityModeComplete / null_action"];
+	s0 -> s0 [label="identityResponse / null_action"];
+	s0 -> s0 [label="configurationUpdateComplete / null_action"];
+	s1 -> s1 [label="registrationRequest / null_action"];
+	s1 -> s1 [label="registrationRequestGUTI / null_action"];
+	s1 -> s1 [label="registrationComplete / null_action"];
+	s1 -> s1 [label="deregistrationRequest / null_action"];
+	s1 -> s1 [label="serviceRequest / null_action"];
+	s1 -> s1 [label="securityModeReject / null_action"];
+	s1 -> s2 [label="authenticationResponse / securityModeCommand"];
+	s1 -> s1 [label="authenticationFailure / null_action"];
+	s1 -> s1 [label="deregistrationAccept / null_action"];
+	s1 -> s1 [label="securityModeComplete / null_action"];
+	s1 -> s1 [label="identityResponse / null_action"];
+	s1 -> s1 [label="configurationUpdateComplete / null_action"];
+	s2 -> s2 [label="registrationRequest / null_action"];
+	s2 -> s2 [label="registrationRequestGUTI / null_action"];
+	s2 -> s2 [label="registrationComplete / null_action"];
+	s2 -> s2 [label="deregistrationRequest / null_action"];
+	s2 -> s2 [label="serviceRequest / null_action"];
+	s2 -> s0 [label="securityModeReject / null_action"];
+	s2 -> s2 [label="authenticationResponse / null_action"];
+	s2 -> s2 [label="authenticationFailure / null_action"];
+	s2 -> s2 [label="deregistrationAccept / null_action"];
+	s2 -> s2 [label="securityModeComplete / registrationAccept"];
+	s2 -> s2 [label="identityResponse / null_action"];
+	s2 -> s2 [label="configurationUpdateComplete / null_action"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

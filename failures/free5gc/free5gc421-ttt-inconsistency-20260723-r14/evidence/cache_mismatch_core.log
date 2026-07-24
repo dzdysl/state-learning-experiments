@@ -1,0 +1,734 @@
+=== CACHE/DATABASE RESULT MISMATCH core.log SEGMENT ===
+Time: 2026-07-23 05:45:53.742
+Detected by: live prefix result
+Sequence: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Current test result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+Source log: core.log
+Capture start offset: 488483
+Capture end offset: 519799
+--- BEGIN core.log SEGMENT ---
+2026-07-23T05:45:41.474050293+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mHandle UEContextReleaseRequest
+2026-07-23T05:45:41.474126560+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mHandle UEContextReleaseRequest (RAN UE NGAP ID: 1)
+2026-07-23T05:45:41.474148130+08:00[33m [WARN][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mCause RadioNetwork[0]
+2026-07-23T05:45:41.474173461+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mSend UE Context Release Command
+2026-07-23T05:45:41.474211792+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mAmfUe is nil
+2026-07-23T05:45:41.474665450+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mHandle UEContextReleaseComplete
+2026-07-23T05:45:41.474701705+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mHandle UEContextReleaseComplete (RAN UE NGAP ID: 1)
+2026-07-23T05:45:41.474731734+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRelease UE Context : RanUe[AmfUeNgapId: 14]
+2026-07-23T05:45:42.246093935+08:00[36m [INFO][AMF][Ngap] [0mHandle SCTP Notification[addr: <nil>]
+2026-07-23T05:45:42.246156154+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mSCTP_SHUTDOWN_EVENT notification, close the connection
+2026-07-23T05:45:42.246182852+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRemove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 00000001>]
+2026-07-23T05:45:42.246297097+08:00[36m [INFO][AMF][Ngap] [0mHandle SCTP Notification[addr: <nil>]
+2026-07-23T05:45:42.246312621+08:00[33m [WARN][AMF][Ngap] [0mRAN context has been removed[addr: <nil>]
+2026-07-23T05:45:42.246568690+08:00[36m [INFO][AMF][Ngap] [0mHandle SCTP Connection Error[addr: <nil>] - remove RAN
+2026-07-23T05:45:42.246594617+08:00[33m [WARN][AMF][Ngap] [0mRAN context has been removed[addr: <nil>]
+SCTPConn: SCTPWrite failed bad file descriptor
+2026-07-23T05:45:42.835482763+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 4)
+2026-07-23T05:45:42.836362431+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:13(3GPP)][ran_addr:127.0.0.18:32815] [0mSend Downlink Nas Transport
+2026-07-23T05:45:42.836472293+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:13(3GPP)][ran_addr:127.0.0.18:32815] [0mAmfUe is nil
+2026-07-23T05:45:42.836496275+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:32815] [0mRan addr is nil
+2026-07-23T05:45:42.885627800+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 2)
+2026-07-23T05:45:42.885721249+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mSend Downlink Nas Transport
+2026-07-23T05:45:42.885817974+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mAmfUe is nil
+2026-07-23T05:45:42.885847239+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRan addr is nil
+2026-07-23T05:45:43.029332378+08:00[36m [INFO][AMF][Ngap] [0m[AMF] SCTP Accept from: 127.0.0.18:47129
+2026-07-23T05:45:43.030425507+08:00[36m [INFO][AMF][Ngap] [0mCreate a new NG connection for: 127.0.0.18:47129
+2026-07-23T05:45:43.030484679+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle NGSetupRequest
+2026-07-23T05:45:43.030537880+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mSend NG-Setup response
+2026-07-23T05:45:44.608429464+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle InitialUEMessage
+2026-07-23T05:45:44.608511600+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mNew RanUe [RanUeNgapID:1][AmfUeNgapID:15]
+2026-07-23T05:45:44.608546331+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0m5GSMobileIdentity ["5G-GUTI":"2089300000000000000", err: <nil>]
+2026-07-23T05:45:44.608614476+08:00[36m [INFO][AMF][CTX] [0mNew AmfUe [supi:][guti:20893cafe000000001d]
+2026-07-23T05:45:44.608648190+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Deregistered] to [Deregistered]
+2026-07-23T05:45:44.608665354+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mHandle Registration Request
+2026-07-23T05:45:44.608686418+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mRegistrationType: Initial Registration
+2026-07-23T05:45:44.608703160+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mMobileIdentity5GS: GUTI[2089300000000000000]
+2026-07-23T05:45:44.608817523+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mServing AMF has changed: guamiFromUeGuti[{PlmnId:0xc00065bb00 AmfId:000000}], servedGuami[{PlmnId:0xc000567cb0 AmfId:cafe00}]
+2026-07-23T05:45:44.608843666+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mContextTransfer from old AMF[&{208 93 } 000000]
+2026-07-23T05:45:44.609426128+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:44.610815467+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:44.612371762+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:44.613161767+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:44.613830736+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?guami=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22amfId%22%3A%22000000%22%7D&requester-nf-type=AMF&target-nf-type=AMF |  |
+2026-07-23T05:45:44.614156095+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0m[GMM] AMF can not select an target AMF by NRF
+2026-07-23T05:45:44.614213473+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Start Authentication], transition from [Deregistered] to [Authentication]
+2026-07-23T05:45:44.614241765+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:45:44.614258136+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mSend Identity Request
+2026-07-23T05:45:44.614282829+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+2026-07-23T05:45:45.121632349+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:45.121711805+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:45.121770215+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:45.121808648+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:45:45.121838718+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:45.121853884+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:45:45.122772572+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.126655041+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.131231169+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.133412998+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:45.135995263+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:45:45.138054008+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.141082850+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.145624716+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.151159404+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:45:45.151224503+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:45:45.153161577+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.154788170+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.156469388+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.157673796+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:45.160166922+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:45:45.163243781+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.164788712+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.167597704+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.169199793+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:45:45.170002325+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.171483220+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.173983456+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.174391318+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:45:45.174426129+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:45:45.174702670+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:45.175949546+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:45.177667248+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:45.178580135+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:45.179421548+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR |  |
+2026-07-23T05:45:45.182747868+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:45.183404291+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000000977 map[] 0 }}]
+2026-07-23T05:45:45.187581157+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:45.187893725+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000015/security-information/generate-auth-data |  |
+2026-07-23T05:45:45.188303986+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000015, imsi-208930000000015) to map.
+2026-07-23T05:45:45.188351830+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:45:45.188371718+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 3337613964643030373936383266363765313434353438663065616563393839
+2026-07-23T05:45:45.188435208+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:45:45.188800050+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:45:45.188954216+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+2026-07-23T05:45:45.189079061+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:45:45.380981789+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 4)
+2026-07-23T05:45:45.381057037+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:13(3GPP)][ran_addr:127.0.0.18:32815] [0mSend Downlink Nas Transport
+2026-07-23T05:45:45.381155156+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:13(3GPP)][ran_addr:127.0.0.18:32815] [0mAmfUe is nil
+2026-07-23T05:45:45.381178218+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:32815] [0mRan addr is nil
+2026-07-23T05:45:45.435145034+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 2)
+2026-07-23T05:45:45.435312274+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mSend Downlink Nas Transport
+2026-07-23T05:45:45.435393545+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mAmfUe is nil
+2026-07-23T05:45:45.435422343+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRan addr is nil
+2026-07-23T05:45:45.697465894+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:45.697541069+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:45.697627091+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:45.697643166+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x45] at Authentication state
+2026-07-23T05:45:47.702438928+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:47.702509153+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:47.702605338+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:47.702623507+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:45:47.702643288+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:47.702661996+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:45:47.703736721+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:47.705927026+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:47.707599442+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:47.708455251+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:47.709498963+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:45:47.710106235+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:47.711587271+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:47.713323183+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:47.715280766+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:45:47.715388339+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:45:47.716238992+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:47.718437150+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:47.721088898+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:47.722580641+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:47.723736124+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:45:47.724800246+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:47.725637459+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:47.729736241+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:47.732035960+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:45:47.732862716+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:47.734174615+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:47.737328152+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:47.737671816+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:45:47.737714152+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:45:47.739296796+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:47.739586573+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000000978 map[] 0 }}]
+2026-07-23T05:45:47.741516203+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:47.741775577+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000015/security-information/generate-auth-data |  |
+2026-07-23T05:45:47.742146321+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000015, imsi-208930000000015) to map.
+2026-07-23T05:45:47.742193447+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:45:47.742212955+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 3261613134343766336630386136386634393565616666646139376532383438
+2026-07-23T05:45:47.742269698+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:45:47.742959637+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:45:47.743036236+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+2026-07-23T05:45:47.743152178+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:45:48.085991985+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mhandleHeartbeatRequest
+2026-07-23T05:45:48.251112880+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:48.251207818+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:48.251273409+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:48.251294666+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x41] at Authentication state
+2026-07-23T05:45:48.835185509+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 Expires 4 times, abort authentication procedure & ongoing 5GMM procedure
+2026-07-23T05:45:48.835283674+08:00[36m [INFO][AMF][CTX] [0mAmfUe[] is removed
+2026-07-23T05:45:48.885383652+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 3)
+2026-07-23T05:45:48.885476692+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mSend Downlink Nas Transport
+2026-07-23T05:45:48.885600994+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mAmfUe is nil
+2026-07-23T05:45:48.885646369+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRan addr is nil
+2026-07-23T05:45:50.256472852+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:50.256559429+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:50.256629647+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:50.256650708+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x41] at Authentication state
+2026-07-23T05:45:51.190100028+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 1)
+2026-07-23T05:45:51.190221302+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+2026-07-23T05:45:51.380569276+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 Expires 4 times, abort authentication procedure & ongoing 5GMM procedure
+2026-07-23T05:45:51.380671648+08:00[36m [INFO][AMF][CTX] [0mAmfUe[] is removed
+2026-07-23T05:45:51.435795219+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:,AU:(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 3)
+2026-07-23T05:45:51.435882310+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mSend Downlink Nas Transport
+2026-07-23T05:45:51.435964350+08:00[33m [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:14(3GPP)][ran_addr:127.0.0.18:33070] [0mAmfUe is nil
+2026-07-23T05:45:51.435985229+08:00[31m [ERRO][AMF][Ngap][ran_addr:127.0.0.18:33070] [0mRan addr is nil
+2026-07-23T05:45:51.699110745+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:51.699187386+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:51.699245364+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:51.699264498+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:45:51.699306433+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:51.699327491+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:45:51.700550735+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:51.701956249+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:51.703476332+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:51.704447336+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:51.705512180+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:45:51.706045642+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:51.707009371+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:51.708906244+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:51.710029543+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:45:51.710149503+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:45:51.710876773+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:51.711857328+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:51.713333108+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:51.714190243+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:45:51.715711786+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:45:51.716302081+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:51.717138983+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:51.719190602+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:51.721019743+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:45:51.721742806+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:45:51.722851529+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:45:51.724636883+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:45:51.724923705+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:45:51.724960097+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:45:51.726330591+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:51.726617410+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000000979 map[] 0 }}]
+2026-07-23T05:45:51.728749352+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000015/authentication-data/authentication-subscription |  |
+2026-07-23T05:45:51.729078461+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000015/security-information/generate-auth-data |  |
+2026-07-23T05:45:51.729387821+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000015, imsi-208930000000015) to map.
+2026-07-23T05:45:51.729433143+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:45:51.729475407+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 6236636637303937393263356133313831666430366266646239383236613836
+2026-07-23T05:45:51.729540078+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:45:51.729830008+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:45:51.729913757+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+2026-07-23T05:45:51.730023682+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:45:52.236628206+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport
+2026-07-23T05:45:52.236702607+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:45:52.237266503+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:45:52.237313015+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x48] at Authentication state
+2026-07-23T05:45:53.743537343+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:15(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 1)
+2026-07-23T05:45:53.743633794+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:15(3GPP)][ran_addr:127.0.0.18:47129] [0mSend Downlink Nas Transport
+--- END core.log SEGMENT ---
+
+=== CACHE/DATABASE RESULT MISMATCH core.log SEGMENT ===
+Time: 2026-07-23 05:46:18.835
+Detected by: live prefix result
+Sequence: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Current test result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+Source log: core.log
+Capture start offset: 520371
+Status: file truncated before mismatch capture
+Capture end offset: 50266
+--- BEGIN core.log SEGMENT ---
+Launching free5GC from: /opt/free5gc_4.2.1
+Detailed free5GC log (append mode): /opt/CoreCrisis/Corelearner/logs/free5gc.log
+log path: /opt/CoreCrisis/Corelearner/logs/.free5gc-runs/20260723_054603_184129/20260723_054603/
+2026-07-23T05:46:03.188365661+08:00[36m [INFO][UPF][Main] [0mUPF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:15Z
+	commit hash:     ce0108ac
+	commit time:     2026-03-02T08:26:35Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:03.188477873+08:00[36m [INFO][UPF][CFG] [0mRead config from [./config/upfcfg.yaml]
+2026-07-23T05:46:03.188811989+08:00[36m [INFO][UPF][CFG] [0m==================================================
+2026-07-23T05:46:03.188827409+08:00[36m [INFO][UPF][CFG] [0m(*factory.Config)(0xc0000a54f0)({
+	Version: (string) (len=5) "1.0.3",
+	Description: (string) (len=31) "UPF initial local configuration",
+	Pfcp: (*factory.Pfcp)(0xc0004dad80)({
+		Addr: (string) (len=9) "127.0.0.8",
+		NodeID: (string) (len=9) "127.0.0.8",
+		RetransTimeout: (time.Duration) 1s,
+		MaxRetrans: (uint8) 3
+	}),
+	Gtpu: (*factory.Gtpu)(0xc0004daf30)({
+		Forwarder: (string) (len=5) "gtp5g",
+		IfList: ([]factory.IfInfo) (len=1 cap=1) {
+			(factory.IfInfo) {
+				Addr: (string) (len=13) "172.31.96.229",
+				Type: (string) (len=2) "N3",
+				Name: (string) "",
+				IfName: (string) "",
+				MTU: (uint32) 0
+			}
+		}
+	}),
+	DnnList: ([]factory.DnnList) (len=2 cap=2) {
+		(factory.DnnList) {
+			Dnn: (string) (len=8) "internet",
+			Cidr: (string) (len=12) "10.60.0.0/16",
+			NatIfName: (string) ""
+		},
+		(factory.DnnList) {
+			Dnn: (string) (len=8) "internet",
+			Cidr: (string) (len=12) "10.61.0.0/16",
+			NatIfName: (string) ""
+		}
+	},
+	Logger: (*factory.Logger)(0xc0001ae760)({
+		Enable: (bool) true,
+		Level: (string) (len=4) "info",
+		ReportCaller: (bool) false
+	})
+})
+2026-07-23T05:46:03.188869463+08:00[36m [INFO][UPF][CFG] [0m==================================================
+2026-07-23T05:46:03.188881213+08:00[36m [INFO][UPF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:03.188891685+08:00[36m [INFO][UPF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:03.188924284+08:00[36m [INFO][UPF][Main] [0mstarting Gtpu Forwarder [gtp5g]
+2026-07-23T05:46:03.188935888+08:00[36m [INFO][UPF][Main] [0mGTP Address: "172.31.96.229:2152"
+2026-07-23T05:46:03.217913332+08:00[36m [INFO][UPF][BUFF] [0mbuff netlink server started
+2026-07-23T05:46:03.217981284+08:00[36m [INFO][UPF][Gtp5g] [0mForwarder started
+2026-07-23T05:46:03.218144070+08:00[36m [INFO][UPF][Perio] [0mperio server started
+2026-07-23T05:46:03.218292464+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mstarting pfcp server
+2026-07-23T05:46:03.218313031+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mpfcp server started
+2026-07-23T05:46:03.218325496+08:00[36m [INFO][UPF][Main] [0mUPF started
+./run.sh: line 139: mongo: command not found
+true
+BSF disabled - skipping BSF service
+Started nrf with PID 184190
+2026-07-23T05:46:04.056611059+08:00[36m [INFO][NRF][Main] [0mNRF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:58:56Z
+	commit hash:     0067e052
+	commit time:     2026-03-02T08:30:28Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.056913510+08:00[36m [INFO][NRF][CFG] [0mRead config from [./config/nrfcfg.yaml]
+2026-07-23T05:46:04.057324838+08:00[36m [INFO][NRF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.057349489+08:00[36m [INFO][NRF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.057360816+08:00[36m [INFO][NRF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.057376786+08:00[36m [INFO][NRF][Init] [0mnrfconfig Info: Version[1.0.2] Description[NRF initial local configuration]
+2026-07-23T05:46:04.057854671+08:00[36m [INFO][NRF][Init] [0mgenerate new NRF cert
+2026-07-23T05:46:04.059612699+08:00[36m [INFO][NRF][SBI] [0mBinding addr: [127.0.0.10:8000]
+2026-07-23T05:46:04.059816447+08:00[36m [INFO][NRF][Init] [0mServer starting
+2026-07-23T05:46:04.059834792+08:00[36m [INFO][NRF][SBI] [0mSBI server started
+Started amf with PID 184201
+2026-07-23T05:46:04.195457530+08:00[36m [INFO][AMF][Main] [0mAMF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:58:45Z
+	commit hash:     92b7a3f8
+	commit time:     2026-02-23T01:48:13Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.195946818+08:00[36m [INFO][AMF][CFG] [0mRead config from [./config/amfcfg.yaml]
+2026-07-23T05:46:04.199025214+08:00[36m [INFO][AMF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.199076964+08:00[36m [INFO][AMF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.199093507+08:00[36m [INFO][AMF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.199235698+08:00[36m [INFO][AMF][SBI] [0mBinding addr: [127.0.0.18:8000]
+2026-07-23T05:46:04.200149926+08:00[36m [INFO][AMF][Util] [0mamfconfig Info: Version[1.0.9]
+2026-07-23T05:46:04.200250748+08:00[36m [INFO][AMF][Init] [0mInitializing NGAP worker pool with 0 workers (buffer size: 4096)
+2026-07-23T05:46:04.200278893+08:00[36m [INFO][AMF][Ngap] [0mInitializing UE Scheduler with 2 workers
+2026-07-23T05:46:04.200847964+08:00[36m [INFO][AMF][Ngap] [0mGlobal UE Scheduler initialized with 2 workers, buffer size 4096
+2026-07-23T05:46:04.200880691+08:00[36m [INFO][AMF][Init] [0mServer started
+2026-07-23T05:46:04.202832382+08:00[36m [INFO][AMF][Ngap] [0mWorker 1 started
+2026-07-23T05:46:04.203481195+08:00[36m [INFO][AMF][Ngap] [0mListen on 127.0.0.18:38412
+2026-07-23T05:46:04.204930773+08:00[36m [INFO][AMF][Ngap] [0mWorker 0 started
+2026-07-23T05:46:04.209492279+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.215027120+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.225278018+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: f21a6ba0-0d4b-4a17-b0f6-f979a59dda34
+2026-07-23T05:46:04.230628187+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/amf.pem
+2026-07-23T05:46:04.232055743+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/f21a6ba0-0d4b-4a17-b0f6-f979a59dda34 |  |
+2026-07-23T05:46:04.232656861+08:00[36m [INFO][AMF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.232707262+08:00[36m [INFO][AMF][SBI] [0mStart SBI server (listen on 127.0.0.18:8000)
+Started smf with PID 184211
+2026-07-23T05:46:04.291831385+08:00[36m [INFO][SMF][Main] [0mSMF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:02Z
+	commit hash:     8385c00a
+	commit time:     2026-03-02T08:30:25Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.292557202+08:00[36m [INFO][SMF][CFG] [0mRead config from [./config/smfcfg.yaml]
+2026-07-23T05:46:04.300425947+08:00[36m [INFO][SMF][CFG] [0mRead config from [./config/uerouting.yaml]
+2026-07-23T05:46:04.300859175+08:00[36m [INFO][SMF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.300881488+08:00[36m [INFO][SMF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.300892058+08:00[36m [INFO][SMF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.300912062+08:00[36m [INFO][SMF][CTX] [0msmfconfig Info: Version[1.0.7] Description[SMF initial local configuration]
+2026-07-23T05:46:04.300953244+08:00[36m [INFO][SMF][CTX] [0mEndpoints: [172.31.96.229]
+2026-07-23T05:46:04.301104967+08:00[36m [INFO][SMF][Init] [0mServer started
+2026-07-23T05:46:04.303416279+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.305029318+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.305882710+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 0e2615b9-9389-4b89-a3fb-ba1225f2f2c7
+2026-07-23T05:46:04.306598407+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/smf.pem
+2026-07-23T05:46:04.308262728+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/0e2615b9-9389-4b89-a3fb-ba1225f2f2c7 |  |
+2026-07-23T05:46:04.308698739+08:00[36m [INFO][SMF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.308917759+08:00[36m [INFO][SMF][Init] [0mSMF Registration to NRF {0e2615b9-9389-4b89-a3fb-ba1225f2f2c7  SMF REGISTERED [] 0 [{208 93}] [] [{1 010203 [] false} {1 112233 [] false}] [] []   [127.0.0.2] [] [] [] [] [] [] 0 0 0 <nil> area1 <nil> map[] <nil> map[] <nil> map[] <nil> map[] 0xc0001504d0 map[] <nil> map[] <nil> map[] <nil> map[] <nil> map[] <nil> <nil> <nil> map[] <nil> map[] map[] map[] map[oauth2:true] <nil> false [{0e2615b9-9389-4b89-a3fb-ba1225f2f2c7nsmf-pdusession nsmf-pdusession [{v1 https://127.0.0.2:8000/nsmf-pdusession/v1 2026-07-23 05:46:04.300986828 +0800 CST}] https REGISTERED   [{127.0.0.2   8000}] http://127.0.0.2:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {0e2615b9-9389-4b89-a3fb-ba1225f2f2c7nsmf-event-exposure nsmf-event-exposure [{v1 https://127.0.0.2:8000/nsmf-pdusession/v1 2026-07-23 05:46:04.300986828 +0800 CST}] https REGISTERED   [{127.0.0.2   8000}] http://127.0.0.2:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {0e2615b9-9389-4b89-a3fb-ba1225f2f2c7nsmf-oam nsmf-oam [{v1 https://127.0.0.2:8000/nsmf-pdusession/v1 2026-07-23 05:46:04.300986828 +0800 CST}] https REGISTERED   [{127.0.0.2   8000}] http://127.0.0.2:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] map[] false false [] <nil> <nil> [] [] false false map[] map[] [] <nil> <nil>  map[] map[] <nil> <nil> map[] <nil> map[] map[] map[] map[] <nil> <nil> [] <nil> <nil>}
+2026-07-23T05:46:04.308981572+08:00[36m [INFO][SMF][SBI] [0mStart SBI server (listen on 127.0.0.2:8000)
+2026-07-23T05:46:04.309018976+08:00[36m [INFO][SMF][PFCP] [0mListen on 127.0.0.1:8805
+2026-07-23T05:46:04.309122980+08:00[36m [INFO][SMF][PFCP] [0mPfcp running... [2026-07-23 05:46:04.309079686 +0800 CST m=+0.030738341]
+Started udr with PID 184219
+2026-07-23T05:46:04.390125890+08:00[36m [INFO][UDR][Main] [0mUDR version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:09Z
+	commit hash:     754d23b0
+	commit time:     2026-01-12T02:38:29Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.390394579+08:00[36m [INFO][UDR][CFG] [0mRead config from [./config/udrcfg.yaml]
+2026-07-23T05:46:04.391080155+08:00[36m [INFO][UDR][Util] [0mudrconfig Info: Version[1.1.0] Description[UDR initial local configuration]
+2026-07-23T05:46:04.391145560+08:00[36m [INFO][UDR][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.391156522+08:00[36m [INFO][UDR][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.391167547+08:00[36m [INFO][UDR][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.397547366+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.399467818+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.400744796+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 017ba25e-8a41-4b93-99ce-4f78a643ab38
+2026-07-23T05:46:04.401965385+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/udr.pem
+2026-07-23T05:46:04.404413752+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/017ba25e-8a41-4b93-99ce-4f78a643ab38 |  |
+2026-07-23T05:46:04.405549662+08:00[36m [INFO][UDR][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.405621949+08:00[36m [INFO][UDR][Init] [0mregister to NRF successfully
+2026-07-23T05:46:04.405637163+08:00[36m [INFO][UDR][Init] [0mServer started
+2026-07-23T05:46:04.405743271+08:00[36m [INFO][UDR][Init] [0mUDR Config Info: Version[1.1.0] Description[UDR initial local configuration]
+2026-07-23T05:46:04.405869891+08:00[36m [INFO][UDR][SBI] [0mStarting server...
+Started pcf with PID 184229
+2026-07-23T05:46:04.493247675+08:00[36m [INFO][PCF][Main] [0mpcf
+2026-07-23T05:46:04.493350944+08:00[36m [INFO][PCF][Main] [0mPCF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:58:59Z
+	commit hash:     df535f55
+	commit time:     2026-01-21T02:13:24Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.494463181+08:00[36m [INFO][PCF][CFG] [0mRead config from [./config/pcfcfg.yaml]
+2026-07-23T05:46:04.495461331+08:00[36m [INFO][PCF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.495500156+08:00[36m [INFO][PCF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.495525690+08:00[36m [INFO][PCF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.495546242+08:00[36m [INFO][PCF][Util] [0mpcfconfig Info: Version[1.0.2] Description[PCF initial local configuration]
+2026-07-23T05:46:04.495713578+08:00[36m [INFO][PCF][SBI] [0mBinding addr: [127.0.0.7:8000]
+2026-07-23T05:46:04.495987696+08:00[36m [INFO][PCF][Init] [0mServer started
+2026-07-23T05:46:04.500636690+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.504035663+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.504839630+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 56529d02-b998-4635-96c9-21a47d11908b
+2026-07-23T05:46:04.505605670+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/pcf.pem
+2026-07-23T05:46:04.507066907+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/56529d02-b998-4635-96c9-21a47d11908b |  |
+2026-07-23T05:46:04.508063843+08:00[36m [INFO][PCF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.508636268+08:00[36m [INFO][PCF][SBI] [0mStart SBI server (listen on 127.0.0.7:8000)
+Started udm with PID 184239
+2026-07-23T05:46:04.603724040+08:00[36m [INFO][UDM][Main] [0mUDM version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:06Z
+	commit hash:     65d7070f
+	commit time:     2026-03-02T02:49:34Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.605570290+08:00[36m [INFO][UDM][CFG] [0mRead config from [./config/udmcfg.yaml]
+2026-07-23T05:46:04.607649069+08:00[36m [INFO][UDM][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.607687637+08:00[36m [INFO][UDM][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.607696553+08:00[36m [INFO][UDM][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.607709585+08:00[36m [INFO][UDM][Util] [0mudmconfig Info: Version[1.0.3] Description[UDM initial local configuration]
+2026-07-23T05:46:04.607852540+08:00[36m [INFO][UDM][SBI] [0mBinding addr: [127.0.0.3:8000]
+2026-07-23T05:46:04.607960335+08:00[36m [INFO][UDM][Init] [0mServer started
+2026-07-23T05:46:04.607972942+08:00[36m [INFO][UDM][SBI] [0mStarting server...
+2026-07-23T05:46:04.612971897+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.614535973+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.615466173+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 9fe15a79-88da-4bc1-b91b-561e933fa968
+2026-07-23T05:46:04.616261811+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/udm.pem
+2026-07-23T05:46:04.617883416+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/9fe15a79-88da-4bc1-b91b-561e933fa968 |  |
+2026-07-23T05:46:04.618439994+08:00[36m [INFO][UDM][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.618497023+08:00[36m [INFO][UDM][SBI] [0mStart SBI server (listen on 127.0.0.3:8000)
+Started nssf with PID 184247
+2026-07-23T05:46:04.699519234+08:00[36m [INFO][NSSF][Main] [0mNSSF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:58:58Z
+	commit hash:     d56f9ed1
+	commit time:     2026-01-29T00:33:31Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.699778352+08:00[36m [INFO][NSSF][CFG] [0mRead config from [./config/nssfcfg.yaml]
+2026-07-23T05:46:04.704350611+08:00[36m [INFO][NSSF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.704404040+08:00[36m [INFO][NSSF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.704416050+08:00[36m [INFO][NSSF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.710637222+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.713925122+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.715869018+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 87ae8508-1a62-4d3b-8af8-f654e396a2ad
+2026-07-23T05:46:04.717957695+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/nssf.pem
+2026-07-23T05:46:04.719818640+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/87ae8508-1a62-4d3b-8af8-f654e396a2ad |  |
+2026-07-23T05:46:04.720585004+08:00[36m [INFO][NSSF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.720630545+08:00[36m [INFO][NSSF][Main] [0mregister to NRF successfully
+2026-07-23T05:46:04.720645437+08:00[36m [INFO][NSSF][SBI] [0mStarting server...
+Started ausf with PID 184256
+2026-07-23T05:46:04.823544406+08:00[36m [INFO][AUSF][Main] [0mAUSF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:58:52Z
+	commit hash:     a96e1584
+	commit time:     2026-02-06T06:51:10Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.823775180+08:00[36m [INFO][AUSF][CFG] [0mRead config from [./config/ausfcfg.yaml]
+2026-07-23T05:46:04.824466515+08:00[36m [INFO][AUSF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.824499677+08:00[36m [INFO][AUSF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.824511135+08:00[36m [INFO][AUSF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.824542253+08:00[36m [INFO][AUSF][Init] [0mausfconfig Info: Version[1.0.3] Description[AUSF initial local configuration]
+ausf context =  &{{{} {{{} 0} {0 0} {[] {} <nil>} <nil> <nil> 0}} {{} {{{} 0} {0 0} {[] {} <nil>} <nil> <nil> 0}} 032280c1-8286-4edf-a3f5-6b29d94ba363 ausfGroup001 8000 127.0.0.9 127.0.0.9 http://127.0.0.9:8000 http http://127.0.0.10:8000 cert/nrf.pem map[nausf-auth:{032280c1-8286-4edf-a3f5-6b29d94ba363 nausf-auth [{v1 1.0.3 <nil>}] http REGISTERED   [{127.0.0.9   8000}]  [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] [{208 93} {123 45}]  0xc0005bb180 false false}
+2026-07-23T05:46:04.824655327+08:00[36m [INFO][AUSF][SBI] [0mBinding addr: [127.0.0.9:8000]
+2026-07-23T05:46:04.824738627+08:00[36m [INFO][AUSF][Init] [0mServer started
+2026-07-23T05:46:04.826854744+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.829067741+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.829850794+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 032280c1-8286-4edf-a3f5-6b29d94ba363
+2026-07-23T05:46:04.830629730+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/ausf.pem
+2026-07-23T05:46:04.832082197+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/032280c1-8286-4edf-a3f5-6b29d94ba363 |  |
+2026-07-23T05:46:04.832663004+08:00[36m [INFO][AUSF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.833415838+08:00[36m [INFO][AUSF][SBI] [0mStart SBI server (listen on 127.0.0.9:8000)
+Started chf with PID 184264
+2026-07-23T05:46:04.928251663+08:00[36m [INFO][CHF][Main] [0mCHF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:16Z
+	commit hash:     5dabc81f
+	commit time:     2026-01-26T00:48:42Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:04.928924908+08:00[36m [INFO][CHF][CFG] [0mRead config from [./config/chfcfg.yaml]
+2026-07-23T05:46:04.933654976+08:00[36m [INFO][CHF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:04.933767563+08:00[36m [INFO][CHF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:04.933857828+08:00[36m [INFO][CHF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:04.934010988+08:00[36m [INFO][CHF][Init] [0mchfconfig Info: Version[1.0.3] Description[CHF initial local configuration]
+2026-07-23T05:46:04.934248779+08:00[36m [INFO][CHF][SBI] [0mBinding addr: [127.0.0.113:8000]
+2026-07-23T05:46:04.934385112+08:00[36m [INFO][CHF][Init] [0mServer started
+2026-07-23T05:46:04.934704446+08:00[36m [INFO][CHF][CGF] [0mFTP server Start
+2026-07-23T05:46:04.935309646+08:00[33m [WARN][CHF][CGF] [0mLogin to Webconsole FTP fail: dial tcp 127.0.0.1:2121: connect: connection refused, retrying [1]
+2026-07-23T05:46:04.936074701+08:00[36m [INFO][CHF][Acct] [0mOpen Account Balance Management Server
+2026-07-23T05:46:04.942092577+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:04.943519618+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:04.944171920+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: ec9ae556-228d-4b14-840c-3d89bfe02a74
+2026-07-23T05:46:04.944879365+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/chf.pem
+2026-07-23T05:46:04.947174763+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/ec9ae556-228d-4b14-840c-3d89bfe02a74 |  |
+2026-07-23T05:46:04.948088980+08:00[36m [INFO][CHF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:04.948144076+08:00[36m [INFO][CHF][SBI] [0mStart SBI server (listen on 127.0.0.113:8000)
+Started nef with PID 184274
+2026-07-23T05:46:05.009622249+08:00[36m [INFO][NEF][Main] [0mNEF version:  
+	free5GC version: v4.2.1
+	build time:      2026-06-18T02:59:23Z
+	commit hash:     5ce35eab
+	commit time:     2026-01-04T07:36:55Z
+	go version:      go1.25.5 linux/amd64
+2026-07-23T05:46:05.010031166+08:00[36m [INFO][NEF][CFG] [0mRead config from [./config/nefcfg.yaml]
+2026-07-23T05:46:05.010791826+08:00[36m [INFO][NEF][CFG] [0m==================================================
+2026-07-23T05:46:05.010842482+08:00[36m [INFO][NEF][CFG] [0m(*factory.Configuration)(0xc0004b3020)({
+	NfInstanceId: (string) (len=36) "4b422fb4-8593-43dc-8f96-22fe78a1d931",
+	Sbi: (*factory.Sbi)(0xc00009bb80)({
+		Scheme: (string) (len=4) "http",
+		RegisterIPv4: (string) (len=9) "127.0.0.5",
+		BindingIPv4: (string) (len=9) "127.0.0.5",
+		Port: (int) 8000,
+		Tls: (*factory.Tls)(0xc0002a7740)({
+			Pem: (string) (len=12) "cert/nef.pem",
+			Key: (string) (len=12) "cert/nef.key"
+		})
+	}),
+	Metrics: (*factory.Metrics)(<nil>),
+	NrfUri: (string) (len=22) "http://127.0.0.10:8000",
+	NrfCertPem: (string) (len=12) "cert/nrf.pem",
+	ServiceList: ([]factory.Service) (len=2 cap=2) {
+		(factory.Service) {
+			ServiceName: (string) (len=18) "nnef-pfdmanagement",
+			SuppFeat: (string) ""
+		},
+		(factory.Service) {
+			ServiceName: (string) (len=8) "nnef-oam",
+			SuppFeat: (string) ""
+		}
+	}
+})
+2026-07-23T05:46:05.010883773+08:00[36m [INFO][NEF][CFG] [0m==================================================
+2026-07-23T05:46:05.010902453+08:00[36m [INFO][NEF][Main] [0mLog enable is set to [true]
+2026-07-23T05:46:05.010926001+08:00[36m [INFO][NEF][Main] [0mLog level is set to [info]
+2026-07-23T05:46:05.010936631+08:00[36m [INFO][NEF][Main] [0mReport Caller is set to [false]
+2026-07-23T05:46:05.010953324+08:00[36m [INFO][NEF][CTX] [0mNew nfInstID: [4b422fb4-8593-43dc-8f96-22fe78a1d931]
+2026-07-23T05:46:05.011042764+08:00[36m [INFO][NEF][SBI] [0mBinding addr: [127.0.0.5:8000]
+2026-07-23T05:46:05.017731093+08:00[36m [INFO][NEF][SBI] [0mStart SBI server (listen on 127.0.0.5:8000)
+2026-07-23T05:46:05.020142929+08:00[36m [INFO][NRF][NFM] [0mHandle NFRegisterRequest
+2026-07-23T05:46:05.129130409+08:00[36m [INFO][NRF][NFM] [0murilist update
+2026-07-23T05:46:05.130118905+08:00[36m [INFO][NRF][NFM] [0mCreate NF Profile: 4b422fb4-8593-43dc-8f96-22fe78a1d931
+2026-07-23T05:46:05.130822015+08:00[36m [INFO][NRF][NFM] [0mUse NF certPath: cert/nef.pem
+2026-07-23T05:46:05.132915840+08:00[36m [INFO][NRF][GIN] [0m| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/4b422fb4-8593-43dc-8f96-22fe78a1d931 |  |
+2026-07-23T05:46:05.133462102+08:00[36m [INFO][NEF][Main] [0mOAuth2 setting receive from NRF: true
+2026-07-23T05:46:05.133504107+08:00[36m [INFO][NEF][CTX] [0mSet nfInstID: [4b422fb4-8593-43dc-8f96-22fe78a1d931]
+2026-07-23T05:46:05.133520486+08:00[36m [INFO][NEF][Main] [0mregister to NRF successfully
+2026-07-23T05:46:05.310491102+08:00[36m [INFO][SMF][Main] [0mSending PFCP Association Request to UPF[127.0.0.8]
+2026-07-23T05:46:05.311342651+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mhandleAssociationSetupRequest
+2026-07-23T05:46:05.311423473+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805][CPNodeID:127.0.0.1] [0mNew node
+2026-07-23T05:46:05.311571755+08:00[36m [INFO][SMF][Main] [0mReceived PFCP Association Setup Accepted Response from UPF[127.0.0.8]
+2026-07-23T05:46:05.311604719+08:00[36m [INFO][SMF][Main] [0mUPF(127.0.0.8) setup association
+2026-07-23T05:46:05.311686596+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mhandleHeartbeatRequest
+2026-07-23T05:46:05.936145436+08:00[33m [WARN][CHF][CGF] [0mLogin to Webconsole FTP fail: dial tcp 127.0.0.1:2121: connect: connection refused, retrying [2]
+2026-07-23T05:46:06.936590315+08:00[33m [WARN][CHF][CGF] [0mLogin to Webconsole FTP fail: dial tcp 127.0.0.1:2121: connect: connection refused, retrying [3]
+2026-07-23T05:46:07.937441978+08:00[36m [INFO][address:127.0.0.113:2122][category:FTP][component:CHF] [0mListening...
+2026-07-23T05:46:07.937533433+08:00[36m [INFO][category:FTP][component:CHF] [0mStarting...
+2026-07-23T05:46:08.150658331+08:00[36m [INFO][AMF][Ngap] [0m[AMF] SCTP Accept from: 127.0.0.18:53151
+2026-07-23T05:46:08.151540805+08:00[36m [INFO][AMF][Ngap] [0mCreate a new NG connection for: 127.0.0.18:53151
+2026-07-23T05:46:08.151594218+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle NGSetupRequest
+2026-07-23T05:46:08.151650401+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mSend NG-Setup response
+2026-07-23T05:46:09.724090877+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle InitialUEMessage
+2026-07-23T05:46:09.724200857+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mNew RanUe [RanUeNgapID:1][AmfUeNgapID:1]
+2026-07-23T05:46:09.724248351+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0m5GSMobileIdentity ["5G-GUTI":"2089300000000000000", err: <nil>]
+2026-07-23T05:46:09.724318303+08:00[36m [INFO][AMF][CTX] [0mNew AmfUe [supi:][guti:20893cafe0000000001]
+2026-07-23T05:46:09.724357487+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Deregistered] to [Deregistered]
+2026-07-23T05:46:09.724440731+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mHandle Registration Request
+2026-07-23T05:46:09.724464585+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mRegistrationType: Initial Registration
+2026-07-23T05:46:09.724481707+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mMobileIdentity5GS: GUTI[2089300000000000000]
+2026-07-23T05:46:09.724523641+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mServing AMF has changed: guamiFromUeGuti[{PlmnId:0xc00070e2d0 AmfId:000000}], servedGuami[{PlmnId:0xc00057bb60 AmfId:cafe00}]
+2026-07-23T05:46:09.724547849+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mContextTransfer from old AMF[&{208 93 } 000000]
+2026-07-23T05:46:09.725393480+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:09.726815364+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:09.728248121+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:09.729281840+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:09.730425681+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?guami=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22amfId%22%3A%22000000%22%7D&requester-nf-type=AMF&target-nf-type=AMF |  |
+2026-07-23T05:46:09.731429743+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0m[GMM] AMF can not select an target AMF by NRF
+2026-07-23T05:46:09.731500585+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Start Authentication], transition from [Deregistered] to [Authentication]
+2026-07-23T05:46:09.731832895+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:46:09.731861165+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mSend Identity Request
+2026-07-23T05:46:09.731904419+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mSend Downlink Nas Transport
+2026-07-23T05:46:10.241638900+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:10.241729683+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:10.241820324+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:10.241840275+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:46:10.241869814+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:10.241904147+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:46:10.242573649+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.243875435+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.245061675+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.245830364+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:10.246675543+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:46:10.247205489+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.249546459+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.252859553+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.254710801+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:46:10.254751247+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:46:10.255426501+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.256256090+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.257500166+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.258293427+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:10.259732823+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:46:10.260784238+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.262254002+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.264170881+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.265780794+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:46:10.266544677+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.267678573+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.269445890+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.269767692+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:46:10.269814470+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:46:10.270087449+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:10.270952166+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:10.272148067+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:10.272778732+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:10.273619736+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR |  |
+2026-07-23T05:46:10.276957382+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:10.277317009+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000002adc map[] 0 }}]
+2026-07-23T05:46:10.279676121+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:10.280047170+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000001/security-information/generate-auth-data |  |
+2026-07-23T05:46:10.280382045+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000001, imsi-208930000000001) to map.
+2026-07-23T05:46:10.280433308+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:46:10.280452563+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 3138656336383965373665303438363336363934633765383665336535393030
+2026-07-23T05:46:10.280556776+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:46:10.280943214+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:46:10.281009114+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mSend Downlink Nas Transport
+2026-07-23T05:46:10.281116872+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:46:10.787856753+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:10.787944956+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:10.788020582+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:10.788044896+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x45] at Authentication state
+2026-07-23T05:46:12.793295817+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:12.793354441+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:12.793404335+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:12.793419233+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:46:12.793452099+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:12.793463239+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:46:12.794311944+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:12.795693578+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:12.797740649+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:12.798879098+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:12.800434836+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:46:12.801084246+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:12.804300076+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:12.806970068+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:12.809105339+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:46:12.809155015+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:46:12.810502007+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:12.811590663+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:12.813300845+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:12.814891920+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:12.816229643+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:46:12.817165623+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:12.818140721+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:12.820760670+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:12.822371794+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:46:12.823170955+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:12.824578260+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:12.826676544+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:12.827116609+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:46:12.827148440+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:46:12.829858065+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:12.830781036+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000002add map[] 0 }}]
+2026-07-23T05:46:12.836777725+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:12.838256123+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000001/security-information/generate-auth-data |  |
+2026-07-23T05:46:12.839510884+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000001, imsi-208930000000001) to map.
+2026-07-23T05:46:12.839573101+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:46:12.839593173+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 6238373061386537373932313866343833643565363433663436666463323631
+2026-07-23T05:46:12.839650102+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:46:12.839968591+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:46:12.840104487+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mSend Downlink Nas Transport
+2026-07-23T05:46:12.840304753+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:46:13.352471335+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:13.352526438+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:13.352583789+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:13.352601980+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x41] at Authentication state
+2026-07-23T05:46:15.320560442+08:00[36m [INFO][UPF][PFCP][LAddr:127.0.0.8:8805] [0mhandleHeartbeatRequest
+2026-07-23T05:46:15.358473086+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:15.358530223+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:15.358591621+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:15.358609821+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x41] at Authentication state
+2026-07-23T05:46:16.281645332+08:00[33m [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mT3560 expires, retransmit Authentication Request (retry: 1)
+2026-07-23T05:46:16.281745716+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mSend Downlink Nas Transport
+2026-07-23T05:46:16.787543412+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:16.787613089+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:16.787680778+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:16.787692308+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mHandle Identity Response
+2026-07-23T05:46:16.787713712+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Authentication Restart], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:16.787734264+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mAuthentication procedure
+2026-07-23T05:46:16.788531496+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:16.790080230+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:16.791200505+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:16.792139568+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:16.792942723+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-07-23T05:46:16.793366284+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:16.794524598+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:16.796756666+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:16.799820942+08:00[36m [INFO][AUSF][UeAuth] [0mHandleUeAuthPostRequest
+2026-07-23T05:46:16.799874128+08:00[36m [INFO][AUSF][UeAuth] [0mServing network authorized
+2026-07-23T05:46:16.800490176+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:16.802606899+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:16.805028658+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:16.806157958+08:00[36m [INFO][NRF][DISC] [0mHandle NFDiscoveryRequest
+2026-07-23T05:46:16.807508245+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-07-23T05:46:16.808094933+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:16.808959764+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:16.810871691+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:16.812455356+08:00[36m [INFO][UDM][UEAU] [0mHandle GenerateAuthDataRequest
+2026-07-23T05:46:16.813381869+08:00[36m [INFO][NRF][Token] [0mIn HTTPAccessTokenRequest
+2026-07-23T05:46:16.814545164+08:00[33m [WARN][NRF][Token] [0mCertificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "free5gc")
+2026-07-23T05:46:16.816093813+08:00[36m [INFO][NRF][GIN] [0m| 200 |       127.0.0.1 | POST    | /oauth2/token |  |
+2026-07-23T05:46:16.816350306+08:00[36m [INFO][UDM][Suci] [0mscheme 0
+2026-07-23T05:46:16.816388817+08:00[36m [INFO][UDM][Suci] [0mSUPI type is IMSI
+2026-07-23T05:46:16.818116553+08:00[36m [INFO][UDR][GIN] [0m| 200 |       127.0.0.1 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:16.818400684+08:00[36m [INFO][UDM][Proc] [0mModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000002ade map[] 0 }}]
+2026-07-23T05:46:16.820662391+08:00[36m [INFO][UDR][GIN] [0m| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-07-23T05:46:16.820970485+08:00[36m [INFO][UDM][GIN] [0m| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000001/security-information/generate-auth-data |  |
+2026-07-23T05:46:16.821241553+08:00[36m [INFO][AUSF][UeAuth] [0mAdd SuciSupiPair (suci-0-208-93-0000-0-0-0000000001, imsi-208930000000001) to map.
+2026-07-23T05:46:16.821307974+08:00[36m [INFO][AUSF][UeAuth] [0mUse 5G AKA auth method
+2026-07-23T05:46:16.821331059+08:00[36m [INFO][AUSF][5gAka] [0mXresStar = 6139663939333830323633333765646666363733316563643132376432363866
+2026-07-23T05:46:16.821386614+08:00[36m [INFO][AUSF][GIN] [0m| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-07-23T05:46:16.821762889+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mSend Authentication Request
+2026-07-23T05:46:16.821962401+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mSend Downlink Nas Transport
+2026-07-23T05:46:16.822073662+08:00[36m [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] [0mStart T3560 timer
+2026-07-23T05:46:17.331031582+08:00[36m [INFO][AMF][Ngap][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport
+2026-07-23T05:46:17.331113789+08:00[36m [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:127.0.0.18:53151] [0mHandle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-07-23T05:46:17.331179240+08:00[36m [INFO][AMF][Gmm] [0mHandle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-07-23T05:46:17.331194861+08:00[31m [ERRO][AMF][Gmm] [0mUE state mismatch: receieve gmm message[message type 0x48] at Authentication state
+--- END core.log SEGMENT ---
+

@@ -1,0 +1,64 @@
+schema_version: 1
+external_artifacts:
+  - path: D:\downloads\logs\free5gc.log
+    bytes: 107727742
+    sha256: D1310DE4E90685B97D6CF26F7603D537FA2B45680C512492C56855F9FF7EB4ED
+    relevance: mixed
+    note: Append-only log modified by later runs; not direct failure evidence.
+  - path: D:\downloads\logs\core.log
+    bytes: 447928
+    sha256: EBC80A6342F0669AB28106720F9BCAF0E6683F8C6E4387EB6998271CBC7B9949
+    relevance: mixed
+    note: Lifecycle/version log appended after the failure window; exact failure segment is frozen in evidence/cache_mismatch_core.log.
+  - path: D:\downloads\logs\statelearner_trace.jsonl
+    bytes: 21926766
+    sha256: 83C9DECDFDAC85A6E7DAB295DB499990306F53F46104C0FFFDEB0AA49C58E661
+    relevance: supporting
+    note: Full trace remains external; directly relevant segments are frozen in evidence/cache_mismatch_trace.log.
+  - path: D:\downloads\logs\statelearner_sht_debug.jsonl
+    bytes: 2616186
+    sha256: 98483E8AB8C7A2C916BB2E69E1D17BAB7990E8B84C9A61755AACE8882605BCD5
+    relevance: supporting
+  - path: D:\downloads\logs\my_database.sqlite
+    bytes: 909312
+    sha256: F234B0461770672FEFBFA9FF90762A1944B0747068603042DF2CEC3FA0C19550
+    relevance: supporting
+  - path: D:\downloads\logs\free5GC_4.2.1.log\console.log
+    bytes: 6620383
+    sha256: 2ADDDEAC3A9449655E2B7E6D41DDE3A9F6D4492C02124A03144DDE5A88021363
+    relevance: direct
+    note: Contains the fatal learner message but remains external because it was not selected as part of the compact direct-evidence set.
+  - path: D:\downloads\logs\resume.log
+    bytes: 211837
+    sha256: E29A34B1F83D30C97004F6E1816D5B89B8B7783CE2B4B2D61A4E00B2BD79A0DC
+    relevance: supporting
+  - path: D:\downloads\logs\statelearner.log
+    bytes: 458116
+    sha256: 1CEBF6A5AA73E2254A37F68C947FD9373C9E05CF3D2EBF5AA3C0ADEC3CC516B6
+    relevance: supporting
+in_repository_artifacts:
+  - path: followups/baseline-vs-multiseq-mdf-20260723/raw/statelearner_trace_baseline.jsonl
+    bytes: 466512
+    sha256: FAAAFC83E3F52A1A09CBBB63F0724E5081453904641529C189D660D5DC5500F6
+    relevance: direct
+    note: Complete 50-sequence baseline trace; baseline learner commit was not frozen.
+  - path: followups/baseline-vs-multiseq-mdf-20260723/raw/statelearner_trace_multiseq-mdf.jsonl
+    bytes: 466512
+    sha256: 57B022BC61DA1DF897F1D4751ACC5CCADDD5C7B87AD6576917A01290E1636B00
+    relevance: direct
+    note: Complete 50-sequence multiSeq-MDF trace.
+  - path: followups/baseline-vs-multiseq-mdf-20260723/raw/multiseq-mdf-run.zip
+    bytes: 7196
+    sha256: 860B1D967812447B6BBFC9FEC62B63088E4F7E8C04603878339896CCDAF97991
+    relevance: supporting
+    note: Run envelope and console; manifest remained running and contains no core-network raw log.
+  - path: followups/t3560-retransmission-reproduction-20260724/raw/run-20260724T094326Z-d078312d.zip
+    bytes: 34332
+    sha256: 2D84C1FD065A9B392F2D114C512D2F75CBF25BAB209FB4998260D4CCC4AFF3D3
+    relevance: direct
+    note: Frozen reproduction run with trace, console and time-bounded Free5GC log.
+archive_policy:
+  threshold_mib: 10
+  original_failure_direct_evidence_bytes: 200907
+  strategy: normal_git_for_small_direct_evidence
+  note: Log, JSONL and ZIP files are ignored by default and require exact-path review before any future forced Git add.

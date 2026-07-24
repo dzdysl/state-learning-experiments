@@ -1,0 +1,36 @@
+schema_version: 2
+failure_id: free5gc421-ttt-inconsistency-20260723-r14
+platform: free5gc
+status: mechanism_reproduced_fix_pending
+time_zone: Asia/Hong_Kong
+run_window:
+  started: '2026-07-22T23:58:55+08:00'
+  failure_observed: '2026-07-23T05:45:53+08:00'
+  learning_stopped: '2026-07-23T05:46:18+08:00'
+core_network:
+  product: free5GC
+  version: v4.2.1
+  deployed_path: /opt/free5gc_4.2.1
+  source_of_version: D:\downloads\logs\core.log
+  source_snapshot_id: free5gc-v4.2.1
+  source_snapshot_path: D:\state-learning-lab\sources\free5gc-v4.2.1
+  source_snapshot_commit: 52d9545faa42efca71b1567cf7d5c5afca79f490
+  amf_submodule_commit: 92b7a3f85764b21b5a94204afc2fb1effff5ed15
+learner:
+  algorithm: TTTLearnerMealy
+  equivalence_oracle: MealyWpMethodEQOracle
+  git_commit: unknown
+  git_commit_note: Historical learner JAR/source revision was not logged by this run.
+analysis_tools:
+  repository: D:\state-learning-lab\projects\state-learning-tools
+  git_commit: 71e4d1eb8147d5838bb9ce5a797a37e6e3dfe3fb
+followups:
+  - id: baseline-vs-multiseq-mdf-20260723
+    path: followups/baseline-vs-multiseq-mdf-20260723
+    result: abstract_behavior_equal_failure_not_reproduced
+  - id: t3560-retransmission-reproduction-20260724
+    path: followups/t3560-retransmission-reproduction-20260724
+    result: retransmission_misattribution_mechanism_reproduced
+source_log_root: D:\downloads\logs
+direct_evidence_bytes: 200907
+direct_evidence_policy: normal_git_under_10_mib

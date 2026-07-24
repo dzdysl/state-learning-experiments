@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "mealy_simulation",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\failures\\free5gc\\free5gc421-ttt-inconsistency-20260723-r14\\evidence\\hypotheses\\hypothesis_13.dot",
+  "source_sha256": "f98140bafeae59a4c1f92d1e1614eecf0100ca5fe794c0ec0d458c91fcaf4b51",
+  "start_state": "s0",
+  "input_sequence": [
+    "registrationRequestGUTI",
+    "identityResponse",
+    "deregistrationRequest",
+    "identityResponse",
+    "registrationRequest",
+    "registrationRequest",
+    "identityResponse",
+    "deregistrationAccept",
+    "registrationRequest"
+  ],
+  "output_sequence": [
+    "identityRequest",
+    "authenticationRequest",
+    "null_action",
+    "authenticationRequest",
+    "null_action",
+    "authenticationRequest",
+    "null_action",
+    "null_action",
+    "null_action"
+  ],
+  "final_state": "s1",
+  "trace": [
+    {
+      "step": 1,
+      "src": "s0",
+      "dst": "s4",
+      "input": "registrationRequestGUTI",
+      "output": "identityRequest"
+    },
+    {
+      "step": 2,
+      "src": "s4",
+      "dst": "s9",
+      "input": "identityResponse",
+      "output": "authenticationRequest"
+    },
+    {
+      "step": 3,
+      "src": "s9",
+      "dst": "s14",
+      "input": "deregistrationRequest",
+      "output": "null_action"
+    },
+    {
+      "step": 4,
+      "src": "s14",
+      "dst": "s15",
+      "input": "identityResponse",
+      "output": "authenticationRequest"
+    },
+    {
+      "step": 5,
+      "src": "s15",
+      "dst": "s0",
+      "input": "registrationRequest",
+      "output": "null_action"
+    },
+    {
+      "step": 6,
+      "src": "s0",
+      "dst": "s1",
+      "input": "registrationRequest",
+      "output": "authenticationRequest"
+    },
+    {
+      "step": 7,
+      "src": "s1",
+      "dst": "s1",
+      "input": "identityResponse",
+      "output": "null_action"
+    },
+    {
+      "step": 8,
+      "src": "s1",
+      "dst": "s1",
+      "input": "deregistrationAccept",
+      "output": "null_action"
+    },
+    {
+      "step": 9,
+      "src": "s1",
+      "dst": "s1",
+      "input": "registrationRequest",
+      "output": "null_action"
+    }
+  ]
+}

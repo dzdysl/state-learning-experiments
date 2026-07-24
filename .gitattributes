@@ -7,3 +7,15 @@
 *.ps1 text eol=crlf
 *.pdf binary
 *.png binary
+
+# Preserve experiment evidence and hash-recorded derivatives byte-for-byte.
+failures/**/inputs/** -text
+failures/**/evidence/** -text
+failures/**/raw/** -text
+failures/**/analysis/derived/** -text
+failures/**/analysis/figures/** -text
+experiments/**/inputs/** -text
+experiments/**/evidence/** -text
+experiments/**/raw/** -text
+experiments/**/analysis/derived/** -text
+experiments/**/analysis/figures/** -text

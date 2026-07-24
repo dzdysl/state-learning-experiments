@@ -1,0 +1,26 @@
+=== CACHE/DATABASE RESULT MISMATCH ===
+Time: 2026-07-23 05:45:53.742
+Detected by: live prefix result
+Sequence: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Current test result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+Stored in: queryNew_free5gc
+Stored command: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Stored result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest authenticationRequest
+Normalized stored result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest authenticationRequest
+Mismatch positions:
+  8 (input=deregistrationAccept): stored=authenticationRequest, current=null_action
+Action: retained the existing SQLite result; conflicting live result was not written.
+
+=== CACHE/DATABASE RESULT MISMATCH ===
+Time: 2026-07-23 05:46:18.835
+Detected by: live prefix result
+Sequence: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Current test result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+Stored in: queryNew_free5gc
+Stored command: registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+Stored result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest authenticationRequest
+Normalized stored result: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest authenticationRequest
+Mismatch positions:
+  8 (input=deregistrationAccept): stored=authenticationRequest, current=null_action
+Action: retained the existing SQLite result; conflicting live result was not written.
+

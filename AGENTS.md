@@ -42,6 +42,38 @@ Use the same evidence model for both `experiments/` and `failures/`. A failure a
 
 Do not create every optional file before it has content. Preserve the top-level names when they exist so tools and later analysis remain predictable.
 
+## Adaptive organization of mixed materials
+
+Treat the required layout as an evidence model, not a rule that every record must have the same directories. Inventory the supplied material before moving it and classify each item by the question it answers: original failure/experiment evidence, exact input, planned comparison, regression, reproduction or minimisation, root-cause analysis, fix verification, figure/derived output, or mixed/external artifact.
+
+The following is an optional pattern for a failure investigation that accumulates materially different later runs:
+
+```text
+<failure>/
+  README.md
+  inputs/                    # original failure input
+  evidence/                  # original failure evidence
+  analysis/                  # cross-investigation index and model analysis
+  followups/
+    <comparison-id>/
+      README.md
+      provenance.yaml
+      artifacts.yaml
+      inputs/
+      evidence/
+      raw/
+      analysis/
+    <reproduction-id>/
+      ...
+```
+
+- Use a separate `followups/<descriptive-id>/` when later material comes from a different run, build, test set, or question but still investigates the same parent failure. Give that follow-up its own status, provenance, artifacts and conclusion; create only the populated subdirectories.
+- Keep the parent `README.md` and, when useful, `analysis/README.md` as navigation and a confidence-aware synthesis. Do not copy a follow-up conclusion into the original evidence layer.
+- Create a new top-level experiment/failure record instead of a follow-up when the material is unrelated, has a different primary phenomenon, or needs an independent lifecycle.
+- A small one-off analysis may remain directly under `analysis/`; a single exact reproducer may remain under `inputs/`; a large frozen run may be only an external snapshot plus `artifacts.yaml`. Do not introduce nested structure merely for symmetry.
+- Preserve original bytes and SHA-256 values when reorganizing. Move complete raw files to `raw/`, compact direct excerpts to `evidence/`, exact commands/sequences/configs to `inputs/`, and interpretations or figures to `analysis/`.
+- Before applying this optional pattern, account for the actual material and any user-specified structure. Explicit user requirements override the pattern. If classification would change the experiment boundary, mix conclusions, overwrite an existing record, or discard provenance, ask before acting.
+
 ## Evidence rules
 
 - `inputs/` contains exact input material. Copy a query/config/sequence rather than describing it from memory.

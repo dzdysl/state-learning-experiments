@@ -1,0 +1,26 @@
+schema_version: 1
+artifacts:
+  - path: inputs/test-50.seq
+    bytes: 9702
+    sha256: FEE9D03997DD1F26D09840D5C3B3266448DF87E7BD78178ADDB24ED2FA1F7832
+    relevance: direct
+  - path: raw/statelearner_trace_baseline.jsonl
+    bytes: 466512
+    sha256: FAAAFC83E3F52A1A09CBBB63F0724E5081453904641529C189D660D5DC5500F6
+    relevance: direct
+  - path: raw/statelearner_trace_multiseq-mdf.jsonl
+    bytes: 466512
+    sha256: 57B022BC61DA1DF897F1D4751ACC5CCADDD5C7B87AD6576917A01290E1636B00
+    relevance: direct
+  - path: raw/multiseq-mdf-run.zip
+    bytes: 7196
+    sha256: 860B1D967812447B6BBFC9FEC62B63088E4F7E8C04603878339896CCDAF97991
+    relevance: supporting
+  - path: evidence/baseline-config-path-error.log
+    bytes: 76
+    sha256: 03F3D778D740361AA1098110BA45D880CCD77355ED8971A23DCD96D2F7A3ED98
+    relevance: supporting
+archive_policy:
+  threshold_mib: 10
+  total_bytes: 949998
+  strategy: in_repository_raw

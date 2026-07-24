@@ -1,0 +1,14 @@
+schema_version: 1
+artifacts:
+  - path: inputs/reproducer.seq
+    bytes: 185
+    sha256: 496F5BF986A4DA9B74533224A583E994579935C324C256F50EED2C721965BDC4
+    relevance: direct
+  - path: raw/run-20260724T094326Z-d078312d.zip
+    bytes: 34332
+    sha256: 2D84C1FD065A9B392F2D114C512D2F75CBF25BAB209FB4998260D4CCC4AFF3D3
+    relevance: direct
+archive_policy:
+  threshold_mib: 10
+  total_bytes: 34517
+  strategy: in_repository_raw

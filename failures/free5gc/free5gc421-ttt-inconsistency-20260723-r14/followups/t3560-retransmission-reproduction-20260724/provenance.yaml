@@ -1,0 +1,43 @@
+schema_version: 1
+followup_id: t3560-retransmission-reproduction-20260724
+parent_failure: free5gc421-ttt-inconsistency-20260723-r14
+platform: free5gc
+status: mechanism_reproduced_fix_pending
+time_zone: Asia/Hong_Kong
+run:
+  id: 20260724T094326Z-d078312d
+  started_utc: '2026-07-24T09:43:27.105484Z'
+  ended_utc: '2026-07-24T09:44:33Z'
+  manifest_status: finalized
+  archive_path: raw/run-20260724T094326Z-d078312d.zip
+  archive_bytes: 34332
+  archive_sha256: 2D84C1FD065A9B392F2D114C512D2F75CBF25BAB209FB4998260D4CCC4AFF3D3
+input:
+  path: inputs/reproducer.seq
+  bytes: 185
+  sha256: 496F5BF986A4DA9B74533224A583E994579935C324C256F50EED2C721965BDC4
+learner:
+  repository: free5gc-state-learning
+  component: multiSeq
+  git_commit: 8448e4173816b7c33dceb0c4a89a79a3c4067ae7
+  git_dirty: true
+  git_status_sha256: 3ba0e63e2b147c76cab5258b80a63afdcb2820de52965e267f71103403a28bbd
+  jar_path: /opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar
+  jar_sha256: 6B41D3C81C13527EFE4C716BF8D5236672AD2EFD7CA390EA0C33A44284992235
+  config_path: /opt/CoreCrisis/Corelearner/core.properties
+  config_sha256: 43b49afe5f33efc5eb42557e300f51383df9bf561977bb3c180cae8537036013
+  ueransim_source_path: src
+  ueransim_executable_sha256: unknown
+core_network:
+  product: free5GC
+  version: v4.2.1
+  deployed_path: /opt/free5gc_4.2.1
+  source_snapshot_id: free5gc-v4.2.1
+  source_snapshot_path: D:\state-learning-lab\sources\free5gc-v4.2.1
+  source_snapshot_commit: 52d9545faa42efca71b1567cf7d5c5afca79f490
+  source_snapshot_describe: v4.2.1-dirty
+  amf_submodule_commit: 92b7a3f85764b21b5a94204afc2fb1effff5ed15
+evidence_limits:
+  ue_gnb_raw_log_present: false
+  pcap_present: false
+  ueransim_binary_hash_present: false

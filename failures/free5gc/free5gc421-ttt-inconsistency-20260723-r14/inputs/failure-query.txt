@@ -1,0 +1,27 @@
+# Source: evidence/inconsistent.log and evidence/cache_mismatch.log
+# TTT failure query: prefix followed by suffix.
+
+prefix:
+registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept
+
+suffix:
+registrationRequest
+
+full_input:
+registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest registrationRequest identityResponse deregistrationAccept registrationRequest
+
+observed_runs:
+1. prefix output: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest authenticationRequest
+   suffix output: null_action
+2. prefix output: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+   suffix output: authenticationRequest
+3. prefix output: identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest authenticationRequest null_action
+   suffix output: authenticationRequest
+
+first_prefix_conflict:
+input: deregistrationAccept
+previous_output: authenticationRequest
+current_output: null_action
+
+# A formal reproducer.seq is intentionally deferred until the accepted multiSeq file syntax is confirmed.
+

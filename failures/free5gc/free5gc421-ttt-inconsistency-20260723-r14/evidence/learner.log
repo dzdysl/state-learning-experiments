@@ -1,0 +1,218 @@
+Jul 22, 2026 11:58:55 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using Core SUL
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using learning algorithm TTTLearnerMealy
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using equivalence algorithm MealyWpMethodEQOracle
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting learning
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 1
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse / authenticationRequest securityModeCommand]
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 419, (0.419 s)
+Searching for counter-example [ms]: 16, (0.016 s)
+
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 1
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 12
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 1
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 1
+Jul 22, 2026 11:59:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 2
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest configurationUpdateComplete authenticationFailure authenticationResponse authenticationFailure registrationRequest serviceRequest authenticationFailure configurationUpdateComplete registrationRequestGUTI registrationComplete authenticationResponse / authenticationRequest null_action null_action securityModeCommand null_action null_action null_action null_action null_action null_action null_action null_action]
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 881, (0.881 s)
+Searching for counter-example [ms]: 32, (0.032 s)
+
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 2
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 47
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 2
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 2
+Jul 22, 2026 11:59:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 3
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest serviceRequest serviceRequest registrationRequest registrationRequestGUTI authenticationResponse registrationComplete identityResponse securityModeComplete configurationUpdateComplete authenticationResponse serviceRequest authenticationFailure authenticationResponse / authenticationRequest null_action null_action null_action null_action securityModeCommand null_action null_action registrationAccept null_action null_action serviceReject null_action null_action]
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 1587, (1.587 s)
+Searching for counter-example [ms]: 69, (0.069 s)
+
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 3
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 98
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 4
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 3
+Jul 22, 2026 11:59:17 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 4
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse securityModeComplete authenticationFailure serviceRequest deregistrationAccept registrationRequestGUTI authenticationFailure authenticationFailure serviceRequest securityModeComplete / authenticationRequest securityModeCommand registrationAccept null_action serviceReject null_action identityRequest null_action null_action null_action null_action]
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 2383, (2.383 s)
+Searching for counter-example [ms]: 281, (0.281 s)
+
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 4
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 158
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 22
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 4
+Jul 22, 2026 11:59:18 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 5
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse securityModeComplete authenticationResponse deregistrationAccept registrationRequest deregistrationAccept registrationRequestGUTI serviceRequest configurationUpdateComplete serviceRequest securityModeComplete / authenticationRequest securityModeCommand registrationAccept null_action null_action null_action null_action null_action serviceReject null_action serviceReject null_action]
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 3137, (3.137 s)
+Searching for counter-example [ms]: 293, (0.293 s)
+
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 5
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 230
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 23
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 5
+Jul 22, 2026 11:59:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 6
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse registrationRequest securityModeComplete authenticationFailure authenticationResponse authenticationResponse registrationRequestGUTI registrationComplete registrationRequest registrationRequestGUTI securityModeComplete registrationComplete / authenticationRequest securityModeCommand null_action registrationAccept null_action null_action null_action null_action configurationUpdateCommand null_action registrationAccept null_action configurationUpdateCommand]
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 4767, (4.767 s)
+Searching for counter-example [ms]: 409, (0.409 s)
+
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 6
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 372
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 30
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 8
+Jul 22, 2026 11:59:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 7
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequestGUTI identityResponse identityResponse / identityRequest authenticationRequest authenticationRequest]
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 5673, (5.673 s)
+Searching for counter-example [ms]: 9860071, (9860.071 s)
+
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 7
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 457
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 397
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 9
+Jul 23, 2026 2:43:41 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 8
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse securityModeComplete deregistrationRequest registrationComplete registrationRequest / authenticationRequest securityModeCommand registrationAccept null_action configurationUpdateCommand registrationAccept]
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 858654, (858.654 s)
+Searching for counter-example [ms]: 9874362, (9874.362 s)
+
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 8
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 519
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 398
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 10
+Jul 23, 2026 2:58:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 9
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest authenticationResponse deregistrationRequest securityModeReject registrationRequest / authenticationRequest securityModeCommand null_action null_action registrationReject]
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 2813639, (2813.639 s)
+Searching for counter-example [ms]: 9902760, (9902.76 s)
+
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 9
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 657
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 400
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 12
+Jul 23, 2026 3:31:12 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 10
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequest deregistrationRequest authenticationResponse securityModeReject registrationRequest / authenticationRequest null_action securityModeCommand null_action registrationReject]
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 4287577, (4287.577 s)
+Searching for counter-example [ms]: 9919057, (9919.057 s)
+
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 10
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 733
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 401
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 13
+Jul 23, 2026 3:56:02 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 11
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequestGUTI identityResponse deregistrationRequest authenticationResponse securityModeReject registrationRequest / identityRequest authenticationRequest null_action securityModeCommand null_action registrationReject]
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 5581592, (5581.592 s)
+Searching for counter-example [ms]: 9936153, (9936.153 s)
+
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 11
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 805
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 402
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 14
+Jul 23, 2026 4:17:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 12
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequestGUTI identityResponse deregistrationRequest identityResponse securityModeReject registrationRequest / identityRequest authenticationRequest null_action authenticationRequest null_action authenticationRequest]
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 6897894, (6897.894 s)
+Searching for counter-example [ms]: 9957399, (9957.399 s)
+
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 12
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 876
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 403
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 15
+Jul 23, 2026 4:40:11 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 13
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[ε|registrationRequestGUTI identityResponse deregistrationRequest identityResponse registrationRequest authenticationResponse securityModeReject registrationRequest / identityRequest authenticationRequest null_action authenticationRequest null_action securityModeCommand authenticationRequest registrationReject]
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 8039184, (8039.184 s)
+Searching for counter-example [ms]: 9977389, (9977.389 s)
+
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 13
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 939
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 404
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: States in the hypothesis: 16
+Jul 23, 2026 4:59:32 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 14

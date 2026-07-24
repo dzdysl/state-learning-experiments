@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "kind": "mealy_trace_observations",
+  "source": "../../inputs/failure-query.txt",
+  "simulation": "hypothesis_13_failure_query_simulation.json",
+  "observed_runs": [
+    {
+      "name": "run-1",
+      "output_sequence": [
+        "identityRequest",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "authenticationRequest",
+        "authenticationRequest",
+        "null_action"
+      ]
+    },
+    {
+      "name": "run-2",
+      "output_sequence": [
+        "identityRequest",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest"
+      ]
+    },
+    {
+      "name": "run-3",
+      "output_sequence": [
+        "identityRequest",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest",
+        "authenticationRequest",
+        "null_action",
+        "authenticationRequest"
+      ]
+    }
+  ]
+}
