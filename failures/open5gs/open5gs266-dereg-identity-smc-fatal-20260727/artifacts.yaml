@@ -1,0 +1,3 @@
+schema_version: 1
+artifacts: []
+note: All selected run artifacts are frozen in raw/. Exact core and UERANSIM/SUL source revisions are recorded in provenance.yaml.

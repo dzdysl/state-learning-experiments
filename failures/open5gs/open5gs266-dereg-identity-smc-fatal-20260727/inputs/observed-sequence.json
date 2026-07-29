@@ -1,0 +1,32 @@
+{
+  "source": "../raw/statelearner_trace.jsonl",
+  "source_sequence_id": 1,
+  "socket_session_id": 1,
+  "inputs": [
+    "registrationRequest",
+    "authenticationResponse",
+    "securityModeComplete",
+    "registrationComplete",
+    "deregistrationRequest",
+    "identityResponse",
+    "authenticationResponse",
+    "securityModeComplete"
+  ],
+  "outputs": [
+    "authenticationRequest",
+    "securityModeCommand",
+    "registrationAccept",
+    "configurationUpdateCommand",
+    "null_action",
+    "authenticationRequest",
+    "securityModeCommand",
+    "null_action"
+  ],
+  "failure_trigger": {
+    "input_index": 8,
+    "input": "securityModeComplete",
+    "observed_output": "null_action",
+    "core_session_exit_code": 134
+  },
+  "sequence_syntax": "Abstract symbols copied from the trace. The executable multiSeq file syntax has not yet been independently confirmed; therefore this is not named reproducer.seq."
+}

@@ -1,0 +1,47 @@
+Open5GS daemon v2.6.6
+
+[32m07/27 13:26:46.235[0m: [[33mapp[0m] [1;32mINFO[0m: Configuration: '/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/configs/sample.yaml' (../lib/app/ogs-init.c:126)
+Open5GS daemon v2.6.6
+
+[32m07/27 13:26:46.239[0m: [[33mapp[0m] [1;32mINFO[0m: Configuration: '/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/configs/sample.yaml' (../lib/app/ogs-init.c:126)
+[32m07/27 13:26:46.240[0m: [[33msbi[0m] [1;32mINFO[0m: nghttp2_server() [http://127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+[32m07/27 13:26:46.240[0m: [[33msbi[0m] [1;32mINFO[0m: nghttp2_server() [http://::1]:7777 (../lib/sbi/nghttp2-server.c:395)
+[32m07/27 13:26:46.240[0m: [[33mapp[0m] [1;32mINFO[0m: NRF initialize...done (../src/nrf/app.c:31)
+Open5GS daemon v2.6.6
+
+[32m07/27 13:26:46.289[0m: [[33mapp[0m] [1;32mINFO[0m: Configuration: '/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/configs/sample.yaml' (../lib/app/ogs-init.c:126)
+[32m07/27 13:26:46.290[0m: [[33msbi[0m] [1;32mINFO[0m: nghttp2_server() [http://127.0.1.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+[32m07/27 13:26:46.290[0m: [[33mapp[0m] [1;32mINFO[0m: SCP initialize...done (../src/scp/app.c:31)
+[32m07/27 13:26:46.290[0m: [[33mnrf[0m] [1;32mINFO[0m: [c2887844-897b-41f1-bc00-c51a0556b366] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+[32m07/27 13:26:46.290[0m: [[33msbi[0m] [1;32mINFO[0m: [c2887844-897b-41f1-bc00-c51a0556b366] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c2889a36-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291114+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c2889f22-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291233+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a026-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291256+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a120-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291282+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a210-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291305+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a634-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291412+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a6f2-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291431+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33mnrf[0m] [1;32mINFO[0m: [c288a79c-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291447+08:00 [validity_duration:86400] (../src/nrf/nnrf-handler.c:375)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c2889a36-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291114+08:00 [duration:86400,validity:86399.999581,patch:43199.999790] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c2889f22-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291233+08:00 [duration:86400,validity:86399.999680,patch:43199.999840] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a026-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291256+08:00 [duration:86400,validity:86399.999630,patch:43199.999815] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a120-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291282+08:00 [duration:86400,validity:86399.999645,patch:43199.999822] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a210-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291305+08:00 [duration:86400,validity:86399.999572,patch:43199.999786] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a634-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291412+08:00 [duration:86400,validity:86399.999622,patch:43199.999811] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a6f2-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291431+08:00 [duration:86400,validity:86399.999623,patch:43199.999811] (../lib/sbi/nnrf-handler.c:509)
+[32m07/27 13:26:46.291[0m: [[33msbi[0m] [1;32mINFO[0m: [c288a79c-897b-41f1-beb5-c54385232ce3] Subscription created until 2026-07-28T13:26:46.291447+08:00 [duration:86400,validity:86399.999583,patch:43199.999791] (../lib/sbi/nnrf-handler.c:509)
+Open5GS daemon v2.6.6
+
+[32m07/27 13:26:46.339[0m: [[33mapp[0m] [1;32mINFO[0m: Configuration: '/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/configs/sample.yaml' (../lib/app/ogs-init.c:126)
+Failed to bind to port 0: Address already in use
+[32m07/27 13:26:46.359[0m: [[33mmetrics[0m] [1;33mERROR[0m: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+[32m07/27 13:26:46.359[0m: [[33msock[0m] [1;33mERROR[0m: socket bind(2) [127.0.0.7]:8805 failed (98:Address already in use) (../lib/core/ogs-socket.c:114)
+[32m07/27 13:26:46.359[0m: [[33msock[0m] [1;33mERROR[0m: udp_server() [127.0.0.7]:8805 failed (98:Address already in use) (../lib/core/ogs-udp.c:67)
+[32m07/27 13:26:46.359[0m: [[33mapp[0m] [1;33mERROR[0m: Failed to intialize UPF (../src/upf/app.c:28)
+[32m07/27 13:26:46.359[0m: [[33mapp[0m] [1;31mFATAL[0m: Open5GS initialization failed. Aborted (../src/main.c:219)
+[32m07/27 13:26:46.359[0m: [[33mcore[0m] [1;31mFATAL[0m: child_main: Assertion `out_return_code == 0' failed. (../tests/common/application.c:106)
+[32m07/27 13:26:46.359[0m: [[33mcore[0m] [1;31mFATAL[0m: backtrace() returned 5 addresses (../lib/core/ogs-abort.c:37)
+/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/tests/app/5gc(+0xbebc) [0x56506bab2ebc]
+/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/tests/app/../../lib/core/libogscore.so.2(+0x1074c) [0x7f204d08c74c]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x8609) [0x7f204cbf7609]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x43) [0x7f204cd31353]

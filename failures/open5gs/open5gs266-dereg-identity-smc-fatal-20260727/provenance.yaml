@@ -1,0 +1,38 @@
+schema_version: 1
+record_type: failure
+platform: open5gs
+failure_id: open5gs266-dereg-identity-smc-fatal-20260727
+status: reproduced-root-cause-located-pending-fixed-version-verification
+run:
+  id: 20260727T044327Z-2de7c9aa
+  started_utc: '2026-07-27T04:43:27.136188303Z'
+  ended_utc: '2026-07-27T04:44:00Z'
+  mode: interactive
+  timezone: UTC
+  source_directory: D:\downloads\runs\20260727T044327Z-2de7c9aa
+core_network:
+  snapshot_id: open5gs_old
+  snapshot_path: D:\state-learning-lab\sources\open5gs_old\open5gs
+  requested_version: v2.6.6
+  git_commit: 499c70d8be63e5f87c2d1c2bcd4e521d50ce1a6b
+  git_describe: v2.6.6-dirty
+  runtime_core_path: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+learner:
+  repository: D:\state-learning-lab\projects\open5gs-state-learning
+  git_commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  git_branch: refactor/multiseq-mdf
+  git_describe: runtime/2026-07-24/core-output-filter-v3-dirty
+  git_dirty: true
+  git_status_sha256: 29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc
+  component: multiSeq
+  jar_path: /opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar
+  jar_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+  ueransim_sul_path: src/
+  ueransim_sul_commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  ueransim_sul_access: git show <commit>:src/<path>
+configuration:
+  path: /opt/CoreCrisis/Corelearner/core.properties
+  sha256: cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289
+tools:
+  state_learning_tools_commit: 635b6de97f91b499e77f003025fa13d628e4ca74
+  archive_script: operations/experiment_archive/New-StateLearningArchive.ps1

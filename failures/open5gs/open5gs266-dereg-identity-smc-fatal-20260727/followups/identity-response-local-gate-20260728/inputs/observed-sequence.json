@@ -1,0 +1,14 @@
+{
+  "run_id": "20260728T083613Z-23b95c25",
+  "sequence_id": 1,
+  "inputs": [
+    "registrationRequest",
+    "authenticationResponse",
+    "securityModeComplete",
+    "registrationRequestGUTI",
+    "authenticationResponse",
+    "securityModeReject",
+    "registrationRequestGUTI",
+    "identityResponse"
+  ]
+}

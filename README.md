@@ -26,3 +26,4 @@ sequences/canonical/
 ## 失败记录
 
 - [`free5gc421-ttt-inconsistency-20260723-r14`](failures/free5gc/free5gc421-ttt-inconsistency-20260723-r14/README.md)：Free5GC v4.2.1 的 TTT 第 14 轮查询不一致；原因机制已定向复现，修复验证待进行。
+- [`open5gs266-dereg-identity-smc-fatal-20260727`](failures/open5gs/open5gs266-dereg-identity-smc-fatal-20260727/README.md)：Open5GS v2.6.6 注销后由 Identity Response 重新进入鉴权，最终 SMCompl 触发 AMF 致命分支并退出；修复版本复验待进行。

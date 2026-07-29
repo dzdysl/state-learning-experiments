@@ -1,0 +1,6 @@
+[INFO] Launching Open5GS from: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+[INFO] Configuration: /opt/CoreCrisis/Corelearner/core.properties
+[INFO] Core log: /opt/CoreCrisis/Corelearner/runs/20260727T052451Z-3196bc78/raw/open5gs/core-session-003/core.log
+Stopping Open5GS test-core: 4307
+[ERROR] Open5GS launcher finished with status 134
+Open5GS stopped and session log writes were flushed.

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "run.started_utc": "2026-07-27T04:43:27.223288921Z",
+  "run.id": "20260727T044327Z-2de7c9aa",
+  "run.mode": "interactive",
+  "run.output_dir": "/opt/CoreCrisis/Corelearner/baseLine_mdf_servReq_0716_log/Open5GS.log",
+  "run.config_path": "/opt/CoreCrisis/Corelearner/core.properties",
+  "run.config_sha256": "cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289",
+  "process.cwd": "/opt/CoreCrisis/Corelearner",
+  "runtime.java_version": "21.0.7",
+  "runtime.os_name": "Linux",
+  "build.repository": "open5gs-state-learning",
+  "build.component": "multiSeq",
+  "build.utc": "2026-07-24T08:03:41.5492884Z",
+  "git.commit": "11453a35e1c1dba5b49ae2d487f9e48ff0b493a8",
+  "git.branch": "refactor/multiseq-mdf",
+  "git.describe": "runtime/2026-07-24/core-output-filter-v3-dirty",
+  "git.dirty": "true",
+  "git.status_sha256": "29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc",
+  "artifact.path": "/opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar",
+  "artifact.sha256": "4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116"
+}

@@ -1,0 +1,5 @@
+No Open5GS test-core process is running from: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+Open5GS stopped and session log writes were flushed.
+[INFO] Launching Open5GS from: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+[INFO] Configuration: /opt/CoreCrisis/Corelearner/core.properties
+[INFO] Core log: /opt/CoreCrisis/Corelearner/runs/20260728T083613Z-23b95c25/raw/open5gs/core-session-001/core.log

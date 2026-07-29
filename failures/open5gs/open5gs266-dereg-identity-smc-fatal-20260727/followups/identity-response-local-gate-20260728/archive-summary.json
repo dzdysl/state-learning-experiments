@@ -1,0 +1,18 @@
+{
+  "source": "D:\\downloads\\runs\\20260728T083613Z-23b95c25",
+  "destination": "raw/20260728T083613Z-23b95c25",
+  "strategy": "manual_preserve_tree_after_standard_dry_run",
+  "dry_run_strategy": "git_raw",
+  "file_count": 8,
+  "total_bytes": 49712,
+  "files": [
+    {"path": "raw/console.log", "bytes": 3135, "sha256": "c0178bd466be9a103e82374639777288cb4190700aaaa0b2ff2b768d66681964"},
+    {"path": "raw/open5gs/core-session-001/core.log", "bytes": 33867, "sha256": "48ff6d3dff8420121b3fd585876e1245e54753c3b264bcb5f7511f65e5d753f2"},
+    {"path": "raw/open5gs/core-session-001/launcher.log", "bytes": 394, "sha256": "a208976b8b3f2b522627454191a5b4f8e07c54793795937844ee44f7767ac163"},
+    {"path": "raw/open5gs/core-session-001/session.json", "bytes": 443, "sha256": "f9d96451f51ab6944efc9ee1f2a812f0af3578b267491184b577b663f7ca114d"},
+    {"path": "run-manifest.json", "bytes": 275, "sha256": "6e18f713e1c4e39954d952f0a411b2d7cff9bf6aa8387a01e0d7a33b3b0153ae"},
+    {"path": "run-provenance.json", "bytes": 1093, "sha256": "ea987880c6091dab5781246aa348404cf736057b80b2d09de91647c055e5830b"},
+    {"path": "statelearner_trace.jsonl", "bytes": 10503, "sha256": "e01e8228bc5549751ab374be9df5c9a3651e59319910f9d01176b4748786f1ea"},
+    {"path": "statelearner_trace.meta", "bytes": 2, "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"}
+  ]
+}

@@ -1,0 +1,37 @@
+schema_version: 1
+record_type: followup
+parent_failure_id: open5gs266-dereg-identity-smc-fatal-20260727
+followup_id: identity-response-local-gate-20260728
+platform: open5gs
+run:
+  id: 20260728T083613Z-23b95c25
+  started_utc: "2026-07-28T08:36:13.213980287Z"
+  mode: interactive
+  original_path: "D:\\downloads\\runs\\20260728T083613Z-23b95c25"
+  copied_raw_path: raw/20260728T083613Z-23b95c25
+  total_files: 8
+  total_bytes: 49712
+  manifest_status_at_freeze: running
+source:
+  core_snapshot_id: open5gs_old
+  core_snapshot: "D:\\state-learning-lab\\sources\\open5gs_old\\open5gs"
+  core_version: Open5GS v2.6.6
+  core_commit: 499c70d8be63e5f87c2d1c2bcd4e521d50ce1a6b
+  learner_repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  learner_commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  learner_branch_at_runtime: refactor/multiseq-mdf
+  learner_dirty_at_runtime: true
+  learner_git_describe: runtime/2026-07-24/core-output-filter-v3-dirty
+  state_learning_tools_commit: 635b6de97f91b499e77f003025fa13d628e4ca74
+runtime:
+  java_version: 21.0.7
+  os_name: Linux
+  config_path: /opt/CoreCrisis/Corelearner/core.properties
+  config_sha256: cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289
+  artifact_path: /opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar
+  artifact_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+archive:
+  method: manual_preserve_tree_after_standard_dry_run
+  standard_dry_run_strategy: git_raw
+  original_bytes_preserved: true
+  checksum_manifest: archive-summary.json

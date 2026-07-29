@@ -1,0 +1,83 @@
+{
+  "failure_id": "open5gs266-dereg-identity-smc-fatal-20260727",
+  "platform": "open5gs",
+  "strategy": "git_raw",
+  "threshold_bytes": 10485760,
+  "selected_bytes": 124948,
+  "file_count": 12,
+  "destination": "D:\\state-learning-lab\\projects\\state-learning-experiments\\failures\\open5gs\\open5gs266-dereg-identity-smc-fatal-20260727\\raw",
+  "files": [
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\core-events.jsonl",
+      "bytes": 19659,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "DACDA9BE22E5600D29C438CD50C484E96420AE33D8E62D113141A80ECFDB9791"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\protocol-events.jsonl",
+      "bytes": 34913,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "4CEDCB2871623983B7E90B8BDCA537BD851D05876526A7EFDA83E007ED77C8CE"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\raw\\console.log",
+      "bytes": 3272,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "50258154EB048956EF3068118CAFEB84BE97194E41A7E893FA1C72C325DB133B"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\raw\\open5gs\\core-session-001\\core.log",
+      "bytes": 36156,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "9B719201A049A7F16537A756D08307F18B0F264D9B530CF3716AB8C82F3BD1B9"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\raw\\open5gs\\core-session-001\\launcher.log",
+      "bytes": 530,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "F82EEC1330AFEF03E04F8DF83E2EE3ED81D1CFDF2EC89A4D8FEB61BD4ED67A39"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\raw\\open5gs\\core-session-001\\session.json",
+      "bytes": 498,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "5D48219F6698C1C91F3754E88F5C02C5A6DE0A869A9E75DA2C5DB1AE3F803A61"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\run-manifest.json",
+      "bytes": 941,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "3B7DE688A85FE4E002DCEF557C3F63E0894C751E8044E6E0C36919194AD0D3E2"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\run-provenance.json",
+      "bytes": 1093,
+      "modified_utc": "2026-07-27T04:43:27.0000000Z",
+      "sha256": "37605EE8689CD495F9FD8783D9EBF3E5A1BDD48545D139B98FA044C94BEAE990"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\statelearner_sht_debug.jsonl",
+      "bytes": 2058,
+      "modified_utc": "2026-07-27T04:43:41.0000000Z",
+      "sha256": "C3927E99CDFD0FA6A057684B92FD968007244CD045331A6EE29F41B91B4A4982"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\statelearner_trace.jsonl",
+      "bytes": 10572,
+      "modified_utc": "2026-07-27T04:43:45.0000000Z",
+      "sha256": "C8A0491485A935E5E298EA3EEDB2F162DFA1D4EFC8B046BCA4C227CDD8F92F55"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\statelearner_trace.meta",
+      "bytes": 2,
+      "modified_utc": "2026-07-27T04:43:35.0000000Z",
+      "sha256": "4355A46B19D348DC2F57C046F8EF63D4538EBB936000F3C9EE954A27460DD865"
+    },
+    {
+      "source_path": "D:\\downloads\\runs\\20260727T044327Z-2de7c9aa\\ue-events.jsonl",
+      "bytes": 15254,
+      "modified_utc": "2026-07-27T04:44:00.0000000Z",
+      "sha256": "D9758B3D1576319C7996EA0E01B26D7137F2936BF2370FD6DF8DB181AFA610C2"
+    }
+  ]
+}
