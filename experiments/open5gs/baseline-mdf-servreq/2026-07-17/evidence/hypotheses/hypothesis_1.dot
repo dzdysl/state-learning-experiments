@@ -1,0 +1,20 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s0 -> s0 [label="registrationRequest / authenticationRequest"];
+	s0 -> s0 [label="registrationRequestGUTI / identityRequest"];
+	s0 -> s0 [label="registrationComplete / null_action"];
+	s0 -> s0 [label="deregistrationRequest / null_action"];
+	s0 -> s0 [label="serviceRequest / null_action"];
+	s0 -> s0 [label="securityModeReject / null_action"];
+	s0 -> s0 [label="authenticationResponse / null_action"];
+	s0 -> s0 [label="authenticationFailure / null_action"];
+	s0 -> s0 [label="deregistrationAccept / null_action"];
+	s0 -> s0 [label="securityModeComplete / null_action"];
+	s0 -> s0 [label="identityResponse / authenticationRequest"];
+	s0 -> s0 [label="configurationUpdateComplete / null_action"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

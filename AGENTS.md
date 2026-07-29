@@ -136,6 +136,20 @@ When given a new set of logs, sequences, database files, screenshots, or learner
 7. Start objective analysis in `analysis/observations.md`; place candidate causes in `analysis/hypotheses.md`; create figures only from a documented source DOT or other recorded evidence.
 8. Add concrete remaining tasks to `followups/`. Update the README status only after each reproduction, minimisation, explanation, or fix-verification step.
 
+## Submission-ready record normalization
+
+Before staging a new or substantially updated record, normalize the supplied material using this reusable decision process:
+
+1. Inventory every modified and untracked path, then group material by primary phenomenon and independent lifecycle. Planned measurements belong to `experiments/`; abnormal or unstable results belong to `failures/`; a later run remains a `followups/<descriptive-id>/` only when it answers a narrower question inside the same investigation.
+2. Give every top-level record and follow-up a descriptive kebab-case ID. A runtime-generated run ID belongs in `provenance.yaml`, the preserved raw directory name and evidence references; do not use a bare run ID as the follow-up ID.
+3. Keep each record README concise: status, scope, confirmed conclusion, evidence/analysis navigation, follow-up summaries and next actions. Move detailed, source-referenced facts to `analysis/observations.md`; keep only unconfirmed causal explanations and explicit confidence/boundaries in `analysis/hypotheses.md`.
+4. Add or update the repository README index for every top-level experiment or failure. Update parent links after renaming a follow-up, and verify that no old path or ID remains in active Markdown or metadata.
+5. Remove only disposable task-created output: unreferenced intermediate renders, temporary staging copies and `.gitkeep` files in directories that now contain real records. Preserve immutable evidence, raw snapshots, requested final figures and all user-existing material whose role is uncertain.
+6. Validate JSON/YAML syntax, relative Markdown links, archive file counts, byte sizes and SHA-256 values. Check external snapshots without copying large material back into Git.
+7. Review ignored files explicitly. When a selected complete snapshot is at most 10 MiB, force-add only the exact reviewed `raw/` or `evidence/` paths that match ignore rules; never broaden `.gitignore` merely to stage one record.
+8. Treat independent top-level records as separate commits and annotated tags by default, even when organized in one working session. Combine them only when the user explicitly requests a shared version boundary. Stage the repository index entry with the record it references so a tag never contains a dangling link.
+9. Before each commit, inspect the staged path list and run format/link/hash checks plus `git diff --cached --check`. After an explicitly requested commit, create the predeclared annotated tag immediately and stop on any tag-name collision. Do not push unless explicitly requested.
+
 ## Git and generated files
 
 - When generating files from a user command, retain only requested final deliverables plus required source evidence, provenance, and recorded derivatives. Unless explicitly requested otherwise, verify the final output and promptly remove task-created disposable intermediates, staging copies, and exploratory output. Never delete user-existing inputs, immutable evidence, requested figures/records, tracked files, or anything outside the task scope; ask if retention is unclear.

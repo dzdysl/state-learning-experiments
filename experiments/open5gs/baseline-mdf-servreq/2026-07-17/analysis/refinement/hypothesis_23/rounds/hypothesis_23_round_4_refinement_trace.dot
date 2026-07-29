@@ -1,0 +1,21 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="第 4 轮细化溯源图", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+subgraph cluster_1 {
+label="父类 A4"; color="#90a4ae"; style="rounded";
+p_1 [label="A4（上一轮）\\n{s12, s27}" fillcolor="#fff9c4" penwidth=1.5];
+c_1_1 [label="A4\\n{s12}" fillcolor="#fff9c4"];
+p_1 -> c_1_1 [label="基准 signature"];
+c_1_2 [label="A5\\n{s27}" fillcolor="#fff9c4"];
+p_1 -> c_1_2 [label="securityModeReject: D3→D4"];
+}
+subgraph cluster_2 {
+label="父类 NG1"; color="#90a4ae"; style="rounded";
+p_2 [label="NG1（上一轮）\\n{s8, s18}" fillcolor="#c8e6c9" penwidth=1.5];
+c_2_1 [label="NG1\\n{s8}" fillcolor="#c8e6c9"];
+p_2 -> c_2_1 [label="基准 signature"];
+c_2_2 [label="NG2\\n{s18}" fillcolor="#c8e6c9"];
+p_2 -> c_2_2 [label="deregistrationRequest: D1→D2"];
+}
+}

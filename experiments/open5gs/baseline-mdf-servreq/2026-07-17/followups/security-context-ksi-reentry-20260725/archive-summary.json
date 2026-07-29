@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "archive_mode": "followup_manual_copy_after_required_dry_run",
+  "dry_run_tool": "D:\\state-learning-lab\\projects\\state-learning-tools\\operations\\experiment_archive\\New-StateLearningArchive.ps1",
+  "dry_run_strategy": "git_raw",
+  "dry_run_apply": false,
+  "dry_run_apply_reason": "The tool only targets top-level failures; this run belongs to an existing experiment follow-up.",
+  "source_root": "D:\\downloads\\runs\\20260725T082217Z-b0edabac",
+  "snapshot_root": "raw/20260725T082217Z-b0edabac",
+  "file_count": 11,
+  "bytes": 114570,
+  "content_manifest_sha256": "e976e76dbfd86b08033c72c4dc266873e95dc5d84e4ecdf5fffc39794bb1c9ce",
+  "content_manifest_hash_scope": "SHA-256 of sorted UTF-8 lines: relative-path<TAB>bytes<TAB>file-sha256<LF>",
+  "files": [
+    {"path":"core-events.jsonl","bytes":18566,"sha256":"6a94b1a038a072629a834982c3527333775a447574926f1955e0cce454c4c122"},
+    {"path":"protocol-events.jsonl","bytes":32157,"sha256":"20f19ba667407bedefaf989a2e7485220b1347618c5461ebc5e372e83c5a54f7"},
+    {"path":"raw/console.log","bytes":3118,"sha256":"c72a9551474a384169f4e2f37461ab7c0a4d3036f1db0e12cc35bb0df22a0c7e"},
+    {"path":"raw/open5gs/core-session-001/core.log","bytes":34600,"sha256":"2dd221e243babb72718f5e4408f931cef741b581d1a65df1fcb7f6535f48d095"},
+    {"path":"raw/open5gs/core-session-001/launcher.log","bytes":531,"sha256":"7046fad13298e36c8e10f26b41fc87c5cbfe207093ce1d402f9a16295eb29c95"},
+    {"path":"raw/open5gs/core-session-001/session.json","bytes":498,"sha256":"59509ab1f2775eb31e4595c3e2d02dd8134489471c5da0ba398d828dbac1be78"},
+    {"path":"run-manifest.json","bytes":941,"sha256":"f074712539e1303f883894ebeb655869fe765997822205903740317a7b6b989d"},
+    {"path":"run-provenance.json","bytes":1093,"sha256":"73694ee80ec274d12c96ccb147650895d60beec2541fa54c2f237286967ef16b"},
+    {"path":"statelearner_trace.jsonl","bytes":9473,"sha256":"369e23cd8dda493e12b225fa66f0afc03e88197c65d96d3a5d4d9b3195cc2f84"},
+    {"path":"statelearner_trace.meta","bytes":2,"sha256":"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"},
+    {"path":"ue-events.jsonl","bytes":13591,"sha256":"4b549ded830d09e8fcbcd28aee52624dfe6446342f6b14db4b97820d4d9e8a78"}
+  ]
+}

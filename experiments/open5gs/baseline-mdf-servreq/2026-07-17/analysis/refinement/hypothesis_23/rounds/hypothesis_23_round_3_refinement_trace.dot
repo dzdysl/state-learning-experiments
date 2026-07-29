@@ -1,0 +1,45 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="第 3 轮细化溯源图", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+subgraph cluster_1 {
+label="父类 D1"; color="#90a4ae"; style="rounded";
+p_1 [label="D1（上一轮）\\n{s0, s15, s26}" fillcolor="#ffcdd2" penwidth=1.5];
+c_1_1 [label="D1\\n{s0, s26}" fillcolor="#ffcdd2"];
+p_1 -> c_1_1 [label="基准 signature"];
+c_1_2 [label="D2\\n{s15}" fillcolor="#ffcdd2"];
+p_1 -> c_1_2 [label="registrationRequest: N1→N2"];
+}
+subgraph cluster_2 {
+label="父类 D2"; color="#90a4ae"; style="rounded";
+p_2 [label="D2（上一轮）\\n{s10, s23}" fillcolor="#ffcdd2" penwidth=1.5];
+c_2_1 [label="D3\\n{s10}" fillcolor="#ffcdd2"];
+p_2 -> c_2_1 [label="基准 signature"];
+c_2_2 [label="D4\\n{s23}" fillcolor="#ffcdd2"];
+p_2 -> c_2_2 [label="registrationRequest: N2→N1"];
+}
+subgraph cluster_3 {
+label="父类 N1"; color="#90a4ae"; style="rounded";
+p_3 [label="N1（上一轮）\\n{s1, s24}" fillcolor="#bbdefb" penwidth=1.5];
+c_3_1 [label="N1\\n{s1}" fillcolor="#bbdefb"];
+p_3 -> c_3_1 [label="基准 signature"];
+c_3_2 [label="N2\\n{s24}" fillcolor="#bbdefb"];
+p_3 -> c_3_2 [label="registrationRequest: N1→N2"];
+}
+subgraph cluster_4 {
+label="父类 N2"; color="#90a4ae"; style="rounded";
+p_4 [label="N2（上一轮）\\n{s11, s14}" fillcolor="#bbdefb" penwidth=1.5];
+c_4_1 [label="N3\\n{s11}" fillcolor="#bbdefb"];
+p_4 -> c_4_1 [label="基准 signature"];
+c_4_2 [label="N4\\n{s14}" fillcolor="#bbdefb"];
+p_4 -> c_4_2 [label="registrationRequest: N1→N2\\nregistrationRequestGUTI: N1→N2"];
+}
+subgraph cluster_5 {
+label="父类 N5"; color="#90a4ae"; style="rounded";
+p_5 [label="N5（上一轮）\\n{s4, s25}" fillcolor="#bbdefb" penwidth=1.5];
+c_5_1 [label="N7\\n{s4}" fillcolor="#bbdefb"];
+p_5 -> c_5_1 [label="基准 signature"];
+c_5_2 [label="N8\\n{s25}" fillcolor="#bbdefb"];
+p_5 -> c_5_2 [label="registrationRequest: N1→N2"];
+}
+}

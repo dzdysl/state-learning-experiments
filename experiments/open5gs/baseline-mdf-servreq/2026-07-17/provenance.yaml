@@ -1,0 +1,36 @@
+schema_version: 1
+record_type: experiment
+platform: open5gs
+series: baseline-mdf-servreq
+iteration: 2026-07-17
+run_window:
+  learner_started: "2026-07-17T20:19:56"
+  learner_last_record: "2026-07-19T11:30:58"
+  core_log_first_timestamp: "2026-07-17T00:15:13.520"
+  core_log_last_timestamp: "2026-07-19T12:13:25.296"
+  timezone: "Asia/Hong_Kong (inferred from the archive environment; source log lines carry no UTC offset)"
+core_network:
+  snapshot_id: open5gs_old
+  version: v2.6.6
+  snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old"
+  git_commit: null
+  version_evidence: "D:\\state-learning-lab\\sources\\source-manifest.yaml; open5gs_5gc.log line 1"
+learner:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  commit: a53346596db9520c4971f0f51721af330675ef50
+  tag: baseline/2026-07-16-servreq
+  baseline_source_snapshot: "D:\\work4\\ICSSIP投稿\\实验的UERANSIM迭代\\open5gs_baseLine_mdf_servReq_0716"
+  jar_sha256: null
+  jar_status: "Runtime JAR was not supplied."
+sul_ueransim:
+  path_at_learner_commit: src/
+  commit: a53346596db9520c4971f0f51721af330675ef50
+  status: "Must be inspected through git show or a detached worktree at this commit during analysis."
+configuration:
+  core_config_path_seen_in_log: "/opt/CoreCrisis/Corelearner/open5gs-2.6.6/build/configs/sample.yaml"
+  sha256: null
+  status: "Configuration file was not supplied."
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 71e4d1eb8147d5838bb9ce5a797a37e6e3dfe3fb
+archive_created: "2026-07-24"

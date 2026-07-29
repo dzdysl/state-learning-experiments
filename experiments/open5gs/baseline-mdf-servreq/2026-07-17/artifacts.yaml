@@ -1,0 +1,41 @@
+schema_version: 1
+archive_strategy: external_snapshot
+direct_git_limit_bytes: 10485760
+selected_total_bytes: 489307643
+artifacts:
+  - id: baseline-learner-export
+    original_path: "D:\\downloads\\baseLine_mdf_servReq_0716_log"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\baseline-mdf-servreq-20260717\\baseLine_mdf_servReq_0716_log"
+    bytes: 138266722
+    file_count: 31
+    relevance: direct
+    appendable: false
+    sha256_content_tree: fe440f29ffaeae8c5125fac80d7681c7395bf9d769654abaeec2f950abe2c727
+    sha256_content_tree_definition: "SHA-256 over UTF-8 sorted records: relative-path, NUL, byte-count, NUL, member SHA-256 hex, LF."
+    key_member_sha256:
+      "Open5GS.log/console.log": 8283123cdea1fd9b3d31f5408257ec79c9c341d181f86bab3fb914f1d7497704
+      "Open5GS.log/learner.log": d635cbf78a12bba882263211878c83c72d379b0a0bfa4c02ba8a3453b040d369
+      "Open5GS.log/hypothesis_23.dot": e0ff218edf17bcbc8af9cf5a4a07d530c3ed62ad0ffab45e150e9d475109d6e2
+    note: "Full member inventory is frozen in the external snapshot; all 23 original DOT files and learner.log are additionally copied as small Git evidence."
+  - id: query-cache-database
+    original_path: "D:\\downloads\\my_database.sqlite"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\baseline-mdf-servreq-20260717\\my_database.sqlite"
+    bytes: 7344128
+    sha256: 1f9055b0045b205e26f19f68de75744156c883c7ae09885a3bef5b0be3c00c2d
+    relevance: direct
+    appendable: false
+  - id: statelearner-protocol-trace
+    original_path: "D:\\downloads\\statelearner_trace.jsonl"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\baseline-mdf-servreq-20260717\\statelearner_trace.jsonl"
+    bytes: 208954524
+    sha256: 28bab489ab81214554867fd7e41a6f099f5148025193c6b59a4a10c782d57f02
+    relevance: direct
+    appendable: false
+    note: "170,045 valid JSONL objects; no event-time field is present in the records."
+  - id: open5gs-core-log
+    original_path: "D:\\downloads\\open5gs_5gc.log"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\baseline-mdf-servreq-20260717\\open5gs_5gc.log"
+    bytes: 134742269
+    sha256: 2f21877d560478340e2f3f16cfc36f8fb4638d9e12f0729ff2e2d704e371d2b1
+    relevance: direct
+    appendable: false

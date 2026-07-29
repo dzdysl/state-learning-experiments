@@ -1,0 +1,13 @@
+schema_version: 1
+artifacts:
+  - original_path: "D:\\downloads\\runs\\20260725T082217Z-b0edabac"
+    snapshot_path: "raw/20260725T082217Z-b0edabac"
+    kind: frozen_run_directory
+    bytes: 114570
+    file_count: 11
+    sha256: e976e76dbfd86b08033c72c4dc266873e95dc5d84e4ecdf5fffc39794bb1c9ce
+    hash_scope: "Sorted relative-path/byte-size/per-file-SHA-256 manifest, not a byte stream of the directory."
+    relevance: direct
+    may_be_appended: false
+    copied_complete: true
+    note: "All supplied files are preserved under the snapshot path; see archive-summary.json for per-file hashes."

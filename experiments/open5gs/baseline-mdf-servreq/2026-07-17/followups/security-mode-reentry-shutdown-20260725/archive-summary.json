@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "archive_mode": "followup_manual_copy_after_required_dry_run",
+  "dry_run_tool": "D:\\state-learning-lab\\projects\\state-learning-tools\\operations\\experiment_archive\\New-StateLearningArchive.ps1",
+  "dry_run_strategy": "git_raw",
+  "dry_run_apply": false,
+  "dry_run_apply_reason": "The tool only targets top-level failures; this run belongs to an existing experiment follow-up.",
+  "source_root": "D:\\downloads\\runs\\20260725T072113Z-1d6f4338",
+  "snapshot_root": "raw/20260725T072113Z-1d6f4338",
+  "file_count": 11,
+  "bytes": 126605,
+  "content_manifest_sha256": "64bd02d697e41263c006f5c0d3ab1ba46b74763268f9d2330985b5414d7ab4ea",
+  "content_manifest_hash_scope": "SHA-256 of sorted UTF-8 lines: relative-path<TAB>bytes<TAB>file-sha256<LF>",
+  "files": [
+    {
+      "path": "core-events.jsonl",
+      "bytes": 22108,
+      "sha256": "e7cc3b620f514f4838bb47517010271a002e092f3d98a97c3c125502d54db29e"
+    },
+    {
+      "path": "protocol-events.jsonl",
+      "bytes": 37412,
+      "sha256": "c17bca97e0339229434d4a56f117dc983a29185f1079532239ebd6490e1ecbe3"
+    },
+    {
+      "path": "raw/console.log",
+      "bytes": 3280,
+      "sha256": "8ac257c3230798d33c81ac37c05a00493edea7f339ef96583bd49bdd931be8b2"
+    },
+    {
+      "path": "raw/open5gs/core-session-001/core.log",
+      "bytes": 34837,
+      "sha256": "d8577de760e79bcbe567bfb21a892a759d2f84e54cd898042e005e877d9fe888"
+    },
+    {
+      "path": "raw/open5gs/core-session-001/launcher.log",
+      "bytes": 531,
+      "sha256": "1eda755e3bf63a1a31fc33809be582429a71234544669141c101741282b9655b"
+    },
+    {
+      "path": "raw/open5gs/core-session-001/session.json",
+      "bytes": 498,
+      "sha256": "c640fbbbda6b626deff89711b6d6d6907c1ee1980a5ce24aa5bb1e7336604ac3"
+    },
+    {
+      "path": "run-manifest.json",
+      "bytes": 941,
+      "sha256": "cf4f436cd429d6bcf473f4506ef11c9ff8758c231f608c005f19ea36687e44eb"
+    },
+    {
+      "path": "run-provenance.json",
+      "bytes": 1093,
+      "sha256": "acb4bccb96c2aaf75df778cb42602e99c755a566709098c61f7528bd89bc396e"
+    },
+    {
+      "path": "statelearner_trace.jsonl",
+      "bytes": 10599,
+      "sha256": "98b450c9f64c0860d544b6ed074fbae875041c2e07af92de47685f1d5ca0e864"
+    },
+    {
+      "path": "statelearner_trace.meta",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "ue-events.jsonl",
+      "bytes": 15304,
+      "sha256": "266687c21dd3997cbcba898875982aa538d622c341aeec869a666e5ec5139f61"
+    }
+  ]
+}

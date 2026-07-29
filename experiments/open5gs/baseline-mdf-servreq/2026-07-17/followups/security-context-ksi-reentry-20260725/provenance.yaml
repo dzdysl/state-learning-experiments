@@ -1,0 +1,62 @@
+schema_version: 1
+record_type: followup
+platform: open5gs
+parent_record: "experiments/open5gs/baseline-mdf-servreq/2026-07-17"
+followup_id: security-context-ksi-reentry-20260725
+purpose: "Preserve and source-correlate successful re-authentication after Security Mode Reject with retained UE KSI 0."
+
+run:
+  id: 20260725T082217Z-b0edabac
+  mode: interactive
+  started_utc: "2026-07-25T08:22:17.270700147Z"
+  core_session_started_utc: "2026-07-25T08:22:18Z"
+  core_session_ended_utc: "2026-07-25T08:23:08Z"
+  core_session_status: failed
+  core_session_exit_code: 134
+  termination_initiator: "Interactive console exit"
+  termination_note: "The successful seven-symbol query completes before the console records 'Bye.' and starts cleanup."
+  timezone_notes:
+    structured_events: UTC
+    core_log: "Asia/Hong_Kong (+08:00)"
+
+core_network:
+  runtime_version: v2.6.6
+  runtime_path: "/opt/CoreCrisis/Corelearner/open5gs-2.6.6"
+  runtime_binary_sha256: null
+  runtime_binary_status: "Not supplied by the run bundle."
+  source_snapshot_id: open5gs_old
+  source_snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old\\open5gs"
+  source_commit: 499c70d8be63e5f87c2d1c2bcd4e521d50ce1a6b
+  source_tag: v2.6.6
+
+learner:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  component: multiSeq
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  branch_at_runtime: refactor/multiseq-mdf
+  tag_at_commit: runtime/2026-07-24/core-output-filter-v3
+  describe_at_runtime: runtime/2026-07-24/core-output-filter-v3-dirty
+  dirty_at_runtime: true
+  status_sha256: 29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc
+  jar_path: "/opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar"
+  jar_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+
+configuration:
+  runtime_path: "/opt/CoreCrisis/Corelearner/core.properties"
+  sha256: cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289
+  contents_status: "Not supplied."
+
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  archive_tool: operations/experiment_archive/New-StateLearningArchive.ps1
+  archive_action: dry_run_only
+  archive_action_reason: "The archive tool targets top-level failures; this supplied run belongs to the existing experiment follow-up tree."
+
+archive:
+  original_path: "D:\\downloads\\runs\\20260725T082217Z-b0edabac"
+  snapshot_path: "raw/20260725T082217Z-b0edabac"
+  file_count: 11
+  bytes: 114570
+  content_manifest_sha256: e976e76dbfd86b08033c72c4dc266873e95dc5d84e4ecdf5fffc39794bb1c9ce
+  manifest_hash_scope: "SHA-256 of sorted UTF-8 lines: relative-path<TAB>bytes<TAB>file-sha256<LF>"
+  copied_complete: true

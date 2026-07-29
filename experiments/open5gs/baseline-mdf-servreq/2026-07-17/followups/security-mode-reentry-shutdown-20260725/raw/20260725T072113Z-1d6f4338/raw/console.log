@@ -1,0 +1,73 @@
+RUN_PROVENANCE file=/opt/CoreCrisis/Corelearner/baseLine_mdf_servReq_0716_log/Open5GS.log/run-provenance.json git.commit=11453a35e1c1dba5b49ae2d487f9e48ff0b493a8 git.branch=refactor/multiseq-mdf artifact.sha256=4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+Loaded Learning Config correctly
+open5gs
+Jul 25, 2026 3:21:14 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using Core SUL
+Selected UERANSIM profile: open5gs (UERANSIM-gnb-999-70-1)
+Starting Core & gNodeB & UE
+nr-gnb is not running.
+nr-ue is not running.
+No Open5GS test-core process is running from: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+Open5GS stopped and session log writes were flushed.
+[core][INFO] Launching Open5GS from: /opt/CoreCrisis/Corelearner/open5gs-2.6.6
+[core][INFO] Configuration: /opt/CoreCrisis/Corelearner/core.properties
+[core][INFO] Core log: /opt/CoreCrisis/Corelearner/runs/20260725T072113Z-1d6f4338/raw/open5gs/core-session-001/core.log
+Finished starting up Core & gNodeB
+Connecting to ue..
+Received = DONE
+Connected with UE.
+Sent Hello.
+Received = Hi
+Connected to ue.
+Done with initializing the connection with UE, gNodeB, and Core.
+=== Interactive SUL Console ===
+输入符号（空格分隔，且只能单空格）后回车执行 step。
+输入 reset 执行 sul.pre() 并清屏 + 清空历史。
+输入 show 展示自上次 reset 起的输入/输出两列历史。
+输入 exit/quit 退出。
+
+> Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Timeout occured for securityModeComplete
+=== OUTPUT ===
+IN : registrationRequest authenticationResponse securityModeReject registrationRequest authenticationResponse registrationRequest authenticationResponse securityModeComplete
+OUT: authenticationRequest securityModeCommand null_action authenticationRequest securityModeCommand authenticationRequest securityModeCommand null_action
+=============
+> Bye.
+=== JVM Shutdown Hook Triggered ===
+UE socket closed.
+Stopping nr-gnb: 16776
+nr-gnb stopped.
+Stopping nr-ue: 16797
+nr-ue stopped.
+Stopping Open5GS test-core: 16668
+[core][ERROR] Open5GS launcher finished with status 134
+Open5GS stopped and session log writes were flushed.
+Core/UE stopped.

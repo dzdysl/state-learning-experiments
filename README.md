@@ -19,6 +19,10 @@ sequences/canonical/
 
 临时序列放在对应 iteration 的 `inputs/`；少量长期稳定的主流程序列才进入 `sequences/canonical/`；导致崩溃的序列冻结为 failure 的 `reproducer.seq`。
 
+## 实验记录
+
+- [`open5gs/baseline-mdf-servreq/2026-07-17`](experiments/open5gs/baseline-mdf-servreq/2026-07-17/README.md)：Open5GS v2.6.6 baseline MDF / Service Request 主动学习运行；H23 分类、迭代细化和二分类回溯已完成，AB 聚类与寄存器推断待继续。
+
 ## 失败记录
 
 - [`free5gc421-ttt-inconsistency-20260723-r14`](failures/free5gc/free5gc421-ttt-inconsistency-20260723-r14/README.md)：Free5GC v4.2.1 的 TTT 第 14 轮查询不一致；原因机制已定向复现，修复验证待进行。

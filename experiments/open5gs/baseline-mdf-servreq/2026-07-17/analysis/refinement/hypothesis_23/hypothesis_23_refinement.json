@@ -1,0 +1,2585 @@
+{
+  "schema_version": 1,
+  "kind": "mealy_refinement",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\evidence\\hypotheses\\hypothesis_23.dot",
+  "source_sha256": "e0ff218edf17bcbc8af9cf5a4a07d530c3ed62ad0ffab45e150e9d475109d6e2",
+  "profile": "open5gs-nas",
+  "states": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27"
+  ],
+  "input_order": [
+    "registrationRequest",
+    "registrationRequestGUTI",
+    "registrationComplete",
+    "deregistrationRequest",
+    "serviceRequest",
+    "securityModeReject",
+    "authenticationResponse",
+    "authenticationFailure",
+    "deregistrationAccept",
+    "securityModeComplete",
+    "identityResponse",
+    "configurationUpdateComplete"
+  ],
+  "initial_groups": {
+    "D": [
+      "s0",
+      "s10",
+      "s13",
+      "s15",
+      "s16",
+      "s23",
+      "s26"
+    ],
+    "N": [
+      "s1",
+      "s4",
+      "s7",
+      "s11",
+      "s14",
+      "s19",
+      "s21",
+      "s24",
+      "s25"
+    ],
+    "NG": [
+      "s8",
+      "s17",
+      "s18"
+    ],
+    "A": [
+      "s3",
+      "s9",
+      "s12",
+      "s20",
+      "s22",
+      "s27"
+    ],
+    "S": [
+      "s5"
+    ],
+    "R": [
+      "s6"
+    ],
+    "X": [
+      "s2"
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "groups": {
+        "A1": [
+          "s3",
+          "s20"
+        ],
+        "A2": [
+          "s9"
+        ],
+        "A3": [
+          "s12",
+          "s27"
+        ],
+        "A4": [
+          "s22"
+        ],
+        "D1": [
+          "s0",
+          "s15",
+          "s26"
+        ],
+        "D2": [
+          "s10",
+          "s23"
+        ],
+        "D3": [
+          "s13"
+        ],
+        "D4": [
+          "s16"
+        ],
+        "N1": [
+          "s1",
+          "s11",
+          "s14",
+          "s19",
+          "s21",
+          "s24"
+        ],
+        "N2": [
+          "s4",
+          "s25"
+        ],
+        "N3": [
+          "s7"
+        ],
+        "NG1": [
+          "s8",
+          "s18"
+        ],
+        "NG2": [
+          "s17"
+        ],
+        "S1": [
+          "s5"
+        ],
+        "R1": [
+          "s6"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A",
+          "members": [
+            "s3",
+            "s9",
+            "s12",
+            "s20",
+            "s22",
+            "s27"
+          ],
+          "children": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ]
+        },
+        {
+          "parent": "D",
+          "members": [
+            "s0",
+            "s10",
+            "s13",
+            "s15",
+            "s16",
+            "s23",
+            "s26"
+          ],
+          "children": [
+            "D1",
+            "D2",
+            "D3",
+            "D4"
+          ]
+        },
+        {
+          "parent": "N",
+          "members": [
+            "s1",
+            "s4",
+            "s7",
+            "s11",
+            "s14",
+            "s19",
+            "s21",
+            "s24",
+            "s25"
+          ],
+          "children": [
+            "N1",
+            "N2",
+            "N3"
+          ]
+        },
+        {
+          "parent": "NG",
+          "members": [
+            "s8",
+            "s17",
+            "s18"
+          ],
+          "children": [
+            "NG1",
+            "NG2"
+          ]
+        },
+        {
+          "parent": "S",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "A",
+          "parent_states": [
+            "s3",
+            "s9",
+            "s12",
+            "s20",
+            "s22",
+            "s27"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3",
+                "s20"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "S",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s9"
+              ],
+              "signature": [
+                "A",
+                "N",
+                "A",
+                "D",
+                "D",
+                "D",
+                "A",
+                "A",
+                "A",
+                "S",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N",
+                  "current": "A"
+                },
+                {
+                  "index": 4,
+                  "input": "serviceRequest",
+                  "baseline": "A",
+                  "current": "D"
+                }
+              ]
+            },
+            {
+              "name": "A3",
+              "states": [
+                "s12",
+                "s27"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "S",
+                  "current": "A"
+                }
+              ]
+            },
+            {
+              "name": "A4",
+              "states": [
+                "s22"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "X",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "S",
+                  "current": "X"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D",
+          "parent_states": [
+            "s0",
+            "s10",
+            "s13",
+            "s15",
+            "s16",
+            "s23",
+            "s26"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0",
+                "s15",
+                "s26"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "N",
+                "D"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s10",
+                "s23"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "X",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "N",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 2,
+                  "input": "registrationComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 11,
+                  "input": "configurationUpdateComplete",
+                  "baseline": "D",
+                  "current": "X"
+                }
+              ]
+            },
+            {
+              "name": "D3",
+              "states": [
+                "s13"
+              ],
+              "signature": [
+                "D",
+                "NG",
+                "X",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N",
+                  "current": "D"
+                },
+                {
+                  "index": 2,
+                  "input": "registrationComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 10,
+                  "input": "identityResponse",
+                  "baseline": "N",
+                  "current": "D"
+                },
+                {
+                  "index": 11,
+                  "input": "configurationUpdateComplete",
+                  "baseline": "D",
+                  "current": "X"
+                }
+              ]
+            },
+            {
+              "name": "D4",
+              "states": [
+                "s16"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "N",
+                "D"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "NG",
+                  "current": "N"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N",
+          "parent_states": [
+            "s1",
+            "s4",
+            "s7",
+            "s11",
+            "s14",
+            "s19",
+            "s21",
+            "s24",
+            "s25"
+          ],
+          "children": [
+            {
+              "name": "N1",
+              "states": [
+                "s1",
+                "s11",
+                "s14",
+                "s19",
+                "s21",
+                "s24"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "N",
+                "D",
+                "N",
+                "N",
+                "A",
+                "D",
+                "N",
+                "N",
+                "N",
+                "N"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N2",
+              "states": [
+                "s4",
+                "s25"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "N",
+                "D",
+                "N",
+                "N",
+                "D",
+                "D",
+                "N",
+                "N",
+                "N",
+                "N"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 6,
+                  "input": "authenticationResponse",
+                  "baseline": "A",
+                  "current": "D"
+                }
+              ]
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s7"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "N",
+                "D",
+                "D",
+                "N",
+                "A",
+                "D",
+                "N",
+                "N",
+                "N",
+                "N"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 4,
+                  "input": "serviceRequest",
+                  "baseline": "N",
+                  "current": "D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "NG",
+          "parent_states": [
+            "s8",
+            "s17",
+            "s18"
+          ],
+          "children": [
+            {
+              "name": "NG1",
+              "states": [
+                "s8",
+                "s18"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "NG",
+                "D",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "N",
+                "NG"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "NG2",
+              "states": [
+                "s17"
+              ],
+              "signature": [
+                "NG",
+                "NG",
+                "NG",
+                "D",
+                "D",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "NG",
+                "NG"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N",
+                  "current": "NG"
+                },
+                {
+                  "index": 4,
+                  "input": "serviceRequest",
+                  "baseline": "NG",
+                  "current": "D"
+                },
+                {
+                  "index": 10,
+                  "input": "identityResponse",
+                  "baseline": "N",
+                  "current": "NG"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 4,
+      "class_count": 16,
+      "converged": false
+    },
+    {
+      "round": 2,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s20"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "A4": [
+          "s12",
+          "s27"
+        ],
+        "A5": [
+          "s22"
+        ],
+        "D1": [
+          "s0",
+          "s15",
+          "s26"
+        ],
+        "D2": [
+          "s10",
+          "s23"
+        ],
+        "D3": [
+          "s13"
+        ],
+        "D4": [
+          "s16"
+        ],
+        "N1": [
+          "s1",
+          "s24"
+        ],
+        "N2": [
+          "s11",
+          "s14"
+        ],
+        "N3": [
+          "s19"
+        ],
+        "N4": [
+          "s21"
+        ],
+        "N5": [
+          "s4",
+          "s25"
+        ],
+        "N6": [
+          "s7"
+        ],
+        "NG1": [
+          "s8",
+          "s18"
+        ],
+        "NG2": [
+          "s17"
+        ],
+        "S1": [
+          "s5"
+        ],
+        "R1": [
+          "s6"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3",
+            "s20"
+          ],
+          "children": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s12",
+            "s27"
+          ],
+          "children": [
+            "A4"
+          ]
+        },
+        {
+          "parent": "A4",
+          "members": [
+            "s22"
+          ],
+          "children": [
+            "A5"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s15",
+            "s26"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s10",
+            "s23"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s16"
+          ],
+          "children": [
+            "D4"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1",
+            "s11",
+            "s14",
+            "s19",
+            "s21",
+            "s24"
+          ],
+          "children": [
+            "N1",
+            "N2",
+            "N3",
+            "N4"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s4",
+            "s25"
+          ],
+          "children": [
+            "N5"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "N6"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s8",
+            "s18"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "NG2",
+          "members": [
+            "s17"
+          ],
+          "children": [
+            "NG2"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "A1",
+          "parent_states": [
+            "s3",
+            "s20"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s20"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D4",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N1",
+          "parent_states": [
+            "s1",
+            "s11",
+            "s14",
+            "s19",
+            "s21",
+            "s24"
+          ],
+          "children": [
+            {
+              "name": "N1",
+              "states": [
+                "s1",
+                "s24"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N2",
+              "states": [
+                "s11",
+                "s14"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A3",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 6,
+                  "input": "authenticationResponse",
+                  "baseline": "A1",
+                  "current": "A3"
+                }
+              ]
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s19"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D4",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D4"
+                }
+              ]
+            },
+            {
+              "name": "N4",
+              "states": [
+                "s21"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D4",
+                "N1",
+                "N1",
+                "A4",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D4"
+                },
+                {
+                  "index": 6,
+                  "input": "authenticationResponse",
+                  "baseline": "A1",
+                  "current": "A4"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 2,
+      "class_count": 20,
+      "converged": false
+    },
+    {
+      "round": 3,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s20"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "A4": [
+          "s12",
+          "s27"
+        ],
+        "A5": [
+          "s22"
+        ],
+        "D1": [
+          "s0",
+          "s26"
+        ],
+        "D2": [
+          "s15"
+        ],
+        "D3": [
+          "s10"
+        ],
+        "D4": [
+          "s23"
+        ],
+        "D5": [
+          "s13"
+        ],
+        "D6": [
+          "s16"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s24"
+        ],
+        "N3": [
+          "s11"
+        ],
+        "N4": [
+          "s14"
+        ],
+        "N5": [
+          "s19"
+        ],
+        "N6": [
+          "s21"
+        ],
+        "N7": [
+          "s4"
+        ],
+        "N8": [
+          "s25"
+        ],
+        "N9": [
+          "s7"
+        ],
+        "NG1": [
+          "s8",
+          "s18"
+        ],
+        "NG2": [
+          "s17"
+        ],
+        "S1": [
+          "s5"
+        ],
+        "R1": [
+          "s6"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s20"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "A4",
+          "members": [
+            "s12",
+            "s27"
+          ],
+          "children": [
+            "A4"
+          ]
+        },
+        {
+          "parent": "A5",
+          "members": [
+            "s22"
+          ],
+          "children": [
+            "A5"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s15",
+            "s26"
+          ],
+          "children": [
+            "D1",
+            "D2"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s10",
+            "s23"
+          ],
+          "children": [
+            "D3",
+            "D4"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s16"
+          ],
+          "children": [
+            "D6"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1",
+            "s24"
+          ],
+          "children": [
+            "N1",
+            "N2"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s11",
+            "s14"
+          ],
+          "children": [
+            "N3",
+            "N4"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s19"
+          ],
+          "children": [
+            "N5"
+          ]
+        },
+        {
+          "parent": "N4",
+          "members": [
+            "s21"
+          ],
+          "children": [
+            "N6"
+          ]
+        },
+        {
+          "parent": "N5",
+          "members": [
+            "s4",
+            "s25"
+          ],
+          "children": [
+            "N7",
+            "N8"
+          ]
+        },
+        {
+          "parent": "N6",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "N9"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s8",
+            "s18"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "NG2",
+          "members": [
+            "s17"
+          ],
+          "children": [
+            "NG2"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "D1",
+          "parent_states": [
+            "s0",
+            "s15",
+            "s26"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0",
+                "s26"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "N5",
+                "D1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s15"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "N5",
+                "D1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D2",
+          "parent_states": [
+            "s10",
+            "s23"
+          ],
+          "children": [
+            {
+              "name": "D3",
+              "states": [
+                "s10"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "N5",
+                "X"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D4",
+              "states": [
+                "s23"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "N5",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N2",
+                  "current": "N1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N1",
+          "parent_states": [
+            "s1",
+            "s24"
+          ],
+          "children": [
+            {
+              "name": "N1",
+              "states": [
+                "s1"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N2",
+              "states": [
+                "s24"
+              ],
+              "signature": [
+                "N2",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N2",
+          "parent_states": [
+            "s11",
+            "s14"
+          ],
+          "children": [
+            {
+              "name": "N3",
+              "states": [
+                "s11"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A4",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N4",
+              "states": [
+                "s14"
+              ],
+              "signature": [
+                "N2",
+                "N2",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A4",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                },
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N5",
+          "parent_states": [
+            "s4",
+            "s25"
+          ],
+          "children": [
+            {
+              "name": "N7",
+              "states": [
+                "s4"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N5",
+                "D1",
+                "N5",
+                "N5",
+                "D1",
+                "D1",
+                "N5",
+                "N5",
+                "N5",
+                "N5"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N8",
+              "states": [
+                "s25"
+              ],
+              "signature": [
+                "N2",
+                "N1",
+                "N5",
+                "D1",
+                "N5",
+                "N5",
+                "D1",
+                "D1",
+                "N5",
+                "N5",
+                "N5",
+                "N5"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 5,
+      "class_count": 25,
+      "converged": false
+    },
+    {
+      "round": 4,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s20"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "A4": [
+          "s12"
+        ],
+        "A5": [
+          "s27"
+        ],
+        "A6": [
+          "s22"
+        ],
+        "D1": [
+          "s0",
+          "s26"
+        ],
+        "D2": [
+          "s15"
+        ],
+        "D3": [
+          "s10"
+        ],
+        "D4": [
+          "s23"
+        ],
+        "D5": [
+          "s13"
+        ],
+        "D6": [
+          "s16"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s24"
+        ],
+        "N3": [
+          "s11"
+        ],
+        "N4": [
+          "s14"
+        ],
+        "N5": [
+          "s19"
+        ],
+        "N6": [
+          "s21"
+        ],
+        "N7": [
+          "s4"
+        ],
+        "N8": [
+          "s25"
+        ],
+        "N9": [
+          "s7"
+        ],
+        "NG1": [
+          "s8"
+        ],
+        "NG2": [
+          "s18"
+        ],
+        "NG3": [
+          "s17"
+        ],
+        "S1": [
+          "s5"
+        ],
+        "R1": [
+          "s6"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s20"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "A4",
+          "members": [
+            "s12",
+            "s27"
+          ],
+          "children": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "parent": "A5",
+          "members": [
+            "s22"
+          ],
+          "children": [
+            "A6"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s26"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s15"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s10"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s23"
+          ],
+          "children": [
+            "D4"
+          ]
+        },
+        {
+          "parent": "D5",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "D6",
+          "members": [
+            "s16"
+          ],
+          "children": [
+            "D6"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s24"
+          ],
+          "children": [
+            "N2"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s11"
+          ],
+          "children": [
+            "N3"
+          ]
+        },
+        {
+          "parent": "N4",
+          "members": [
+            "s14"
+          ],
+          "children": [
+            "N4"
+          ]
+        },
+        {
+          "parent": "N5",
+          "members": [
+            "s19"
+          ],
+          "children": [
+            "N5"
+          ]
+        },
+        {
+          "parent": "N6",
+          "members": [
+            "s21"
+          ],
+          "children": [
+            "N6"
+          ]
+        },
+        {
+          "parent": "N7",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "N7"
+          ]
+        },
+        {
+          "parent": "N8",
+          "members": [
+            "s25"
+          ],
+          "children": [
+            "N8"
+          ]
+        },
+        {
+          "parent": "N9",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "N9"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s8",
+            "s18"
+          ],
+          "children": [
+            "NG1",
+            "NG2"
+          ]
+        },
+        {
+          "parent": "NG2",
+          "members": [
+            "s17"
+          ],
+          "children": [
+            "NG3"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "A4",
+          "parent_states": [
+            "s12",
+            "s27"
+          ],
+          "children": [
+            {
+              "name": "A4",
+              "states": [
+                "s12"
+              ],
+              "signature": [
+                "N4",
+                "N4",
+                "A4",
+                "D2",
+                "A4",
+                "D3",
+                "A4",
+                "A4",
+                "A4",
+                "A4",
+                "A4",
+                "A4"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A5",
+              "states": [
+                "s27"
+              ],
+              "signature": [
+                "N4",
+                "N4",
+                "A4",
+                "D2",
+                "A4",
+                "D4",
+                "A4",
+                "A4",
+                "A4",
+                "A4",
+                "A4",
+                "A4"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 5,
+                  "input": "securityModeReject",
+                  "baseline": "D3",
+                  "current": "D4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "NG1",
+          "parent_states": [
+            "s8",
+            "s18"
+          ],
+          "children": [
+            {
+              "name": "NG1",
+              "states": [
+                "s8"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "NG2",
+              "states": [
+                "s18"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D2",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 2,
+      "class_count": 27,
+      "converged": false
+    },
+    {
+      "round": 5,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s20"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "A4": [
+          "s12"
+        ],
+        "A5": [
+          "s27"
+        ],
+        "A6": [
+          "s22"
+        ],
+        "D1": [
+          "s0",
+          "s26"
+        ],
+        "D2": [
+          "s15"
+        ],
+        "D3": [
+          "s10"
+        ],
+        "D4": [
+          "s23"
+        ],
+        "D5": [
+          "s13"
+        ],
+        "D6": [
+          "s16"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s24"
+        ],
+        "N3": [
+          "s11"
+        ],
+        "N4": [
+          "s14"
+        ],
+        "N5": [
+          "s19"
+        ],
+        "N6": [
+          "s21"
+        ],
+        "N7": [
+          "s4"
+        ],
+        "N8": [
+          "s25"
+        ],
+        "N9": [
+          "s7"
+        ],
+        "NG1": [
+          "s8"
+        ],
+        "NG2": [
+          "s18"
+        ],
+        "NG3": [
+          "s17"
+        ],
+        "S1": [
+          "s5"
+        ],
+        "R1": [
+          "s6"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s20"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "A4",
+          "members": [
+            "s12"
+          ],
+          "children": [
+            "A4"
+          ]
+        },
+        {
+          "parent": "A5",
+          "members": [
+            "s27"
+          ],
+          "children": [
+            "A5"
+          ]
+        },
+        {
+          "parent": "A6",
+          "members": [
+            "s22"
+          ],
+          "children": [
+            "A6"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s26"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s15"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s10"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s23"
+          ],
+          "children": [
+            "D4"
+          ]
+        },
+        {
+          "parent": "D5",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "D6",
+          "members": [
+            "s16"
+          ],
+          "children": [
+            "D6"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s24"
+          ],
+          "children": [
+            "N2"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s11"
+          ],
+          "children": [
+            "N3"
+          ]
+        },
+        {
+          "parent": "N4",
+          "members": [
+            "s14"
+          ],
+          "children": [
+            "N4"
+          ]
+        },
+        {
+          "parent": "N5",
+          "members": [
+            "s19"
+          ],
+          "children": [
+            "N5"
+          ]
+        },
+        {
+          "parent": "N6",
+          "members": [
+            "s21"
+          ],
+          "children": [
+            "N6"
+          ]
+        },
+        {
+          "parent": "N7",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "N7"
+          ]
+        },
+        {
+          "parent": "N8",
+          "members": [
+            "s25"
+          ],
+          "children": [
+            "N8"
+          ]
+        },
+        {
+          "parent": "N9",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "N9"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s8"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "NG2",
+          "members": [
+            "s18"
+          ],
+          "children": [
+            "NG2"
+          ]
+        },
+        {
+          "parent": "NG3",
+          "members": [
+            "s17"
+          ],
+          "children": [
+            "NG3"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [],
+      "split_parent_count": 0,
+      "class_count": 27,
+      "converged": true
+    }
+  ],
+  "final_groups": {
+    "A1": [
+      "s3"
+    ],
+    "A2": [
+      "s20"
+    ],
+    "A3": [
+      "s9"
+    ],
+    "A4": [
+      "s12"
+    ],
+    "A5": [
+      "s27"
+    ],
+    "A6": [
+      "s22"
+    ],
+    "D1": [
+      "s0",
+      "s26"
+    ],
+    "D2": [
+      "s15"
+    ],
+    "D3": [
+      "s10"
+    ],
+    "D4": [
+      "s23"
+    ],
+    "D5": [
+      "s13"
+    ],
+    "D6": [
+      "s16"
+    ],
+    "N1": [
+      "s1"
+    ],
+    "N2": [
+      "s24"
+    ],
+    "N3": [
+      "s11"
+    ],
+    "N4": [
+      "s14"
+    ],
+    "N5": [
+      "s19"
+    ],
+    "N6": [
+      "s21"
+    ],
+    "N7": [
+      "s4"
+    ],
+    "N8": [
+      "s25"
+    ],
+    "N9": [
+      "s7"
+    ],
+    "NG1": [
+      "s8"
+    ],
+    "NG2": [
+      "s18"
+    ],
+    "NG3": [
+      "s17"
+    ],
+    "S1": [
+      "s5"
+    ],
+    "R1": [
+      "s6"
+    ],
+    "X": [
+      "s2"
+    ]
+  },
+  "final_effective_round": 4,
+  "convergence_round": 5
+}

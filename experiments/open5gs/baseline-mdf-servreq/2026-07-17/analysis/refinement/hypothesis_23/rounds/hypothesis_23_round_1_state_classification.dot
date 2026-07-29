@@ -1,0 +1,38 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="第 1 轮状态细分类", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+partition_1 [label="轮次 1\\n类别数: 16" shape=ellipse fillcolor="#eceff1" penwidth=1.4];
+g_D1 [label="D1\\n{s0, s15, s26}" fillcolor="#ffcdd2"];
+partition_1 -> g_D1 [label="包含"];
+g_D2 [label="D2\\n{s10, s23}" fillcolor="#ffcdd2"];
+partition_1 -> g_D2 [label="包含"];
+g_D3 [label="D3\\n{s13}" fillcolor="#ffcdd2"];
+partition_1 -> g_D3 [label="包含"];
+g_D4 [label="D4\\n{s16}" fillcolor="#ffcdd2"];
+partition_1 -> g_D4 [label="包含"];
+g_N1 [label="N1\\n{s1, s11, s14, s19, s21, s24}" fillcolor="#bbdefb"];
+partition_1 -> g_N1 [label="包含"];
+g_N2 [label="N2\\n{s4, s25}" fillcolor="#bbdefb"];
+partition_1 -> g_N2 [label="包含"];
+g_N3 [label="N3\\n{s7}" fillcolor="#bbdefb"];
+partition_1 -> g_N3 [label="包含"];
+g_NG1 [label="NG1\\n{s8, s18}" fillcolor="#c8e6c9"];
+partition_1 -> g_NG1 [label="包含"];
+g_NG2 [label="NG2\\n{s17}" fillcolor="#c8e6c9"];
+partition_1 -> g_NG2 [label="包含"];
+g_A1 [label="A1\\n{s3, s20}" fillcolor="#fff9c4"];
+partition_1 -> g_A1 [label="包含"];
+g_A2 [label="A2\\n{s9}" fillcolor="#fff9c4"];
+partition_1 -> g_A2 [label="包含"];
+g_A3 [label="A3\\n{s12, s27}" fillcolor="#fff9c4"];
+partition_1 -> g_A3 [label="包含"];
+g_A4 [label="A4\\n{s22}" fillcolor="#fff9c4"];
+partition_1 -> g_A4 [label="包含"];
+g_S1 [label="S1\\n{s5}" fillcolor="#e1bee7"];
+partition_1 -> g_S1 [label="包含"];
+g_R1 [label="R1\\n{s6}" fillcolor="#ffe0b2"];
+partition_1 -> g_R1 [label="包含"];
+g_X [label="X\\n{s2}" fillcolor="#cfd8dc"];
+partition_1 -> g_X [label="包含"];
+}

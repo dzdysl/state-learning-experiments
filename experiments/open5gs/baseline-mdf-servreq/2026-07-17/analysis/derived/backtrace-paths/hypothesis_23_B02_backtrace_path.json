@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "kind": "mealy_backtrace_overlay",
+  "sources": {
+    "original_dot": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\evidence\\hypotheses\\hypothesis_23.dot",
+      "bytes": 20952,
+      "sha256": "e0ff218edf17bcbc8af9cf5a4a07d530c3ed62ad0ffab45e150e9d475109d6e2"
+    },
+    "base_dot": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\analysis\\derived\\hypothesis_23_smp.dot",
+      "bytes": 5366,
+      "sha256": "66628d3d6779477f964edc1667e900b89db094825499018021eabd117caf1bf6"
+    },
+    "base_svg": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\analysis\\derived\\hypothesis_23_smp.svg",
+      "bytes": 44482,
+      "sha256": "5a38c0c6b7c283308075a4ed640c5ceebb2badeb9c12036b476a811365389e69"
+    },
+    "backtrace_json": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\analysis\\refinement\\hypothesis_23\\backtrace\\hypothesis_23_all_binary_backtrace.json",
+      "bytes": 249638,
+      "sha256": "c446620e4fae38eae48fde8105201e54365ab54e966832f4a0a9adcdcfeeb012"
+    }
+  },
+  "overlays": [
+    {
+      "entry": {
+        "display_id": "B02",
+        "key": "r4:NG1:NG1/NG2",
+        "role": "independent_entry",
+        "children": [
+          {
+            "name": "NG1",
+            "states": [
+              "s8"
+            ],
+            "signature": [
+              "N1",
+              "NG1",
+              "NG1",
+              "D1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "N1",
+              "NG1"
+            ],
+            "differences_from_baseline": []
+          },
+          {
+            "name": "NG2",
+            "states": [
+              "s18"
+            ],
+            "signature": [
+              "N1",
+              "NG1",
+              "NG1",
+              "D2",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "NG1",
+              "N1",
+              "NG1"
+            ],
+            "differences_from_baseline": [
+              {
+                "index": 3,
+                "input": "deregistrationRequest",
+                "baseline": "D1",
+                "current": "D2"
+              }
+            ]
+          }
+        ]
+      },
+      "terminals": [
+        "stage0:A/S"
+      ],
+      "color": "#1E88E5",
+      "style": {
+        "fill": "none",
+        "stroke_width_px": 6,
+        "stroke_opacity": 0.5,
+        "stroke_linecap": "round",
+        "stroke_linejoin": "round",
+        "marker_start": "none",
+        "marker_end": "none"
+      },
+      "paths": [
+        {
+          "path_index": 1,
+          "node_keys": [
+            "r4:NG1:NG1/NG2",
+            "r3:D1:D1/D2",
+            "r2:N1:N1/N2",
+            "r1:A:A1/A3"
+          ],
+          "relations": [
+            {
+              "from": "r4:NG1:NG1/NG2",
+              "signals": "DR",
+              "inputs": [
+                "deregistrationRequest"
+              ],
+              "to": "r3:D1:D1/D2"
+            },
+            {
+              "from": "r3:D1:D1/D2",
+              "signals": "RR",
+              "inputs": [
+                "registrationRequest"
+              ],
+              "to": "r2:N1:N1/N2"
+            },
+            {
+              "from": "r2:N1:N1/N2",
+              "signals": "AR",
+              "inputs": [
+                "authenticationResponse"
+              ],
+              "to": "r1:A:A1/A3"
+            },
+            {
+              "from": "r1:A:A1/A3",
+              "signals": "SMC",
+              "inputs": [
+                "securityModeComplete"
+              ],
+              "to_terminal": "stage0:A/S"
+            }
+          ],
+          "terminal": "stage0:A/S",
+          "trace_variants": [
+            {
+              "variant_index": 1,
+              "input_sequence": [
+                "deregistrationRequest",
+                "registrationRequest",
+                "authenticationResponse",
+                "securityModeComplete"
+              ],
+              "branches": {
+                "A": {
+                  "entry_child": "NG1",
+                  "start_states": [
+                    "s8"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s8",
+                      "states": [
+                        "s8",
+                        "s0",
+                        "s1",
+                        "s3",
+                        "s5"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r4:NG1:NG1/NG2",
+                          "src": "s8",
+                          "dst": "s0",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "NG1",
+                          "relation_to": "r3:D1:D1/D2",
+                          "target_child": "D1",
+                          "rendered": true,
+                          "render_source": "restored_to_s0",
+                          "geometry_id": "G001",
+                          "geometry_method": "reverse_base_edge"
+                        },
+                        {
+                          "relation_from": "r3:D1:D1/D2",
+                          "src": "s0",
+                          "dst": "s1",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D1",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N1",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G002",
+                          "geometry_method": "base_svg_edge"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s1",
+                          "dst": "s3",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N1",
+                          "relation_to": "r1:A:A1/A3",
+                          "target_child": "A1",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G003",
+                          "geometry_method": "base_svg_edge"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A3",
+                          "src": "s3",
+                          "dst": "s5",
+                          "input": "securityModeComplete",
+                          "output": "registrationAccept",
+                          "source_child": "A1",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "S",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G004",
+                          "geometry_method": "base_svg_edge"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "B": {
+                  "entry_child": "NG2",
+                  "start_states": [
+                    "s18"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s18",
+                      "states": [
+                        "s18",
+                        "s15",
+                        "s14",
+                        "s27",
+                        "s27"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r4:NG1:NG1/NG2",
+                          "src": "s18",
+                          "dst": "s15",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "NG2",
+                          "relation_to": "r3:D1:D1/D2",
+                          "target_child": "D2",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G005",
+                          "geometry_method": "base_svg_edge"
+                        },
+                        {
+                          "relation_from": "r3:D1:D1/D2",
+                          "src": "s15",
+                          "dst": "s14",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D2",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N2",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G006",
+                          "geometry_method": "base_svg_edge"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s14",
+                          "dst": "s27",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N2",
+                          "relation_to": "r1:A:A1/A3",
+                          "target_child": "A3",
+                          "rendered": true,
+                          "render_source": "base_edge",
+                          "geometry_id": "G007",
+                          "geometry_method": "base_svg_edge"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A3",
+                          "src": "s27",
+                          "dst": "s27",
+                          "input": "securityModeComplete",
+                          "output": "null_action",
+                          "source_child": "A3",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "A",
+                          "rendered": true,
+                          "render_source": "restored_self_loop",
+                          "geometry_id": "G008",
+                          "geometry_method": "generated_self_loop_right"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "geometries": [
+        {
+          "geometry_id": "G001",
+          "d": "M27.93,-1074.84C16.4,-1057.9 0,-1028.89 0,-1000.96 0,-1000.96 0,-1000.96 0,-122.64 0,-45.43 607.16,-28.27 752.17,-25.27",
+          "method": "reverse_base_edge"
+        },
+        {
+          "geometry_id": "G002",
+          "d": "M58.32,-1087.39C160.08,-1075.37 634,-1019.39 759.46,-1004.57",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G003",
+          "d": "M809.43,-998.52C909.82,-996.17 1365.77,-984.34 1386,-962.85 1392.62,-955.82 1392.09,-945.87 1389.11,-936.52",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G004",
+          "d": "M1394.19,-906.74C1527.24,-896.32 2311.99,-834.88 2477.4,-821.92",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G005",
+          "d": "M1544.88,-325.2C1588.32,-327.21 1682.49,-335 1755,-365.21 1766.7,-370.08 1766.55,-376.85 1778.25,-381.71 1845.89,-409.81 1932.14,-418.52 1979.64,-421.21",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G006",
+          "d": "M2038.78,-420.58C2084.66,-416.53 2182.92,-405.26 2206,-381.71 2211.99,-375.6 2215.22,-367.29 2216.86,-358.89",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G007",
+          "d": "M2212.12,-299.8C2210.94,-288.64 2211.5,-275.43 2217.75,-265.28 2227.47,-249.5 2245.5,-239.54 2261.8,-233.42",
+          "method": "base_svg_edge"
+        },
+        {
+          "geometry_id": "G008",
+          "d": "M2312.60,-240.17C2357.65,-261.51 2357.65,-185.63 2312.60,-206.97",
+          "method": "generated_self_loop_right"
+        }
+      ],
+      "concrete_segment_count": 8,
+      "unique_rendered_geometry_count": 8
+    }
+  ],
+  "outputs": {
+    "svg": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\analysis\\derived\\backtrace-paths\\hypothesis_23_B02_backtrace_path.svg",
+      "bytes": 45911,
+      "sha256": "d07bf1471bdec41f3b5a1c9491d5cfb73896a3513515c3e671bab94bccca0657"
+    },
+    "pdf": {
+      "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\baseline-mdf-servreq\\2026-07-17\\analysis\\derived\\backtrace-paths\\hypothesis_23_B02_backtrace_path.pdf",
+      "bytes": 38439,
+      "sha256": "7cd9429054753ec4722c8208f45da12f24f8547bcbbaf44b725a55e751252fb6"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="初始七类分类（Open5GS NAS profile）", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+partition_0 [label="轮次 0\\n类别数: 7" shape=ellipse fillcolor="#eceff1" penwidth=1.4];
+g_D [label="D\\n{s0, s10, s13, s15, s16, s23, s26}" fillcolor="#ffcdd2"];
+partition_0 -> g_D [label="包含"];
+g_N [label="N\\n{s1, s4, s7, s11, s14, s19, s21, s24, s25}" fillcolor="#bbdefb"];
+partition_0 -> g_N [label="包含"];
+g_NG [label="NG\\n{s8, s17, s18}" fillcolor="#c8e6c9"];
+partition_0 -> g_NG [label="包含"];
+g_A [label="A\\n{s3, s9, s12, s20, s22, s27}" fillcolor="#fff9c4"];
+partition_0 -> g_A [label="包含"];
+g_S [label="S\\n{s5}" fillcolor="#e1bee7"];
+partition_0 -> g_S [label="包含"];
+g_R [label="R\\n{s6}" fillcolor="#ffe0b2"];
+partition_0 -> g_R [label="包含"];
+g_X [label="X\\n{s2}" fillcolor="#cfd8dc"];
+partition_0 -> g_X [label="包含"];
+}

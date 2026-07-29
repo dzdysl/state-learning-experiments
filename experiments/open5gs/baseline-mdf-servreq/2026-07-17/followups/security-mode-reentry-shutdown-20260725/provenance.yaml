@@ -1,0 +1,79 @@
+schema_version: 1
+record_type: followup
+platform: open5gs
+parent_record: "experiments/open5gs/baseline-mdf-servreq/2026-07-17"
+followup_id: security-mode-reentry-shutdown-20260725
+purpose: "Source-correlate one H23-derived interactive sequence and preserve its shutdown failure."
+
+run:
+  id: 20260725T072113Z-1d6f4338
+  mode: interactive
+  started_utc: "2026-07-25T07:21:13.972268791Z"
+  core_session_started_utc: "2026-07-25T07:21:15Z"
+  core_session_ended_utc: "2026-07-25T07:23:17Z"
+  core_session_status: failed
+  core_session_exit_code: 134
+  termination_initiator: "Interactive console exit (operator report after archival)"
+  termination_note: "The raw console's 'Bye.' and cleanup messages agree with the operator report."
+  timezone_notes:
+    structured_events: UTC
+    core_log: "Asia/Hong_Kong (+08:00), correlated by the matching 07:23Z/15:23 local timestamps"
+
+core_network:
+  runtime_version: v2.6.6
+  runtime_path: "/opt/CoreCrisis/Corelearner/open5gs-2.6.6"
+  runtime_binary_sha256: null
+  runtime_binary_status: "Not supplied by the run bundle."
+  source_snapshot_id: open5gs_old
+  source_snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old\\open5gs"
+  source_commit: 499c70d8be63e5f87c2d1c2bcd4e521d50ce1a6b
+  source_tag: v2.6.6
+  source_snapshot_status: dirty
+  source_correlation: "The four cited source files match commit 499c70d8 after CRLF/LF normalization; runtime binary identity is not proven."
+
+learner:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  component: multiSeq
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  branch_at_runtime: refactor/multiseq-mdf
+  tag_at_commit: runtime/2026-07-24/core-output-filter-v3
+  describe_at_runtime: runtime/2026-07-24/core-output-filter-v3-dirty
+  dirty_at_runtime: true
+  status_sha256: 29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc
+  build_utc: "2026-07-24T08:03:41.5492884Z"
+  jar_path: "/opt/CoreCrisis/Corelearner/Corelearner_SeqTest.jar"
+  jar_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+
+sul_ueransim:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  source_root_at_commit: src/
+  java_sul_at_commit: "Corelearner_seqTest_pack/mylearner/src/main/java/org/example/corelearner/"
+  profile: "open5gs (UERANSIM-gnb-999-70-1)"
+  inspection_method: "git show 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8:<path>"
+
+configuration:
+  runtime_path: "/opt/CoreCrisis/Corelearner/core.properties"
+  sha256: cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289
+  contents_status: "Not supplied; neither tracked core.properties file at the recorded commit has this hash."
+
+runtime:
+  os: Linux
+  java_version: 21.0.7
+  working_directory: "/opt/CoreCrisis/Corelearner"
+
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 0cca01d5e4f70af171245143942d16987601eaf9
+  archive_tool: operations/experiment_archive/New-StateLearningArchive.ps1
+  archive_action: dry_run_only
+  archive_action_reason: "The tool only creates top-level failures; the user confirmed this run belongs under the parent experiment's followups."
+
+archive:
+  original_path: "D:\\downloads\\runs\\20260725T072113Z-1d6f4338"
+  snapshot_path: "raw/20260725T072113Z-1d6f4338"
+  file_count: 11
+  bytes: 126605
+  content_manifest_sha256: 64bd02d697e41263c006f5c0d3ab1ba46b74763268f9d2330985b5414d7ab4ea
+  manifest_hash_scope: "SHA-256 of sorted UTF-8 lines: relative-path<TAB>bytes<TAB>file-sha256<LF>"
+  copied_complete: true

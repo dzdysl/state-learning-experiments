@@ -1,0 +1,53 @@
+digraph MealyBinaryBacktrace {
+  graph [rankdir=BT, compound=true, newrank=true, splines=polyline, overlap=false, nodesep=0.45, ranksep=1.05, pad=0.25, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="hypothesis_23 全量二分类回溯流程图"];
+  node [fontname="Microsoft YaHei", fontsize=10];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#555555", arrowsize=0.8];
+
+  subgraph cluster_initial {
+    label="初始类别关键差异"; color="#e6a23c"; style="rounded"; rank=same;
+    K_1 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="A/D"];
+    K_2 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="A/S"];
+    K_3 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="A/X"];
+    K_4 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="D/N"];
+    K_5 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="N/NG"];
+    K_6 [shape=box, style="rounded,filled", fillcolor="#fff2cc", color="#d99a00", penwidth=2, label="S/X"];
+  }
+  subgraph cluster_round_1 { label="第1轮"; color="#b7c9e2"; style="rounded"; rank=same;
+    P_R1_1 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 A</B></TD></TR><TR><TD ALIGN="LEFT"><B>A1</B> = {s3, s20}</TD></TR><TR><TD ALIGN="LEFT"><B>A2</B> = {s9}</TD></TR><TR><TD ALIGN="LEFT"><B>A3</B> = {s12, s27}</TD></TR><TR><TD ALIGN="LEFT"><B>A4</B> = {s22}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：A3/A4</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">覆盖对子：A1/A3; A1/A4</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：A1/A2(2处); A2/A3(3处); A2/A4(3处)</FONT></TD></TR></TABLE>>];
+    P_R1_2 [shape=plain label=<<TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#2f75b5" BGCOLOR="#ffffff"><TR><TD BGCOLOR="#ffffff"><B>父类 D</B></TD></TR><TR><TD ALIGN="LEFT"><B>D1</B> = {s0, s15, s26}</TD></TR><TR><TD ALIGN="LEFT"><B>D2</B> = {s10, s23}</TD></TR><TR><TD ALIGN="LEFT"><B>D3</B> = {s13}</TD></TR><TR><TD ALIGN="LEFT"><B>D4</B> = {s16}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">覆盖对子：D1/D4</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：D1/D2(3处); D1/D3(5处); D2/D3(2处); D2/D4(4处); D3/D4(6处)</FONT></TD></TR></TABLE>>];
+    P_R1_3 [shape=plain label=<<TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#2f75b5" BGCOLOR="#ffffff"><TR><TD BGCOLOR="#ffffff"><B>父类 N</B></TD></TR><TR><TD ALIGN="LEFT"><B>N1</B> = {s1, s11, s14, s19, s21, s24}</TD></TR><TR><TD ALIGN="LEFT"><B>N2</B> = {s4, s25}</TD></TR><TR><TD ALIGN="LEFT"><B>N3</B> = {s7}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：N1/N2; N1/N3</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：N2/N3(2处)</FONT></TD></TR></TABLE>>];
+    P_R1_4 [shape=box, style="dashed", color="#9e9e9e", penwidth=2, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#9e9e9e" BGCOLOR="#f2f2f2"><TR><TD BGCOLOR="#f2f2f2"><B>父类 NG</B></TD></TR><TR><TD ALIGN="LEFT"><B>NG1</B> = {s8, s18}</TD></TR><TR><TD ALIGN="LEFT"><B>NG2</B> = {s17}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：NG1/NG2(3处)</FONT></TD></TR></TABLE>>];
+  }
+  subgraph cluster_round_2 { label="第2轮"; color="#b7c9e2"; style="rounded"; rank=same;
+    P_R2_1 [shape=plain label=<<TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#2f75b5" BGCOLOR="#ffffff"><TR><TD BGCOLOR="#ffffff"><B>父类 A1</B></TD></TR><TR><TD ALIGN="LEFT"><B>A1</B> = {s3}</TD></TR><TR><TD ALIGN="LEFT"><B>A2</B> = {s20}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：A1/A2</FONT></TD></TR></TABLE>>];
+    P_R2_2 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 N1</B></TD></TR><TR><TD ALIGN="LEFT"><B>N1</B> = {s1, s24}</TD></TR><TR><TD ALIGN="LEFT"><B>N2</B> = {s11, s14}</TD></TR><TR><TD ALIGN="LEFT"><B>N3</B> = {s19}</TD></TR><TR><TD ALIGN="LEFT"><B>N4</B> = {s21}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：N1/N3; N3/N4</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">覆盖对子：N1/N2</FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：N1/N4(2处); N2/N3(2处); N2/N4(2处)</FONT></TD></TR></TABLE>>];
+  }
+  subgraph cluster_round_3 { label="第3轮"; color="#b7c9e2"; style="rounded"; rank=same;
+    P_R3_1 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 D1</B></TD></TR><TR><TD ALIGN="LEFT"><B>D1</B> = {s0, s26}</TD></TR><TR><TD ALIGN="LEFT"><B>D2</B> = {s15}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">覆盖对子：D1/D2</FONT></TD></TR></TABLE>>];
+    P_R3_2 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 D2</B></TD></TR><TR><TD ALIGN="LEFT"><B>D3</B> = {s10}</TD></TR><TR><TD ALIGN="LEFT"><B>D4</B> = {s23}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">覆盖对子：D3/D4</FONT></TD></TR></TABLE>>];
+    P_R3_3 [shape=plain label=<<TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#2f75b5" BGCOLOR="#ffffff"><TR><TD BGCOLOR="#ffffff"><B>父类 N1</B></TD></TR><TR><TD ALIGN="LEFT"><B>N1</B> = {s1}</TD></TR><TR><TD ALIGN="LEFT"><B>N2</B> = {s24}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：N1/N2</FONT></TD></TR></TABLE>>];
+    P_R3_4 [shape=box, style="dashed", color="#9e9e9e", penwidth=2, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#9e9e9e" BGCOLOR="#f2f2f2"><TR><TD BGCOLOR="#f2f2f2"><B>父类 N2</B></TD></TR><TR><TD ALIGN="LEFT"><B>N3</B> = {s11}</TD></TR><TR><TD ALIGN="LEFT"><B>N4</B> = {s14}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#777777">非入口对子：N3/N4(2处)</FONT></TD></TR></TABLE>>];
+    P_R3_5 [shape=plain label=<<TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#2f75b5" BGCOLOR="#ffffff"><TR><TD BGCOLOR="#ffffff"><B>父类 N5</B></TD></TR><TR><TD ALIGN="LEFT"><B>N7</B> = {s4}</TD></TR><TR><TD ALIGN="LEFT"><B>N8</B> = {s25}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：N7/N8</FONT></TD></TR></TABLE>>];
+  }
+  subgraph cluster_round_4 { label="第4轮"; color="#b7c9e2"; style="rounded"; rank=same;
+    P_R4_1 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 A4</B></TD></TR><TR><TD ALIGN="LEFT"><B>A4</B> = {s12}</TD></TR><TR><TD ALIGN="LEFT"><B>A5</B> = {s27}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：A4/A5</FONT></TD></TR></TABLE>>];
+    P_R4_2 [shape=plain label=<<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="#1565c0" BGCOLOR="#dcecff"><TR><TD BGCOLOR="#dcecff"><B>父类 NG1</B></TD></TR><TR><TD ALIGN="LEFT"><B>NG1</B> = {s8}</TD></TR><TR><TD ALIGN="LEFT"><B>NG2</B> = {s18}</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#1f4e79">独立入口对子：NG1/NG2</FONT></TD></TR></TABLE>>];
+  }
+  P_R4_1 -> P_R3_2 [label="A4/A5: SMR → D3/D4", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R3_2 -> P_R2_2 [label="D3/D4: RR → N1/N2", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R2_2 -> P_R1_1 [label="N1/N2: AR → A1/A3", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R1_1 -> K_2 [label="A1/A3: SMC → A/S", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R4_2 -> P_R3_1 [label="NG1/NG2: DR → D1/D2", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R3_1 -> P_R2_2 [label="D1/D2: RR → N1/N2", color="#1565c0", fontcolor="#1565c0", penwidth=3];
+  P_R3_3 -> P_R2_2 [label="N1/N2: RR → N1/N2"];
+  P_R3_5 -> P_R2_2 [label="N7/N8: RR → N1/N2"];
+  P_R2_1 -> P_R1_2 [label="A1/A2: DR → D1/D4"];
+  P_R1_2 -> K_5 [label="D1/D4: RRG → N/NG"];
+  P_R2_2 -> P_R1_2 [label="N1/N3: DR → D1/D4"];
+  P_R2_2 -> P_R1_1 [label="N3/N4: AR → A1/A4"];
+  P_R1_1 -> K_6 [label="A1/A4: SMC → S/X"];
+  P_R1_1 -> K_3 [label="A3/A4: SMC → A/X"];
+  P_R1_3 -> K_1 [label="N1/N2: AR → A/D"];
+  P_R1_3 -> K_4 [label="N1/N3: SR → D/N"];
+  legend [shape=plain, label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD ALIGN="LEFT"><B>信令简写</B></TD></TR><TR><TD ALIGN="LEFT">RR = registrationRequest</TD></TR><TR><TD ALIGN="LEFT">RRG = registrationRequestGUTI</TD></TR><TR><TD ALIGN="LEFT">RC = registrationComplete</TD></TR><TR><TD ALIGN="LEFT">DR = deregistrationRequest</TD></TR><TR><TD ALIGN="LEFT">SR = serviceRequest</TD></TR><TR><TD ALIGN="LEFT">SMR = securityModeReject</TD></TR><TR><TD ALIGN="LEFT">AR = authenticationResponse</TD></TR><TR><TD ALIGN="LEFT">AF = authenticationFailure</TD></TR><TR><TD ALIGN="LEFT">DA = deregistrationAccept</TD></TR><TR><TD ALIGN="LEFT">SMC = securityModeComplete</TD></TR><TR><TD ALIGN="LEFT">IR = identityResponse</TD></TR><TR><TD ALIGN="LEFT">CUC = configurationUpdateComplete</TD></TR></TABLE>>];
+}

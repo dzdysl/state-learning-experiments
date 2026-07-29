@@ -1,0 +1,47 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="第 1 轮细化溯源图", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+subgraph cluster_1 {
+label="父类 A"; color="#90a4ae"; style="rounded";
+p_1 [label="A（上一轮）\\n{s3, s9, s12, s20, s22, s27}" fillcolor="#fff9c4" penwidth=1.5];
+c_1_1 [label="A1\\n{s3, s20}" fillcolor="#fff9c4"];
+p_1 -> c_1_1 [label="基准 signature"];
+c_1_2 [label="A2\\n{s9}" fillcolor="#fff9c4"];
+p_1 -> c_1_2 [label="registrationRequest: N→A\\nserviceRequest: A→D"];
+c_1_3 [label="A3\\n{s12, s27}" fillcolor="#fff9c4"];
+p_1 -> c_1_3 [label="securityModeComplete: S→A"];
+c_1_4 [label="A4\\n{s22}" fillcolor="#fff9c4"];
+p_1 -> c_1_4 [label="securityModeComplete: S→X"];
+}
+subgraph cluster_2 {
+label="父类 D"; color="#90a4ae"; style="rounded";
+p_2 [label="D（上一轮）\\n{s0, s10, s13, s15, s16, s23, s26}" fillcolor="#ffcdd2" penwidth=1.5];
+c_2_1 [label="D1\\n{s0, s15, s26}" fillcolor="#ffcdd2"];
+p_2 -> c_2_1 [label="基准 signature"];
+c_2_2 [label="D2\\n{s10, s23}" fillcolor="#ffcdd2"];
+p_2 -> c_2_2 [label="registrationComplete: D→X\\nsecurityModeComplete: D→X\\nconfigurationUpdateComplete: D→X"];
+c_2_3 [label="D3\\n{s13}" fillcolor="#ffcdd2"];
+p_2 -> c_2_3 [label="registrationRequest: N→D\\nregistrationComplete: D→X\\nsecurityModeComplete: D→X\\nidentityResponse: N→D\\nconfigurationUpdateComplete: D→X"];
+c_2_4 [label="D4\\n{s16}" fillcolor="#ffcdd2"];
+p_2 -> c_2_4 [label="registrationRequestGUTI: NG→N"];
+}
+subgraph cluster_3 {
+label="父类 N"; color="#90a4ae"; style="rounded";
+p_3 [label="N（上一轮）\\n{s1, s4, s7, s11, s14, s19, s21, s24, s25}" fillcolor="#bbdefb" penwidth=1.5];
+c_3_1 [label="N1\\n{s1, s11, s14, s19, s21, s24}" fillcolor="#bbdefb"];
+p_3 -> c_3_1 [label="基准 signature"];
+c_3_2 [label="N2\\n{s4, s25}" fillcolor="#bbdefb"];
+p_3 -> c_3_2 [label="authenticationResponse: A→D"];
+c_3_3 [label="N3\\n{s7}" fillcolor="#bbdefb"];
+p_3 -> c_3_3 [label="serviceRequest: N→D"];
+}
+subgraph cluster_4 {
+label="父类 NG"; color="#90a4ae"; style="rounded";
+p_4 [label="NG（上一轮）\\n{s8, s17, s18}" fillcolor="#c8e6c9" penwidth=1.5];
+c_4_1 [label="NG1\\n{s8, s18}" fillcolor="#c8e6c9"];
+p_4 -> c_4_1 [label="基准 signature"];
+c_4_2 [label="NG2\\n{s17}" fillcolor="#c8e6c9"];
+p_4 -> c_4_2 [label="registrationRequest: N→NG\\nserviceRequest: NG→D\\nidentityResponse: N→NG"];
+}
+}

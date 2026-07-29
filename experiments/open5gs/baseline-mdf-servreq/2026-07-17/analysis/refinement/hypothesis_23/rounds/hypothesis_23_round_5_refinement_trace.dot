@@ -1,0 +1,6 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", fontname="Microsoft YaHei", labelloc="t", label="第 5 轮细化溯源图", fontsize=20, pad=0.25, nodesep=0.35, ranksep=0.7];
+node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#455a64", margin="0.10,0.07"];
+edge [fontname="Microsoft YaHei", fontsize=9, color="#607d8b"];
+fixed [label="第 5 轮：无新拆分\n分区保持 27 类，达到固定点" shape=ellipse fillcolor="#c8e6c9" penwidth=1.5];
+}
