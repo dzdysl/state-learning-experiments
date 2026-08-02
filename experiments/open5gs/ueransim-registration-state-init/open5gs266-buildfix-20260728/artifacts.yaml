@@ -1,0 +1,45 @@
+schema_version: 1
+archive_strategy: external_snapshot
+direct_git_limit_bytes: 10485760
+selected_total_bytes: 178163011
+content_tree_definition: "SHA-256 over UTF-8 sorted records: relative-path, NUL, byte-count, NUL, member SHA-256 hex, LF."
+artifacts:
+  - id: structured-run
+    original_path: "D:\\downloads\\runs\\20260728T111737Z-fcf920b5"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\open5gs266-buildfix-20260728\\run-20260728T111737Z-fcf920b5"
+    bytes: 172692676
+    file_count: 2775
+    relevance: direct
+    appendable: false
+    sha256_content_tree: ca150bf42f85220167c15ec8e938a7d0ffaace3ace2aa07e1919ed3d7ac85e40
+    key_member_sha256:
+      "raw/console.log": 6ee6ec8bf75f0634c11112ce10ebbf2da00099081614df1c0fbb4acfd1763a33
+      "run-manifest.json": dbed9e596be3cde9a80fc7bbe22459d24bf21d295684f024af5555f46265904e
+      "run-provenance.json": bc21100992f47829b950269863ad32b88c1691407e6866a6cfdb8e20d23a6a3a
+      "statelearner_sht_debug.jsonl": 06f2415f80aefa144394aaa9ed29af6aae14b46a493b54bcf384b1d2a486e7f7
+      "statelearner_trace.jsonl": 7593227463854970e8646fcc12466bfd85559a8661e51267c2e9c894d35fa761
+      "raw/open5gs/core-session-923/session.json": 61db3ef8661d6c6a672ae3667ec91ec821e957b392d6231f4d87002ba323d501
+  - id: selected-learner-export
+    original_path: "D:\\downloads\\Open5GS.log"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\open5gs266-buildfix-20260728\\learner-export"
+    bytes: 5470335
+    file_count: 24
+    relevance: mixed
+    appendable: false
+    source_may_have_later_appends: true
+    sha256_content_tree: b794182bc752cf839780ba36b8d853e8123d916e7e7330fcdb6cf4d01d2d7d35
+    key_member_sha256:
+      "hypothesis_20.dot": 175afb542e3fd8401cd529bc6b7c611faddc5fbaf84a809a715b4d045db00bff
+      "learner.log": 6fad88ef0b94411aac8056b07303444585f7c653bc645e3f5d796fa64c05489c
+      "learning_queries.log": d8bd06ba1a306830b1caa685900c36d65af7642bfdce34246e95b3ad3dfe71f1
+      "equivalence_queries.log": 2d29e4ffd867d9702cecd916b4476aff2108acef5c9dc8b21d6a5b8c66dcbbeb
+    note: "The DOT files, learner.log, learning_queries.log and provenance match this run. equivalence_queries.log is retained as mixed/supporting append-only material because its logger lock predates the run."
+excluded_material:
+  - path: "D:\\downloads\\Open5GS.log\\console.log"
+    bytes: 137961021
+    sha256: 8283123cdea1fd9b3d31f5408257ec79c9c341d181f86bab3fb914f1d7497704
+    reason: "Byte-identical to the console already archived for the 2026-07-17 baseline; not evidence from this run."
+  - paths:
+      - "D:\\downloads\\Open5GS.log\\*.lck"
+      - "D:\\downloads\\Open5GS.log\\learnlib.log"
+    reason: "Logger locks and empty output do not provide run evidence."

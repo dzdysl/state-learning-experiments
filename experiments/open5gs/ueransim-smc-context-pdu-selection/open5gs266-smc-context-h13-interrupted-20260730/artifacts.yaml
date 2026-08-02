@@ -1,0 +1,47 @@
+schema_version: 1
+archive_strategy: external_snapshot
+direct_git_limit_bytes: 10485760
+selected_total_bytes: 165976493
+content_tree_definition: "SHA-256 over UTF-8 sorted records: relative-path, NUL, byte-count, NUL, member SHA-256 hex, LF."
+artifacts:
+  - id: structured-run
+    original_path: "D:\\downloads\\runs\\20260730T054606Z-60d7ce19"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\open5gs266-smc-context-h13-interrupted-20260730\\run-20260730T054606Z-60d7ce19"
+    bytes: 162359537
+    file_count: 2595
+    relevance: direct
+    appendable: false
+    sha256_content_tree: 02007630bef7fd64eafd8edab3fc0ea56a3831e753fb9f292a6446c0129b3a07
+    key_member_sha256:
+      "raw/console.log": df12abf48e1ba5d09711382bc3eadfe14b8f96f20daf7ab6b9b303f7c540dfc8
+      "run-manifest.json": a8db0ff0db1a1f428161a64c150a26bced0bf8d1eac17f3be6a6092b3e991a63
+      "run-provenance.json": 7edc83d6a6d336a1ca4530ec31dfa011d2505e91dd7dd0d8e5b3572d1ad2e141
+      "statelearner_sht_debug.jsonl": dc100f60b1f8be6bdd99b82ab6346e47804ac795b7306b97b25c424d7203ec73
+      "statelearner_trace.jsonl": 44a2b1179c4a7f38cec2e5a216621e74d81333f0f19df997f566e8d0772cbbb6
+      "statelearner_trace.meta": f06ff7d595d2e3feae4eabb488ad5430524fee05ffd9d1e2fa510535917da89b
+      "raw/open5gs/core-session-863/session.json": 22dd74c79237ce4f49f451ab20e26050363aeda9cc12cf187f2c506cc81d9256
+  - id: selected-learner-export
+    original_path: "D:\\downloads\\workflow-doc-consolidation"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\open5gs266-smc-context-h13-interrupted-20260730\\learner-export"
+    bytes: 3616956
+    file_count: 17
+    relevance: mixed
+    appendable: false
+    source_may_have_later_appends: true
+    sha256_content_tree: d69db1f559aea4d776c3d48eb007b47063a063ba3cd5fcf45b981e74891b9866
+    key_member_sha256:
+      "hypothesis_13.dot": 465fc8f4e5cba3715ec8745cbc81f9d24f5876fdb37d455f858f02f01815523a
+      "learner.log": 4b6ae9dc0c9f18b1fc25accb5c6f74093136763403342a467a36cdbd0be4e43d
+      "learning_queries.log": 8ec3f0f245be929f56839b0cc36088a4fdb223f2ead1ac04a50f8473ce75fcef
+      "equivalence_queries.log": bf12a1c49de7ebfc54696931e8d266734190e8c443aabf9b1a0ebd8874deb0ed
+      "run-provenance.json": 7edc83d6a6d336a1ca4530ec31dfa011d2505e91dd7dd0d8e5b3572d1ad2e141
+    note: "H1-H13, learner.log and run provenance are direct run evidence. Query logs are retained as supporting append-only material frozen at the supplied boundary."
+excluded_material:
+  - paths:
+      - "D:\\downloads\\workflow-doc-consolidation\\*.lck"
+      - "D:\\downloads\\workflow-doc-consolidation\\learnlib.log"
+    reason: "Logger locks and empty output do not provide run evidence."
+  - paths:
+      - "D:\\downloads\\workflow-doc-consolidation\\hypothesis_13_smp.dot"
+      - "D:\\downloads\\workflow-doc-consolidation\\hypothesis_13_smp.svg"
+    reason: "Task-generated analysis derivatives were regenerated from the archived evidence DOT inside the record."

@@ -1,0 +1,3394 @@
+{
+  "schema_version": 2,
+  "kind": "mealy_binary_backtrace",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\evidence\\hypotheses\\hypothesis_13.dot",
+  "source_sha256": "465fc8f4e5cba3715ec8745cbc81f9d24f5876fdb37d455f858f02f01815523a",
+  "entry_policy": "strict",
+  "input_order": [
+    "registrationRequest",
+    "registrationRequestGUTI",
+    "registrationComplete",
+    "deregistrationRequest",
+    "serviceRequest",
+    "securityModeReject",
+    "authenticationResponse",
+    "authenticationFailure",
+    "deregistrationAccept",
+    "securityModeComplete",
+    "identityResponse",
+    "configurationUpdateComplete"
+  ],
+  "counts": {
+    "all_pairs": 12,
+    "strict": 8,
+    "convergent_unique": 2,
+    "branching": 2,
+    "independent_entries": 4,
+    "non_strict": 4,
+    "covered_nodes": 4,
+    "visited_nodes": 8,
+    "terminals": 2,
+    "round_relations": 6,
+    "terminal_relations": 2,
+    "initial_key_differences": 2
+  },
+  "pairs": [
+    {
+      "round": 1,
+      "parent": "A",
+      "pair": "A1/A2",
+      "children": [
+        {
+          "name": "A1",
+          "states": [
+            "s3",
+            "s14"
+          ],
+          "signature": [
+            "N",
+            "N",
+            "A",
+            "D",
+            "A",
+            "D",
+            "A",
+            "A",
+            "A",
+            "S",
+            "A",
+            "A"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "A2",
+          "states": [
+            "s9"
+          ],
+          "signature": [
+            "N",
+            "N",
+            "A",
+            "D",
+            "A",
+            "D",
+            "A",
+            "A",
+            "A",
+            "A",
+            "A",
+            "A"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 9,
+              "input": "securityModeComplete",
+              "baseline": "S",
+              "current": "A"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 9,
+          "input": "securityModeComplete",
+          "abbreviation": "SMC",
+          "upstream_pair": [
+            "A",
+            "S"
+          ],
+          "child_views": [
+            {
+              "child": "A1",
+              "target_label": "S",
+              "transitions": [
+                {
+                  "src": "s3",
+                  "dst": "s4",
+                  "input": "securityModeComplete",
+                  "output": "registrationAccept"
+                },
+                {
+                  "src": "s14",
+                  "dst": "s4",
+                  "input": "securityModeComplete",
+                  "output": "registrationAccept"
+                }
+              ]
+            },
+            {
+              "child": "A2",
+              "target_label": "A",
+              "transitions": [
+                {
+                  "src": "s9",
+                  "dst": "s9",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "A",
+          "S"
+        ]
+      ],
+      "classification": "strict",
+      "role": "covered",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s3",
+              "s9"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          },
+          {
+            "states": [
+              "s14",
+              "s9"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s14",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B07",
+      "key": "r1:A:A1/A2",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 1,
+      "parent": "D",
+      "pair": "D1/D2",
+      "children": [
+        {
+          "name": "D1",
+          "states": [
+            "s0",
+            "s11"
+          ],
+          "signature": [
+            "N",
+            "NG",
+            "D",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "D",
+            "D"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "D2",
+          "states": [
+            "s7",
+            "s15"
+          ],
+          "signature": [
+            "N",
+            "NG",
+            "X",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "X"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 2,
+              "input": "registrationComplete",
+              "baseline": "D",
+              "current": "X"
+            },
+            {
+              "index": 9,
+              "input": "securityModeComplete",
+              "baseline": "D",
+              "current": "X"
+            },
+            {
+              "index": 11,
+              "input": "configurationUpdateComplete",
+              "baseline": "D",
+              "current": "X"
+            }
+          ]
+        }
+      ],
+      "difference_count": 3,
+      "differences": [
+        {
+          "index": 2,
+          "input": "registrationComplete",
+          "abbreviation": "RC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D1",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s0",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s11",
+                  "dst": "s11",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "input": "securityModeComplete",
+          "abbreviation": "SMC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D1",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s0",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s11",
+                  "dst": "s11",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "input": "configurationUpdateComplete",
+          "abbreviation": "CUC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D1",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s0",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s11",
+                  "dst": "s11",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "D",
+          "X"
+        ]
+      ],
+      "classification": "convergent_unique",
+      "role": "unvisited_non_entry",
+      "key": "r1:D:D1/D2",
+      "entry_eligible": false,
+      "entry_exclusion_reason": "3 个 signature 位置不同；虽汇聚到同一上游类别对，但不满足 strict 的单位置条件"
+    },
+    {
+      "round": 1,
+      "parent": "D",
+      "pair": "D1/D3",
+      "children": [
+        {
+          "name": "D1",
+          "states": [
+            "s0",
+            "s11"
+          ],
+          "signature": [
+            "N",
+            "NG",
+            "D",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "D",
+            "D"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "D3",
+          "states": [
+            "s12"
+          ],
+          "signature": [
+            "N",
+            "N",
+            "D",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "D",
+            "D"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 1,
+              "input": "registrationRequestGUTI",
+              "baseline": "NG",
+              "current": "N"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 1,
+          "input": "registrationRequestGUTI",
+          "abbreviation": "RRG",
+          "upstream_pair": [
+            "N",
+            "NG"
+          ],
+          "child_views": [
+            {
+              "child": "D1",
+              "target_label": "NG",
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s6",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                },
+                {
+                  "src": "s11",
+                  "dst": "s16",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                }
+              ]
+            },
+            {
+              "child": "D3",
+              "target_label": "N",
+              "transitions": [
+                {
+                  "src": "s12",
+                  "dst": "s13",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "N",
+          "NG"
+        ]
+      ],
+      "classification": "strict",
+      "role": "covered",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s0",
+              "s12"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "registrationRequestGUTI"
+            ],
+            "outputs": [
+              {
+                "state": "s0",
+                "output": "identityRequest"
+              },
+              {
+                "state": "s12",
+                "output": "authenticationRequest"
+              }
+            ]
+          },
+          {
+            "states": [
+              "s11",
+              "s12"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "registrationRequestGUTI"
+            ],
+            "outputs": [
+              {
+                "state": "s11",
+                "output": "identityRequest"
+              },
+              {
+                "state": "s12",
+                "output": "authenticationRequest"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B08",
+      "key": "r1:D:D1/D3",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 1,
+      "parent": "D",
+      "pair": "D2/D3",
+      "children": [
+        {
+          "name": "D2",
+          "states": [
+            "s7",
+            "s15"
+          ],
+          "signature": [
+            "N",
+            "NG",
+            "X",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "X"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 2,
+              "input": "registrationComplete",
+              "baseline": "D",
+              "current": "X"
+            },
+            {
+              "index": 9,
+              "input": "securityModeComplete",
+              "baseline": "D",
+              "current": "X"
+            },
+            {
+              "index": 11,
+              "input": "configurationUpdateComplete",
+              "baseline": "D",
+              "current": "X"
+            }
+          ]
+        },
+        {
+          "name": "D3",
+          "states": [
+            "s12"
+          ],
+          "signature": [
+            "N",
+            "N",
+            "D",
+            "D",
+            "D",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D",
+            "D",
+            "D"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 1,
+              "input": "registrationRequestGUTI",
+              "baseline": "NG",
+              "current": "N"
+            }
+          ]
+        }
+      ],
+      "difference_count": 4,
+      "differences": [
+        {
+          "index": 1,
+          "input": "registrationRequestGUTI",
+          "abbreviation": "RRG",
+          "upstream_pair": [
+            "N",
+            "NG"
+          ],
+          "child_views": [
+            {
+              "child": "D2",
+              "target_label": "NG",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s6",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s6",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                }
+              ]
+            },
+            {
+              "child": "D3",
+              "target_label": "N",
+              "transitions": [
+                {
+                  "src": "s12",
+                  "dst": "s13",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "input": "registrationComplete",
+          "abbreviation": "RC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D3",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s12",
+                  "dst": "s12",
+                  "input": "registrationComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "input": "securityModeComplete",
+          "abbreviation": "SMC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D3",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s12",
+                  "dst": "s12",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "input": "configurationUpdateComplete",
+          "abbreviation": "CUC",
+          "upstream_pair": [
+            "D",
+            "X"
+          ],
+          "child_views": [
+            {
+              "child": "D2",
+              "target_label": "X",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s2",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s15",
+                  "dst": "s2",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "D3",
+              "target_label": "D",
+              "transitions": [
+                {
+                  "src": "s12",
+                  "dst": "s12",
+                  "input": "configurationUpdateComplete",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "D",
+          "X"
+        ],
+        [
+          "N",
+          "NG"
+        ]
+      ],
+      "classification": "branching",
+      "role": "unvisited_non_entry",
+      "key": "r1:D:D2/D3",
+      "entry_eligible": false,
+      "entry_exclusion_reason": "4 个 signature 位置不同，且指向 2 个不同上游类别对"
+    },
+    {
+      "round": 2,
+      "parent": "A1",
+      "pair": "A1/A2",
+      "children": [
+        {
+          "name": "A1",
+          "states": [
+            "s3"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "A1",
+            "D1",
+            "A1",
+            "D2",
+            "A1",
+            "A1",
+            "A1",
+            "S1",
+            "A1",
+            "A1"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "A2",
+          "states": [
+            "s14"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "A1",
+            "D3",
+            "A1",
+            "D2",
+            "A1",
+            "A1",
+            "A1",
+            "S1",
+            "A1",
+            "A1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 3,
+              "input": "deregistrationRequest",
+              "baseline": "D1",
+              "current": "D3"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 3,
+          "input": "deregistrationRequest",
+          "abbreviation": "DR",
+          "upstream_pair": [
+            "D1",
+            "D3"
+          ],
+          "child_views": [
+            {
+              "child": "A1",
+              "target_label": "D1",
+              "transitions": [
+                {
+                  "src": "s3",
+                  "dst": "s0",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "A2",
+              "target_label": "D3",
+              "transitions": [
+                {
+                  "src": "s14",
+                  "dst": "s12",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "D1",
+          "D3"
+        ]
+      ],
+      "classification": "strict",
+      "role": "independent_entry",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s3",
+              "s14"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "deregistrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "outputs": [
+              {
+                "state": "s0",
+                "output": "identityRequest"
+              },
+              {
+                "state": "s12",
+                "output": "authenticationRequest"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B04",
+      "key": "r2:A1:A1/A2",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 2,
+      "parent": "N1",
+      "pair": "N1/N2",
+      "children": [
+        {
+          "name": "N1",
+          "states": [
+            "s1"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D1",
+            "N1",
+            "N1",
+            "A1",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "N2",
+          "states": [
+            "s8",
+            "s10"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D1",
+            "N1",
+            "N1",
+            "A2",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 6,
+              "input": "authenticationResponse",
+              "baseline": "A1",
+              "current": "A2"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 6,
+          "input": "authenticationResponse",
+          "abbreviation": "AR",
+          "upstream_pair": [
+            "A1",
+            "A2"
+          ],
+          "child_views": [
+            {
+              "child": "N1",
+              "target_label": "A1",
+              "transitions": [
+                {
+                  "src": "s1",
+                  "dst": "s3",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                }
+              ]
+            },
+            {
+              "child": "N2",
+              "target_label": "A2",
+              "transitions": [
+                {
+                  "src": "s8",
+                  "dst": "s9",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                },
+                {
+                  "src": "s10",
+                  "dst": "s9",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "classification": "strict",
+      "role": "covered",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s1",
+              "s8"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          },
+          {
+            "states": [
+              "s1",
+              "s10"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B05",
+      "key": "r2:N1:N1/N2",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 2,
+      "parent": "N1",
+      "pair": "N1/N3",
+      "children": [
+        {
+          "name": "N1",
+          "states": [
+            "s1"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D1",
+            "N1",
+            "N1",
+            "A1",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "N3",
+          "states": [
+            "s13"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D3",
+            "N1",
+            "N1",
+            "A1",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 3,
+              "input": "deregistrationRequest",
+              "baseline": "D1",
+              "current": "D3"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 3,
+          "input": "deregistrationRequest",
+          "abbreviation": "DR",
+          "upstream_pair": [
+            "D1",
+            "D3"
+          ],
+          "child_views": [
+            {
+              "child": "N1",
+              "target_label": "D1",
+              "transitions": [
+                {
+                  "src": "s1",
+                  "dst": "s0",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "N3",
+              "target_label": "D3",
+              "transitions": [
+                {
+                  "src": "s13",
+                  "dst": "s12",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "D1",
+          "D3"
+        ]
+      ],
+      "classification": "strict",
+      "role": "independent_entry",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s1",
+              "s13"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "deregistrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "outputs": [
+              {
+                "state": "s0",
+                "output": "identityRequest"
+              },
+              {
+                "state": "s12",
+                "output": "authenticationRequest"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B06",
+      "key": "r2:N1:N1/N3",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 2,
+      "parent": "N1",
+      "pair": "N2/N3",
+      "children": [
+        {
+          "name": "N2",
+          "states": [
+            "s8",
+            "s10"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D1",
+            "N1",
+            "N1",
+            "A2",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 6,
+              "input": "authenticationResponse",
+              "baseline": "A1",
+              "current": "A2"
+            }
+          ]
+        },
+        {
+          "name": "N3",
+          "states": [
+            "s13"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N1",
+            "D3",
+            "N1",
+            "N1",
+            "A1",
+            "D1",
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 3,
+              "input": "deregistrationRequest",
+              "baseline": "D1",
+              "current": "D3"
+            }
+          ]
+        }
+      ],
+      "difference_count": 2,
+      "differences": [
+        {
+          "index": 3,
+          "input": "deregistrationRequest",
+          "abbreviation": "DR",
+          "upstream_pair": [
+            "D1",
+            "D3"
+          ],
+          "child_views": [
+            {
+              "child": "N2",
+              "target_label": "D1",
+              "transitions": [
+                {
+                  "src": "s8",
+                  "dst": "s0",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                },
+                {
+                  "src": "s10",
+                  "dst": "s11",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "N3",
+              "target_label": "D3",
+              "transitions": [
+                {
+                  "src": "s13",
+                  "dst": "s12",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "input": "authenticationResponse",
+          "abbreviation": "AR",
+          "upstream_pair": [
+            "A1",
+            "A2"
+          ],
+          "child_views": [
+            {
+              "child": "N2",
+              "target_label": "A2",
+              "transitions": [
+                {
+                  "src": "s8",
+                  "dst": "s9",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                },
+                {
+                  "src": "s10",
+                  "dst": "s9",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                }
+              ]
+            },
+            {
+              "child": "N3",
+              "target_label": "A1",
+              "transitions": [
+                {
+                  "src": "s13",
+                  "dst": "s14",
+                  "input": "authenticationResponse",
+                  "output": "securityModeCommand"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "D1",
+          "D3"
+        ]
+      ],
+      "classification": "branching",
+      "role": "unvisited_non_entry",
+      "key": "r2:N1:N2/N3",
+      "entry_eligible": false,
+      "entry_exclusion_reason": "2 个 signature 位置不同，且指向 2 个不同上游类别对"
+    },
+    {
+      "round": 3,
+      "parent": "D1",
+      "pair": "D1/D2",
+      "children": [
+        {
+          "name": "D1",
+          "states": [
+            "s0"
+          ],
+          "signature": [
+            "N1",
+            "NG1",
+            "D1",
+            "D1",
+            "D1",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D1",
+            "D1",
+            "D1"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "D2",
+          "states": [
+            "s11"
+          ],
+          "signature": [
+            "N2",
+            "NG1",
+            "D1",
+            "D1",
+            "D1",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D1",
+            "D1",
+            "D1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 0,
+              "input": "registrationRequest",
+              "baseline": "N1",
+              "current": "N2"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 0,
+          "input": "registrationRequest",
+          "abbreviation": "RR",
+          "upstream_pair": [
+            "N1",
+            "N2"
+          ],
+          "child_views": [
+            {
+              "child": "D1",
+              "target_label": "N1",
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s1",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            },
+            {
+              "child": "D2",
+              "target_label": "N2",
+              "transitions": [
+                {
+                  "src": "s11",
+                  "dst": "s10",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "N1",
+          "N2"
+        ]
+      ],
+      "classification": "strict",
+      "role": "covered",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s0",
+              "s11"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B02",
+      "key": "r3:D1:D1/D2",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 3,
+      "parent": "D2",
+      "pair": "D3/D4",
+      "children": [
+        {
+          "name": "D3",
+          "states": [
+            "s7"
+          ],
+          "signature": [
+            "N2",
+            "NG1",
+            "X",
+            "D1",
+            "D2",
+            "X",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D2",
+            "X"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "D4",
+          "states": [
+            "s15"
+          ],
+          "signature": [
+            "N1",
+            "NG1",
+            "X",
+            "D1",
+            "D2",
+            "X",
+            "X",
+            "X",
+            "X",
+            "X",
+            "D2",
+            "X"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 0,
+              "input": "registrationRequest",
+              "baseline": "N2",
+              "current": "N1"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 0,
+          "input": "registrationRequest",
+          "abbreviation": "RR",
+          "upstream_pair": [
+            "N1",
+            "N2"
+          ],
+          "child_views": [
+            {
+              "child": "D3",
+              "target_label": "N2",
+              "transitions": [
+                {
+                  "src": "s7",
+                  "dst": "s8",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            },
+            {
+              "child": "D4",
+              "target_label": "N1",
+              "transitions": [
+                {
+                  "src": "s15",
+                  "dst": "s1",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "N1",
+          "N2"
+        ]
+      ],
+      "classification": "strict",
+      "role": "independent_entry",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s7",
+              "s15"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s9",
+                "output": "null_action"
+              },
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B03",
+      "key": "r3:D2:D3/D4",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    },
+    {
+      "round": 3,
+      "parent": "N2",
+      "pair": "N2/N3",
+      "children": [
+        {
+          "name": "N2",
+          "states": [
+            "s8"
+          ],
+          "signature": [
+            "N1",
+            "N1",
+            "N2",
+            "D1",
+            "N2",
+            "N2",
+            "A3",
+            "D1",
+            "N2",
+            "N2",
+            "N2",
+            "N2"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "N3",
+          "states": [
+            "s10"
+          ],
+          "signature": [
+            "N2",
+            "N2",
+            "N2",
+            "D1",
+            "N2",
+            "N2",
+            "A3",
+            "D1",
+            "N2",
+            "N2",
+            "N2",
+            "N2"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 0,
+              "input": "registrationRequest",
+              "baseline": "N1",
+              "current": "N2"
+            },
+            {
+              "index": 1,
+              "input": "registrationRequestGUTI",
+              "baseline": "N1",
+              "current": "N2"
+            }
+          ]
+        }
+      ],
+      "difference_count": 2,
+      "differences": [
+        {
+          "index": 0,
+          "input": "registrationRequest",
+          "abbreviation": "RR",
+          "upstream_pair": [
+            "N1",
+            "N2"
+          ],
+          "child_views": [
+            {
+              "child": "N2",
+              "target_label": "N1",
+              "transitions": [
+                {
+                  "src": "s8",
+                  "dst": "s1",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            },
+            {
+              "child": "N3",
+              "target_label": "N2",
+              "transitions": [
+                {
+                  "src": "s10",
+                  "dst": "s10",
+                  "input": "registrationRequest",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "input": "registrationRequestGUTI",
+          "abbreviation": "RRG",
+          "upstream_pair": [
+            "N1",
+            "N2"
+          ],
+          "child_views": [
+            {
+              "child": "N2",
+              "target_label": "N1",
+              "transitions": [
+                {
+                  "src": "s8",
+                  "dst": "s1",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ]
+            },
+            {
+              "child": "N3",
+              "target_label": "N2",
+              "transitions": [
+                {
+                  "src": "s10",
+                  "dst": "s10",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "N1",
+          "N2"
+        ]
+      ],
+      "classification": "convergent_unique",
+      "role": "unvisited_non_entry",
+      "key": "r3:N2:N2/N3",
+      "entry_eligible": false,
+      "entry_exclusion_reason": "2 个 signature 位置不同；虽汇聚到同一上游类别对，但不满足 strict 的单位置条件"
+    },
+    {
+      "round": 4,
+      "parent": "NG1",
+      "pair": "NG1/NG2",
+      "children": [
+        {
+          "name": "NG1",
+          "states": [
+            "s6"
+          ],
+          "signature": [
+            "N1",
+            "NG1",
+            "NG1",
+            "D1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "N1",
+            "NG1"
+          ],
+          "differences_from_baseline": []
+        },
+        {
+          "name": "NG2",
+          "states": [
+            "s16"
+          ],
+          "signature": [
+            "N1",
+            "NG1",
+            "NG1",
+            "D2",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "NG1",
+            "N1",
+            "NG1"
+          ],
+          "differences_from_baseline": [
+            {
+              "index": 3,
+              "input": "deregistrationRequest",
+              "baseline": "D1",
+              "current": "D2"
+            }
+          ]
+        }
+      ],
+      "difference_count": 1,
+      "differences": [
+        {
+          "index": 3,
+          "input": "deregistrationRequest",
+          "abbreviation": "DR",
+          "upstream_pair": [
+            "D1",
+            "D2"
+          ],
+          "child_views": [
+            {
+              "child": "NG1",
+              "target_label": "D1",
+              "transitions": [
+                {
+                  "src": "s6",
+                  "dst": "s0",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            },
+            {
+              "child": "NG2",
+              "target_label": "D2",
+              "transitions": [
+                {
+                  "src": "s16",
+                  "dst": "s11",
+                  "input": "deregistrationRequest",
+                  "output": "null_action"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "upstream_pairs": [
+        [
+          "D1",
+          "D2"
+        ]
+      ],
+      "classification": "strict",
+      "role": "independent_entry",
+      "behavior_audit": {
+        "all_equivalent": false,
+        "state_pairs": [
+          {
+            "states": [
+              "s6",
+              "s16"
+            ],
+            "equivalent": false,
+            "sequence": [
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "outputs": [
+              {
+                "state": "s3",
+                "output": "registrationAccept"
+              },
+              {
+                "state": "s9",
+                "output": "null_action"
+              }
+            ]
+          }
+        ]
+      },
+      "display_id": "B01",
+      "key": "r4:NG1:NG1/NG2",
+      "entry_eligible": true,
+      "entry_exclusion_reason": null
+    }
+  ],
+  "independent_entry_keys": [
+    "r4:NG1:NG1/NG2",
+    "r3:D2:D3/D4",
+    "r2:A1:A1/A2",
+    "r2:N1:N1/N3"
+  ],
+  "entry_paths": [
+    {
+      "entry_key": "r4:NG1:NG1/NG2",
+      "paths": [
+        {
+          "node_keys": [
+            "r4:NG1:NG1/NG2",
+            "r3:D1:D1/D2",
+            "r2:N1:N1/N2",
+            "r1:A:A1/A2"
+          ],
+          "relations": [
+            {
+              "from": "r4:NG1:NG1/NG2",
+              "signals": "DR",
+              "inputs": [
+                "deregistrationRequest"
+              ],
+              "to": "r3:D1:D1/D2"
+            },
+            {
+              "from": "r3:D1:D1/D2",
+              "signals": "RR",
+              "inputs": [
+                "registrationRequest"
+              ],
+              "to": "r2:N1:N1/N2"
+            },
+            {
+              "from": "r2:N1:N1/N2",
+              "signals": "AR",
+              "inputs": [
+                "authenticationResponse"
+              ],
+              "to": "r1:A:A1/A2"
+            },
+            {
+              "from": "r1:A:A1/A2",
+              "signals": "SMC",
+              "inputs": [
+                "securityModeComplete"
+              ],
+              "to_terminal": "stage0:A/S"
+            }
+          ],
+          "terminal": "stage0:A/S",
+          "trace_variants": [
+            {
+              "input_sequence": [
+                "deregistrationRequest",
+                "registrationRequest",
+                "authenticationResponse",
+                "securityModeComplete"
+              ],
+              "branches": {
+                "A": {
+                  "entry_child": "NG1",
+                  "start_states": [
+                    "s6"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s6",
+                      "states": [
+                        "s6",
+                        "s0",
+                        "s1",
+                        "s3",
+                        "s4"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r4:NG1:NG1/NG2",
+                          "src": "s6",
+                          "dst": "s0",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "NG1",
+                          "relation_to": "r3:D1:D1/D2",
+                          "target_child": "D1"
+                        },
+                        {
+                          "relation_from": "r3:D1:D1/D2",
+                          "src": "s0",
+                          "dst": "s1",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D1",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N1"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s1",
+                          "dst": "s3",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N1",
+                          "relation_to": "r1:A:A1/A2",
+                          "target_child": "A1"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A2",
+                          "src": "s3",
+                          "dst": "s4",
+                          "input": "securityModeComplete",
+                          "output": "registrationAccept",
+                          "source_child": "A1",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "S"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "B": {
+                  "entry_child": "NG2",
+                  "start_states": [
+                    "s16"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s16",
+                      "states": [
+                        "s16",
+                        "s11",
+                        "s10",
+                        "s9",
+                        "s9"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r4:NG1:NG1/NG2",
+                          "src": "s16",
+                          "dst": "s11",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "NG2",
+                          "relation_to": "r3:D1:D1/D2",
+                          "target_child": "D2"
+                        },
+                        {
+                          "relation_from": "r3:D1:D1/D2",
+                          "src": "s11",
+                          "dst": "s10",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D2",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N2"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s10",
+                          "dst": "s9",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N2",
+                          "relation_to": "r1:A:A1/A2",
+                          "target_child": "A2"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A2",
+                          "src": "s9",
+                          "dst": "s9",
+                          "input": "securityModeComplete",
+                          "output": "null_action",
+                          "source_child": "A2",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "A"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_key": "r3:D2:D3/D4",
+      "paths": [
+        {
+          "node_keys": [
+            "r3:D2:D3/D4",
+            "r2:N1:N1/N2",
+            "r1:A:A1/A2"
+          ],
+          "relations": [
+            {
+              "from": "r3:D2:D3/D4",
+              "signals": "RR",
+              "inputs": [
+                "registrationRequest"
+              ],
+              "to": "r2:N1:N1/N2"
+            },
+            {
+              "from": "r2:N1:N1/N2",
+              "signals": "AR",
+              "inputs": [
+                "authenticationResponse"
+              ],
+              "to": "r1:A:A1/A2"
+            },
+            {
+              "from": "r1:A:A1/A2",
+              "signals": "SMC",
+              "inputs": [
+                "securityModeComplete"
+              ],
+              "to_terminal": "stage0:A/S"
+            }
+          ],
+          "terminal": "stage0:A/S",
+          "trace_variants": [
+            {
+              "input_sequence": [
+                "registrationRequest",
+                "authenticationResponse",
+                "securityModeComplete"
+              ],
+              "branches": {
+                "A": {
+                  "entry_child": "D3",
+                  "start_states": [
+                    "s7"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s7",
+                      "states": [
+                        "s7",
+                        "s8",
+                        "s9",
+                        "s9"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r3:D2:D3/D4",
+                          "src": "s7",
+                          "dst": "s8",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D3",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N2"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s8",
+                          "dst": "s9",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N2",
+                          "relation_to": "r1:A:A1/A2",
+                          "target_child": "A2"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A2",
+                          "src": "s9",
+                          "dst": "s9",
+                          "input": "securityModeComplete",
+                          "output": "null_action",
+                          "source_child": "A2",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "A"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "B": {
+                  "entry_child": "D4",
+                  "start_states": [
+                    "s15"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s15",
+                      "states": [
+                        "s15",
+                        "s1",
+                        "s3",
+                        "s4"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r3:D2:D3/D4",
+                          "src": "s15",
+                          "dst": "s1",
+                          "input": "registrationRequest",
+                          "output": "authenticationRequest",
+                          "source_child": "D4",
+                          "relation_to": "r2:N1:N1/N2",
+                          "target_child": "N1"
+                        },
+                        {
+                          "relation_from": "r2:N1:N1/N2",
+                          "src": "s1",
+                          "dst": "s3",
+                          "input": "authenticationResponse",
+                          "output": "securityModeCommand",
+                          "source_child": "N1",
+                          "relation_to": "r1:A:A1/A2",
+                          "target_child": "A1"
+                        },
+                        {
+                          "relation_from": "r1:A:A1/A2",
+                          "src": "s3",
+                          "dst": "s4",
+                          "input": "securityModeComplete",
+                          "output": "registrationAccept",
+                          "source_child": "A1",
+                          "to_terminal": "stage0:A/S",
+                          "terminal_class": "S"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_key": "r2:A1:A1/A2",
+      "paths": [
+        {
+          "node_keys": [
+            "r2:A1:A1/A2",
+            "r1:D:D1/D3"
+          ],
+          "relations": [
+            {
+              "from": "r2:A1:A1/A2",
+              "signals": "DR",
+              "inputs": [
+                "deregistrationRequest"
+              ],
+              "to": "r1:D:D1/D3"
+            },
+            {
+              "from": "r1:D:D1/D3",
+              "signals": "RRG",
+              "inputs": [
+                "registrationRequestGUTI"
+              ],
+              "to_terminal": "stage0:N/NG"
+            }
+          ],
+          "terminal": "stage0:N/NG",
+          "trace_variants": [
+            {
+              "input_sequence": [
+                "deregistrationRequest",
+                "registrationRequestGUTI"
+              ],
+              "branches": {
+                "A": {
+                  "entry_child": "A1",
+                  "start_states": [
+                    "s3"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s3",
+                      "states": [
+                        "s3",
+                        "s0",
+                        "s6"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r2:A1:A1/A2",
+                          "src": "s3",
+                          "dst": "s0",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "A1",
+                          "relation_to": "r1:D:D1/D3",
+                          "target_child": "D1"
+                        },
+                        {
+                          "relation_from": "r1:D:D1/D3",
+                          "src": "s0",
+                          "dst": "s6",
+                          "input": "registrationRequestGUTI",
+                          "output": "identityRequest",
+                          "source_child": "D1",
+                          "to_terminal": "stage0:N/NG",
+                          "terminal_class": "NG"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "B": {
+                  "entry_child": "A2",
+                  "start_states": [
+                    "s14"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s14",
+                      "states": [
+                        "s14",
+                        "s12",
+                        "s13"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r2:A1:A1/A2",
+                          "src": "s14",
+                          "dst": "s12",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "A2",
+                          "relation_to": "r1:D:D1/D3",
+                          "target_child": "D3"
+                        },
+                        {
+                          "relation_from": "r1:D:D1/D3",
+                          "src": "s12",
+                          "dst": "s13",
+                          "input": "registrationRequestGUTI",
+                          "output": "authenticationRequest",
+                          "source_child": "D3",
+                          "to_terminal": "stage0:N/NG",
+                          "terminal_class": "N"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_key": "r2:N1:N1/N3",
+      "paths": [
+        {
+          "node_keys": [
+            "r2:N1:N1/N3",
+            "r1:D:D1/D3"
+          ],
+          "relations": [
+            {
+              "from": "r2:N1:N1/N3",
+              "signals": "DR",
+              "inputs": [
+                "deregistrationRequest"
+              ],
+              "to": "r1:D:D1/D3"
+            },
+            {
+              "from": "r1:D:D1/D3",
+              "signals": "RRG",
+              "inputs": [
+                "registrationRequestGUTI"
+              ],
+              "to_terminal": "stage0:N/NG"
+            }
+          ],
+          "terminal": "stage0:N/NG",
+          "trace_variants": [
+            {
+              "input_sequence": [
+                "deregistrationRequest",
+                "registrationRequestGUTI"
+              ],
+              "branches": {
+                "A": {
+                  "entry_child": "N1",
+                  "start_states": [
+                    "s1"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s1",
+                      "states": [
+                        "s1",
+                        "s0",
+                        "s6"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r2:N1:N1/N3",
+                          "src": "s1",
+                          "dst": "s0",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "N1",
+                          "relation_to": "r1:D:D1/D3",
+                          "target_child": "D1"
+                        },
+                        {
+                          "relation_from": "r1:D:D1/D3",
+                          "src": "s0",
+                          "dst": "s6",
+                          "input": "registrationRequestGUTI",
+                          "output": "identityRequest",
+                          "source_child": "D1",
+                          "to_terminal": "stage0:N/NG",
+                          "terminal_class": "NG"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "B": {
+                  "entry_child": "N3",
+                  "start_states": [
+                    "s13"
+                  ],
+                  "trajectories": [
+                    {
+                      "start_state": "s13",
+                      "states": [
+                        "s13",
+                        "s12",
+                        "s13"
+                      ],
+                      "steps": [
+                        {
+                          "relation_from": "r2:N1:N1/N3",
+                          "src": "s13",
+                          "dst": "s12",
+                          "input": "deregistrationRequest",
+                          "output": "null_action",
+                          "source_child": "N3",
+                          "relation_to": "r1:D:D1/D3",
+                          "target_child": "D3"
+                        },
+                        {
+                          "relation_from": "r1:D:D1/D3",
+                          "src": "s12",
+                          "dst": "s13",
+                          "input": "registrationRequestGUTI",
+                          "output": "authenticationRequest",
+                          "source_child": "D3",
+                          "to_terminal": "stage0:N/NG",
+                          "terminal_class": "N"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "r4:NG1:NG1/NG2",
+      "signals": "DR",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "to": "r3:D1:D1/D2"
+    },
+    {
+      "from": "r3:D1:D1/D2",
+      "signals": "RR",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "to": "r2:N1:N1/N2"
+    },
+    {
+      "from": "r2:N1:N1/N2",
+      "signals": "AR",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "to": "r1:A:A1/A2"
+    },
+    {
+      "from": "r1:A:A1/A2",
+      "signals": "SMC",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "to_terminal": "stage0:A/S"
+    },
+    {
+      "from": "r3:D2:D3/D4",
+      "signals": "RR",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "to": "r2:N1:N1/N2"
+    },
+    {
+      "from": "r2:A1:A1/A2",
+      "signals": "DR",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "to": "r1:D:D1/D3"
+    },
+    {
+      "from": "r1:D:D1/D3",
+      "signals": "RRG",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "to_terminal": "stage0:N/NG"
+    },
+    {
+      "from": "r2:N1:N1/N3",
+      "signals": "DR",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "to": "r1:D:D1/D3"
+    }
+  ],
+  "terminals": [
+    {
+      "stage": 0,
+      "pair": [
+        "A",
+        "S"
+      ],
+      "kind": "initial_difference"
+    },
+    {
+      "stage": 0,
+      "pair": [
+        "N",
+        "NG"
+      ],
+      "kind": "initial_difference"
+    }
+  ],
+  "terminal_ids": {
+    "stage0:A/S": "K1",
+    "stage0:N/NG": "K2"
+  },
+  "terminal_audits": [
+    {
+      "from": "r1:A:A1/A2",
+      "terminal": "stage0:A/S",
+      "initial_pair": [
+        "A",
+        "S"
+      ],
+      "inputs": [
+        {
+          "input": "securityModeComplete",
+          "abbreviation": "SMC",
+          "state_pairs": [
+            {
+              "states": [
+                "s3",
+                "s9"
+              ],
+              "transitions": [
+                {
+                  "src": "s3",
+                  "dst": "s4",
+                  "input": "securityModeComplete",
+                  "output": "registrationAccept"
+                },
+                {
+                  "src": "s9",
+                  "dst": "s9",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ],
+              "immediate_output_equal": false
+            },
+            {
+              "states": [
+                "s14",
+                "s9"
+              ],
+              "transitions": [
+                {
+                  "src": "s14",
+                  "dst": "s4",
+                  "input": "securityModeComplete",
+                  "output": "registrationAccept"
+                },
+                {
+                  "src": "s9",
+                  "dst": "s9",
+                  "input": "securityModeComplete",
+                  "output": "null_action"
+                }
+              ],
+              "immediate_output_equal": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "r1:D:D1/D3",
+      "terminal": "stage0:N/NG",
+      "initial_pair": [
+        "N",
+        "NG"
+      ],
+      "inputs": [
+        {
+          "input": "registrationRequestGUTI",
+          "abbreviation": "RRG",
+          "state_pairs": [
+            {
+              "states": [
+                "s0",
+                "s12"
+              ],
+              "transitions": [
+                {
+                  "src": "s0",
+                  "dst": "s6",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                },
+                {
+                  "src": "s12",
+                  "dst": "s13",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ],
+              "immediate_output_equal": false
+            },
+            {
+              "states": [
+                "s11",
+                "s12"
+              ],
+              "transitions": [
+                {
+                  "src": "s11",
+                  "dst": "s16",
+                  "input": "registrationRequestGUTI",
+                  "output": "identityRequest"
+                },
+                {
+                  "src": "s12",
+                  "dst": "s13",
+                  "input": "registrationRequestGUTI",
+                  "output": "authenticationRequest"
+                }
+              ],
+              "immediate_output_equal": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "class_count": 10,
+      "split_parent_count": 2,
+      "splits": [
+        {
+          "parent": "A",
+          "parent_states": [
+            "s3",
+            "s9",
+            "s14"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3",
+                "s14"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "S",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s9"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "S",
+                  "current": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D",
+          "parent_states": [
+            "s0",
+            "s7",
+            "s11",
+            "s12",
+            "s15"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0",
+                "s11"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "D",
+                "D"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s7",
+                "s15"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "X",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 2,
+                  "input": "registrationComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 11,
+                  "input": "configurationUpdateComplete",
+                  "baseline": "D",
+                  "current": "X"
+                }
+              ]
+            },
+            {
+              "name": "D3",
+              "states": [
+                "s12"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "D",
+                "D"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "NG",
+                  "current": "N"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "class_count": 13,
+      "split_parent_count": 2,
+      "splits": [
+        {
+          "parent": "A1",
+          "parent_states": [
+            "s3",
+            "s14"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s14"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D3",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N1",
+          "parent_states": [
+            "s1",
+            "s8",
+            "s10",
+            "s13"
+          ],
+          "children": [
+            {
+              "name": "N1",
+              "states": [
+                "s1"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N2",
+              "states": [
+                "s8",
+                "s10"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A2",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 6,
+                  "input": "authenticationResponse",
+                  "baseline": "A1",
+                  "current": "A2"
+                }
+              ]
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s13"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D3",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "class_count": 16,
+      "split_parent_count": 3,
+      "splits": [
+        {
+          "parent": "D1",
+          "parent_states": [
+            "s0",
+            "s11"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "D1",
+                "D1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s11"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "D1",
+                "D1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D2",
+          "parent_states": [
+            "s7",
+            "s15"
+          ],
+          "children": [
+            {
+              "name": "D3",
+              "states": [
+                "s7"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D2",
+                "X"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D4",
+              "states": [
+                "s15"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D2",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N2",
+                  "current": "N1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N2",
+          "parent_states": [
+            "s8",
+            "s10"
+          ],
+          "children": [
+            {
+              "name": "N2",
+              "states": [
+                "s8"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A3",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s10"
+              ],
+              "signature": [
+                "N2",
+                "N2",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A3",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                },
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "class_count": 17,
+      "split_parent_count": 1,
+      "splits": [
+        {
+          "parent": "NG1",
+          "parent_states": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            {
+              "name": "NG1",
+              "states": [
+                "s6"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "NG2",
+              "states": [
+                "s16"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D2",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "round_pair_statistics": [
+    {
+      "round": 1,
+      "split_parent_count": 2,
+      "candidate_pairs": 4,
+      "strict_pairs": 2,
+      "non_strict_pairs": 2
+    },
+    {
+      "round": 2,
+      "split_parent_count": 2,
+      "candidate_pairs": 4,
+      "strict_pairs": 3,
+      "non_strict_pairs": 1
+    },
+    {
+      "round": 3,
+      "split_parent_count": 3,
+      "candidate_pairs": 3,
+      "strict_pairs": 2,
+      "non_strict_pairs": 1
+    },
+    {
+      "round": 4,
+      "split_parent_count": 1,
+      "candidate_pairs": 1,
+      "strict_pairs": 1,
+      "non_strict_pairs": 0
+    }
+  ],
+  "highlighted_node_keys": [
+    "r1:A:A1/A2",
+    "r2:N1:N1/N2",
+    "r3:D1:D1/D2",
+    "r4:NG1:NG1/NG2"
+  ],
+  "highlighted_edges": [
+    {
+      "from": "r1:A:A1/A2",
+      "to": "stage0:A/S"
+    },
+    {
+      "from": "r2:N1:N1/N2",
+      "to": "r1:A:A1/A2"
+    },
+    {
+      "from": "r3:D1:D1/D2",
+      "to": "r2:N1:N1/N2"
+    },
+    {
+      "from": "r4:NG1:NG1/NG2",
+      "to": "r3:D1:D1/D2"
+    }
+  ],
+  "refinement_summary": {
+    "round_class_counts": [
+      10,
+      13,
+      16,
+      17
+    ],
+    "split_parent_counts": [
+      2,
+      2,
+      3,
+      1,
+      0
+    ],
+    "final_effective_round": 4,
+    "convergence_round": 5,
+    "state_count": 17
+  }
+}

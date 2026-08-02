@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "run.started_utc": "2026-07-28T11:17:37.487253481Z",
+  "run.id": "20260728T111737Z-fcf920b5",
+  "run.mode": "active_learning",
+  "run.output_dir": "/opt/CoreCrisis/Corelearner/baseLine_mdf_servReq_0716_log/Open5GS.log",
+  "run.config_path": "/opt/CoreCrisis/Corelearner/core.properties",
+  "run.config_sha256": "cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289",
+  "process.cwd": "/opt/CoreCrisis/Corelearner",
+  "runtime.java_version": "21.0.7",
+  "runtime.os_name": "Linux",
+  "build.repository": "open5gs-state-learning",
+  "build.component": "main",
+  "build.utc": "2026-07-24T08:03:26.5453520Z",
+  "git.commit": "11453a35e1c1dba5b49ae2d487f9e48ff0b493a8",
+  "git.branch": "refactor/multiseq-mdf",
+  "git.describe": "runtime/2026-07-24/core-output-filter-v3-dirty",
+  "git.dirty": "true",
+  "git.status_sha256": "87d34823f35c5a2afc32651ca9e1d828d921d58cf75e4a8c9633d2798a61800f",
+  "artifact.path": "/opt/CoreCrisis/Corelearner/Corelearner.jar",
+  "artifact.sha256": "f1e0d03ae359def28c947702a396291055359ef49a89fa3ed23cf8617cfee9e5"
+}

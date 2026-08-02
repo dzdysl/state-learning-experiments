@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "kind": "h13-cycle-cover-repeat-analysis",
+  "run_id": "20260731T064710Z-74bcf3ee",
+  "effective_dataset": {
+    "base_run_id": "20260731T064710Z-74bcf3ee",
+    "base_input_lines": [1, 26],
+    "replacement_run_id": "20260731T092950Z-e8ae5e2f",
+    "replacement_input_lines": [27, 28],
+    "replacement_record": "../../../c14-ngksi-sync-verify-20260731",
+    "original_c14_samples_preserved": true
+  },
+  "input": {
+    "path": "../../inputs/hypothesis_13_cycle_cover_repeat10.seq",
+    "line_count": 28,
+    "repeat_count": 10,
+    "analyzed_repetitions": [2, 10],
+    "sha256": "31a645f38976e61953c20c3ba99dc5af137e93926a2a6844d41f500b4f753f20"
+  },
+  "trace": {
+    "external_path": "D:\\state-learning-lab\\run-data\\open5gs\\20260731T064710Z-74bcf3ee\\statelearner_trace.jsonl",
+    "record_count": 1521,
+    "sequence_group_count": 28,
+    "mapped_input_line_count": 28,
+    "sha256": "3f0628586d4ec2776b4e5540c6bfee7d5714fc23a9532aa726ddb80aad833cc0"
+  },
+  "alignment": {
+    "cycle_edge_series": 146,
+    "aligned_samples": 1314,
+    "missing_samples": 0,
+    "abstract_output_unstable_series": 0,
+    "downlink_field_key_unstable_series": 0
+  },
+  "hypothesis_validation": {
+    "checked_steps": 1521,
+    "output_mismatches": 0
+  },
+  "decoded_downlink_fields": {
+    "nonconstant_series": 40,
+    "nonconstant_field_paths": [
+      "auth_request_ksi_value",
+      "smc_ksi_value"
+    ]
+  },
+  "downlink_ksi_series": {
+    "total": 78,
+    "patterns": {
+      "add_1_mod_7": 22,
+      "add_2_mod_7": 16,
+      "hold_0": 24,
+      "hold_1": 14,
+      "piecewise_add_1_then_hold_4": 2
+    },
+    "relations": {
+      "valid_registration_ksi_to_authentication_request": {
+        "equation": "auth_ksi=(registration_ksi+1) mod 7",
+        "matches": 81,
+        "samples": 81
+      },
+      "authentication_request_to_security_mode_command": {
+        "equation": "smc_ksi=latest_auth_ksi",
+        "matches": 306,
+        "samples": 306
+      }
+    }
+  },
+  "c08_line_14": {
+    "source_trace_range": [385, 420],
+    "repetitions": [2, 10],
+    "smc_ksi": [1, 2, 3, 4, 4, 4, 4, 4, 4],
+    "registration_request_guti_ksi": [1, 2, 3, 3, 3, 3, 3, 3, 3],
+    "authentication_request_ksi": [2, 3, 4, 4, 4, 4, 4, 4, 4],
+    "first_context_absent_repetition_at_edge_3": 5,
+    "first_piecewise_break_repetition": 5
+  },
+  "runtime_facts": {
+    "manifest_status": "finalized",
+    "core_session_count": 58,
+    "core_session_exit_134_count": 58,
+    "runtime_contract_warning_count": 58
+  },
+  "analysis_policy": {
+    "amf": "black_box",
+    "ueransim": "source_correlated_white_box",
+    "fixed_script_created": false
+  }
+}

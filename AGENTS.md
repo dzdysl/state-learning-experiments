@@ -14,6 +14,20 @@ One record must describe one clearly bounded experiment run, experiment iteratio
 - Name an iteration or failure ID in lower-case kebab case. Include the platform/version, concise phenomenon, date, and optional round, for example `free5gc421-ttt-inconsistency-20260723-r14`.
 - Put only stable, broadly reused sequence families in `sequences/canonical/`. A one-off sequence belongs to its record's `inputs/`; a crash-inducing sequence belongs to the failure record and is never mixed into ordinary canonical sequences.
 
+## Outcome classification
+
+- The active-learning outcome takes precedence over post-completion runtime cleanup. When the learner has emitted its final completion summary and final hypothesis, a subsequent core-launcher/finalizer exit (including Open5GS exit status 134 during teardown) is a recorded `teardown_anomaly`, not a failed experiment.
+- Keep the raw finalizer status, exit code, and supporting logs in provenance/evidence. State the anomaly and its impact boundary in the record README, but classify the experiment as successful for the purpose of active-learning completion.
+- A learner that has not completed its algorithm or has not exported its final result remains incomplete or failed as appropriate; this exception must not hide failures that occur before completion.
+
+## Experiment version and series assignment
+
+- Determine an experiment's primary version and `series` from the actual UERANSIM/SUL source version deployed for the run, not from the learner JAR's embedded Git version. UERANSIM-only commits may intentionally reuse an older learner JAR.
+- Record the UERANSIM/SUL repository, exact commit and tag, `src/` path, and an available deployed binary/source-archive hash in `provenance.yaml`. Record the learner commit, JAR hash and runtime dirty state separately as secondary provenance.
+- Prefer direct deployment evidence such as a UERANSIM commit marker, binary hash, `src.zip` hash or immutable deployment manifest. If only source-correlated behavior and timing identify the UERANSIM version, state the confidence and missing byte-level boundary explicitly; never present a reference-worktree hash as a captured deployment hash.
+- Do not infer the experiment version from an inherited `output_dir`, directory basename, learner branch name or current working-tree HEAD.
+- A new semantic UERANSIM/SUL version starts a new experiment `series` by default. Repeated runs of the same UERANSIM/SUL version use separate descriptive iterations unless the experiment question requires an independent lifecycle.
+
 ## Required record layout
 
 Use the same evidence model for both `experiments/` and `failures/`. A failure additionally freezes the smallest known reproducer when available.
@@ -88,7 +102,10 @@ The following is an optional pattern for a failure investigation that accumulate
 - 分析实验序列、崩溃序列、协议输出或错误时，必须同时对照：对应版本的核心网源码快照，以及实际使用的 UERANSIM/SUL 源码版本；不要只根据日志、Mealy 输出或当前工作树推断行为。
 - 核心网快照位于 `D:\state-learning-lab\sources\`：`open5gs_old`（Open5GS v2.6.6）、`open5gs_new`（实验标签 v2.8.0）、`free5gc-v4.2.1`、`free5gc-v4.2.2`、`oai-cn5g-v2.0.1`（OAI CN5G v2.0.1 Docker federation）。以 `D:\state-learning-lab\sources\source-manifest.yaml` 中的 revision 和来源为准。
 - UERANSIM/SUL 必须从三套学习器仓库中与该实验 commit 对应的 `src/` 查找：`projects/open5gs-state-learning`、`projects/free5gc-state-learning`、`projects/oai-state-learning`。历史实验使用 `git show <commit>:src/<path>` 或独立 detached worktree；不得悄悄改用当前分支源码。
-- 在 `provenance.yaml` 记录核心网 snapshot ID、核心网 commit/tag、学习器 commit、UERANSIM/SUL 路径与 commit；在 `analysis/observations.md` 记录支持结论的源码文件、函数/模块、行范围和 revision。因果猜测仍只写入 `analysis/hypotheses.md`。
+- 原生上游 UERANSIM 对照位于 `D:\state-learning-lab\sources\UERANSIM`。它用于判断实验版 SUL 相对原生实现修改了什么，不得把它的 commit 写成实验实际部署版本。
+- CoreCrisis 公开 artifact 位于 `D:\state-learning-lab\sources\CoreCrisis`：`Corelearner` 用于对照状态推断与等价查询，`CoreFuzzer` 用于对照状态机引导测试，修改版消息适配器位于 `CoreCrisis\UERANSIM_CoreTesting`。该子目录属于 CoreCrisis 父仓库，不是独立 Git 仓库；引用时记录父仓库 commit 和该子目录 tree hash。
+- `D:\state-learning-lab\sources\UERANSIM_CoreTesting - 快捷方式.lnk` 只是指向上述真实目录的 Windows 快捷方式。不要扫描、引用或写入 provenance 作为源码路径。
+- 在 `provenance.yaml` 分开记录实际运行源码与参考源码：核心网 snapshot ID/commit、学习器 commit、实际 UERANSIM/SUL 路径/commit/tag/`src.zip` 哈希属于 runtime provenance；原生 UERANSIM 或 CoreCrisis 的 snapshot ID、commit/tree 和比较目的属于 `reference_sources`。在 `analysis/observations.md` 记录支持结论的源码文件、函数/模块、行范围和 revision。因果猜测仍只写入 `analysis/hypotheses.md`。
 
 ## DOT models and figures
 
@@ -117,13 +134,54 @@ D:\anaconda3\python.exe D:\state-learning-lab\projects\state-learning-tools\rend
 
 The default command creates `hypothesis_13_smp.dot` and rendered files in `analysis/derived/`. Record the command, source relative path, source/output SHA-256 values, purpose, and visual conclusion in `analysis/rendering.md`. Keep only final figures in Git; place exploratory renders under `tmp/` or outside the repository.
 
+### Cycle-cover sequence export
+
+When selected cycle-cover routes are converted into executable inputs, use the
+versioned `state-learning-tools/analysis/cycle_cover/analyze_cycle_cover.py`
+sequence-export options. For each route, rotate it to the numerically smallest
+`sN` state, compute a deterministic shortest access prefix from `s0` on the
+filtered original hypothesis, materialize merged SMP inputs according to the
+recorded policy, and repeat each concrete closed route as requested. Simulate
+every generated line against the original hypothesis before retaining it.
+
+Store the final `.seq` under the experiment record's `inputs/`, not in
+`state-learning-tools` or `analysis/`. Keep the evidence DOT immutable. Record
+the source and output SHA-256 values, command, access-prefix rule,
+merged-input policy, repetition count and line count in the record README or
+observations. The canonical semantics and CLI are documented in
+`state-learning-tools/docs/mealy/cycle-cover-sequence-workflow.md`.
+
+### Repeated-cycle register-candidate analysis
+
+Treat each generated `.seq` line as one concrete-cycle test. Keep the shortest
+prefix and repetition 1 as setup context, then align repetitions 2-10 by the
+same cycle edge, logical input, message direction/type and field path. Missing,
+extra, duplicate, retransmitted or reordered messages are anomalies and must
+not be hidden by shifting the alignment.
+
+For every aligned field series, first try simple AMF logical-register
+candidates such as `r'=r`, `r'=0`, `r'=c`, `r'=r+1`, `r'=r-1`, fixed-step or
+modular increments, Boolean toggle and copy-from-input. Report all matching
+candidates from simplest to most specific. If no candidate fits all nine
+samples, report the first breaking repetition, the closest rule and the exact
+values. These are heuristic candidates, not confirmed internal variable
+names.
+
+Then inspect the exact experiment AMF source snapshot and UERANSIM/SUL revision
+for a matching context member and update/reset/copy site on that edge. Report
+the candidate equation, source location and high/medium/low confidence.
+Perform this exploration manually first; do not create a fixed script until
+real traces establish stable edge boundaries, message names and field paths.
+The full procedure is in
+`state-learning-tools/docs/mealy/cycle-cover-sequence-workflow.md`.
+
 ## From raw data to a complete record
 
 When given a new set of logs, sequences, database files, screenshots, or learner output:
 
 1. Identify one run window and its exact source file list. Do not select a shared append-only log directory or wildcard collection until it is frozen to the relevant time window.
-2. Choose `experiments/` for a planned measurement or `failures/` for an abnormal/unstable result; allocate the ID before copying files.
-3. Create the record root and write `README.md` with status, run window, confirmed failure/measurement, and next action. Create `provenance.yaml` before analysis; record the three platform commits/tags that apply, `state-learning-tools` commit, learner JAR SHA-256, config hash, sequence/SUL/UERANSIM variant, and timezone.
+2. Resolve the actual deployed UERANSIM/SUL version using the version-assignment rules above, then choose `experiments/` for a planned measurement or `failures/` for an abnormal/unstable result. Allocate the UERANSIM-version-based series and descriptive ID before copying files.
+3. Create the record root and write `README.md` with status, run window, confirmed failure/measurement, version confidence and next action. Create `provenance.yaml` before analysis; record the primary UERANSIM/SUL commit/tag and available deployment hash separately from the learner/JAR commit and hash, plus the core-network snapshot, `state-learning-tools` commit, config hash, sequence variant and timezone.
 4. Run a dry-run archive manifest using only the selected inputs:
 
    ```powershell

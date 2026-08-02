@@ -1,0 +1,61 @@
+schema_version: 1
+archive_strategy: external_snapshot
+direct_git_limit_bytes: 10485760
+selected_total_bytes: 22626148
+content_tree_definition: "SHA-256 over UTF-8 sorted records: relative-path, NUL, byte-count, NUL, member SHA-256 hex, LF."
+archive_preview:
+  tool: "D:\\state-learning-lab\\projects\\state-learning-tools\\operations\\experiment_archive\\New-StateLearningArchive.ps1"
+  selected_top_level_files: 9
+  selected_top_level_bytes: 20222083
+  selected_top_level_paths:
+    - core-events.jsonl
+    - protocol-events.jsonl
+    - run-manifest.json
+    - run-provenance.json
+    - statelearner_sht_debug.jsonl
+    - statelearner_trace.cleaned.jsonl
+    - statelearner_trace.jsonl
+    - statelearner_trace.meta
+    - ue-events.jsonl
+  preview_strategy: external_snapshot
+  note: "The current tool targets failures/ and flattens member names. This experiment follow-up was copied with its original hierarchy to the same preview destination, then verified member-by-member."
+snapshot_application:
+  method: "Recursive byte-preserving copy of the bounded run directory to the preview destination."
+  source_snapshot_member_identity: true
+  verification: "184/184 relative paths, byte counts and SHA-256 values match."
+artifacts:
+  - id: cycle-cover-repeat10-run
+    original_path: "D:\\downloads\\20260731T064710Z-74bcf3ee"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\20260731T064710Z-74bcf3ee"
+    bytes: 22626148
+    file_count: 184
+    relevance: direct
+    appendable: false
+    source_may_have_later_appends: false
+    sha256_content_tree: 88a27d881468f9cecd345a0ebf9d2e95a687588a31c0de24a725f622c688b9ec
+    key_member_sha256:
+      "run-provenance.json": 042df4de4e9357d39c8d4ffb10ac8efeb59f401c4517c5bec737a0308e01acba
+      "run-manifest.json": c773a936bf39b7a65c0000e1252a11c2c7fb2338877a9adf9d2fc26eeb6ff634
+      "statelearner_trace.jsonl": 3f0628586d4ec2776b4e5540c6bfee7d5714fc23a9532aa726ddb80aad833cc0
+      "statelearner_trace.cleaned.jsonl": 34da88a682f81efb105f77eef7819184083194ccdc3edc761d801137834786e0
+      "statelearner_sht_debug.jsonl": a7d65adda906f65443aa57c7b291633cbe96d987fbd80f87d1b3c11c56c14c08
+      "raw/console.log": f11d9995bfbf9f2f327e1da85d6a2b2d5de5f1644aed3c4cf5def6cbe7182d31
+      "protocol-events.jsonl": 299a8812328ded3e86dff538b7c6439a2ac1ae697dc05c150a59c7a4b4a2627a
+      "ue-events.jsonl": dbb7ecfc0e6ac698317e6711579375fdbc4ee5c06e70748d90e5497a5fec95da
+      "core-events.jsonl": 0fb0e2c70222a1920d7cd1a571a262491f121d973c6f21c740a424a0ca1a836f
+      "raw/open5gs/core-session-029/core.log": 71cc505d76069cd8f9c1c834eb8d150d6feb1958b2084704fe6c8a5fabcd0977
+      "raw/open5gs/core-session-029/session.json": 28a899b212b88e6d5c16c16efccb55fd0bacc791896c7a4ca3c388389393a9fa
+selected_git_evidence:
+  - path: archive-manifest.json
+    bytes: 43879
+    sha256: e9520af71dbb318dea9afbfa29e8c2309d22324a59153dc9df1a9f934753b06d
+  - path: evidence/run-provenance.json
+    bytes: 1093
+    sha256: 042df4de4e9357d39c8d4ffb10ac8efeb59f401c4517c5bec737a0308e01acba
+  - path: evidence/run-manifest.json
+    bytes: 38069
+    sha256: c773a936bf39b7a65c0000e1252a11c2c7fb2338877a9adf9d2fc26eeb6ff634
+  - path: evidence/c08-line14-trace-lines-385-420.jsonl
+    bytes: 75930
+    sha256: 0e5249c445eacf2029867134c2183aa930fc285b2035714cac1f04ad8bfe0499
+    source_range: "statelearner_trace.jsonl lines 385-420"

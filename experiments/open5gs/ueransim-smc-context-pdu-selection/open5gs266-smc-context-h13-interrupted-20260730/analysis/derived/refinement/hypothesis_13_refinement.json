@@ -1,0 +1,1567 @@
+{
+  "schema_version": 1,
+  "kind": "mealy_refinement",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\evidence\\hypotheses\\hypothesis_13.dot",
+  "source_sha256": "465fc8f4e5cba3715ec8745cbc81f9d24f5876fdb37d455f858f02f01815523a",
+  "profile": "open5gs-nas",
+  "states": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16"
+  ],
+  "input_order": [
+    "registrationRequest",
+    "registrationRequestGUTI",
+    "registrationComplete",
+    "deregistrationRequest",
+    "serviceRequest",
+    "securityModeReject",
+    "authenticationResponse",
+    "authenticationFailure",
+    "deregistrationAccept",
+    "securityModeComplete",
+    "identityResponse",
+    "configurationUpdateComplete"
+  ],
+  "initial_groups": {
+    "D": [
+      "s0",
+      "s7",
+      "s11",
+      "s12",
+      "s15"
+    ],
+    "N": [
+      "s1",
+      "s8",
+      "s10",
+      "s13"
+    ],
+    "NG": [
+      "s6",
+      "s16"
+    ],
+    "A": [
+      "s3",
+      "s9",
+      "s14"
+    ],
+    "S": [
+      "s4"
+    ],
+    "R": [
+      "s5"
+    ],
+    "X": [
+      "s2"
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "groups": {
+        "A1": [
+          "s3",
+          "s14"
+        ],
+        "A2": [
+          "s9"
+        ],
+        "D1": [
+          "s0",
+          "s11"
+        ],
+        "D2": [
+          "s7",
+          "s15"
+        ],
+        "D3": [
+          "s12"
+        ],
+        "N1": [
+          "s1",
+          "s8",
+          "s10",
+          "s13"
+        ],
+        "NG1": [
+          "s6",
+          "s16"
+        ],
+        "S1": [
+          "s4"
+        ],
+        "R1": [
+          "s5"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A",
+          "members": [
+            "s3",
+            "s9",
+            "s14"
+          ],
+          "children": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "parent": "D",
+          "members": [
+            "s0",
+            "s7",
+            "s11",
+            "s12",
+            "s15"
+          ],
+          "children": [
+            "D1",
+            "D2",
+            "D3"
+          ]
+        },
+        {
+          "parent": "N",
+          "members": [
+            "s1",
+            "s8",
+            "s10",
+            "s13"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "NG",
+          "members": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "S",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "A",
+          "parent_states": [
+            "s3",
+            "s9",
+            "s14"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3",
+                "s14"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "S",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s9"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "A",
+                "D",
+                "A",
+                "D",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "S",
+                  "current": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D",
+          "parent_states": [
+            "s0",
+            "s7",
+            "s11",
+            "s12",
+            "s15"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0",
+                "s11"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "D",
+                "D"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s7",
+                "s15"
+              ],
+              "signature": [
+                "N",
+                "NG",
+                "X",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 2,
+                  "input": "registrationComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 9,
+                  "input": "securityModeComplete",
+                  "baseline": "D",
+                  "current": "X"
+                },
+                {
+                  "index": 11,
+                  "input": "configurationUpdateComplete",
+                  "baseline": "D",
+                  "current": "X"
+                }
+              ]
+            },
+            {
+              "name": "D3",
+              "states": [
+                "s12"
+              ],
+              "signature": [
+                "N",
+                "N",
+                "D",
+                "D",
+                "D",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D",
+                "D",
+                "D"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "NG",
+                  "current": "N"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 2,
+      "class_count": 10,
+      "converged": false
+    },
+    {
+      "round": 2,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s14"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "D1": [
+          "s0",
+          "s11"
+        ],
+        "D2": [
+          "s7",
+          "s15"
+        ],
+        "D3": [
+          "s12"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s8",
+          "s10"
+        ],
+        "N3": [
+          "s13"
+        ],
+        "NG1": [
+          "s6",
+          "s16"
+        ],
+        "S1": [
+          "s4"
+        ],
+        "R1": [
+          "s5"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3",
+            "s14"
+          ],
+          "children": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s11"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s7",
+            "s15"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s12"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1",
+            "s8",
+            "s10",
+            "s13"
+          ],
+          "children": [
+            "N1",
+            "N2",
+            "N3"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "A1",
+          "parent_states": [
+            "s3",
+            "s14"
+          ],
+          "children": [
+            {
+              "name": "A1",
+              "states": [
+                "s3"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "A2",
+              "states": [
+                "s14"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "A1",
+                "D3",
+                "A1",
+                "D2",
+                "A1",
+                "A1",
+                "A1",
+                "S1",
+                "A1",
+                "A1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N1",
+          "parent_states": [
+            "s1",
+            "s8",
+            "s10",
+            "s13"
+          ],
+          "children": [
+            {
+              "name": "N1",
+              "states": [
+                "s1"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N2",
+              "states": [
+                "s8",
+                "s10"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D1",
+                "N1",
+                "N1",
+                "A2",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 6,
+                  "input": "authenticationResponse",
+                  "baseline": "A1",
+                  "current": "A2"
+                }
+              ]
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s13"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N1",
+                "D3",
+                "N1",
+                "N1",
+                "A1",
+                "D1",
+                "N1",
+                "N1",
+                "N1",
+                "N1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 2,
+      "class_count": 13,
+      "converged": false
+    },
+    {
+      "round": 3,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s14"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "D1": [
+          "s0"
+        ],
+        "D2": [
+          "s11"
+        ],
+        "D3": [
+          "s7"
+        ],
+        "D4": [
+          "s15"
+        ],
+        "D5": [
+          "s12"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s8"
+        ],
+        "N3": [
+          "s10"
+        ],
+        "N4": [
+          "s13"
+        ],
+        "NG1": [
+          "s6",
+          "s16"
+        ],
+        "S1": [
+          "s4"
+        ],
+        "R1": [
+          "s5"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s14"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0",
+            "s11"
+          ],
+          "children": [
+            "D1",
+            "D2"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s7",
+            "s15"
+          ],
+          "children": [
+            "D3",
+            "D4"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s12"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s8",
+            "s10"
+          ],
+          "children": [
+            "N2",
+            "N3"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "N4"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "D1",
+          "parent_states": [
+            "s0",
+            "s11"
+          ],
+          "children": [
+            {
+              "name": "D1",
+              "states": [
+                "s0"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "D1",
+                "D1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D2",
+              "states": [
+                "s11"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "D1",
+                "D1",
+                "D1",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D1",
+                "D1",
+                "D1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "D2",
+          "parent_states": [
+            "s7",
+            "s15"
+          ],
+          "children": [
+            {
+              "name": "D3",
+              "states": [
+                "s7"
+              ],
+              "signature": [
+                "N2",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D2",
+                "X"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "D4",
+              "states": [
+                "s15"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "X",
+                "D1",
+                "D2",
+                "X",
+                "X",
+                "X",
+                "X",
+                "X",
+                "D2",
+                "X"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N2",
+                  "current": "N1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent": "N2",
+          "parent_states": [
+            "s8",
+            "s10"
+          ],
+          "children": [
+            {
+              "name": "N2",
+              "states": [
+                "s8"
+              ],
+              "signature": [
+                "N1",
+                "N1",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A3",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "N3",
+              "states": [
+                "s10"
+              ],
+              "signature": [
+                "N2",
+                "N2",
+                "N2",
+                "D1",
+                "N2",
+                "N2",
+                "A3",
+                "D1",
+                "N2",
+                "N2",
+                "N2",
+                "N2"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 0,
+                  "input": "registrationRequest",
+                  "baseline": "N1",
+                  "current": "N2"
+                },
+                {
+                  "index": 1,
+                  "input": "registrationRequestGUTI",
+                  "baseline": "N1",
+                  "current": "N2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 3,
+      "class_count": 16,
+      "converged": false
+    },
+    {
+      "round": 4,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s14"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "D1": [
+          "s0"
+        ],
+        "D2": [
+          "s11"
+        ],
+        "D3": [
+          "s7"
+        ],
+        "D4": [
+          "s15"
+        ],
+        "D5": [
+          "s12"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s8"
+        ],
+        "N3": [
+          "s10"
+        ],
+        "N4": [
+          "s13"
+        ],
+        "NG1": [
+          "s6"
+        ],
+        "NG2": [
+          "s16"
+        ],
+        "S1": [
+          "s4"
+        ],
+        "R1": [
+          "s5"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s14"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s11"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s15"
+          ],
+          "children": [
+            "D4"
+          ]
+        },
+        {
+          "parent": "D5",
+          "members": [
+            "s12"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s8"
+          ],
+          "children": [
+            "N2"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s10"
+          ],
+          "children": [
+            "N3"
+          ]
+        },
+        {
+          "parent": "N4",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "N4"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            "NG1",
+            "NG2"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [
+        {
+          "parent": "NG1",
+          "parent_states": [
+            "s6",
+            "s16"
+          ],
+          "children": [
+            {
+              "name": "NG1",
+              "states": [
+                "s6"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": []
+            },
+            {
+              "name": "NG2",
+              "states": [
+                "s16"
+              ],
+              "signature": [
+                "N1",
+                "NG1",
+                "NG1",
+                "D2",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "NG1",
+                "N1",
+                "NG1"
+              ],
+              "differences_from_baseline": [
+                {
+                  "index": 3,
+                  "input": "deregistrationRequest",
+                  "baseline": "D1",
+                  "current": "D2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "split_parent_count": 1,
+      "class_count": 17,
+      "converged": false
+    },
+    {
+      "round": 5,
+      "groups": {
+        "A1": [
+          "s3"
+        ],
+        "A2": [
+          "s14"
+        ],
+        "A3": [
+          "s9"
+        ],
+        "D1": [
+          "s0"
+        ],
+        "D2": [
+          "s11"
+        ],
+        "D3": [
+          "s7"
+        ],
+        "D4": [
+          "s15"
+        ],
+        "D5": [
+          "s12"
+        ],
+        "N1": [
+          "s1"
+        ],
+        "N2": [
+          "s8"
+        ],
+        "N3": [
+          "s10"
+        ],
+        "N4": [
+          "s13"
+        ],
+        "NG1": [
+          "s6"
+        ],
+        "NG2": [
+          "s16"
+        ],
+        "S1": [
+          "s4"
+        ],
+        "R1": [
+          "s5"
+        ],
+        "X": [
+          "s2"
+        ]
+      },
+      "parents": [
+        {
+          "parent": "A1",
+          "members": [
+            "s3"
+          ],
+          "children": [
+            "A1"
+          ]
+        },
+        {
+          "parent": "A2",
+          "members": [
+            "s14"
+          ],
+          "children": [
+            "A2"
+          ]
+        },
+        {
+          "parent": "A3",
+          "members": [
+            "s9"
+          ],
+          "children": [
+            "A3"
+          ]
+        },
+        {
+          "parent": "D1",
+          "members": [
+            "s0"
+          ],
+          "children": [
+            "D1"
+          ]
+        },
+        {
+          "parent": "D2",
+          "members": [
+            "s11"
+          ],
+          "children": [
+            "D2"
+          ]
+        },
+        {
+          "parent": "D3",
+          "members": [
+            "s7"
+          ],
+          "children": [
+            "D3"
+          ]
+        },
+        {
+          "parent": "D4",
+          "members": [
+            "s15"
+          ],
+          "children": [
+            "D4"
+          ]
+        },
+        {
+          "parent": "D5",
+          "members": [
+            "s12"
+          ],
+          "children": [
+            "D5"
+          ]
+        },
+        {
+          "parent": "N1",
+          "members": [
+            "s1"
+          ],
+          "children": [
+            "N1"
+          ]
+        },
+        {
+          "parent": "N2",
+          "members": [
+            "s8"
+          ],
+          "children": [
+            "N2"
+          ]
+        },
+        {
+          "parent": "N3",
+          "members": [
+            "s10"
+          ],
+          "children": [
+            "N3"
+          ]
+        },
+        {
+          "parent": "N4",
+          "members": [
+            "s13"
+          ],
+          "children": [
+            "N4"
+          ]
+        },
+        {
+          "parent": "NG1",
+          "members": [
+            "s6"
+          ],
+          "children": [
+            "NG1"
+          ]
+        },
+        {
+          "parent": "NG2",
+          "members": [
+            "s16"
+          ],
+          "children": [
+            "NG2"
+          ]
+        },
+        {
+          "parent": "S1",
+          "members": [
+            "s4"
+          ],
+          "children": [
+            "S1"
+          ]
+        },
+        {
+          "parent": "R1",
+          "members": [
+            "s5"
+          ],
+          "children": [
+            "R1"
+          ]
+        },
+        {
+          "parent": "X",
+          "members": [
+            "s2"
+          ],
+          "children": [
+            "X"
+          ]
+        }
+      ],
+      "splits": [],
+      "split_parent_count": 0,
+      "class_count": 17,
+      "converged": true
+    }
+  ],
+  "final_groups": {
+    "A1": [
+      "s3"
+    ],
+    "A2": [
+      "s14"
+    ],
+    "A3": [
+      "s9"
+    ],
+    "D1": [
+      "s0"
+    ],
+    "D2": [
+      "s11"
+    ],
+    "D3": [
+      "s7"
+    ],
+    "D4": [
+      "s15"
+    ],
+    "D5": [
+      "s12"
+    ],
+    "N1": [
+      "s1"
+    ],
+    "N2": [
+      "s8"
+    ],
+    "N3": [
+      "s10"
+    ],
+    "N4": [
+      "s13"
+    ],
+    "NG1": [
+      "s6"
+    ],
+    "NG2": [
+      "s16"
+    ],
+    "S1": [
+      "s4"
+    ],
+    "R1": [
+      "s5"
+    ],
+    "X": [
+      "s2"
+    ]
+  },
+  "final_effective_round": 4,
+  "convergence_round": 5
+}

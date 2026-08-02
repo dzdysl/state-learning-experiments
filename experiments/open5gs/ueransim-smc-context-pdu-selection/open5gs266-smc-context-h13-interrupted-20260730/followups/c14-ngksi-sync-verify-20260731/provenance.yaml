@@ -1,0 +1,53 @@
+schema_version: 1
+record_type: followup
+platform: open5gs
+record_id: c14-ngksi-sync-verify-20260731
+parent_record: ../../
+run:
+  id: 20260731T092950Z-e8ae5e2f
+  mode: interactive
+  started_utc: "2026-07-31T09:29:50.319812Z"
+  captured_manifest_status: running
+  source_path: "D:\\downloads\\20260731T092950Z-e8ae5e2f"
+  frozen_path: raw
+  file_count: 9
+  total_bytes: 800076
+  note: "Both requested 91-step sequences were complete; the still-interactive run was frozen at this exact byte boundary."
+input:
+  parent_path: ../../inputs/hypothesis_13_cycle_cover_repeat10.seq
+  parent_sha256: 31a645f38976e61953c20c3ba99dc5af137e93926a2a6844d41f500b4f753f20
+  selected_lines: [27, 28]
+  selected_copy: inputs/c14-lines-27-28.seq
+  selected_copy_sha256: 7b9a69b48d3180e23c87bd68fef7fed49a67a3bf6e5e9544f0f169c743026058
+runtime:
+  config_path: /home/dzdysl/CoreCrisis/test_open5gs/core.properties
+  config_sha256: 22bc766b425881e092d556b5ce7405d5cd1d4682633b5069ca85e0e2a1b747f7
+  learner_repository: open5gs-state-learning
+  learner_component: multiSeq
+  learner_commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  learner_git_dirty: true
+  learner_jar_path: /home/dzdysl/CoreCrisis/test_open5gs/Corelearner_SeqTest.jar
+  learner_jar_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+ueransim_sul:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  behavior_correlated_commit: 6b1bcc070331ac2d0443a255afbf5466413fd0b7
+  behavior_correlated_tag: runtime/2026-07-31/regreq-guti-ngksi-event-sync
+  behavior_correlated_src_zip_sha256: 9d05f5cd4e2c41351eff686b3c613d5b30cbbc3f2e947f2a83b153e84f5efaf4
+  deployed_binary_or_archive_hash_captured: false
+  version_confidence: medium-high
+  version_basis: "Exact behavioral signature plus source timing; the run itself contains no UE commit marker, binary hash, or src.zip hash."
+core_network:
+  snapshot_id: open5gs_old
+  requested_version: v2.6.6
+  snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old\\open5gs"
+  version_evidence: "meson.build declares version 2.6.6; source-manifest.yaml has no git commit for this snapshot."
+analysis_tooling:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 1990d920af1f164cfde6d239f52283e546c437ba
+  dirty: true
+  fixed_register_analysis_script_created: false
+replacement:
+  original_run_id: 20260731T064710Z-74bcf3ee
+  original_input_lines: [27, 28]
+  original_trace_sequence_ids: [56, 58]
+  replacement_trace_sequence_ids: [1, 2]

@@ -1,0 +1,998 @@
+{
+  "schema_version": "1",
+  "run_id": "20260731T064710Z-74bcf3ee",
+  "platform": "open5gs",
+  "started_utc": "2026-07-31T06:47:10.412468Z",
+  "mode": "multi_sequence",
+  "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+  "status": "finalized",
+  "warnings": [],
+  "core_sessions": [
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-001",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:47:11Z",
+      "ended_utc": "2026-07-31T06:47:37Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-001/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-001/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-002",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:47:39Z",
+      "ended_utc": "2026-07-31T06:47:39Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-002/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-002/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-003",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:47:53Z",
+      "ended_utc": "2026-07-31T06:48:18Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-003/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-003/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-004",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:48:20Z",
+      "ended_utc": "2026-07-31T06:48:20Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-004/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-004/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-005",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:48:34Z",
+      "ended_utc": "2026-07-31T06:49:13Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-005/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-005/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-006",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:49:15Z",
+      "ended_utc": "2026-07-31T06:49:15Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-006/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-006/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-007",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:49:28Z",
+      "ended_utc": "2026-07-31T06:50:07Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-007/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-007/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-008",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:50:09Z",
+      "ended_utc": "2026-07-31T06:50:09Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-008/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-008/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-009",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:50:23Z",
+      "ended_utc": "2026-07-31T06:50:52Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-009/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-009/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-010",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:50:54Z",
+      "ended_utc": "2026-07-31T06:50:54Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-010/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-010/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-011",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:51:07Z",
+      "ended_utc": "2026-07-31T06:51:36Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-011/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-011/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-012",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:51:38Z",
+      "ended_utc": "2026-07-31T06:51:38Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-012/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-012/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-013",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:51:52Z",
+      "ended_utc": "2026-07-31T06:52:32Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-013/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-013/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-014",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:52:34Z",
+      "ended_utc": "2026-07-31T06:52:34Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-014/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-014/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-015",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:52:47Z",
+      "ended_utc": "2026-07-31T06:53:28Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-015/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-015/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-016",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:53:30Z",
+      "ended_utc": "2026-07-31T06:53:30Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-016/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-016/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-017",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:53:43Z",
+      "ended_utc": "2026-07-31T06:54:14Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-017/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-017/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-018",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:54:16Z",
+      "ended_utc": "2026-07-31T06:54:16Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-018/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-018/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-019",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:54:30Z",
+      "ended_utc": "2026-07-31T06:55:13Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-019/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-019/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-020",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:55:15Z",
+      "ended_utc": "2026-07-31T06:55:15Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-020/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-020/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-021",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:55:28Z",
+      "ended_utc": "2026-07-31T06:56:12Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-021/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-021/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-022",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:56:14Z",
+      "ended_utc": "2026-07-31T06:56:14Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-022/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-022/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-023",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:56:28Z",
+      "ended_utc": "2026-07-31T06:56:28Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-023/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-023/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-024",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:56:41Z",
+      "ended_utc": "2026-07-31T06:57:25Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-024/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-024/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-025",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:57:27Z",
+      "ended_utc": "2026-07-31T06:57:27Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-025/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-025/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-026",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:57:40Z",
+      "ended_utc": "2026-07-31T06:58:26Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-026/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-026/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-027",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:58:28Z",
+      "ended_utc": "2026-07-31T06:58:28Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-027/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-027/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-028",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:58:42Z",
+      "ended_utc": "2026-07-31T06:58:42Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-028/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-028/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-029",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:58:56Z",
+      "ended_utc": "2026-07-31T06:59:41Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-029/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-029/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-030",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:59:43Z",
+      "ended_utc": "2026-07-31T06:59:43Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-030/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-030/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-031",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T06:59:57Z",
+      "ended_utc": "2026-07-31T06:59:57Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-031/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-031/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-032",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:00:10Z",
+      "ended_utc": "2026-07-31T07:01:11Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-032/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-032/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-033",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:01:13Z",
+      "ended_utc": "2026-07-31T07:01:13Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-033/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-033/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-034",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:01:26Z",
+      "ended_utc": "2026-07-31T07:02:30Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-034/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-034/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-035",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:02:32Z",
+      "ended_utc": "2026-07-31T07:02:32Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-035/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-035/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-036",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:02:46Z",
+      "ended_utc": "2026-07-31T07:03:48Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-036/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-036/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-037",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:03:49Z",
+      "ended_utc": "2026-07-31T07:03:50Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-037/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-037/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-038",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:04:03Z",
+      "ended_utc": "2026-07-31T07:05:05Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-038/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-038/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-039",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:05:07Z",
+      "ended_utc": "2026-07-31T07:05:07Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-039/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-039/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-040",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:05:20Z",
+      "ended_utc": "2026-07-31T07:06:37Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-040/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-040/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-041",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:06:38Z",
+      "ended_utc": "2026-07-31T07:06:39Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-041/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-041/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-042",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:06:52Z",
+      "ended_utc": "2026-07-31T07:08:08Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-042/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-042/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-043",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:08:09Z",
+      "ended_utc": "2026-07-31T07:08:10Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-043/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-043/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-044",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:08:23Z",
+      "ended_utc": "2026-07-31T07:09:39Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-044/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-044/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-045",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:09:41Z",
+      "ended_utc": "2026-07-31T07:09:41Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-045/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-045/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-046",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:09:54Z",
+      "ended_utc": "2026-07-31T07:11:11Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-046/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-046/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-047",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:11:12Z",
+      "ended_utc": "2026-07-31T07:11:13Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-047/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-047/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-048",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:11:26Z",
+      "ended_utc": "2026-07-31T07:12:42Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-048/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-048/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-049",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:12:43Z",
+      "ended_utc": "2026-07-31T07:12:44Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-049/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-049/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-050",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:12:57Z",
+      "ended_utc": "2026-07-31T07:14:13Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-050/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-050/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-051",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:14:15Z",
+      "ended_utc": "2026-07-31T07:14:15Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-051/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-051/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-052",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:14:28Z",
+      "ended_utc": "2026-07-31T07:15:49Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-052/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-052/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-053",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:15:51Z",
+      "ended_utc": "2026-07-31T07:15:51Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-053/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-053/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-054",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:16:05Z",
+      "ended_utc": "2026-07-31T07:17:26Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-054/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-054/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-055",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:17:28Z",
+      "ended_utc": "2026-07-31T07:17:28Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-055/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-055/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-056",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:17:41Z",
+      "ended_utc": "2026-07-31T07:19:02Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-056/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-056/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-057",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:19:04Z",
+      "ended_utc": "2026-07-31T07:19:05Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-057/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-057/session.json"
+    },
+    {
+      "schema_version": "core-session/v1",
+      "runtime_contract": "state-learning-runtime/v2",
+      "platform": "open5gs",
+      "run_id": "20260731T064710Z-74bcf3ee",
+      "session_id": "core-session-058",
+      "config_path": "/home/dzdysl/CoreCrisis/test_open5gs/core.properties",
+      "core_path": "/home/dzdysl/CoreCrisis/test_open5gs/open5gs",
+      "started_utc": "2026-07-31T07:19:18Z",
+      "ended_utc": "2026-07-31T07:20:39Z",
+      "status": "failed",
+      "exit_code": 134,
+      "raw_logs": [
+        "raw/open5gs/core-session-058/core.log"
+      ],
+      "metadata_path": "raw/open5gs/core-session-058/session.json"
+    }
+  ]
+}

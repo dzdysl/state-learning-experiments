@@ -1,0 +1,59 @@
+schema_version: 1
+record_type: experiment
+platform: open5gs
+series: ueransim-registration-state-init
+iteration: open5gs266-buildfix-20260728
+version_basis: sul_ueransim
+run:
+  id: 20260728T111737Z-fcf920b5
+  mode: active_learning
+  status_in_supplied_manifest: running
+run_window:
+  started_utc: "2026-07-28T11:17:37.449705140Z"
+  learner_logger_started_local: "2026-07-28T19:17:37+08:00"
+  latest_exported_hypothesis_local: "2026-07-29T15:31:30+08:00"
+  final_protocol_trace_utc: "2026-07-29T09:28:13Z"
+  timezone: "Asia/Hong_Kong; structured runtime fields are UTC"
+core_network:
+  snapshot_id: open5gs_old
+  version: v2.6.6
+  snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old"
+  git_commit: null
+  runtime_path: "/opt/CoreCrisis/Corelearner/open5gs-2.6.6"
+  version_evidence: "D:\\state-learning-lab\\sources\\source-manifest.yaml and evidence/final-session/session.json"
+sul_ueransim:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  path_at_version: src/
+  commit: 2d6da6d83421ad20ac98df1a6be860677e23447b
+  tag: runtime/2026-07-28/learner-registration-state-init-buildfix
+  git_tree_oid: dc42f5c43111de6fb2b1b444c5890714bcdea00c
+  reference_src_zip_path: "D:\\state-learning-lab\\projects\\open5gs-state-learning\\src.zip"
+  reference_src_zip_bytes: 4081827
+  reference_src_zip_sha256: 3afa5b089fcdd4462ed44312ff7ffc9696247b68daea87adda99aca3e6bfc719
+  version_confidence: high
+  version_evidence:
+    - "The tag was created at 2026-07-28T18:03:48+08:00, before this run started at 2026-07-28T19:17:37+08:00."
+    - "evidence/hypotheses/hypothesis_20.dot line 39 has s0 identityResponse / null_action, matching the state gate at src/ue/app/state_learner.cpp:1147-1158 in this revision."
+    - "The preceding learner-registration-state-init tag could not build; this buildfix deep-copies the saved Registration Request at src/ue/nas/mm/register.cpp:21-29."
+  boundary: "The deployed UERANSIM executable or source-archive hash was not supplied; the reference src.zip hash identifies the clean tagged workspace artifact, not a captured deployment file."
+learner:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  tag: runtime/2026-07-24/core-output-filter-v3
+  runtime_branch: refactor/multiseq-mdf
+  runtime_dirty: true
+  runtime_status_sha256: 87d34823f35c5a2afc32651ca9e1d828d921d58cf75e4a8c9633d2798a61800f
+  jar_path: "/opt/CoreCrisis/Corelearner/Corelearner.jar"
+  jar_sha256: f1e0d03ae359def28c947702a396291055359ef49a89fa3ed23cf8617cfee9e5
+  provenance_role: "Secondary runtime/JAR provenance; not the experiment-series version basis."
+configuration:
+  path: "/opt/CoreCrisis/Corelearner/core.properties"
+  sha256: cc03cb9de57b1d00919ce65398c8c819e74e9a11dde17409fb3c847eccd68289
+  supplied_file: false
+runtime:
+  java_version: 21.0.7
+  os_name: Linux
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 1990d920af1f164cfde6d239f52283e546c437ba
+archive_created: "2026-07-29"

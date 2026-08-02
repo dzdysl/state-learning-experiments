@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source_glob": "external structured-run snapshot/raw/open5gs/core-session-*/session.json",
+  "session_file_count": 923,
+  "status_counts": {
+    "failed": 922,
+    "running": 1
+  },
+  "exit_code_counts": {
+    "134": 922,
+    "null": 1
+  },
+  "first_session": {
+    "started_utc": "2026-07-28T11:17:38Z",
+    "status": "failed",
+    "exit_code": 134
+  },
+  "last_session": {
+    "session_id": "core-session-923",
+    "started_utc": "2026-07-29T09:26:11Z",
+    "ended_utc": null,
+    "status": "running",
+    "exit_code": null
+  }
+}

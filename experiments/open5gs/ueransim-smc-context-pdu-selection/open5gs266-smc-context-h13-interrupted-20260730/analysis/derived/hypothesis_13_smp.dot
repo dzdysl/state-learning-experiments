@@ -1,0 +1,57 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s4 [shape="circle" label="s4"];
+	s5 [shape="circle" label="s5"];
+	s6 [shape="circle" label="s6"];
+	s7 [shape="circle" label="s7"];
+	s8 [shape="circle" label="s8"];
+	s9 [shape="circle" label="s9"];
+	s10 [shape="circle" label="s10"];
+	s11 [shape="circle" label="s11"];
+	s12 [shape="circle" label="s12"];
+	s13 [shape="circle" label="s13"];
+	s14 [shape="circle" label="s14"];
+	s15 [shape="circle" label="s15"];
+	s16 [shape="circle" label="s16"];
+	s0 -> s1 [label="registrationRequest / authenticationRequest"];
+	s0 -> s6 [label="registrationRequestGUTI / identityRequest"];
+	s1 -> s3 [label="authenticationResponse / securityModeCommand"];
+	s3 -> s1 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s3 -> s7 [label="securityModeReject / null_action"];
+	s3 -> s4 [label="securityModeComplete / registrationAccept"];
+	s4 -> s1 [label="registrationRequestGUTI / authenticationRequest"];
+	s4 -> s5 [label="registrationComplete / configurationUpdateCommand"];
+	s5 -> s4 [label="registrationRequestGUTI / registrationAccept"];
+	s5 -> s12 [label="deregistrationRequest / null_action"];
+	s6 -> s1 [label="registrationRequest | identityResponse / authenticationRequest"];
+	s7 -> s8 [label="registrationRequest / authenticationRequest"];
+	s7 -> s6 [label="registrationRequestGUTI / identityRequest"];
+	s8 -> s1 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s8 -> s9 [label="authenticationResponse / securityModeCommand"];
+	s9 -> s10 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s9 -> s11 [label="deregistrationRequest / null_action"];
+	s9 -> s7 [label="securityModeReject / null_action"];
+	s10 -> s11 [label="deregistrationRequest / null_action"];
+	s10 -> s9 [label="authenticationResponse / securityModeCommand"];
+	s11 -> s10 [label="registrationRequest / authenticationRequest"];
+	s11 -> s16 [label="registrationRequestGUTI / identityRequest"];
+	s12 -> s13 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s13 -> s12 [label="deregistrationRequest / null_action"];
+	s13 -> s14 [label="authenticationResponse / securityModeCommand"];
+	s14 -> s13 [label="registrationRequest | registrationRequestGUTI / authenticationRequest"];
+	s14 -> s12 [label="deregistrationRequest / null_action"];
+	s14 -> s15 [label="securityModeReject / null_action"];
+	s14 -> s4 [label="securityModeComplete / registrationAccept"];
+	s15 -> s1 [label="registrationRequest / authenticationRequest"];
+	s15 -> s6 [label="registrationRequestGUTI / identityRequest"];
+	s16 -> s1 [label="registrationRequest | identityResponse / authenticationRequest"];
+	s16 -> s11 [label="deregistrationRequest / null_action"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

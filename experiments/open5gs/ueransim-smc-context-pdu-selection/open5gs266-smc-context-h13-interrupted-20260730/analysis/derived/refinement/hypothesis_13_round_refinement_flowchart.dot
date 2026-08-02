@@ -1,0 +1,162 @@
+digraph MealyRoundRefinement {
+  graph [rankdir=TB, bgcolor="white", pad="0.30", nodesep="0.18", ranksep="1.05", splines=polyline, outputorder=edgesfirst, fontname="Microsoft YaHei", labelloc=t, labeljust=c, label="H13 第1–4轮状态拆分流程图", fontsize=24];
+  node [shape=plain, fontname="Microsoft YaHei"];
+  edge [fontname="Microsoft YaHei", arrowsize=0.70];
+
+  round_1 [shape=box, style="rounded,filled", fillcolor="#17365D", fontcolor="white", color="#17365D", margin="0.14,0.09", label="第 1 轮\n10 类"];
+  r1 [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" CELLPADDING="4" COLOR="#6B7280">
+      <TR>
+        <TD PORT="A1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A1</B><BR/><FONT POINT-SIZE="9">{s3, s14}</FONT></TD>
+        <TD PORT="A2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A2</B><BR/><FONT POINT-SIZE="9">{s9}</FONT></TD>
+        <TD PORT="D1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D1</B><BR/><FONT POINT-SIZE="9">{s0, s11}</FONT></TD>
+        <TD PORT="D2" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D2</B><BR/><FONT POINT-SIZE="9">{s7, s15}</FONT></TD>
+        <TD PORT="D3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D3</B><BR/><FONT POINT-SIZE="9">{s12}</FONT></TD>
+        <TD PORT="N1" COLSPAN="4" FIXEDSIZE="TRUE" WIDTH="368" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N1</B><BR/><FONT POINT-SIZE="9">{s1, s8, s10, s13}</FONT></TD>
+        <TD PORT="NG1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#EBDDFA"><B>NG1</B><BR/><FONT POINT-SIZE="9">{s6, s16}</FONT></TD>
+        <TD PORT="S1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFF0BD"><B>S1</B><BR/><FONT POINT-SIZE="9">{s4}</FONT></TD>
+        <TD PORT="R1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DDF5F7"><B>R1</B><BR/><FONT POINT-SIZE="9">{s5}</FONT></TD>
+        <TD PORT="X" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#ECEFF1"><B>X</B><BR/><FONT POINT-SIZE="9">{s2}</FONT></TD>
+      </TR>
+    </TABLE>
+  >];
+  { rank=same; round_1; r1; }
+  round_1 -> r1 [style=invis, weight=300];
+
+  round_2 [shape=box, style="rounded,filled", fillcolor="#17365D", fontcolor="white", color="#17365D", margin="0.14,0.09", label="第 2 轮\n13 类"];
+  r2 [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" CELLPADDING="4" COLOR="#6B7280">
+      <TR>
+        <TD PORT="A1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A1</B><BR/><FONT POINT-SIZE="9">{s3}</FONT></TD>
+        <TD PORT="A2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A2</B><BR/><FONT POINT-SIZE="9">{s14}</FONT></TD>
+        <TD PORT="A3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A3</B><BR/><FONT POINT-SIZE="9">{s9}</FONT></TD>
+        <TD PORT="D1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D1</B><BR/><FONT POINT-SIZE="9">{s0, s11}</FONT></TD>
+        <TD PORT="D2" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D2</B><BR/><FONT POINT-SIZE="9">{s7, s15}</FONT></TD>
+        <TD PORT="D3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D3</B><BR/><FONT POINT-SIZE="9">{s12}</FONT></TD>
+        <TD PORT="N1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N1</B><BR/><FONT POINT-SIZE="9">{s1}</FONT></TD>
+        <TD PORT="N2" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N2</B><BR/><FONT POINT-SIZE="9">{s8, s10}</FONT></TD>
+        <TD PORT="N3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N3</B><BR/><FONT POINT-SIZE="9">{s13}</FONT></TD>
+        <TD PORT="NG1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#EBDDFA"><B>NG1</B><BR/><FONT POINT-SIZE="9">{s6, s16}</FONT></TD>
+        <TD PORT="S1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFF0BD"><B>S1</B><BR/><FONT POINT-SIZE="9">{s4}</FONT></TD>
+        <TD PORT="R1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DDF5F7"><B>R1</B><BR/><FONT POINT-SIZE="9">{s5}</FONT></TD>
+        <TD PORT="X" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#ECEFF1"><B>X</B><BR/><FONT POINT-SIZE="9">{s2}</FONT></TD>
+      </TR>
+    </TABLE>
+  >];
+  { rank=same; round_2; r2; }
+  round_2 -> r2 [style=invis, weight=300];
+
+  round_3 [shape=box, style="rounded,filled", fillcolor="#17365D", fontcolor="white", color="#17365D", margin="0.14,0.09", label="第 3 轮\n16 类"];
+  r3 [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" CELLPADDING="4" COLOR="#6B7280">
+      <TR>
+        <TD PORT="A1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A1</B><BR/><FONT POINT-SIZE="9">{s3}</FONT></TD>
+        <TD PORT="A2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A2</B><BR/><FONT POINT-SIZE="9">{s14}</FONT></TD>
+        <TD PORT="A3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A3</B><BR/><FONT POINT-SIZE="9">{s9}</FONT></TD>
+        <TD PORT="D1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D1</B><BR/><FONT POINT-SIZE="9">{s0}</FONT></TD>
+        <TD PORT="D2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D2</B><BR/><FONT POINT-SIZE="9">{s11}</FONT></TD>
+        <TD PORT="D3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D3</B><BR/><FONT POINT-SIZE="9">{s7}</FONT></TD>
+        <TD PORT="D4" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D4</B><BR/><FONT POINT-SIZE="9">{s15}</FONT></TD>
+        <TD PORT="D5" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D5</B><BR/><FONT POINT-SIZE="9">{s12}</FONT></TD>
+        <TD PORT="N1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N1</B><BR/><FONT POINT-SIZE="9">{s1}</FONT></TD>
+        <TD PORT="N2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N2</B><BR/><FONT POINT-SIZE="9">{s8}</FONT></TD>
+        <TD PORT="N3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N3</B><BR/><FONT POINT-SIZE="9">{s10}</FONT></TD>
+        <TD PORT="N4" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N4</B><BR/><FONT POINT-SIZE="9">{s13}</FONT></TD>
+        <TD PORT="NG1" COLSPAN="2" FIXEDSIZE="TRUE" WIDTH="184" HEIGHT="58" BGCOLOR="#EBDDFA"><B>NG1</B><BR/><FONT POINT-SIZE="9">{s6, s16}</FONT></TD>
+        <TD PORT="S1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFF0BD"><B>S1</B><BR/><FONT POINT-SIZE="9">{s4}</FONT></TD>
+        <TD PORT="R1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DDF5F7"><B>R1</B><BR/><FONT POINT-SIZE="9">{s5}</FONT></TD>
+        <TD PORT="X" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#ECEFF1"><B>X</B><BR/><FONT POINT-SIZE="9">{s2}</FONT></TD>
+      </TR>
+    </TABLE>
+  >];
+  { rank=same; round_3; r3; }
+  round_3 -> r3 [style=invis, weight=300];
+
+  round_4 [shape=box, style="rounded,filled", fillcolor="#17365D", fontcolor="white", color="#17365D", margin="0.14,0.09", label="第 4 轮\n17 类"];
+  r4 [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="2" CELLPADDING="4" COLOR="#6B7280">
+      <TR>
+        <TD PORT="A1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A1</B><BR/><FONT POINT-SIZE="9">{s3}</FONT></TD>
+        <TD PORT="A2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A2</B><BR/><FONT POINT-SIZE="9">{s14}</FONT></TD>
+        <TD PORT="A3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DCEBFF"><B>A3</B><BR/><FONT POINT-SIZE="9">{s9}</FONT></TD>
+        <TD PORT="D1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D1</B><BR/><FONT POINT-SIZE="9">{s0}</FONT></TD>
+        <TD PORT="D2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D2</B><BR/><FONT POINT-SIZE="9">{s11}</FONT></TD>
+        <TD PORT="D3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D3</B><BR/><FONT POINT-SIZE="9">{s7}</FONT></TD>
+        <TD PORT="D4" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D4</B><BR/><FONT POINT-SIZE="9">{s15}</FONT></TD>
+        <TD PORT="D5" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFE1E1"><B>D5</B><BR/><FONT POINT-SIZE="9">{s12}</FONT></TD>
+        <TD PORT="N1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N1</B><BR/><FONT POINT-SIZE="9">{s1}</FONT></TD>
+        <TD PORT="N2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N2</B><BR/><FONT POINT-SIZE="9">{s8}</FONT></TD>
+        <TD PORT="N3" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N3</B><BR/><FONT POINT-SIZE="9">{s10}</FONT></TD>
+        <TD PORT="N4" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DFF3E4"><B>N4</B><BR/><FONT POINT-SIZE="9">{s13}</FONT></TD>
+        <TD PORT="NG1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#EBDDFA"><B>NG1</B><BR/><FONT POINT-SIZE="9">{s6}</FONT></TD>
+        <TD PORT="NG2" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#EBDDFA"><B>NG2</B><BR/><FONT POINT-SIZE="9">{s16}</FONT></TD>
+        <TD PORT="S1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#FFF0BD"><B>S1</B><BR/><FONT POINT-SIZE="9">{s4}</FONT></TD>
+        <TD PORT="R1" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#DDF5F7"><B>R1</B><BR/><FONT POINT-SIZE="9">{s5}</FONT></TD>
+        <TD PORT="X" COLSPAN="1" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="58" BGCOLOR="#ECEFF1"><B>X</B><BR/><FONT POINT-SIZE="9">{s2}</FONT></TD>
+      </TR>
+    </TABLE>
+  >];
+  { rank=same; round_4; r4; }
+  round_4 -> r4 [style=invis, weight=300];
+
+  round_1 -> round_2 [style=invis, weight=300, minlen=2];
+  round_2 -> round_3 [style=invis, weight=300, minlen=2];
+  round_3 -> round_4 [style=invis, weight=300, minlen=2];
+
+  r1:A1:s -> r2:A1:n [color="#2E8B57", penwidth=2.5];
+  r1:A1:s -> r2:A2:n [color="#2E8B57", penwidth=2.5];
+  r1:A2:s -> r2:A3:n [color="#E67E22", penwidth=2.2];
+  r1:D1:s -> r2:D1:n [color="#9AA0A6", penwidth=1.15];
+  r1:D2:s -> r2:D2:n [color="#9AA0A6", penwidth=1.15];
+  r1:D3:s -> r2:D3:n [color="#9AA0A6", penwidth=1.15];
+  r1:N1:s -> r2:N1:n [color="#2E8B57", penwidth=2.5];
+  r1:N1:s -> r2:N2:n [color="#2E8B57", penwidth=2.5];
+  r1:N1:s -> r2:N3:n [color="#2E8B57", penwidth=2.5];
+  r1:NG1:s -> r2:NG1:n [color="#9AA0A6", penwidth=1.15];
+  r1:S1:s -> r2:S1:n [color="#9AA0A6", penwidth=1.15];
+  r1:R1:s -> r2:R1:n [color="#9AA0A6", penwidth=1.15];
+  r1:X:s -> r2:X:n [color="#9AA0A6", penwidth=1.15];
+  r2:A1:s -> r3:A1:n [color="#9AA0A6", penwidth=1.15];
+  r2:A2:s -> r3:A2:n [color="#9AA0A6", penwidth=1.15];
+  r2:A3:s -> r3:A3:n [color="#9AA0A6", penwidth=1.15];
+  r2:D1:s -> r3:D1:n [color="#2E8B57", penwidth=2.5];
+  r2:D1:s -> r3:D2:n [color="#2E8B57", penwidth=2.5];
+  r2:D2:s -> r3:D3:n [color="#2E8B57", penwidth=2.5];
+  r2:D2:s -> r3:D4:n [color="#2E8B57", penwidth=2.5];
+  r2:D3:s -> r3:D5:n [color="#E67E22", penwidth=2.2];
+  r2:N1:s -> r3:N1:n [color="#9AA0A6", penwidth=1.15];
+  r2:N2:s -> r3:N2:n [color="#2E8B57", penwidth=2.5];
+  r2:N2:s -> r3:N3:n [color="#2E8B57", penwidth=2.5];
+  r2:N3:s -> r3:N4:n [color="#E67E22", penwidth=2.2];
+  r2:NG1:s -> r3:NG1:n [color="#9AA0A6", penwidth=1.15];
+  r2:S1:s -> r3:S1:n [color="#9AA0A6", penwidth=1.15];
+  r2:R1:s -> r3:R1:n [color="#9AA0A6", penwidth=1.15];
+  r2:X:s -> r3:X:n [color="#9AA0A6", penwidth=1.15];
+  r3:A1:s -> r4:A1:n [color="#9AA0A6", penwidth=1.15];
+  r3:A2:s -> r4:A2:n [color="#9AA0A6", penwidth=1.15];
+  r3:A3:s -> r4:A3:n [color="#9AA0A6", penwidth=1.15];
+  r3:D1:s -> r4:D1:n [color="#9AA0A6", penwidth=1.15];
+  r3:D2:s -> r4:D2:n [color="#9AA0A6", penwidth=1.15];
+  r3:D3:s -> r4:D3:n [color="#9AA0A6", penwidth=1.15];
+  r3:D4:s -> r4:D4:n [color="#9AA0A6", penwidth=1.15];
+  r3:D5:s -> r4:D5:n [color="#9AA0A6", penwidth=1.15];
+  r3:N1:s -> r4:N1:n [color="#9AA0A6", penwidth=1.15];
+  r3:N2:s -> r4:N2:n [color="#9AA0A6", penwidth=1.15];
+  r3:N3:s -> r4:N3:n [color="#9AA0A6", penwidth=1.15];
+  r3:N4:s -> r4:N4:n [color="#9AA0A6", penwidth=1.15];
+  r3:NG1:s -> r4:NG1:n [color="#2E8B57", penwidth=2.5];
+  r3:NG1:s -> r4:NG2:n [color="#2E8B57", penwidth=2.5];
+  r3:S1:s -> r4:S1:n [color="#9AA0A6", penwidth=1.15];
+  r3:R1:s -> r4:R1:n [color="#9AA0A6", penwidth=1.15];
+  r3:X:s -> r4:X:n [color="#9AA0A6", penwidth=1.15];
+
+  legend [shape=plain, label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6B7280">
+      <TR><TD COLSPAN="9" BGCOLOR="#F3F4F6"><B>图例</B></TD></TR>
+      <TR><TD><FONT COLOR="#2E8B57">━━▶</FONT></TD><TD ALIGN="LEFT">绿色：真正拆分</TD><TD><FONT COLOR="#E67E22">━━▶</FONT></TD><TD ALIGN="LEFT">橙色：成员不变，仅编号变化</TD><TD><FONT COLOR="#9AA0A6">──▶</FONT></TD><TD ALIGN="LEFT">灰色：名称和成员均不变</TD><TD></TD><TD></TD><TD></TD></TR>
+      <TR><TD BGCOLOR="#DCEBFF"><B>A 类</B></TD><TD BGCOLOR="#FFE1E1"><B>D 类</B></TD><TD BGCOLOR="#DFF3E4"><B>N 类</B></TD><TD BGCOLOR="#EBDDFA"><B>NG 类</B></TD><TD BGCOLOR="#FFF0BD"><B>S 类</B></TD><TD BGCOLOR="#DDF5F7"><B>R 类</B></TD><TD BGCOLOR="#ECEFF1"><B>X 类</B></TD><TD COLSPAN="2" ALIGN="LEFT">横向顺序：A → D → N → NG → S → R → X</TD></TR>
+    </TABLE>
+  >];
+  { rank=sink; legend; }
+  round_4 -> legend [style=invis, weight=200];
+}

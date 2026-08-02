@@ -1,0 +1,5021 @@
+{
+  "schema_version": 3,
+  "kind": "mealy_minimum_cycle_cover",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\analysis\\derived\\hypothesis_13_smp.dot",
+  "source_sha256": "4fe68f3e8836d86c3b77c2c8c4671ff4b437690eeaf2870084764ab66027797f",
+  "closure_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\evidence\\hypotheses\\hypothesis_13.dot",
+  "closure_sha256": "465fc8f4e5cba3715ec8745cbc81f9d24f5876fdb37d455f858f02f01815523a",
+  "basename": "hypothesis_13",
+  "parameters": {
+    "excluded_states": [
+      "s2"
+    ],
+    "required_inputs": [],
+    "required_outputs": [
+      "authenticationRequest",
+      "securityModeCommand"
+    ],
+    "signal_match_mode": "output-only",
+    "coverage_semantics": "target_edge_union",
+    "cycle_type": "simple_directed_or_composite_closed_walk",
+    "used_closed_walk_fallback": true,
+    "visualization": "one_full_smp_svg_per_selected_cycle",
+    "objective_order": [
+      "maximum_cycle_length",
+      "cycle_count",
+      "repeated_transition_uses",
+      "total_cycle_length",
+      "canonical_candidate_ids"
+    ]
+  },
+  "counts": {
+    "target_edges": 33,
+    "candidate_cycles": 63,
+    "selected_cycles": 14,
+    "minimum_max_cycle_length": 9,
+    "total_selected_cycle_length": 64,
+    "distinct_selected_transitions": 35,
+    "repeated_transition_uses": 29,
+    "candidate_length_distribution": {
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 7,
+      "6": 2,
+      "7": 6,
+      "8": 5,
+      "9": 7,
+      "10": 9,
+      "11": 5,
+      "12": 4
+    },
+    "selected_length_distribution": {
+      "2": 3,
+      "3": 4,
+      "4": 1,
+      "5": 2,
+      "7": 1,
+      "8": 2,
+      "9": 1
+    }
+  },
+  "candidate_cycles": [
+    {
+      "candidate_id": "K001",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s0",
+        "s1",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001"
+      ],
+      "signal_edge_indexes": [
+        0
+      ]
+    },
+    {
+      "candidate_id": "K002",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s1",
+        "s3",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E004"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K003",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s9",
+        "s10",
+        "s9"
+      ],
+      "target_edge_ids": [
+        "E016",
+        "E020"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K004",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s10",
+        "s11",
+        "s10"
+      ],
+      "target_edge_ids": [
+        "E019",
+        "E021"
+      ],
+      "signal_edge_indexes": [
+        1
+      ]
+    },
+    {
+      "candidate_id": "K005",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s12",
+        "s13",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E024"
+      ],
+      "signal_edge_indexes": [
+        0
+      ]
+    },
+    {
+      "candidate_id": "K006",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s13",
+        "s14",
+        "s13"
+      ],
+      "target_edge_ids": [
+        "E025",
+        "E026"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K007",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K008",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        1
+      ]
+    },
+    {
+      "candidate_id": "K009",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E007"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2
+      ]
+    },
+    {
+      "candidate_id": "K010",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s7",
+        "s8",
+        "s9",
+        "s7"
+      ],
+      "target_edge_ids": [
+        "E012",
+        "E015",
+        "E018"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K011",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s9",
+        "s11",
+        "s10",
+        "s9"
+      ],
+      "target_edge_ids": [
+        "E017",
+        "E020",
+        "E021"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2
+      ]
+    },
+    {
+      "candidate_id": "K012",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s12",
+        "s13",
+        "s14",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E025",
+        "E027"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K013",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K014",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K015",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2
+      ]
+    },
+    {
+      "candidate_id": "K016",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s6",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E011",
+        "E013"
+      ],
+      "signal_edge_indexes": [
+        0,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K017",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E014"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K018",
+      "walk_type": "composite_closed_walk",
+      "length": 4,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E019",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2
+      ]
+    },
+    {
+      "candidate_id": "K019",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s6",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E013"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "candidate_id": "K020",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E012"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K021",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2
+      ]
+    },
+    {
+      "candidate_id": "K022",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s7",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E005",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2
+      ]
+    },
+    {
+      "candidate_id": "K023",
+      "walk_type": "composite_closed_walk",
+      "length": 5,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E007",
+        "E008",
+        "E009"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K024",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E029"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K025",
+      "walk_type": "composite_closed_walk",
+      "length": 5,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s9",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E017",
+        "E020",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3
+      ]
+    },
+    {
+      "candidate_id": "K026",
+      "walk_type": "simple_directed_cycle",
+      "length": 6,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E005",
+        "E011",
+        "E012"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "candidate_id": "K027",
+      "walk_type": "composite_closed_walk",
+      "length": 6,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s0",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4
+      ]
+    },
+    {
+      "candidate_id": "K028",
+      "walk_type": "simple_directed_cycle",
+      "length": 7,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "candidate_id": "K029",
+      "walk_type": "simple_directed_cycle",
+      "length": 7,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "candidate_id": "K030",
+      "walk_type": "simple_directed_cycle",
+      "length": 7,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11",
+        "s16",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E022",
+        "E032"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K031",
+      "walk_type": "composite_closed_walk",
+      "length": 7,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5
+      ]
+    },
+    {
+      "candidate_id": "K032",
+      "walk_type": "composite_closed_walk",
+      "length": 7,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E029"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5
+      ]
+    },
+    {
+      "candidate_id": "K033",
+      "walk_type": "composite_closed_walk",
+      "length": 7,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E029"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4
+      ]
+    },
+    {
+      "candidate_id": "K034",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11",
+        "s10",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E021"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K035",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E011",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K036",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E005",
+        "E011",
+        "E012",
+        "E015",
+        "E016"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K037",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E030"
+      ],
+      "signal_edge_indexes": [
+        0,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K038",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s16",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016",
+        "E019",
+        "E022",
+        "E032"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K039",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K040",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11",
+        "s10",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E005",
+        "E011",
+        "E012",
+        "E015",
+        "E017",
+        "E021"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K041",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        0,
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K042",
+      "walk_type": "composite_closed_walk",
+      "length": 9,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K043",
+      "walk_type": "composite_closed_walk",
+      "length": 9,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K044",
+      "walk_type": "composite_closed_walk",
+      "length": 9,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s16",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E022",
+        "E032",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K045",
+      "walk_type": "composite_closed_walk",
+      "length": 9,
+      "nodes": [
+        "s16",
+        "s11",
+        "s16",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11",
+        "s16"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E022",
+        "E032",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K046",
+      "walk_type": "simple_directed_cycle",
+      "length": 10,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "K047",
+      "walk_type": "simple_directed_cycle",
+      "length": 10,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        1,
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K048",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K049",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E030"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K050",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023"
+      ],
+      "signal_edge_indexes": [
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K051",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E030"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K052",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K053",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s16",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016",
+        "E019",
+        "E022",
+        "E032",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K054",
+      "walk_type": "composite_closed_walk",
+      "length": 10,
+      "nodes": [
+        "s16",
+        "s11",
+        "s16",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s16"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016",
+        "E019",
+        "E022",
+        "E032",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "K055",
+      "walk_type": "composite_closed_walk",
+      "length": 11,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "candidate_id": "K056",
+      "walk_type": "composite_closed_walk",
+      "length": 11,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "candidate_id": "K057",
+      "walk_type": "composite_closed_walk",
+      "length": 11,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K058",
+      "walk_type": "composite_closed_walk",
+      "length": 11,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "candidate_id": "K059",
+      "walk_type": "composite_closed_walk",
+      "length": 11,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E005",
+        "E011",
+        "E012",
+        "E015",
+        "E017",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "candidate_id": "K060",
+      "walk_type": "composite_closed_walk",
+      "length": 12,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5,
+        9,
+        10
+      ]
+    },
+    {
+      "candidate_id": "K061",
+      "walk_type": "composite_closed_walk",
+      "length": 12,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s0",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5,
+        9,
+        10
+      ]
+    },
+    {
+      "candidate_id": "K062",
+      "walk_type": "composite_closed_walk",
+      "length": 12,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s0",
+        "s6",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "candidate_id": "K063",
+      "walk_type": "composite_closed_walk",
+      "length": 12,
+      "nodes": [
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s0",
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E006",
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        3,
+        4,
+        8,
+        9
+      ]
+    }
+  ],
+  "selected_cycles": [
+    {
+      "cycle_id": "C01",
+      "candidate_id": "K002",
+      "color": "#D81B60",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s1",
+        "s3",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E004"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s1",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_01_len02.svg",
+        "bytes": 24131,
+        "sha256": "897b9fcdb1e40220215a8170f52763d434e3dac70a68d2a3df7a4cf3588e0e5c"
+      }
+    },
+    {
+      "cycle_id": "C02",
+      "candidate_id": "K005",
+      "color": "#1E88E5",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s12",
+        "s13",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E024"
+      ],
+      "signal_edge_indexes": [
+        0
+      ],
+      "edges": [
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s13",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_02_len02.svg",
+        "bytes": 24151,
+        "sha256": "59e565cdc72e473885a818ce35894601e365525fdc404f57e85d9472f5c62cdb"
+      }
+    },
+    {
+      "cycle_id": "C03",
+      "candidate_id": "K006",
+      "color": "#D19A00",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s13",
+        "s14",
+        "s13"
+      ],
+      "target_edge_ids": [
+        "E025",
+        "E026"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s14",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_03_len02.svg",
+        "bytes": 24157,
+        "sha256": "b9511d313d5cb6f5d0034239250abc116e18eb9c6f3913d6d14e742e8522c45b"
+      }
+    },
+    {
+      "cycle_id": "C04",
+      "candidate_id": "K008",
+      "color": "#004D40",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E011"
+      ],
+      "signal_edge_indexes": [
+        1
+      ],
+      "edges": [
+        {
+          "src": "s0",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s6",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 2
+        },
+        {
+          "src": "s1",
+          "dst": "s0",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "closure",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_04_len03.svg",
+        "bytes": 25605,
+        "sha256": "1f2453e4fa821b14fb88a931dd666949d209c0136d1dec8ef0539766de46a334"
+      }
+    },
+    {
+      "cycle_id": "C05",
+      "candidate_id": "K009",
+      "color": "#F4511E",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E007"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s4",
+          "dst": "s1",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_05_len03.svg",
+        "bytes": 24246,
+        "sha256": "fd428064b76403dadadcff291bd36e8df3e1aba0ab3c82300359594dbf8cf70c"
+      }
+    },
+    {
+      "cycle_id": "C06",
+      "candidate_id": "K010",
+      "color": "#7E57C2",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s7",
+        "s8",
+        "s9",
+        "s7"
+      ],
+      "target_edge_ids": [
+        "E012",
+        "E015",
+        "E018"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 3
+        },
+        {
+          "src": "s8",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 2
+        },
+        {
+          "src": "s9",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_06_len03.svg",
+        "bytes": 24258,
+        "sha256": "1b0e3260969a8f9035664f02f158b913cba43cb81d5f96a62f44c30b71c9cbae"
+      }
+    },
+    {
+      "cycle_id": "C07",
+      "candidate_id": "K012",
+      "color": "#43A047",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s12",
+        "s13",
+        "s14",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E025",
+        "E027"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s14",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_07_len03.svg",
+        "bytes": 24273,
+        "sha256": "e0f8b2eaf4eaf6f8a1fe15fc9aab041f2a9da94b62566924a1981c4b43324fb3"
+      }
+    },
+    {
+      "cycle_id": "C08",
+      "candidate_id": "K017",
+      "color": "#6D4C41",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E014"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2,
+        3
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 3
+        },
+        {
+          "src": "s8",
+          "dst": "s1",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_08_len04.svg",
+        "bytes": 24360,
+        "sha256": "afc5f4d1a6dd722ba7f03a5c016bea269a2f09a5d056537e2be5cfa4322c64b4"
+      }
+    },
+    {
+      "cycle_id": "C09",
+      "candidate_id": "K019",
+      "color": "#00ACC1",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s6",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E013"
+      ],
+      "signal_edge_indexes": [
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "src": "s0",
+          "dst": "s1",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        },
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s7",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s6",
+          "dst": "s0",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "closure",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_09_len05.svg",
+        "bytes": 25545,
+        "sha256": "182444986f45e3bf21aeb817c657ffab0776c7fc44a540611ab29d3208e25058"
+      }
+    },
+    {
+      "cycle_id": "C10",
+      "candidate_id": "K025",
+      "color": "#7A8B00",
+      "walk_type": "composite_closed_walk",
+      "length": 5,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s9",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E017",
+        "E020",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "signal_edge_indexes": [
+        2,
+        3
+      ],
+      "edges": [
+        {
+          "src": "s11",
+          "dst": "s16",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 2
+        },
+        {
+          "src": "s16",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s11",
+          "dst": "s10",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        },
+        {
+          "src": "s10",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        },
+        {
+          "src": "s9",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_10_len05.svg",
+        "bytes": 24502,
+        "sha256": "6e88a895a7d27b870bdcccbd28f2a5c54aa7e1a59f3b35a13e3fdcc4a3db058c"
+      }
+    },
+    {
+      "cycle_id": "C11",
+      "candidate_id": "K032",
+      "color": "#3949AB",
+      "walk_type": "composite_closed_walk",
+      "length": 7,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E008",
+        "E009",
+        "E010",
+        "E023",
+        "E025",
+        "E029"
+      ],
+      "signal_edge_indexes": [
+        4,
+        5
+      ],
+      "edges": [
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 4
+        },
+        {
+          "src": "s5",
+          "dst": "s4",
+          "label": "registrationRequestGUTI / registrationAccept",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 4
+        },
+        {
+          "src": "s5",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s14",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_11_len07.svg",
+        "bytes": 24627,
+        "sha256": "67b574aad23caf75dc336083a4cfba5c73276f5a3588972c182a6d4f164821c8"
+      }
+    },
+    {
+      "cycle_id": "C12",
+      "candidate_id": "K037",
+      "color": "#FB8C00",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E028",
+        "E030"
+      ],
+      "signal_edge_indexes": [
+        0,
+        4,
+        5,
+        7
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 4
+        },
+        {
+          "src": "s5",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s14",
+          "dst": "s15",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 2
+        },
+        {
+          "src": "s15",
+          "dst": "s1",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_12_len08.svg",
+        "bytes": 24838,
+        "sha256": "2e662ac0a4247dd429c30309b974c48cb5ee024fb72e39e1f7b772294a21c9a3"
+      }
+    },
+    {
+      "cycle_id": "C13",
+      "candidate_id": "K038",
+      "color": "#8E24AA",
+      "walk_type": "simple_directed_cycle",
+      "length": 8,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s16",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016",
+        "E019",
+        "E022",
+        "E032"
+      ],
+      "signal_edge_indexes": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 3
+        },
+        {
+          "src": "s8",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 2
+        },
+        {
+          "src": "s9",
+          "dst": "s10",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        },
+        {
+          "src": "s10",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s11",
+          "dst": "s16",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 2
+        },
+        {
+          "src": "s16",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 1
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_13_len08.svg",
+        "bytes": 24851,
+        "sha256": "8e79565146eb87edbe885003527bb3ca96ce29f7ecda86f453bcd9a3a3d06a83"
+      }
+    },
+    {
+      "cycle_id": "C14",
+      "candidate_id": "K041",
+      "color": "#00897B",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "signal_edge_indexes": [
+        0,
+        4,
+        5,
+        8
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 7
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 4
+        },
+        {
+          "src": "s5",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 3
+        },
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 5
+        },
+        {
+          "src": "s14",
+          "dst": "s15",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 2
+        },
+        {
+          "src": "s15",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "required_signal": false,
+          "global_use_count": 1
+        },
+        {
+          "src": "s6",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "required_signal": true,
+          "global_use_count": 2
+        }
+      ],
+      "artifact": {
+        "path": "cycles/hypothesis_13_smp_cycle_14_len09.svg",
+        "bytes": 24962,
+        "sha256": "2e5262a40b2b493e37a8dc9647ecf03082ebcb59f8ff32810870356d965df04d"
+      }
+    }
+  ],
+  "target_edges": [
+    {
+      "target_id": "E001",
+      "src": "s0",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C09"
+      ]
+    },
+    {
+      "target_id": "E002",
+      "src": "s0",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C04"
+      ]
+    },
+    {
+      "target_id": "E003",
+      "src": "s1",
+      "dst": "s3",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 7,
+      "cover_count": 7,
+      "selected_cycle_ids": [
+        "C01",
+        "C05",
+        "C08",
+        "C09",
+        "C12",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E004",
+      "src": "s3",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C01"
+      ]
+    },
+    {
+      "target_id": "E005",
+      "src": "s3",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "cover_count": 3,
+      "selected_cycle_ids": [
+        "C08",
+        "C09",
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E006",
+      "src": "s3",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "cover_count": 3,
+      "selected_cycle_ids": [
+        "C05",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E007",
+      "src": "s4",
+      "dst": "s1",
+      "label": "registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C05"
+      ]
+    },
+    {
+      "target_id": "E008",
+      "src": "s4",
+      "dst": "s5",
+      "label": "registrationComplete / configurationUpdateCommand",
+      "inputs": [
+        "registrationComplete"
+      ],
+      "output": "configurationUpdateCommand",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "cover_count": 3,
+      "selected_cycle_ids": [
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E009",
+      "src": "s5",
+      "dst": "s4",
+      "label": "registrationRequestGUTI / registrationAccept",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C11"
+      ]
+    },
+    {
+      "target_id": "E010",
+      "src": "s5",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "cover_count": 3,
+      "selected_cycle_ids": [
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E011",
+      "src": "s6",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 2,
+      "cover_count": 2,
+      "selected_cycle_ids": [
+        "C04",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E012",
+      "src": "s7",
+      "dst": "s8",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 3,
+      "cover_count": 3,
+      "selected_cycle_ids": [
+        "C06",
+        "C08",
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E013",
+      "src": "s7",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C09"
+      ]
+    },
+    {
+      "target_id": "E014",
+      "src": "s8",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C08"
+      ]
+    },
+    {
+      "target_id": "E015",
+      "src": "s8",
+      "dst": "s9",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 2,
+      "cover_count": 2,
+      "selected_cycle_ids": [
+        "C06",
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E016",
+      "src": "s9",
+      "dst": "s10",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E017",
+      "src": "s9",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "target_id": "E018",
+      "src": "s9",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C06"
+      ]
+    },
+    {
+      "target_id": "E019",
+      "src": "s10",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E020",
+      "src": "s10",
+      "dst": "s9",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "target_id": "E021",
+      "src": "s11",
+      "dst": "s10",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "target_id": "E022",
+      "src": "s11",
+      "dst": "s16",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 2,
+      "cover_count": 2,
+      "selected_cycle_ids": [
+        "C10",
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E023",
+      "src": "s12",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 5,
+      "cover_count": 5,
+      "selected_cycle_ids": [
+        "C02",
+        "C07",
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E024",
+      "src": "s13",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C02"
+      ]
+    },
+    {
+      "target_id": "E025",
+      "src": "s13",
+      "dst": "s14",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 5,
+      "cover_count": 5,
+      "selected_cycle_ids": [
+        "C03",
+        "C07",
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E026",
+      "src": "s14",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C03"
+      ]
+    },
+    {
+      "target_id": "E027",
+      "src": "s14",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C07"
+      ]
+    },
+    {
+      "target_id": "E028",
+      "src": "s14",
+      "dst": "s15",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 2,
+      "cover_count": 2,
+      "selected_cycle_ids": [
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E029",
+      "src": "s14",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C11"
+      ]
+    },
+    {
+      "target_id": "E030",
+      "src": "s15",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C12"
+      ]
+    },
+    {
+      "target_id": "E031",
+      "src": "s15",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C14"
+      ]
+    },
+    {
+      "target_id": "E032",
+      "src": "s16",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "target_id": "E033",
+      "src": "s16",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "cover_count": 1,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    }
+  ],
+  "selected_transition_usage": [
+    {
+      "src": "s1",
+      "dst": "s0",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "closure",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C04"
+      ]
+    },
+    {
+      "src": "s6",
+      "dst": "s0",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "closure",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C09"
+      ]
+    },
+    {
+      "src": "s0",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C09"
+      ]
+    },
+    {
+      "src": "s0",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C04"
+      ]
+    },
+    {
+      "src": "s1",
+      "dst": "s3",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 7,
+      "repeated_uses": 6,
+      "selected_cycle_ids": [
+        "C01",
+        "C05",
+        "C08",
+        "C09",
+        "C12",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "src": "s3",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C01"
+      ]
+    },
+    {
+      "src": "s3",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "repeated_uses": 2,
+      "selected_cycle_ids": [
+        "C05",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s3",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "repeated_uses": 2,
+      "selected_cycle_ids": [
+        "C08",
+        "C09",
+        "C13"
+      ]
+    },
+    {
+      "src": "s4",
+      "dst": "s1",
+      "label": "registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C05"
+      ]
+    },
+    {
+      "src": "s4",
+      "dst": "s5",
+      "label": "registrationComplete / configurationUpdateCommand",
+      "inputs": [
+        "registrationComplete"
+      ],
+      "output": "configurationUpdateCommand",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 4,
+      "repeated_uses": 3,
+      "selected_cycle_ids": [
+        "C11",
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s5",
+      "dst": "s4",
+      "label": "registrationRequestGUTI / registrationAccept",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C11"
+      ]
+    },
+    {
+      "src": "s5",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 3,
+      "repeated_uses": 2,
+      "selected_cycle_ids": [
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s6",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 2,
+      "repeated_uses": 1,
+      "selected_cycle_ids": [
+        "C04",
+        "C14"
+      ]
+    },
+    {
+      "src": "s7",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C09"
+      ]
+    },
+    {
+      "src": "s7",
+      "dst": "s8",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 3,
+      "repeated_uses": 2,
+      "selected_cycle_ids": [
+        "C06",
+        "C08",
+        "C13"
+      ]
+    },
+    {
+      "src": "s8",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C08"
+      ]
+    },
+    {
+      "src": "s8",
+      "dst": "s9",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 2,
+      "repeated_uses": 1,
+      "selected_cycle_ids": [
+        "C06",
+        "C13"
+      ]
+    },
+    {
+      "src": "s9",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C06"
+      ]
+    },
+    {
+      "src": "s9",
+      "dst": "s10",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "src": "s9",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "src": "s10",
+      "dst": "s9",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "src": "s10",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "src": "s11",
+      "dst": "s10",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    },
+    {
+      "src": "s11",
+      "dst": "s16",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 2,
+      "repeated_uses": 1,
+      "selected_cycle_ids": [
+        "C10",
+        "C13"
+      ]
+    },
+    {
+      "src": "s12",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 5,
+      "repeated_uses": 4,
+      "selected_cycle_ids": [
+        "C02",
+        "C07",
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s13",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C02"
+      ]
+    },
+    {
+      "src": "s13",
+      "dst": "s14",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 5,
+      "repeated_uses": 4,
+      "selected_cycle_ids": [
+        "C03",
+        "C07",
+        "C11",
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s14",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C11"
+      ]
+    },
+    {
+      "src": "s14",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C07"
+      ]
+    },
+    {
+      "src": "s14",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C03"
+      ]
+    },
+    {
+      "src": "s14",
+      "dst": "s15",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 2,
+      "repeated_uses": 1,
+      "selected_cycle_ids": [
+        "C12",
+        "C14"
+      ]
+    },
+    {
+      "src": "s15",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C12"
+      ]
+    },
+    {
+      "src": "s15",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C14"
+      ]
+    },
+    {
+      "src": "s16",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "required_signal": true,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C13"
+      ]
+    },
+    {
+      "src": "s16",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "required_signal": false,
+      "global_use_count": 1,
+      "repeated_uses": 0,
+      "selected_cycle_ids": [
+        "C10"
+      ]
+    }
+  ],
+  "validation": {
+    "all_target_edges_covered": true,
+    "all_selected_cycles_signal_valid": true,
+    "all_selected_cycles_within_minimum_max_length": true,
+    "selected_cycle_ids_unique": true,
+    "all_selected_artifacts_are_svg": true
+  },
+  "sequence_export": {
+    "start_state": "s0",
+    "repeat_count": 10,
+    "merged_input_policy": "expand",
+    "line_count": 28,
+    "cycle_count": 14,
+    "cycles": [
+      {
+        "cycle_id": "C01",
+        "candidate_id": "K002",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 2,
+        "variant_count": 2,
+        "first_line": 1,
+        "last_line": 2,
+        "variants": [
+          {
+            "line_number": 1,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequest"
+            ],
+            "input_count": 21
+          },
+          {
+            "line_number": 2,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequestGUTI"
+            ],
+            "input_count": 21
+          }
+        ]
+      },
+      {
+        "cycle_id": "C02",
+        "candidate_id": "K005",
+        "cycle_start_state": "s12",
+        "rotated_nodes": [
+          "s12",
+          "s13",
+          "s12"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest"
+        ],
+        "prefix_length": 5,
+        "loop_length": 2,
+        "variant_count": 2,
+        "first_line": 3,
+        "last_line": 4,
+        "variants": [
+          {
+            "line_number": 3,
+            "loop_inputs": [
+              "registrationRequest",
+              "deregistrationRequest"
+            ],
+            "input_count": 25
+          },
+          {
+            "line_number": 4,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "deregistrationRequest"
+            ],
+            "input_count": 25
+          }
+        ]
+      },
+      {
+        "cycle_id": "C03",
+        "candidate_id": "K006",
+        "cycle_start_state": "s13",
+        "rotated_nodes": [
+          "s13",
+          "s14",
+          "s13"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12",
+          "s13"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "loop_length": 2,
+        "variant_count": 2,
+        "first_line": 5,
+        "last_line": 6,
+        "variants": [
+          {
+            "line_number": 5,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequest"
+            ],
+            "input_count": 26
+          },
+          {
+            "line_number": 6,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequestGUTI"
+            ],
+            "input_count": 26
+          }
+        ]
+      },
+      {
+        "cycle_id": "C04",
+        "candidate_id": "K008",
+        "cycle_start_state": "s0",
+        "rotated_nodes": [
+          "s0",
+          "s6",
+          "s1",
+          "s0"
+        ],
+        "prefix_state_sequence": [
+          "s0"
+        ],
+        "prefix_inputs": [],
+        "prefix_length": 0,
+        "loop_length": 3,
+        "variant_count": 2,
+        "first_line": 7,
+        "last_line": 8,
+        "variants": [
+          {
+            "line_number": 7,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "registrationRequest",
+              "deregistrationRequest"
+            ],
+            "input_count": 30
+          },
+          {
+            "line_number": 8,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "identityResponse",
+              "deregistrationRequest"
+            ],
+            "input_count": 30
+          }
+        ]
+      },
+      {
+        "cycle_id": "C05",
+        "candidate_id": "K009",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 3,
+        "variant_count": 1,
+        "first_line": 9,
+        "last_line": 9,
+        "variants": [
+          {
+            "line_number": 9,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationRequestGUTI"
+            ],
+            "input_count": 31
+          }
+        ]
+      },
+      {
+        "cycle_id": "C06",
+        "candidate_id": "K010",
+        "cycle_start_state": "s7",
+        "rotated_nodes": [
+          "s7",
+          "s8",
+          "s9",
+          "s7"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s7"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject"
+        ],
+        "prefix_length": 3,
+        "loop_length": 3,
+        "variant_count": 1,
+        "first_line": 10,
+        "last_line": 10,
+        "variants": [
+          {
+            "line_number": 10,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject"
+            ],
+            "input_count": 33
+          }
+        ]
+      },
+      {
+        "cycle_id": "C07",
+        "candidate_id": "K012",
+        "cycle_start_state": "s12",
+        "rotated_nodes": [
+          "s12",
+          "s13",
+          "s14",
+          "s12"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest"
+        ],
+        "prefix_length": 5,
+        "loop_length": 3,
+        "variant_count": 2,
+        "first_line": 11,
+        "last_line": 12,
+        "variants": [
+          {
+            "line_number": 11,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "deregistrationRequest"
+            ],
+            "input_count": 35
+          },
+          {
+            "line_number": 12,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "deregistrationRequest"
+            ],
+            "input_count": 35
+          }
+        ]
+      },
+      {
+        "cycle_id": "C08",
+        "candidate_id": "K017",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 4,
+        "variant_count": 2,
+        "first_line": 13,
+        "last_line": 14,
+        "variants": [
+          {
+            "line_number": 13,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "registrationRequest"
+            ],
+            "input_count": 41
+          },
+          {
+            "line_number": 14,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "input_count": 41
+          }
+        ]
+      },
+      {
+        "cycle_id": "C09",
+        "candidate_id": "K019",
+        "cycle_start_state": "s0",
+        "rotated_nodes": [
+          "s0",
+          "s1",
+          "s3",
+          "s7",
+          "s6",
+          "s0"
+        ],
+        "prefix_state_sequence": [
+          "s0"
+        ],
+        "prefix_inputs": [],
+        "prefix_length": 0,
+        "loop_length": 5,
+        "variant_count": 1,
+        "first_line": 15,
+        "last_line": 15,
+        "variants": [
+          {
+            "line_number": 15,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "deregistrationRequest"
+            ],
+            "input_count": 50
+          }
+        ]
+      },
+      {
+        "cycle_id": "C10",
+        "candidate_id": "K025",
+        "cycle_start_state": "s9",
+        "rotated_nodes": [
+          "s9",
+          "s11",
+          "s16",
+          "s11",
+          "s10",
+          "s9"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse"
+        ],
+        "prefix_length": 5,
+        "loop_length": 5,
+        "variant_count": 1,
+        "first_line": 16,
+        "last_line": 16,
+        "variants": [
+          {
+            "line_number": 16,
+            "loop_inputs": [
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse"
+            ],
+            "input_count": 55
+          }
+        ]
+      },
+      {
+        "cycle_id": "C11",
+        "candidate_id": "K032",
+        "cycle_start_state": "s4",
+        "rotated_nodes": [
+          "s4",
+          "s5",
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s4"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1",
+          "s3",
+          "s4"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete"
+        ],
+        "prefix_length": 3,
+        "loop_length": 7,
+        "variant_count": 2,
+        "first_line": 17,
+        "last_line": 18,
+        "variants": [
+          {
+            "line_number": 17,
+            "loop_inputs": [
+              "registrationComplete",
+              "registrationRequestGUTI",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "input_count": 73
+          },
+          {
+            "line_number": 18,
+            "loop_inputs": [
+              "registrationComplete",
+              "registrationRequestGUTI",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "input_count": 73
+          }
+        ]
+      },
+      {
+        "cycle_id": "C12",
+        "candidate_id": "K037",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s15",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 8,
+        "variant_count": 2,
+        "first_line": 19,
+        "last_line": 20,
+        "variants": [
+          {
+            "line_number": 19,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest"
+            ],
+            "input_count": 81
+          },
+          {
+            "line_number": 20,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest"
+            ],
+            "input_count": 81
+          }
+        ]
+      },
+      {
+        "cycle_id": "C13",
+        "candidate_id": "K038",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s10",
+          "s11",
+          "s16",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 8,
+        "variant_count": 4,
+        "first_line": 21,
+        "last_line": 24,
+        "variants": [
+          {
+            "line_number": 21,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequest",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "input_count": 81
+          },
+          {
+            "line_number": 22,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequest",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "input_count": 81
+          },
+          {
+            "line_number": 23,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequestGUTI",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "input_count": 81
+          },
+          {
+            "line_number": 24,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequestGUTI",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "input_count": 81
+          }
+        ]
+      },
+      {
+        "cycle_id": "C14",
+        "candidate_id": "K041",
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s15",
+          "s6",
+          "s1"
+        ],
+        "prefix_state_sequence": [
+          "s0",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "loop_length": 9,
+        "variant_count": 4,
+        "first_line": 25,
+        "last_line": 28,
+        "variants": [
+          {
+            "line_number": 25,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "input_count": 91
+          },
+          {
+            "line_number": 26,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "input_count": 91
+          },
+          {
+            "line_number": 27,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "input_count": 91
+          },
+          {
+            "line_number": 28,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "input_count": 91
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "all_cycle_starts_reachable": true,
+      "all_concrete_transitions_defined": true,
+      "all_lines_close_after_repetition": true,
+      "excluded_states_absent_from_access_graph": true,
+      "single_space_delimited_nonempty_lines": true
+    },
+    "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\inputs\\hypothesis_13_cycle_cover_repeat10.seq",
+    "bytes": 32857,
+    "sha256": "31a645f38976e61953c20c3ba99dc5af137e93926a2a6844d41f500b4f753f20"
+  },
+  "report_artifact": {
+    "path": "hypothesis_13_cycle_cover_report.md",
+    "bytes": 18745,
+    "sha256": "ba67a04baca58ab5f5bd6770cf351fe2096f2a54973039d33bbf3ed9a113b2af"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "kind": "frozen-run-copy",
+  "run_id": "20260731T092950Z-e8ae5e2f",
+  "original_path": "D:\\downloads\\20260731T092950Z-e8ae5e2f",
+  "frozen_path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\followups\\c14-ngksi-sync-verify-20260731\\raw",
+  "file_count": 9,
+  "total_bytes": 800076,
+  "source_copy_hashes_match": true,
+  "files": [
+    {
+      "path": "raw/console.log",
+      "source_path": "raw/console.log",
+      "bytes": 37533,
+      "sha256": "90427c060e7af12710b01b1a5781e4515797c640d47b8ef35342c49841dbc520",
+      "source_sha256": "90427c060e7af12710b01b1a5781e4515797c640d47b8ef35342c49841dbc520",
+      "modified_utc": "2026-07-31T09:34:24.961971Z"
+    },
+    {
+      "path": "raw/open5gs-core.log",
+      "source_path": "raw/open5gs/core-session-001/core.log",
+      "bytes": 123400,
+      "sha256": "610afd0ac4ba43fd21c025d10c0f7f9471a3a9ff30040e46b1d3c84b179f5681",
+      "source_sha256": "610afd0ac4ba43fd21c025d10c0f7f9471a3a9ff30040e46b1d3c84b179f5681",
+      "modified_utc": "2026-07-31T09:35:15.224464Z"
+    },
+    {
+      "path": "raw/open5gs-launcher.log",
+      "source_path": "raw/open5gs/core-session-001/launcher.log",
+      "bytes": 418,
+      "sha256": "6ccb91213be658d3de20262dee66371b50106ab6c3e2d7410546f56aa8b7fbb7",
+      "source_sha256": "6ccb91213be658d3de20262dee66371b50106ab6c3e2d7410546f56aa8b7fbb7",
+      "modified_utc": "2026-07-31T09:29:51.589077Z"
+    },
+    {
+      "path": "raw/open5gs-session.json",
+      "source_path": "raw/open5gs/core-session-001/session.json",
+      "bytes": 455,
+      "sha256": "3d7510e36bb6eda0be4b9e3478ec405db4cc46a20d50bbb013d05cb771be7433",
+      "source_sha256": "3d7510e36bb6eda0be4b9e3478ec405db4cc46a20d50bbb013d05cb771be7433",
+      "modified_utc": "2026-07-31T09:29:51.585077Z"
+    },
+    {
+      "path": "raw/run-manifest.json",
+      "source_path": "run-manifest.json",
+      "bytes": 281,
+      "sha256": "0f5547d4efe1f225498eed8d7e0b00e42cd540f06349f40cc55cd3dbfc8a047a",
+      "source_sha256": "0f5547d4efe1f225498eed8d7e0b00e42cd540f06349f40cc55cd3dbfc8a047a",
+      "modified_utc": "2026-07-31T09:29:50.300973Z"
+    },
+    {
+      "path": "raw/run-provenance.json",
+      "source_path": "run-provenance.json",
+      "bytes": 1090,
+      "sha256": "6fd7069a7e16552956b128cfb97e7acf2fa8fdb7e693784e8ed805c03fe06226",
+      "source_sha256": "6fd7069a7e16552956b128cfb97e7acf2fa8fdb7e693784e8ed805c03fe06226",
+      "modified_utc": "2026-07-31T09:29:50.352977Z"
+    },
+    {
+      "path": "raw/statelearner_sht_debug.jsonl",
+      "source_path": "statelearner_sht_debug.jsonl",
+      "bytes": 48864,
+      "sha256": "a4b45ed90da6b8841ccfc4b46763a26404fd7df10fa84f90a8aa61b9660907b0",
+      "source_sha256": "a4b45ed90da6b8841ccfc4b46763a26404fd7df10fa84f90a8aa61b9660907b0",
+      "modified_utc": "2026-07-31T09:34:20.445715Z"
+    },
+    {
+      "path": "raw/statelearner_trace.jsonl",
+      "source_path": "statelearner_trace.jsonl",
+      "bytes": 588033,
+      "sha256": "459cd17566b248c374fef058a5e5b5299fa97cec0bedb05b295fcb4a765dc788",
+      "source_sha256": "459cd17566b248c374fef058a5e5b5299fa97cec0bedb05b295fcb4a765dc788",
+      "modified_utc": "2026-07-31T09:34:24.961971Z"
+    },
+    {
+      "path": "raw/statelearner_trace.meta",
+      "source_path": "statelearner_trace.meta",
+      "bytes": 2,
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "modified_utc": "2026-07-31T09:33:11.876920Z"
+    }
+  ]
+}

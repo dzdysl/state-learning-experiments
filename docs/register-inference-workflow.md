@@ -23,6 +23,18 @@ commit, input SHA-256 values and result hashes in the record.  Retain all
 repeated observations; do not align away missing, duplicated, reordered or
 unmappable events.
 
+## KSI-specific trajectory rule
+
+For a KSI analysis, retain `ue_sec_ctx_ngksi` and `*_ksi_value` fields only;
+do not include any `*_ksi_tsc` field in inputs, normalised observations,
+candidate equations or reports.  `ue_sec_ctx_ngksi` is a UE-internal context
+observation, useful for checking UE adoption after a downlink message, but it
+is not normally an AMF-visible input.  By default, do not use it as a
+replacement for the uplink `registration_ksi_value` when fitting AMF behaviour.
+When a concrete user request explicitly selects it, label the result as a
+UE-internal observation.  Keep UE-side observations and AMF-facing
+Registration/Authentication/SMC KSI values in separate labelled columns.
+
 The current `simple_scalar_v1` stage can only propose and fit `r'=r`, `r'=c`,
 `r'=r+k` and `r'=i`.  Its results are heuristic register candidates, not
 confirmed AMF implementation facts.  Before a causal claim, correlate a

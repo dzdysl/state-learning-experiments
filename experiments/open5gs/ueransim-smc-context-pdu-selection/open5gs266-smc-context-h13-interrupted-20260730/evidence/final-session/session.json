@@ -1,0 +1,14 @@
+{
+  "schema_version": "core-session/v1",
+  "runtime_contract": "state-learning-runtime/v2",
+  "platform": "open5gs",
+  "run_id": "20260730T054606Z-60d7ce19",
+  "session_id": "core-session-863",
+  "config_path": "/opt/CoreCrisis/Corelearner/core.properties",
+  "core_path": "/opt/CoreCrisis/Corelearner/open5gs-2.6.6",
+  "started_utc": "2026-07-31T02:44:34Z",
+  "ended_utc": null,
+  "status": "running",
+  "exit_code": null,
+  "raw_logs": []
+}

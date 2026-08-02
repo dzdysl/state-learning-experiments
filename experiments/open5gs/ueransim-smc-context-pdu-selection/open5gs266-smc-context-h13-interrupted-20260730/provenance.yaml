@@ -1,0 +1,65 @@
+schema_version: 1
+record_type: experiment
+platform: open5gs
+series: ueransim-smc-context-pdu-selection
+iteration: open5gs266-smc-context-h13-interrupted-20260730
+version_basis: sul_ueransim
+run:
+  id: 20260730T054606Z-60d7ce19
+  mode: active_learning
+  status_in_supplied_manifest: running
+run_window:
+  started_utc: "2026-07-30T05:46:06.583983521Z"
+  learner_logger_started_local: "2026-07-30T13:46:06+08:00"
+  latest_exported_hypothesis_local: "2026-07-31T09:30:53+08:00"
+  final_protocol_trace_utc: "2026-07-31T02:45:46Z"
+  timezone: "Asia/Hong_Kong; structured runtime fields are UTC"
+core_network:
+  snapshot_id: open5gs_old
+  version: v2.6.6
+  snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old"
+  git_commit: null
+  runtime_path: "/opt/CoreCrisis/Corelearner/open5gs-2.6.6"
+  version_evidence: "D:\\state-learning-lab\\sources\\source-manifest.yaml and evidence/final-session/session.json"
+sul_ueransim:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  path_at_version: src/
+  semantic_source:
+    commit: 693678935ff2faf0d818d988de72e2a0505879df
+    tag: runtime/2026-07-30/smc-context-pdu-selection
+    git_tree_oid: 516aef65c8edb34af33e432e49c3c3c39e2c3614
+  best_correlated_runtime_snapshot:
+    commit: 792add084006069a5da8aefae5caebbd3adab48f
+    tag: runtime/2026-07-30/workflow-doc-consolidation
+    git_tree_oid: 516aef65c8edb34af33e432e49c3c3c39e2c3614
+    note: "Documentation-only commit; src/ is byte-identical at the Git-tree level to the semantic source commit."
+  reference_src_zip_path: "D:\\state-learning-lab\\projects\\open5gs-state-learning\\src.zip"
+  reference_src_zip_bytes: 4082474
+  reference_src_zip_sha256: 13fc7d6230914c4853d3fa4fad16873b5460f7276c24602835b8ea296fe67725
+  version_confidence: medium
+  version_evidence:
+    - "The closest tagged snapshot was created before the run started and has the same src/ tree as the semantic SMC-context version."
+    - "evidence/hypotheses/hypothesis_13.dot line 30 has s0 identityResponse / null_action, consistent with the registration-state gate at src/ue/app/state_learner.cpp:1147-1159 in this source tree."
+    - "The H13 learner counterexamples exercise Security Mode Complete and Security Mode Reject behavior handled by src/ue/nas/mm/security.cpp at this revision."
+  boundary: "No deployed UERANSIM executable or source-archive hash was supplied. The clean local src.zip identifies the correlated tagged workspace artifact, not a captured deployment file."
+learner:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  tag: runtime/2026-07-24/core-output-filter-v3
+  runtime_branch: refactor/multiseq-mdf
+  runtime_dirty: true
+  runtime_status_sha256: 87d34823f35c5a2afc32651ca9e1d828d921d58cf75e4a8c9633d2798a61800f
+  jar_path: "/opt/CoreCrisis/Corelearner/Corelearner.jar"
+  jar_sha256: f1e0d03ae359def28c947702a396291055359ef49a89fa3ed23cf8617cfee9e5
+  provenance_role: "Secondary runtime/JAR provenance; not the experiment-series version basis."
+configuration:
+  path: "/opt/CoreCrisis/Corelearner/core.properties"
+  sha256: c8792b81cfe12723a72c43db3d60adc4a603f6520e99aae63043e2f356f5e707
+  supplied_file: false
+runtime:
+  java_version: 21.0.7
+  os_name: Linux
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 1990d920af1f164cfde6d239f52283e546c437ba
+archive_created: "2026-07-31"

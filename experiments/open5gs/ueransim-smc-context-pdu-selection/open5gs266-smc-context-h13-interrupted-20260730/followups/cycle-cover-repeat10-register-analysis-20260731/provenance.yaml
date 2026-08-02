@@ -1,0 +1,66 @@
+schema_version: 1
+record_type: experiment_followup
+platform: open5gs
+parent_record: open5gs266-smc-context-h13-interrupted-20260730
+followup_id: cycle-cover-repeat10-register-analysis-20260731
+version_basis: sul_ueransim
+run:
+  id: 20260731T064710Z-74bcf3ee
+  mode: multi_sequence
+  status_in_supplied_manifest: finalized
+run_window:
+  started_utc: "2026-07-31T06:47:10.412468Z"
+  final_core_session_ended_utc: "2026-07-31T07:20:39Z"
+  timezone: "UTC in runtime records; local workspace timezone Asia/Hong_Kong"
+input:
+  path: inputs/hypothesis_13_cycle_cover_repeat10.seq
+  source_parent_path: ../../inputs/hypothesis_13_cycle_cover_repeat10.seq
+  line_count: 28
+  repeat_count: 10
+  analysis_repetitions: "2-10"
+  sha256: 31a645f38976e61953c20c3ba99dc5af137e93926a2a6844d41f500b4f753f20
+model:
+  source_parent_path: ../../evidence/hypotheses/hypothesis_13.dot
+  sha256: 465fc8f4e5cba3715ec8745cbc81f9d24f5876fdb37d455f858f02f01815523a
+core_network:
+  snapshot_id: open5gs_old
+  version: v2.6.6
+  snapshot_path: "D:\\state-learning-lab\\sources\\open5gs_old"
+  runtime_path: "/home/dzdysl/CoreCrisis/test_open5gs/open5gs"
+  analysis_policy: "Black-box input/output behavior only for this follow-up; no AMF source-to-variable mapping."
+sul_ueransim:
+  repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+  path_at_version: src/
+  semantic_source:
+    commit: 693678935ff2faf0d818d988de72e2a0505879df
+    tag: runtime/2026-07-30/smc-context-pdu-selection
+    git_tree_oid: 516aef65c8edb34af33e432e49c3c3c39e2c3614
+  version_confidence: medium
+  version_basis_note: "Inherited from the parent experiment record; source timing and behavior correlate, but no deployed UERANSIM binary or source-archive hash was captured."
+learner:
+  repository: open5gs-state-learning
+  component: multiSeq
+  commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  runtime_branch: refactor/multiseq-mdf
+  runtime_dirty: true
+  runtime_status_sha256: 29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc
+  jar_path: "/home/dzdysl/CoreCrisis/test_open5gs/Corelearner_SeqTest.jar"
+  jar_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+configuration:
+  path: "/home/dzdysl/CoreCrisis/test_open5gs/core.properties"
+  sha256: 63955fcee7cb9fbf69c41a57a1a7a119ba7a4436c92c3eccf83bb139c0c5d46f
+  supplied_file: false
+runtime:
+  java_version: 11.0.27
+  os_name: Linux
+analysis:
+  amf_view: black_box
+  ueransim_view: source_correlated_white_box
+  fixed_analysis_script_created: false
+  alignment: "Shortest access prefix and repetition 1 are setup; repetitions 2-10 align by cycle edge and logical input."
+analysis_tools:
+  repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
+  commit: 1990d920af1f164cfde6d239f52283e546c437ba
+  working_tree_dirty: true
+  working_tree_status_sha256: 8fa9053810d5a291b52619d40ae08873299e61cfb564d1ac58793b94f85514ff
+archive_created: "2026-07-31"
