@@ -1,0 +1,29 @@
+schema_version: 2
+inputs:
+  dot: "../../../../../evidence/hypotheses/hypothesis_13.dot"
+  trace: "D:/state-learning-lab/run-data/open5gs/20260802T042407Z-fa7991d2/statelearner_trace.jsonl"
+  cycle_cover: "../../../../../analysis/derived/cycle_cover/hypothesis_13_cycle_cover.json"
+  sequence_file: "../../../../../inputs/hypothesis_13_cycle_cover_repeat10.seq"
+mapping:
+  downlink_ksi_by_output:
+    authenticationRequest: "downlink_side.fields.auth_request_ksi_value"
+    securityModeCommand: "downlink_side.fields.smc_ksi_value"
+  uplink_ksi_by_input:
+    registrationRequest: "ue_side.fields.registration_ksi_value"
+    registrationRequestGUTI: "ue_side.fields.registration_ksi_value"
+  signal_definitions:
+    - id: initial_uplink_context
+      path: "ue_side.fields.isInitMsg"
+      value_type: boolean
+      match:
+        input_symbols:
+          - registrationRequest
+          - registrationRequestGUTI
+      phase: before_numeric_inputs
+  d_states: []
+analysis:
+  cycle_ids: ["C01", "C02", "C03", "C04", "C05"]
+  repetitions: [2, 10]
+  min_consecutive_support: 3
+  max_numeric_depth: 1
+  max_derived_signal_depth: 1

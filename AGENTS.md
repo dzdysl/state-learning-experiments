@@ -6,6 +6,15 @@ This repository is the evidence and conclusion layer for state-learning work. Ke
 
 One record must describe one clearly bounded experiment run, experiment iteration, or failure investigation. Never mix logs or conclusions from unrelated runs in the same record.
 
+## Language for prose
+
+- README、provenance 的说明字段、分析报告、观察、假设、图注和其他面向读者的文字说明一律使用中文。文件名、路径、代码标识符、协议字段、公式、命令和原始日志内容可保留其原有语言；不得为了翻译而改写原始证据字节。
+
+## 派生结果的替换与精简
+
+- 当新的分析或运行结果以同一问题、同一证据边界和可复现命令为基础，并且能完整取代旧的派生结果时，可以直接覆盖或移除旧的派生结果，使项目结构保持精简、不保留无意义的重复副本。替换前应确认新结果的输入、命令和结论均已记录；若旧结果仍具有独立的比较价值，应在新结果或记录说明中保留其来源关系。
+- 此规则仅适用于 `analysis/` 下的派生文件、可再生成输出和任务创建的临时材料。`evidence/` 中的原始证据、已冻结的输入、原始日志快照及其哈希记录不得覆盖或删除；它们仍遵循证据不可变规则。
+
 ## Record types and IDs
 
 - Put ordinary, repeatable measurements under `experiments/<platform>/<series>/<iteration>/`.
@@ -166,6 +175,16 @@ candidates from simplest to most specific. If no candidate fits all nine
 samples, report the first breaking repetition, the closest rule and the exact
 values. These are heuristic candidates, not confirmed internal variable
 names.
+
+重复循环的类型化时序推断还必须遵守以下规则：
+
+- 区域统一表示为 `(r_before, ordered_observation_items, r_after)`。信号量和数值输入都要保留字段路径、逻辑输入、事件位置和出现序号；缺失、重复、乱序或槽位身份不一致必须报告对齐异常，不得移动其他观察量补位。
+- 信号只能通过通用 `mapping.signal_definitions` 配置，消息选择器支持任意列表和单独的 `"*"` 通配符；不得在推断代码中硬编码 `registrationRequest`、`registrationRequestGUTI` 或其他具体消息名。同一消息可携带多个信号，同一信号可应用于多个消息。
+- 区域内先按轨迹事件时间排序；同一事件的信号在数值输入之前；多个信号和多个数值输入分别按配置声明顺序排列。相同字段出现在不同消息中时仍是独立槽位。
+- 所有已配置并在区域中出现的信号都作为最外层 `signal_guard`，即使样本中的信号恒为 0 或恒为 1。未观察分支写为 `unknown/unobserved_signal_branch`，支持不足分支写为 `unknown/insufficient_support`；含未知叶子的候选只能标记为 `partial_observational_candidate`。
+- 严格区分三类节点：`signal_guard` 使用 `s == 0/1`；`threshold_guard` 只表示 `ite(x < T, f, 0)` 形式的回绕，`else` 必须是常数 0；`derived_value_guard` 只在基础公式和阈值树均失败后枚举输入槽的观测值。派生值的两侧必须非空并各自满足最小连续支持，不能仅凭数值 7 自动赋予协议语义。
+- 配置信号层数、`max_numeric_depth` 和 `max_derived_signal_depth` 独立计数。对 `r'=c`、`r'=r+k`、`r'=ij+k` 以及精确并列树不做任意取舍；候选索引使用有序 `guard_path + update_tree + status` 并维护具体 DOT 边集合。
+- `isInitMsg` 在文字中称为伴随 NAS 输入事件的“初始上行传输上下文信号”。它不是 NAS PDU 内的显式 IE，但 AMF 可通过 NGAP `InitialUEMessage` 与普通 `UplinkNASTransport` 的不同入口区分这一上下文。当前 C01–C05 仅验证门控结构和已观察分支，不得声称验证未知分支或泛化能力。
 
 Then inspect the exact experiment AMF source snapshot and UERANSIM/SUL revision
 for a matching context member and update/reset/copy site on that edge. Report

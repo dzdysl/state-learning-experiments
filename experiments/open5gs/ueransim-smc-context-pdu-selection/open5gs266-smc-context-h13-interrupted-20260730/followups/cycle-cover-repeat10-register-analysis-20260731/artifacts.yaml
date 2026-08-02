@@ -24,6 +24,20 @@ snapshot_application:
   source_snapshot_member_identity: true
   verification: "184/184 relative paths, byte counts and SHA-256 values match."
 artifacts:
+  - id: current-register-inference-cycle-trace
+    original_path: "D:\\downloads\\20260802T042407Z-fa7991d2"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\20260802T042407Z-fa7991d2"
+    bytes: 4135893
+    file_count: 3
+    relevance: direct
+    appendable: false
+    source_may_have_later_appends: false
+    sha256_content_tree: 57a0ee20b35fe6da184e60485f1d1d71e64cc4b65df46fed560002bd5aff2be0
+    note: "当前脚本化寄存器推断输入；替换派生配置中此前引用的旧轨迹，不改写旧运行快照。"
+    key_member_sha256:
+      "run-provenance.json": 01e73307da0a50324f09f04b8b25dd4ad1813fa7cfd64c5f5bb5a79713a81630
+      "run-manifest.json": 07add4b1d49c7490bc6666046230a4abeeabbd31b35f2d5afd2e7b9cbd2f7539
+      "statelearner_trace.jsonl": 73862231f221608b791df34923f871b109b889c01775a8b942e27939594eec73
   - id: cycle-cover-repeat10-run
     original_path: "D:\\downloads\\20260731T064710Z-74bcf3ee"
     snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\20260731T064710Z-74bcf3ee"

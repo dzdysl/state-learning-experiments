@@ -56,8 +56,25 @@ runtime:
 analysis:
   amf_view: black_box
   ueransim_view: source_correlated_white_box
-  fixed_analysis_script_created: false
+  fixed_analysis_script_created: true
+  fixed_analysis_script_path: "D:\\state-learning-lab\\projects\\state-learning-tools\\analysis\\register_inference\\experiments\\infer_cycle_ngksi_regions.py"
+  fixed_analysis_script_sha256: 842315a53bb0e1bf0e17cc7851a66e22ccad10175692db85ccf9b892d9b1289a
   alignment: "Shortest access prefix and repetition 1 are setup; repetitions 2-10 align by cycle edge and logical input."
+current_register_inference_input:
+  run_id: 20260802T042407Z-fa7991d2
+  snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\20260802T042407Z-fa7991d2\\statelearner_trace.jsonl"
+  trace_sha256: 73862231f221608b791df34923f871b109b889c01775a8b942e27939594eec73
+  coverage: "C01-C14 的 28 条 cycle-cover 序列均逐行匹配。"
+  replacement_scope: "仅替换派生寄存器推断使用的具体轨迹；原 20260731 运行快照及其既有证据保持不变。"
+  trace_field_source_correlation:
+    repository: "D:\\state-learning-lab\\projects\\open5gs-state-learning"
+    commit: f1b98aca9292eda0eb8193d78bda994b2adf0a39
+    tag: isinitmsg-uplink-trace-20260801
+    paths:
+      - "src/ue/nas/mm/messaging.cpp:279-288,349-358"
+      - "src/ue/app/state_learner.cpp:635-676"
+    confidence: medium
+    boundary: "轨迹字段与该版本源码一致，但未捕获该次部署二进制或源码归档哈希；不将参考工作树哈希表述为部署哈希。"
 analysis_tools:
   repository: "D:\\state-learning-lab\\projects\\state-learning-tools"
   commit: 1990d920af1f164cfde6d239f52283e546c437ba
