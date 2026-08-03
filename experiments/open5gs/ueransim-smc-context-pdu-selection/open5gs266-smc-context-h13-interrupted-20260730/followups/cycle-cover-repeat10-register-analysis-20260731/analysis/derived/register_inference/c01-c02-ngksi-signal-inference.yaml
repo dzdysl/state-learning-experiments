@@ -1,4 +1,4 @@
-schema_version: 2
+schema_version: 3
 inputs:
   dot: "../../../../../evidence/hypotheses/hypothesis_13.dot"
   trace: "D:/state-learning-lab/run-data/open5gs/20260802T042407Z-fa7991d2/statelearner_trace.jsonl"
@@ -8,9 +8,16 @@ mapping:
   downlink_ksi_by_output:
     authenticationRequest: "downlink_side.fields.auth_request_ksi_value"
     securityModeCommand: "downlink_side.fields.smc_ksi_value"
-  uplink_ksi_by_input:
-    registrationRequest: "ue_side.fields.registration_ksi_value"
-    registrationRequestGUTI: "ue_side.fields.registration_ksi_value"
+  numeric_input_definitions:
+    - id: registration_ngksi
+      input_register_id: ngksi_uplink
+      path: "ue_side.fields.registration_ksi_value"
+      value_type: integer
+      match:
+        input_symbols:
+          - registrationRequest
+          - registrationRequestGUTI
+      phase: before_register_updates
   signal_definitions:
     - id: initial_uplink_context
       path: "ue_side.fields.isInitMsg"
@@ -22,7 +29,7 @@ mapping:
       phase: before_numeric_inputs
   d_states: []
 analysis:
-  cycle_ids: ["C01", "C02", "C03", "C04", "C05"]
+  cycle_ids: ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "C13", "C14"]
   repetitions: [2, 10]
   min_consecutive_support: 3
   max_numeric_depth: 1
