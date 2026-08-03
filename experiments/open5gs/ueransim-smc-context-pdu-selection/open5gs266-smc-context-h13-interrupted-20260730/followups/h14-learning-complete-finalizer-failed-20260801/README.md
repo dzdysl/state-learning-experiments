@@ -40,6 +40,10 @@ boundary and its analyses.
 ## Navigation
 
 - Objective facts: [analysis/observations.md](analysis/observations.md)
+- H14 SMP 派生图与可复现渲染记录：[analysis/rendering.md](analysis/rendering.md)
+- H14 分层基础环覆盖：[analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_cover_report.md](analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_cover_report.md)
+- H14 额外短环与自环增强路线：[analysis/derived/cycle_cover/extra/hypothesis_14_extra_cycle_cover_report.md](analysis/derived/cycle_cover/extra/hypothesis_14_extra_cycle_cover_report.md)
+- 基础输入：[inputs/hypothesis_14_base_cycle_cover_repeat10.seq](inputs/hypothesis_14_base_cycle_cover_repeat10.seq)；额外输入：[inputs/hypothesis_14_extra_cycle_cover_repeat10.seq](inputs/hypothesis_14_extra_cycle_cover_repeat10.seq)
 - Runtime/source provenance: [provenance.yaml](provenance.yaml)
 - Original H13 frozen boundary: [../../README.md](../../README.md)
 
