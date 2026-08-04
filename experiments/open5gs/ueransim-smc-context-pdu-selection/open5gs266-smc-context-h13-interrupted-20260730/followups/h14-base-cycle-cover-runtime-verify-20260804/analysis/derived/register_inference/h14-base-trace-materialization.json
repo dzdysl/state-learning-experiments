@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "kind": "lossless-register-inference-trace-materialization",
+  "operation": "verified_existing_byte_identical",
+  "source": {
+    "path": "D:\\state-learning-lab\\run-data\\open5gs\\20260804T034905Z-2b7f2823\\statelearner_trace.jsonl",
+    "bytes": 4284444,
+    "sha256": "cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6"
+  },
+  "evidence_trace": {
+    "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\followups\\h14-base-cycle-cover-runtime-verify-20260804\\evidence\\statelearner_trace.jsonl",
+    "bytes": 4284444,
+    "sha256": "cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6"
+  },
+  "contract": {
+    "encoding": "utf-8 JSON Lines",
+    "record_count": 1656,
+    "sequence_group_count": 37,
+    "sequence_ids": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      30,
+      33,
+      36,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      74,
+      77,
+      80
+    ],
+    "sequence_file": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\followups\\h14-base-cycle-cover-runtime-verify-20260804\\inputs\\hypothesis_14_base_cycle_cover_repeat10.seq",
+    "sequence_file_sha256": "4b1f05b6e4a9030de0c0b0170124dc8ac635e03de7f872b6f4f3d1c987df9e2a",
+    "sequence_line_count": 37,
+    "cycle_cover": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\open5gs266-smc-context-h13-interrupted-20260730\\followups\\h14-learning-complete-finalizer-failed-20260801\\analysis\\derived\\cycle_cover\\base\\hypothesis_14_base_cycle_cover.json",
+    "cycle_cover_sha256": "c33beee39053578b15324564fb7960d421a470fd77fd3a507567fc61b23bc07d",
+    "sequence_export_key": "sequence_export.cycles",
+    "selected_variant_count": 37,
+    "selected_variant_checks": [
+      {
+        "cycle_id": "S002",
+        "sequence_line": 1,
+        "trace_sequence_id": 1,
+        "input_count": 21
+      },
+      {
+        "cycle_id": "S002",
+        "sequence_line": 2,
+        "trace_sequence_id": 3,
+        "input_count": 21
+      },
+      {
+        "cycle_id": "S003",
+        "sequence_line": 3,
+        "trace_sequence_id": 5,
+        "input_count": 26
+      },
+      {
+        "cycle_id": "S004",
+        "sequence_line": 4,
+        "trace_sequence_id": 7,
+        "input_count": 26
+      },
+      {
+        "cycle_id": "S004",
+        "sequence_line": 5,
+        "trace_sequence_id": 9,
+        "input_count": 26
+      },
+      {
+        "cycle_id": "S005",
+        "sequence_line": 6,
+        "trace_sequence_id": 11,
+        "input_count": 25
+      },
+      {
+        "cycle_id": "S005",
+        "sequence_line": 7,
+        "trace_sequence_id": 13,
+        "input_count": 25
+      },
+      {
+        "cycle_id": "S006",
+        "sequence_line": 8,
+        "trace_sequence_id": 15,
+        "input_count": 26
+      },
+      {
+        "cycle_id": "S006",
+        "sequence_line": 9,
+        "trace_sequence_id": 17,
+        "input_count": 26
+      },
+      {
+        "cycle_id": "S008",
+        "sequence_line": 10,
+        "trace_sequence_id": 19,
+        "input_count": 30
+      },
+      {
+        "cycle_id": "S008",
+        "sequence_line": 11,
+        "trace_sequence_id": 21,
+        "input_count": 30
+      },
+      {
+        "cycle_id": "S009",
+        "sequence_line": 12,
+        "trace_sequence_id": 23,
+        "input_count": 31
+      },
+      {
+        "cycle_id": "S010",
+        "sequence_line": 13,
+        "trace_sequence_id": 25,
+        "input_count": 33
+      },
+      {
+        "cycle_id": "S012",
+        "sequence_line": 14,
+        "trace_sequence_id": 27,
+        "input_count": 35
+      },
+      {
+        "cycle_id": "S012",
+        "sequence_line": 15,
+        "trace_sequence_id": 30,
+        "input_count": 35
+      },
+      {
+        "cycle_id": "S017",
+        "sequence_line": 16,
+        "trace_sequence_id": 33,
+        "input_count": 41
+      },
+      {
+        "cycle_id": "S017",
+        "sequence_line": 17,
+        "trace_sequence_id": 36,
+        "input_count": 41
+      },
+      {
+        "cycle_id": "S018",
+        "sequence_line": 18,
+        "trace_sequence_id": 39,
+        "input_count": 50
+      },
+      {
+        "cycle_id": "S022",
+        "sequence_line": 19,
+        "trace_sequence_id": 41,
+        "input_count": 53
+      },
+      {
+        "cycle_id": "S022",
+        "sequence_line": 20,
+        "trace_sequence_id": 43,
+        "input_count": 53
+      },
+      {
+        "cycle_id": "S036",
+        "sequence_line": 21,
+        "trace_sequence_id": 45,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S036",
+        "sequence_line": 22,
+        "trace_sequence_id": 47,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S036",
+        "sequence_line": 23,
+        "trace_sequence_id": 49,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S036",
+        "sequence_line": 24,
+        "trace_sequence_id": 51,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S037",
+        "sequence_line": 25,
+        "trace_sequence_id": 53,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S037",
+        "sequence_line": 26,
+        "trace_sequence_id": 55,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S037",
+        "sequence_line": 27,
+        "trace_sequence_id": 57,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S037",
+        "sequence_line": 28,
+        "trace_sequence_id": 59,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "S039",
+        "sequence_line": 29,
+        "trace_sequence_id": 61,
+        "input_count": 91
+      },
+      {
+        "cycle_id": "F001",
+        "sequence_line": 30,
+        "trace_sequence_id": 63,
+        "input_count": 46
+      },
+      {
+        "cycle_id": "F002",
+        "sequence_line": 31,
+        "trace_sequence_id": 65,
+        "input_count": 51
+      },
+      {
+        "cycle_id": "L001",
+        "sequence_line": 32,
+        "trace_sequence_id": 67,
+        "input_count": 11
+      },
+      {
+        "cycle_id": "L002",
+        "sequence_line": 33,
+        "trace_sequence_id": 69,
+        "input_count": 11
+      },
+      {
+        "cycle_id": "L003",
+        "sequence_line": 34,
+        "trace_sequence_id": 71,
+        "input_count": 16
+      },
+      {
+        "cycle_id": "L004",
+        "sequence_line": 35,
+        "trace_sequence_id": 74,
+        "input_count": 16
+      },
+      {
+        "cycle_id": "L005",
+        "sequence_line": 36,
+        "trace_sequence_id": 77,
+        "input_count": 16
+      },
+      {
+        "cycle_id": "L006",
+        "sequence_line": 37,
+        "trace_sequence_id": 80,
+        "input_count": 16
+      }
+    ]
+  },
+  "preservation": {
+    "payload_transformation": "none",
+    "permitted_inference_conversion": [
+      "in-memory integer parsing of configured field values",
+      "in-memory boolean parsing of configured signal values",
+      "in-memory trace_line annotation"
+    ],
+    "forbidden_inputs": [
+      "statelearner_trace.cleaned.jsonl",
+      "filtered JSONL",
+      "reordered JSONL"
+    ]
+  }
+}

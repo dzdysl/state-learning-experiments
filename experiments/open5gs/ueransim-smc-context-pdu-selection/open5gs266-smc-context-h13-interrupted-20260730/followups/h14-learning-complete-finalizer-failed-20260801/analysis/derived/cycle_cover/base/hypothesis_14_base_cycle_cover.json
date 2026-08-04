@@ -1946,8 +1946,8 @@
     "repeat_count": 10,
     "merged_input_policy": "expand",
     "line_count": 37,
-    "route_count": 23,
-    "routes": [
+    "cycle_count": 23,
+    "cycles": [
       {
         "route_id": "S002",
         "route_kind": "base_simple_cover",
@@ -1988,6 +1988,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S002",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -2005,7 +2008,7 @@
         "variants": [
           {
             "line_number": 1,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequest"
             ],
@@ -2014,7 +2017,7 @@
           },
           {
             "line_number": 2,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequestGUTI"
             ],
@@ -2062,6 +2065,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S003",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
         "cycle_start_state": "s10",
         "rotated_nodes": [
           "s10",
@@ -2084,7 +2090,7 @@
         "variants": [
           {
             "line_number": 3,
-            "route_inputs": [
+            "loop_inputs": [
               "deregistrationRequest",
               "registrationRequest"
             ],
@@ -2133,6 +2139,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S004",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
         "cycle_start_state": "s10",
         "rotated_nodes": [
           "s10",
@@ -2155,7 +2164,7 @@
         "variants": [
           {
             "line_number": 4,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequest"
             ],
@@ -2164,7 +2173,7 @@
           },
           {
             "line_number": 5,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequestGUTI"
             ],
@@ -2213,6 +2222,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S005",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
         "cycle_start_state": "s12",
         "rotated_nodes": [
           "s12",
@@ -2234,7 +2246,7 @@
         "variants": [
           {
             "line_number": 6,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest",
               "deregistrationRequest"
             ],
@@ -2243,7 +2255,7 @@
           },
           {
             "line_number": 7,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI",
               "deregistrationRequest"
             ],
@@ -2292,6 +2304,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S006",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
         "cycle_start_state": "s13",
         "rotated_nodes": [
           "s13",
@@ -2314,7 +2329,7 @@
         "variants": [
           {
             "line_number": 8,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequest"
             ],
@@ -2323,7 +2338,7 @@
           },
           {
             "line_number": 9,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "registrationRequestGUTI"
             ],
@@ -2384,6 +2399,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S008",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
         "cycle_start_state": "s0",
         "rotated_nodes": [
           "s0",
@@ -2400,7 +2418,7 @@
         "variants": [
           {
             "line_number": 10,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI",
               "registrationRequest",
               "deregistrationRequest"
@@ -2410,7 +2428,7 @@
           },
           {
             "line_number": 11,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI",
               "identityResponse",
               "deregistrationRequest"
@@ -2472,6 +2490,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S009",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -2490,7 +2511,7 @@
         "variants": [
           {
             "line_number": 12,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationRequestGUTI"
@@ -2552,6 +2573,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S010",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
         "cycle_start_state": "s7",
         "rotated_nodes": [
           "s7",
@@ -2572,7 +2596,7 @@
         "variants": [
           {
             "line_number": 13,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest",
               "authenticationResponse",
               "securityModeReject"
@@ -2635,6 +2659,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S012",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
         "cycle_start_state": "s12",
         "rotated_nodes": [
           "s12",
@@ -2657,7 +2684,7 @@
         "variants": [
           {
             "line_number": 14,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest",
               "authenticationResponse",
               "deregistrationRequest"
@@ -2667,7 +2694,7 @@
           },
           {
             "line_number": 15,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI",
               "authenticationResponse",
               "deregistrationRequest"
@@ -2743,6 +2770,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S017",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 4,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -2762,7 +2792,7 @@
         "variants": [
           {
             "line_number": 16,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -2773,7 +2803,7 @@
           },
           {
             "line_number": 17,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -2861,6 +2891,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S018",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 5,
         "cycle_start_state": "s0",
         "rotated_nodes": [
           "s0",
@@ -2879,7 +2912,7 @@
         "variants": [
           {
             "line_number": 18,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest",
               "authenticationResponse",
               "securityModeReject",
@@ -2970,6 +3003,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S022",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 5,
         "cycle_start_state": "s4",
         "rotated_nodes": [
           "s4",
@@ -2992,7 +3028,7 @@
         "variants": [
           {
             "line_number": 19,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationComplete",
               "deregistrationRequest",
               "registrationRequest",
@@ -3004,7 +3040,7 @@
           },
           {
             "line_number": 20,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationComplete",
               "deregistrationRequest",
               "registrationRequestGUTI",
@@ -3148,6 +3184,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S036",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3172,7 +3211,7 @@
         "variants": [
           {
             "line_number": 21,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationComplete",
@@ -3188,7 +3227,7 @@
           },
           {
             "line_number": 22,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationComplete",
@@ -3204,7 +3243,7 @@
           },
           {
             "line_number": 23,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationComplete",
@@ -3220,7 +3259,7 @@
           },
           {
             "line_number": 24,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationComplete",
@@ -3368,6 +3407,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S037",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3392,7 +3434,7 @@
         "variants": [
           {
             "line_number": 25,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -3408,7 +3450,7 @@
           },
           {
             "line_number": 26,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -3424,7 +3466,7 @@
           },
           {
             "line_number": 27,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -3440,7 +3482,7 @@
           },
           {
             "line_number": 28,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -3586,6 +3628,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "S039",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3610,7 +3655,7 @@
         "variants": [
           {
             "line_number": 29,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeReject",
               "registrationRequest",
@@ -3691,6 +3736,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "F001",
+        "cycle_kind": "base_fallback",
+        "loop_length": 4,
         "cycle_start_state": "s10",
         "rotated_nodes": [
           "s10",
@@ -3715,7 +3763,7 @@
         "variants": [
           {
             "line_number": 30,
-            "route_inputs": [
+            "loop_inputs": [
               "deregistrationRequest",
               "registrationRequestGUTI",
               "deregistrationRequest",
@@ -3804,6 +3852,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "F002",
+        "cycle_kind": "base_fallback",
+        "loop_length": 5,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3824,7 +3875,7 @@
         "variants": [
           {
             "line_number": 31,
-            "route_inputs": [
+            "loop_inputs": [
               "authenticationResponse",
               "securityModeComplete",
               "registrationComplete",
@@ -3860,6 +3911,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L001",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3876,7 +3930,7 @@
         "variants": [
           {
             "line_number": 32,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest"
             ],
             "embedded_self_loop_input": null,
@@ -3908,6 +3962,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L002",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s1",
         "rotated_nodes": [
           "s1",
@@ -3924,7 +3981,7 @@
         "variants": [
           {
             "line_number": 33,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI"
             ],
             "embedded_self_loop_input": null,
@@ -3956,6 +4013,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L003",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s10",
         "rotated_nodes": [
           "s10",
@@ -3977,7 +4037,7 @@
         "variants": [
           {
             "line_number": 34,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest"
             ],
             "embedded_self_loop_input": null,
@@ -4009,6 +4069,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L004",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s10",
         "rotated_nodes": [
           "s10",
@@ -4030,7 +4093,7 @@
         "variants": [
           {
             "line_number": 35,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI"
             ],
             "embedded_self_loop_input": null,
@@ -4062,6 +4125,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L005",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s13",
         "rotated_nodes": [
           "s13",
@@ -4083,7 +4149,7 @@
         "variants": [
           {
             "line_number": 36,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequest"
             ],
             "embedded_self_loop_input": null,
@@ -4115,6 +4181,9 @@
           }
         ],
         "embedded_self_loop": null,
+        "cycle_id": "L006",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
         "cycle_start_state": "s13",
         "rotated_nodes": [
           "s13",
@@ -4136,7 +4205,7 @@
         "variants": [
           {
             "line_number": 37,
-            "route_inputs": [
+            "loop_inputs": [
               "registrationRequestGUTI"
             ],
             "embedded_self_loop_input": null,

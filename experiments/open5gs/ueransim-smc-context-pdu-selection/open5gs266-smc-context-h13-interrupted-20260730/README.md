@@ -124,6 +124,8 @@ separately bounded failure investigation.
   [followups/cycle-cover-repeat10-register-analysis-20260731](followups/cycle-cover-repeat10-register-analysis-20260731/README.md)
 - C14 line 27/28 ngKSI event-sync replacement:
   [followups/c14-ngksi-sync-verify-20260731](followups/c14-ngksi-sync-verify-20260731/README.md)
+- H14 基础组运行时验证（37/37 条逻辑序列、1,656/1,656 步与 H14 一致；核心停止/重启异常独立记录）：
+  [followups/h14-base-cycle-cover-runtime-verify-20260804](followups/h14-base-cycle-cover-runtime-verify-20260804/README.md)
 
 ## Next actions
 

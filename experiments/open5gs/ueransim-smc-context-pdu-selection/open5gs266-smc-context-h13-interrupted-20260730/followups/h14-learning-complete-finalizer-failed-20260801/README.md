@@ -41,9 +41,16 @@ boundary and its analyses.
 
 - Objective facts: [analysis/observations.md](analysis/observations.md)
 - H14 SMP 派生图与可复现渲染记录：[analysis/rendering.md](analysis/rendering.md)
-- H14 分层基础环覆盖：[analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_cover_report.md](analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_cover_report.md)
-- H14 额外短环与自环增强路线：[analysis/derived/cycle_cover/extra/hypothesis_14_extra_cycle_cover_report.md](analysis/derived/cycle_cover/extra/hypothesis_14_extra_cycle_cover_report.md)
-- 基础输入：[inputs/hypothesis_14_base_cycle_cover_repeat10.seq](inputs/hypothesis_14_base_cycle_cover_repeat10.seq)；额外输入：[inputs/hypothesis_14_extra_cycle_cover_repeat10.seq](inputs/hypothesis_14_extra_cycle_cover_repeat10.seq)
+- H14 分层基础环覆盖：
+  [报告](analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_cover_report.md)
+- H14 基础组彩色环总览：[analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_overlay.svg](analysis/derived/cycle_cover/base/hypothesis_14_base_cycle_overlay.svg)
+- H14 额外短环与自环增强路线：
+  [报告](analysis/derived/cycle_cover/extra/hypothesis_14_extra_cycle_cover_report.md)
+- 基础输入：[基础组](inputs/hypothesis_14_base_cycle_cover_repeat10.seq)；
+  额外输入：[额外组](inputs/hypothesis_14_extra_cycle_cover_repeat10.seq)
+- 基础组运行时验证：37/37 条逻辑序列、1,656/1,656 步与 H14 一致；运行时退出码
+  134 另行归档。见 [运行记录](../h14-base-cycle-cover-runtime-verify-20260804/README.md)
+  与 [ngKSI 寄存器候选](../h14-base-cycle-cover-runtime-verify-20260804/analysis/derived/register_inference/h14-base-ngksi-signal-summary.md)。
 - Runtime/source provenance: [provenance.yaml](provenance.yaml)
 - Original H13 frozen boundary: [../../README.md](../../README.md)
 

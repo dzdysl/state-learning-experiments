@@ -15,12 +15,21 @@ One record must describe one clearly bounded experiment run, experiment iteratio
 - 当新的分析或运行结果以同一问题、同一证据边界和可复现命令为基础，并且能完整取代旧的派生结果时，可以直接覆盖或移除旧的派生结果，使项目结构保持精简、不保留无意义的重复副本。替换前应确认新结果的输入、命令和结论均已记录；若旧结果仍具有独立的比较价值，应在新结果或记录说明中保留其来源关系。
 - 此规则仅适用于 `analysis/` 下的派生文件、可再生成输出和任务创建的临时材料。`evidence/` 中的原始证据、已冻结的输入、原始日志快照及其哈希记录不得覆盖或删除；它们仍遵循证据不可变规则。
 
+## 同一运行的后续材料与重复内容
+
+- 同一 `run_id` 的后续导出、完成结果或收尾异常，如果仍在解释同一次学习生命周期，应作为父记录的独立 `followups/<descriptive-id>/` 保存。父记录保留其原始证据边界；后续记录只保存该后续时间窗的最终证据、结论和派生物，并在双方 README 互相链接。
+- 不同运行、不同输入边界或不同验证问题（例如对部分序列的替换验证）也应各自作为 sibling follow-up，不得把新运行的 raw、provenance 或结论混入原运行。上层 README 必须明确哪个后续结果取代了哪一段**派生分析**，但不得声称取代原始证据。
+- 完整 `raw/` 导出中与 `evidence/` 的最终 DOT、manifest 或日志同哈希，或同一导出内同时含 `learnedModel.dot` 与最终 `hypothesis_N.dot`，属于可审计的角色重复：前者保存完整原始导出，后者提供最小直接证据。只要 `raw/` 是有界完整导出，两者均保留，并在 README/observations 记录哈希关系；不得为了节省空间删除 raw 成员。
+- 可再生成的 `analysis/derived/` 不保留旧名称的平行副本。分析范围扩大后，应把配置、结果、报告及其全部引用一起改为反映真实范围的名称；在可再生性、输入哈希和替代关系已记录后，可直接替换旧派生文件。
+
 ## 报告交付前的可读性检查
 
 - 每次新建、覆盖或实质性更新面向读者的 Markdown 报告后，必须在交付前检查排版可读性；这项检查不能只验证内容或哈希。
 - 检查长路径、逻辑消息对、状态/边 ID、公式和代码标识符的换行。表格中的 `A/B` 形式应在 `/` 后显式换行，避免长的未断行标识符撑宽列或溢出。
 - 报告含表格时，必须检查列宽是否符合内容：长候选公式列应留有足够宽度，`候选等级`、状态/结论等中文说明列不得窄到逐字竖排。必要时使用固定布局 HTML 表格、`colgroup` 宽度和 `<br>` 调整；同时保持窄屏下可读。
 - 检查所有循环、边或其他承诺列出的结果是否完整覆盖，表头与单元格对齐，代码公式与普通说明均可辨认。完成检查后，在报告中简要记录所采用的换行与列宽策略。
+- Excel 的工作簿预览 PNG 只可位于系统临时目录；artifact-tool 产生的
+  `<workbook>.inspect.ndjson` 属于检查中间文件，验证后必须删除，不得放入 `analysis/`、`evidence/`、`raw/` 或 Git。
 
 ## Record types and IDs
 
@@ -168,6 +177,24 @@ observations. The canonical semantics and CLI are documented in
 `state-learning-tools/docs/mealy/cycle-cover-sequence-workflow.md`.
 
 ### Repeated-cycle register-candidate analysis
+
+在运行寄存器推断前，必须将冻结 raw 快照中的完整
+`statelearner_trace.jsonl` 无损物化到记录的 `evidence/`：使用
+`state-learning-tools/analysis/register_inference/experiments/prepare_register_inference_trace.py`
+按同一个推断 YAML 的 `.seq`、`cycle_cover.sequence_export.cycles` 与 `cycle_id` 选择
+校验每个变体。物化清单必须记录源/目标 SHA-256、字节数、记录数、`sequence_id` 组数和
+变体映射，并声明 `payload_transformation: none`。`cleaned`、筛选、重排、去重、CSV、
+日志/pcap 补字段或 live run 目录都不是合法推断输入；契约失败时停止推断，不得修补数据。
+
+schema v3 寄存器推断必须同时生成 JSON、H13 式 Markdown 摘要和完整 Excel 审计工作簿；`--report`
+与 `--workbook` 都不得省略。Markdown 以固定四列表覆盖全部具体 DOT 边组：循环、边与节点、边级
+候选、输入寄存器、候选等级。完整材料在 Excel 中按 `cycle_id` 分为边级协调、循环—边使用、变体、
+候选明细和协调证据；同一边被不同循环复用时必须分别出现。`expand` 变体显示稳定 `V01…` 及完整
+`loop_inputs`，不以物理 `.seq` 行号为阅读主键。工作簿必须单列精确候选类型
+`hypothetical_candidate` 或 `relatively_stable_candidate`，保留全部并列、交集、非共识、局部候选和
+直接冲突证据。原始区域与重复样本继续仅作为 JSON 的无损证据。Markdown 须使用固定布局 HTML、
+`colgroup` 列宽和 `/` 后换行；Excel 须冻结表头、启用筛选、换行和可读列宽；空交集不自动表述为
+矛盾，只有完整类型化观察键对应不同 `r_after` 时才是 `confirmed_observational_conflict`。
 
 Treat each generated `.seq` line as one concrete-cycle test. Keep the shortest
 prefix and repetition 1 as setup context, then align repetitions 2-10 by the
