@@ -1,0 +1,81 @@
+digraph g {
+  graph [overlap=false, splines=true, bgcolor="white", fontname="Microsoft YaHei", fontsize=20, labelloc="t", label="hypothesis_14_base｜基础组环总览\n实线彩色边=SMP 目标边；虚线彩色边=原始 DOT 补充边或独立自环；多色边=被多个基础路线复用"];
+  node [fontname="Microsoft YaHei", fontsize=12, color="#475569", penwidth=1.4];
+  edge [fontname="Microsoft YaHei", fontsize=9, arrowsize=0.8];
+
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s4 [shape="circle" label="s4"];
+	s5 [shape="circle" label="s5"];
+	s6 [shape="circle" label="s6"];
+	s7 [shape="circle" label="s7"];
+	s8 [shape="circle" label="s8"];
+	s9 [shape="circle" label="s9"];
+	s10 [shape="circle" label="s10"];
+	s11 [shape="circle" label="s11"];
+	s12 [shape="circle" label="s12"];
+	s13 [shape="circle" label="s13"];
+	s14 [shape="circle" label="s14"];
+	s15 [shape="circle" label="s15"];
+	s16 [shape="circle" label="s16"];
+	s17 [shape="circle" label="s17"];
+	s0 -> s1 [label="registrationRequest / authenticationRequest", color="#3949AB", fontcolor="black", style="solid", penwidth=4.0, tooltip="S018"];
+	s0 -> s6 [label="registrationRequestGUTI / identityRequest", color="#7E57C2", fontcolor="black", style="solid", penwidth=4.0, tooltip="S008"];
+	s1 -> s3 [label="authenticationResponse / securityModeCommand", color="#D81B60:#43A047:#7A8B00:#3949AB:#8E24AA:#00897B:#5E35B1:#E53935", fontcolor="black", style="solid", penwidth=4.0, tooltip="S002, S009, S017, S018, S036, S037, S039, F002"];
+	s3 -> s1 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#D81B60", fontcolor="black", style="solid", penwidth=4.0, tooltip="S002"];
+	s3 -> s7 [label="securityModeReject / null_action", color="#7A8B00:#3949AB:#00897B:#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S017, S018, S037, S039"];
+	s3 -> s4 [label="securityModeComplete / registrationAccept", color="#43A047:#8E24AA:#E53935", fontcolor="black", style="solid", penwidth=4.0, tooltip="S009, S036, F002"];
+	s4 -> s1 [label="registrationRequestGUTI / authenticationRequest", color="#43A047:#E53935", fontcolor="black", style="solid", penwidth=4.0, tooltip="S009, F002"];
+	s4 -> s5 [label="registrationComplete / configurationUpdateCommand", color="#FB8C00:#8E24AA:#E53935", fontcolor="black", style="solid", penwidth=4.0, tooltip="S022, S036, F002"];
+	s5 -> s4 [label="registrationRequestGUTI / registrationAccept", color="#E53935", fontcolor="black", style="solid", penwidth=4.0, tooltip="F002"];
+	s5 -> s12 [label="deregistrationRequest / null_action", color="#FB8C00:#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S022, S036"];
+	s6 -> s1 [label="registrationRequest | identityResponse / authenticationRequest", color="#7E57C2:#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S008, S036"];
+	s7 -> s8 [label="registrationRequest / authenticationRequest", color="#6D4C41:#7A8B00:#00897B:#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S010, S017, S037, S039"];
+	s7 -> s6 [label="registrationRequestGUTI / identityRequest", color="#3949AB", fontcolor="black", style="solid", penwidth=4.0, tooltip="S018"];
+	s8 -> s1 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#7A8B00", fontcolor="black", style="solid", penwidth=4.0, tooltip="S017"];
+	s8 -> s9 [label="authenticationResponse / securityModeCommand", color="#6D4C41:#00897B:#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S010, S037, S039"];
+	s9 -> s10 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#00897B", fontcolor="black", style="solid", penwidth=4.0, tooltip="S037"];
+	s9 -> s11 [label="deregistrationRequest / null_action", color="#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S039"];
+	s9 -> s7 [label="securityModeReject / null_action", color="#6D4C41", fontcolor="black", style="solid", penwidth=4.0, tooltip="S010"];
+	s10 -> s11 [label="deregistrationRequest / null_action", color="#1E88E5:#546E7A", fontcolor="black", style="solid", penwidth=4.0, tooltip="S003, F001"];
+	s10 -> s17 [label="authenticationResponse / securityModeCommand", color="#D19A00:#00897B:#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S004, S037, S039"];
+	s11 -> s10 [label="registrationRequest / authenticationRequest", color="#1E88E5:#5E35B1:#546E7A", fontcolor="black", style="solid", penwidth=4.0, tooltip="S003, S039, F001"];
+	s11 -> s16 [label="registrationRequestGUTI / identityRequest", color="#00897B:#546E7A", fontcolor="black", style="solid", penwidth=4.0, tooltip="S037, F001"];
+	s12 -> s13 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#004D40:#00ACC1:#FB8C00:#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S005, S012, S022, S036"];
+	s13 -> s12 [label="deregistrationRequest / null_action", color="#004D40", fontcolor="black", style="solid", penwidth=4.0, tooltip="S005"];
+	s13 -> s14 [label="authenticationResponse / securityModeCommand", color="#F4511E:#00ACC1:#FB8C00:#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S006, S012, S022, S036"];
+	s14 -> s13 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#F4511E", fontcolor="black", style="solid", penwidth=4.0, tooltip="S006"];
+	s14 -> s12 [label="deregistrationRequest / null_action", color="#00ACC1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S012"];
+	s14 -> s15 [label="securityModeReject / null_action", color="#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S036"];
+	s14 -> s4 [label="securityModeComplete / registrationAccept", color="#FB8C00", fontcolor="black", style="solid", penwidth=4.0, tooltip="S022"];
+	s15 -> s1 [label="registrationRequest / authenticationRequest", color="#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S039"];
+	s15 -> s6 [label="registrationRequestGUTI / identityRequest", color="#8E24AA", fontcolor="black", style="solid", penwidth=4.0, tooltip="S036"];
+	s16 -> s1 [label="registrationRequest | identityResponse / authenticationRequest", color="#00897B", fontcolor="black", style="solid", penwidth=4.0, tooltip="S037"];
+	s16 -> s11 [label="deregistrationRequest / null_action", color="#546E7A", fontcolor="black", style="solid", penwidth=4.0, tooltip="F001"];
+	s17 -> s10 [label="registrationRequest | registrationRequestGUTI / authenticationRequest", color="#D19A00", fontcolor="black", style="solid", penwidth=4.0, tooltip="S004"];
+	s17 -> s11 [label="deregistrationRequest / null_action", color="#00897B", fontcolor="black", style="solid", penwidth=4.0, tooltip="S037"];
+	s17 -> s15 [label="securityModeReject / null_action", color="#5E35B1", fontcolor="black", style="solid", penwidth=4.0, tooltip="S039"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+
+  // Closure edges and self-loops used by the base group.
+  s1 -> s0 [label="deregistrationRequest / null_action", color="#7E57C2", fontcolor="black", style="dashed", penwidth=4.0, tooltip="S008", constraint=false];
+  s1 -> s1 [label="registrationRequest / authenticationRequest", color="#039BE5", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L001", constraint=false];
+  s1 -> s1 [label="registrationRequestGUTI / authenticationRequest", color="#C0CA33", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L002", constraint=false];
+  s6 -> s0 [label="deregistrationRequest / null_action", color="#3949AB", fontcolor="black", style="dashed", penwidth=4.0, tooltip="S018", constraint=false];
+  s10 -> s10 [label="registrationRequest / authenticationRequest", color="#00838F", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L003", constraint=false];
+  s10 -> s10 [label="registrationRequestGUTI / authenticationRequest", color="#6A1B9A", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L004", constraint=false];
+  s13 -> s13 [label="registrationRequest / authenticationRequest", color="#8D6E63", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L005", constraint=false];
+  s13 -> s13 [label="registrationRequestGUTI / authenticationRequest", color="#5C6BC0", fontcolor="black", style="dashed", penwidth=4.0, tooltip="L006", constraint=false];
+  base_cycle_legend [shape=plain, margin=0, label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+      <TR><TD COLSPAN="2"><B>基础组路线颜色</B></TD></TR>
+<TR><TD BGCOLOR="#D81B60"></TD><TD ALIGN="LEFT">S002：base_simple_cover</TD></TR><TR><TD BGCOLOR="#1E88E5"></TD><TD ALIGN="LEFT">S003：base_simple_cover</TD></TR><TR><TD BGCOLOR="#D19A00"></TD><TD ALIGN="LEFT">S004：base_simple_cover</TD></TR><TR><TD BGCOLOR="#004D40"></TD><TD ALIGN="LEFT">S005：base_simple_cover</TD></TR><TR><TD BGCOLOR="#F4511E"></TD><TD ALIGN="LEFT">S006：base_simple_cover</TD></TR><TR><TD BGCOLOR="#7E57C2"></TD><TD ALIGN="LEFT">S008：base_simple_cover</TD></TR><TR><TD BGCOLOR="#43A047"></TD><TD ALIGN="LEFT">S009：base_simple_cover</TD></TR><TR><TD BGCOLOR="#6D4C41"></TD><TD ALIGN="LEFT">S010：base_simple_cover</TD></TR><TR><TD BGCOLOR="#00ACC1"></TD><TD ALIGN="LEFT">S012：base_simple_cover</TD></TR><TR><TD BGCOLOR="#7A8B00"></TD><TD ALIGN="LEFT">S017：base_simple_cover</TD></TR><TR><TD BGCOLOR="#3949AB"></TD><TD ALIGN="LEFT">S018：base_simple_cover</TD></TR><TR><TD BGCOLOR="#FB8C00"></TD><TD ALIGN="LEFT">S022：base_simple_cover</TD></TR><TR><TD BGCOLOR="#8E24AA"></TD><TD ALIGN="LEFT">S036：base_simple_cover</TD></TR><TR><TD BGCOLOR="#00897B"></TD><TD ALIGN="LEFT">S037：base_simple_cover</TD></TR><TR><TD BGCOLOR="#5E35B1"></TD><TD ALIGN="LEFT">S039：base_simple_cover</TD></TR><TR><TD BGCOLOR="#546E7A"></TD><TD ALIGN="LEFT">F001：base_fallback</TD></TR><TR><TD BGCOLOR="#E53935"></TD><TD ALIGN="LEFT">F002：base_fallback</TD></TR><TR><TD BGCOLOR="#039BE5"></TD><TD ALIGN="LEFT">L001：base_standalone_self_loop</TD></TR><TR><TD BGCOLOR="#C0CA33"></TD><TD ALIGN="LEFT">L002：base_standalone_self_loop</TD></TR><TR><TD BGCOLOR="#00838F"></TD><TD ALIGN="LEFT">L003：base_standalone_self_loop</TD></TR><TR><TD BGCOLOR="#6A1B9A"></TD><TD ALIGN="LEFT">L004：base_standalone_self_loop</TD></TR><TR><TD BGCOLOR="#8D6E63"></TD><TD ALIGN="LEFT">L005：base_standalone_self_loop</TD></TR><TR><TD BGCOLOR="#5C6BC0"></TD><TD ALIGN="LEFT">L006：base_standalone_self_loop</TD></TR>
+    </TABLE>
+  >];
+}

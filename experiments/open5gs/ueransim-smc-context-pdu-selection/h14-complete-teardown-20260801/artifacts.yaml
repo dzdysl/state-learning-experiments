@@ -1,0 +1,21 @@
+schema_version: 1
+content_tree_definition: "SHA-256 over UTF-8 sorted records: relative-path, NUL, byte-count, NUL, member SHA-256 hex, LF."
+artifacts:
+  - id: complete-structured-run
+    original_path: "D:\\downloads\\runs\\20260730T054606Z-60d7ce19"
+    snapshot_path: "D:\\state-learning-lab\\run-data\\open5gs\\open5gs266-smc-context-h13-interrupted-20260730\\h14-learning-complete-finalizer-failed-20260801\\run-20260730T054606Z-60d7ce19"
+    bytes: 954315118
+    file_count: 6710
+    sha256_content_tree: 9558b3ee6000dcebacc14a473ccb517267e786e680c668fedadaae9bc4ad7b10
+    relevance: direct
+    appendable: false
+    note: "同一 run ID 的完整后续快照；父记录保留较早的 H13 冻结边界。外部快照保持归档时的历史目录名，不随仓库内记录重命名。"
+  - id: complete-learner-export
+    original_path: "D:\\downloads\\workflow-doc-consolidation"
+    archived_path: raw/learner-export
+    bytes: 9127201
+    file_count: 20
+    sha256_content_tree: 760dabc0e6f8bca0659883c4568df482e2e6cc598d585019f214ae5e0617e989
+    relevance: direct
+    appendable: true
+    note: "The source directory had later appends after the parent H13 freeze; this copy fixes the final supplied boundary."

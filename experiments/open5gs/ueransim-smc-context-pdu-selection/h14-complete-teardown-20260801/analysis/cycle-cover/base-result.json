@@ -1,0 +1,4240 @@
+{
+  "schema_version": 4,
+  "kind": "mealy_layered_cycle_routes",
+  "group_name": "基础",
+  "basename": "hypothesis_14_base",
+  "source_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\h14-complete-teardown-20260801\\analysis\\model\\smp.dot",
+  "source_sha256": "ad8506cbb2810e3a79ca7bcd2ce7c6164f39855de79e81d7d84bfa53fed61cd2",
+  "closure_dot": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\h14-complete-teardown-20260801\\evidence\\hypotheses\\hypothesis_14.dot",
+  "closure_sha256": "19fe51296d78d000d2ab7e9106d4555b0064ca7f5e7b78c608c39f05db5ca8d0",
+  "parameters": {
+    "excluded_states": [
+      "s2"
+    ],
+    "required_inputs": [],
+    "required_outputs": [
+      "authenticationRequest",
+      "securityModeCommand"
+    ],
+    "signal_match_mode": "output-only",
+    "sequence_repeat_count": 10,
+    "merged_input_policy": "expand"
+  },
+  "input_warnings": [],
+  "target_edges": [
+    {
+      "target_id": "E001",
+      "src": "s0",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 0
+    },
+    {
+      "target_id": "E002",
+      "src": "s0",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "order": 1
+    },
+    {
+      "target_id": "E003",
+      "src": "s1",
+      "dst": "s3",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "order": 2
+    },
+    {
+      "target_id": "E004",
+      "src": "s3",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 3
+    },
+    {
+      "target_id": "E005",
+      "src": "s3",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 4
+    },
+    {
+      "target_id": "E006",
+      "src": "s3",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "order": 5
+    },
+    {
+      "target_id": "E007",
+      "src": "s4",
+      "dst": "s1",
+      "label": "registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 6
+    },
+    {
+      "target_id": "E008",
+      "src": "s4",
+      "dst": "s5",
+      "label": "registrationComplete / configurationUpdateCommand",
+      "inputs": [
+        "registrationComplete"
+      ],
+      "output": "configurationUpdateCommand",
+      "kind": "target",
+      "order": 7
+    },
+    {
+      "target_id": "E009",
+      "src": "s5",
+      "dst": "s4",
+      "label": "registrationRequestGUTI / registrationAccept",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "order": 8
+    },
+    {
+      "target_id": "E010",
+      "src": "s5",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 9
+    },
+    {
+      "target_id": "E011",
+      "src": "s6",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 10
+    },
+    {
+      "target_id": "E012",
+      "src": "s7",
+      "dst": "s8",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 11
+    },
+    {
+      "target_id": "E013",
+      "src": "s7",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "order": 12
+    },
+    {
+      "target_id": "E014",
+      "src": "s8",
+      "dst": "s1",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 13
+    },
+    {
+      "target_id": "E015",
+      "src": "s8",
+      "dst": "s9",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "order": 14
+    },
+    {
+      "target_id": "E016",
+      "src": "s9",
+      "dst": "s10",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 15
+    },
+    {
+      "target_id": "E017",
+      "src": "s9",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 16
+    },
+    {
+      "target_id": "E018",
+      "src": "s9",
+      "dst": "s7",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 17
+    },
+    {
+      "target_id": "E019",
+      "src": "s10",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 18
+    },
+    {
+      "target_id": "E020",
+      "src": "s10",
+      "dst": "s17",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "order": 19
+    },
+    {
+      "target_id": "E021",
+      "src": "s11",
+      "dst": "s10",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 20
+    },
+    {
+      "target_id": "E022",
+      "src": "s11",
+      "dst": "s16",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "order": 21
+    },
+    {
+      "target_id": "E023",
+      "src": "s12",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 22
+    },
+    {
+      "target_id": "E024",
+      "src": "s13",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 23
+    },
+    {
+      "target_id": "E025",
+      "src": "s13",
+      "dst": "s14",
+      "label": "authenticationResponse / securityModeCommand",
+      "inputs": [
+        "authenticationResponse"
+      ],
+      "output": "securityModeCommand",
+      "kind": "target",
+      "order": 24
+    },
+    {
+      "target_id": "E026",
+      "src": "s14",
+      "dst": "s13",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 25
+    },
+    {
+      "target_id": "E027",
+      "src": "s14",
+      "dst": "s12",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 26
+    },
+    {
+      "target_id": "E028",
+      "src": "s14",
+      "dst": "s15",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 27
+    },
+    {
+      "target_id": "E029",
+      "src": "s14",
+      "dst": "s4",
+      "label": "securityModeComplete / registrationAccept",
+      "inputs": [
+        "securityModeComplete"
+      ],
+      "output": "registrationAccept",
+      "kind": "target",
+      "order": 28
+    },
+    {
+      "target_id": "E030",
+      "src": "s15",
+      "dst": "s1",
+      "label": "registrationRequest / authenticationRequest",
+      "inputs": [
+        "registrationRequest"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 29
+    },
+    {
+      "target_id": "E031",
+      "src": "s15",
+      "dst": "s6",
+      "label": "registrationRequestGUTI / identityRequest",
+      "inputs": [
+        "registrationRequestGUTI"
+      ],
+      "output": "identityRequest",
+      "kind": "target",
+      "order": 30
+    },
+    {
+      "target_id": "E032",
+      "src": "s16",
+      "dst": "s1",
+      "label": "registrationRequest | identityResponse / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "identityResponse"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 31
+    },
+    {
+      "target_id": "E033",
+      "src": "s16",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 32
+    },
+    {
+      "target_id": "E034",
+      "src": "s17",
+      "dst": "s10",
+      "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+      "inputs": [
+        "registrationRequest",
+        "registrationRequestGUTI"
+      ],
+      "output": "authenticationRequest",
+      "kind": "target",
+      "order": 33
+    },
+    {
+      "target_id": "E035",
+      "src": "s17",
+      "dst": "s11",
+      "label": "deregistrationRequest / null_action",
+      "inputs": [
+        "deregistrationRequest"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 34
+    },
+    {
+      "target_id": "E036",
+      "src": "s17",
+      "dst": "s15",
+      "label": "securityModeReject / null_action",
+      "inputs": [
+        "securityModeReject"
+      ],
+      "output": "null_action",
+      "kind": "target",
+      "order": 35
+    }
+  ],
+  "fallback_target_ids": [
+    "E009",
+    "E033"
+  ],
+  "routes": [
+    {
+      "route_id": "S002",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s1",
+        "s3",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E004"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s1",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 3
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#D81B60",
+      "artifact": {
+        "path": "base-S002-len02.svg",
+        "bytes": 33688,
+        "sha256": "f0163c36615ae742ab935f06bf93d875bf82842f69bf8883e61b375b98bc74f2"
+      }
+    },
+    {
+      "route_id": "S003",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s10",
+        "s11",
+        "s10"
+      ],
+      "target_edge_ids": [
+        "E019",
+        "E021"
+      ],
+      "edges": [
+        {
+          "src": "s10",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 18
+        },
+        {
+          "src": "s11",
+          "dst": "s10",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 20
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#1E88E5",
+      "artifact": {
+        "path": "base-S003-len02.svg",
+        "bytes": 33688,
+        "sha256": "b3ea4ac661ed905a7cc6226ec2587c0f28236177e59554206479b30cc23b956c"
+      }
+    },
+    {
+      "route_id": "S004",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s10",
+        "s17",
+        "s10"
+      ],
+      "target_edge_ids": [
+        "E020",
+        "E034"
+      ],
+      "edges": [
+        {
+          "src": "s10",
+          "dst": "s17",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 19
+        },
+        {
+          "src": "s17",
+          "dst": "s10",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 33
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#D19A00",
+      "artifact": {
+        "path": "base-S004-len02.svg",
+        "bytes": 33688,
+        "sha256": "cc3a72f2e1de6ac2ec7e8ff18ed4c7163e58127279dec1da3e8bd8a693369e2c"
+      }
+    },
+    {
+      "route_id": "S005",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s12",
+        "s13",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E024"
+      ],
+      "edges": [
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 22
+        },
+        {
+          "src": "s13",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 23
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#004D40",
+      "artifact": {
+        "path": "base-S005-len02.svg",
+        "bytes": 33688,
+        "sha256": "d1e871d268b5902a1aa725978086c928ee316d9dfc6258b42bfdb2ccce4d7b51"
+      }
+    },
+    {
+      "route_id": "S006",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 2,
+      "nodes": [
+        "s13",
+        "s14",
+        "s13"
+      ],
+      "target_edge_ids": [
+        "E025",
+        "E026"
+      ],
+      "edges": [
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 24
+        },
+        {
+          "src": "s14",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 25
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#F4511E",
+      "artifact": {
+        "path": "base-S006-len02.svg",
+        "bytes": 33688,
+        "sha256": "a4c91c34194553d6c81a7a2a03432802d7566ec6e3a71562d6d40b47a2768f66"
+      }
+    },
+    {
+      "route_id": "S008",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s0",
+        "s6",
+        "s1",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E002",
+        "E011"
+      ],
+      "edges": [
+        {
+          "src": "s0",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "order": 1
+        },
+        {
+          "src": "s6",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 10
+        },
+        {
+          "src": "s1",
+          "dst": "s0",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "closure",
+          "order": 15
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#7E57C2",
+      "artifact": {
+        "path": "base-S008-len03.svg",
+        "bytes": 33709,
+        "sha256": "a89f96a83ea6db279e9c1d9537cce6f5fdd0785b271a638703b9dfc85aecb76c"
+      }
+    },
+    {
+      "route_id": "S009",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E007"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "order": 5
+        },
+        {
+          "src": "s4",
+          "dst": "s1",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 6
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#43A047",
+      "artifact": {
+        "path": "base-S009-len03.svg",
+        "bytes": 33709,
+        "sha256": "87f728dc97bf9fa48ce5d94619fed569bad73b83896080bd8ad8440da3e81750"
+      }
+    },
+    {
+      "route_id": "S010",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s7",
+        "s8",
+        "s9",
+        "s7"
+      ],
+      "target_edge_ids": [
+        "E012",
+        "E015",
+        "E018"
+      ],
+      "edges": [
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 11
+        },
+        {
+          "src": "s8",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 14
+        },
+        {
+          "src": "s9",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 17
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#6D4C41",
+      "artifact": {
+        "path": "base-S010-len03.svg",
+        "bytes": 33709,
+        "sha256": "075d4e46b25388fe5ede601dfe46610ce8d725f66707fc8f1781d2ffd184485c"
+      }
+    },
+    {
+      "route_id": "S012",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 3,
+      "nodes": [
+        "s12",
+        "s13",
+        "s14",
+        "s12"
+      ],
+      "target_edge_ids": [
+        "E023",
+        "E025",
+        "E027"
+      ],
+      "edges": [
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 22
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 24
+        },
+        {
+          "src": "s14",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 26
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#00ACC1",
+      "artifact": {
+        "path": "base-S012-len03.svg",
+        "bytes": 33709,
+        "sha256": "960a38f910dcbca82004900567aa9193e2a084688dc0392d67ea7d5c28a31940"
+      }
+    },
+    {
+      "route_id": "S017",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 4,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E014"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 4
+        },
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 11
+        },
+        {
+          "src": "s8",
+          "dst": "s1",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 13
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#7A8B00",
+      "artifact": {
+        "path": "base-S017-len04.svg",
+        "bytes": 33730,
+        "sha256": "09db898e038b5fe03721eb2610e9c5b21aa55b52569313a228d089a9bff57b75"
+      }
+    },
+    {
+      "route_id": "S018",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s0",
+        "s1",
+        "s3",
+        "s7",
+        "s6",
+        "s0"
+      ],
+      "target_edge_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E013"
+      ],
+      "edges": [
+        {
+          "src": "s0",
+          "dst": "s1",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 0
+        },
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 4
+        },
+        {
+          "src": "s7",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "order": 12
+        },
+        {
+          "src": "s6",
+          "dst": "s0",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "closure",
+          "order": 75
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#3949AB",
+      "artifact": {
+        "path": "base-S018-len05.svg",
+        "bytes": 33751,
+        "sha256": "0839242e3d3eb40beb611bfcb21a25b3ce53b56df049c0ece2158dda6c263fe2"
+      }
+    },
+    {
+      "route_id": "S022",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 5,
+      "nodes": [
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E008",
+        "E010",
+        "E023",
+        "E025",
+        "E029"
+      ],
+      "edges": [
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "order": 7
+        },
+        {
+          "src": "s5",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 9
+        },
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 22
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 24
+        },
+        {
+          "src": "s14",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "order": 28
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#FB8C00",
+      "artifact": {
+        "path": "base-S022-len05.svg",
+        "bytes": 33751,
+        "sha256": "1d7a924f33892b0c94450a5c85bfabfef8c3a7ea33c06c210ed3c516b7e490b3"
+      }
+    },
+    {
+      "route_id": "S036",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s1",
+        "s3",
+        "s4",
+        "s5",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s6",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E008",
+        "E010",
+        "E011",
+        "E023",
+        "E025",
+        "E028",
+        "E031"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "order": 5
+        },
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "order": 7
+        },
+        {
+          "src": "s5",
+          "dst": "s12",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 9
+        },
+        {
+          "src": "s12",
+          "dst": "s13",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 22
+        },
+        {
+          "src": "s13",
+          "dst": "s14",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 24
+        },
+        {
+          "src": "s14",
+          "dst": "s15",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 27
+        },
+        {
+          "src": "s15",
+          "dst": "s6",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "order": 30
+        },
+        {
+          "src": "s6",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 10
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#8E24AA",
+      "artifact": {
+        "path": "base-S036-len09.svg",
+        "bytes": 33835,
+        "sha256": "0954346f2f2b1fa63dadb406c34e1d5a08679e5441a4b25c524fa764fb37765f"
+      }
+    },
+    {
+      "route_id": "S037",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s17",
+        "s11",
+        "s16",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E016",
+        "E020",
+        "E022",
+        "E032",
+        "E035"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 4
+        },
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 11
+        },
+        {
+          "src": "s8",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 14
+        },
+        {
+          "src": "s9",
+          "dst": "s10",
+          "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 15
+        },
+        {
+          "src": "s10",
+          "dst": "s17",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 19
+        },
+        {
+          "src": "s17",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 34
+        },
+        {
+          "src": "s11",
+          "dst": "s16",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "order": 21
+        },
+        {
+          "src": "s16",
+          "dst": "s1",
+          "label": "registrationRequest | identityResponse / authenticationRequest",
+          "inputs": [
+            "registrationRequest",
+            "identityResponse"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 31
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#00897B",
+      "artifact": {
+        "path": "base-S037-len09.svg",
+        "bytes": 33835,
+        "sha256": "6b2ec830a8e911ff5b38e658908c05d199838a2a81b27aa399fbc09ebd14b7fa"
+      }
+    },
+    {
+      "route_id": "S039",
+      "route_kind": "base_simple_cover",
+      "walk_type": "simple_directed_cycle",
+      "length": 9,
+      "nodes": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s11",
+        "s10",
+        "s17",
+        "s15",
+        "s1"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E005",
+        "E012",
+        "E015",
+        "E017",
+        "E020",
+        "E021",
+        "E030",
+        "E036"
+      ],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s7",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 4
+        },
+        {
+          "src": "s7",
+          "dst": "s8",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 11
+        },
+        {
+          "src": "s8",
+          "dst": "s9",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 14
+        },
+        {
+          "src": "s9",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 16
+        },
+        {
+          "src": "s11",
+          "dst": "s10",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 20
+        },
+        {
+          "src": "s10",
+          "dst": "s17",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 19
+        },
+        {
+          "src": "s17",
+          "dst": "s15",
+          "label": "securityModeReject / null_action",
+          "inputs": [
+            "securityModeReject"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 35
+        },
+        {
+          "src": "s15",
+          "dst": "s1",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 29
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#5E35B1",
+      "artifact": {
+        "path": "base-S039-len09.svg",
+        "bytes": 33835,
+        "sha256": "e1e1f40ea75ae7d69dc6a291afe8e7a22428a00e53b55b2a76cdb35625368288"
+      }
+    },
+    {
+      "route_id": "F001",
+      "route_kind": "base_fallback",
+      "walk_type": "composite_closed_walk",
+      "length": 4,
+      "nodes": [
+        "s11",
+        "s16",
+        "s11",
+        "s10",
+        "s11"
+      ],
+      "target_edge_ids": [
+        "E019",
+        "E021",
+        "E022",
+        "E033"
+      ],
+      "edges": [
+        {
+          "src": "s11",
+          "dst": "s16",
+          "label": "registrationRequestGUTI / identityRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "identityRequest",
+          "kind": "target",
+          "order": 21
+        },
+        {
+          "src": "s16",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 32
+        },
+        {
+          "src": "s11",
+          "dst": "s10",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 20
+        },
+        {
+          "src": "s10",
+          "dst": "s11",
+          "label": "deregistrationRequest / null_action",
+          "inputs": [
+            "deregistrationRequest"
+          ],
+          "output": "null_action",
+          "kind": "target",
+          "order": 18
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#546E7A",
+      "artifact": {
+        "path": "base-F001-len04.svg",
+        "bytes": 33730,
+        "sha256": "bdef6b76290d5d619f0094afcfb2f5d584821d12a540838d9a168d9113a5b2f6"
+      }
+    },
+    {
+      "route_id": "F002",
+      "route_kind": "base_fallback",
+      "walk_type": "composite_closed_walk",
+      "length": 5,
+      "nodes": [
+        "s4",
+        "s5",
+        "s4",
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "target_edge_ids": [
+        "E003",
+        "E006",
+        "E007",
+        "E008",
+        "E009"
+      ],
+      "edges": [
+        {
+          "src": "s4",
+          "dst": "s5",
+          "label": "registrationComplete / configurationUpdateCommand",
+          "inputs": [
+            "registrationComplete"
+          ],
+          "output": "configurationUpdateCommand",
+          "kind": "target",
+          "order": 7
+        },
+        {
+          "src": "s5",
+          "dst": "s4",
+          "label": "registrationRequestGUTI / registrationAccept",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "order": 8
+        },
+        {
+          "src": "s4",
+          "dst": "s1",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "target",
+          "order": 6
+        },
+        {
+          "src": "s1",
+          "dst": "s3",
+          "label": "authenticationResponse / securityModeCommand",
+          "inputs": [
+            "authenticationResponse"
+          ],
+          "output": "securityModeCommand",
+          "kind": "target",
+          "order": 2
+        },
+        {
+          "src": "s3",
+          "dst": "s4",
+          "label": "securityModeComplete / registrationAccept",
+          "inputs": [
+            "securityModeComplete"
+          ],
+          "output": "registrationAccept",
+          "kind": "target",
+          "order": 5
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#D81B60",
+      "artifact": {
+        "path": "base-F002-len05.svg",
+        "bytes": 33751,
+        "sha256": "99bd083b35d96dd4f963cdff79008cb5af2a4536de777b7313004fba1795fb41"
+      }
+    },
+    {
+      "route_id": "L001",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s1",
+        "s1"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s1",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 12
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#1E88E5",
+      "artifact": {
+        "path": "base-L001-len01.svg",
+        "bytes": 33667,
+        "sha256": "e4c23ea5495619f27142352434a6b32e1c5437db589adeb61074eb0d2801df3b"
+      }
+    },
+    {
+      "route_id": "L002",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s1",
+        "s1"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s1",
+          "dst": "s1",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 13
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#D19A00",
+      "artifact": {
+        "path": "base-L002-len01.svg",
+        "bytes": 33667,
+        "sha256": "1b35733bcaef204c0af7d458fb0823f503bb8830d653f57ce439e98e4fa52b12"
+      }
+    },
+    {
+      "route_id": "L003",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s10",
+        "s10"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s10",
+          "dst": "s10",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 120
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#004D40",
+      "artifact": {
+        "path": "base-L003-len01.svg",
+        "bytes": 33667,
+        "sha256": "22823eb21da3372a69e081c6e36ece92bc6bfd423dff5ea6d93b54ebe6396f08"
+      }
+    },
+    {
+      "route_id": "L004",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s10",
+        "s10"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s10",
+          "dst": "s10",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 121
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#F4511E",
+      "artifact": {
+        "path": "base-L004-len01.svg",
+        "bytes": 33667,
+        "sha256": "c23e6ccbf7a246e62e11fe58b40121c38157b4991d64bf179f38b8025175d78a"
+      }
+    },
+    {
+      "route_id": "L005",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s13",
+        "s13"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s13",
+          "dst": "s13",
+          "label": "registrationRequest / authenticationRequest",
+          "inputs": [
+            "registrationRequest"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 156
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#7E57C2",
+      "artifact": {
+        "path": "base-L005-len01.svg",
+        "bytes": 33667,
+        "sha256": "84b548104c1a6d7e40c47e2dbd569ce70de26335175cebf27d8de901116e0c2c"
+      }
+    },
+    {
+      "route_id": "L006",
+      "route_kind": "base_standalone_self_loop",
+      "walk_type": "simple_directed_cycle",
+      "length": 1,
+      "nodes": [
+        "s13",
+        "s13"
+      ],
+      "target_edge_ids": [],
+      "edges": [
+        {
+          "src": "s13",
+          "dst": "s13",
+          "label": "registrationRequestGUTI / authenticationRequest",
+          "inputs": [
+            "registrationRequestGUTI"
+          ],
+          "output": "authenticationRequest",
+          "kind": "closure",
+          "order": 157
+        }
+      ],
+      "embedded_self_loop": null,
+      "color": "#43A047",
+      "artifact": {
+        "path": "base-L006-len01.svg",
+        "bytes": 33667,
+        "sha256": "d6cc6d133a13098ac65e7c5bf16301404a50764bcac0cd9b2f42e67e21c1ac88"
+      }
+    }
+  ],
+  "sequence_export": {
+    "start_state": "s0",
+    "repeat_count": 10,
+    "merged_input_policy": "expand",
+    "line_count": 37,
+    "cycle_count": 23,
+    "cycles": [
+      {
+        "route_id": "S002",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 2,
+        "nodes": [
+          "s1",
+          "s3",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E004"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s1",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 3
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S002",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 1,
+        "last_line": 2,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 1,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 21
+          },
+          {
+            "line_number": 2,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 21
+          }
+        ]
+      },
+      {
+        "route_id": "S003",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 2,
+        "nodes": [
+          "s10",
+          "s11",
+          "s10"
+        ],
+        "target_edge_ids": [
+          "E019",
+          "E021"
+        ],
+        "edges": [
+          {
+            "src": "s10",
+            "dst": "s11",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 18
+          },
+          {
+            "src": "s11",
+            "dst": "s10",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 20
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S003",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
+        "cycle_start_state": "s10",
+        "rotated_nodes": [
+          "s10",
+          "s11",
+          "s10"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 3,
+        "last_line": 3,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 3,
+            "loop_inputs": [
+              "deregistrationRequest",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 26
+          }
+        ]
+      },
+      {
+        "route_id": "S004",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 2,
+        "nodes": [
+          "s10",
+          "s17",
+          "s10"
+        ],
+        "target_edge_ids": [
+          "E020",
+          "E034"
+        ],
+        "edges": [
+          {
+            "src": "s10",
+            "dst": "s17",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 19
+          },
+          {
+            "src": "s17",
+            "dst": "s10",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 33
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S004",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
+        "cycle_start_state": "s10",
+        "rotated_nodes": [
+          "s10",
+          "s17",
+          "s10"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 4,
+        "last_line": 5,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 4,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 26
+          },
+          {
+            "line_number": 5,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 26
+          }
+        ]
+      },
+      {
+        "route_id": "S005",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 2,
+        "nodes": [
+          "s12",
+          "s13",
+          "s12"
+        ],
+        "target_edge_ids": [
+          "E023",
+          "E024"
+        ],
+        "edges": [
+          {
+            "src": "s12",
+            "dst": "s13",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 22
+          },
+          {
+            "src": "s13",
+            "dst": "s12",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 23
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S005",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
+        "cycle_start_state": "s12",
+        "rotated_nodes": [
+          "s12",
+          "s13",
+          "s12"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest"
+        ],
+        "prefix_length": 5,
+        "repeat_count": 10,
+        "first_line": 6,
+        "last_line": 7,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 6,
+            "loop_inputs": [
+              "registrationRequest",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 25
+          },
+          {
+            "line_number": 7,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 25
+          }
+        ]
+      },
+      {
+        "route_id": "S006",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 2,
+        "nodes": [
+          "s13",
+          "s14",
+          "s13"
+        ],
+        "target_edge_ids": [
+          "E025",
+          "E026"
+        ],
+        "edges": [
+          {
+            "src": "s13",
+            "dst": "s14",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 24
+          },
+          {
+            "src": "s14",
+            "dst": "s13",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 25
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S006",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 2,
+        "cycle_start_state": "s13",
+        "rotated_nodes": [
+          "s13",
+          "s14",
+          "s13"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 8,
+        "last_line": 9,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 8,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 26
+          },
+          {
+            "line_number": 9,
+            "loop_inputs": [
+              "authenticationResponse",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 26
+          }
+        ]
+      },
+      {
+        "route_id": "S008",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 3,
+        "nodes": [
+          "s0",
+          "s6",
+          "s1",
+          "s0"
+        ],
+        "target_edge_ids": [
+          "E002",
+          "E011"
+        ],
+        "edges": [
+          {
+            "src": "s0",
+            "dst": "s6",
+            "label": "registrationRequestGUTI / identityRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "identityRequest",
+            "kind": "target",
+            "order": 1
+          },
+          {
+            "src": "s6",
+            "dst": "s1",
+            "label": "registrationRequest | identityResponse / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "identityResponse"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 10
+          },
+          {
+            "src": "s1",
+            "dst": "s0",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "closure",
+            "order": 15
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S008",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
+        "cycle_start_state": "s0",
+        "rotated_nodes": [
+          "s0",
+          "s6",
+          "s1",
+          "s0"
+        ],
+        "prefix_inputs": [],
+        "prefix_length": 0,
+        "repeat_count": 10,
+        "first_line": 10,
+        "last_line": 11,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 10,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "registrationRequest",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 30
+          },
+          {
+            "line_number": 11,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "identityResponse",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 30
+          }
+        ]
+      },
+      {
+        "route_id": "S009",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 3,
+        "nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E006",
+          "E007"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s4",
+            "label": "securityModeComplete / registrationAccept",
+            "inputs": [
+              "securityModeComplete"
+            ],
+            "output": "registrationAccept",
+            "kind": "target",
+            "order": 5
+          },
+          {
+            "src": "s4",
+            "dst": "s1",
+            "label": "registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 6
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S009",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 12,
+        "last_line": 12,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 12,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 31
+          }
+        ]
+      },
+      {
+        "route_id": "S010",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 3,
+        "nodes": [
+          "s7",
+          "s8",
+          "s9",
+          "s7"
+        ],
+        "target_edge_ids": [
+          "E012",
+          "E015",
+          "E018"
+        ],
+        "edges": [
+          {
+            "src": "s7",
+            "dst": "s8",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 11
+          },
+          {
+            "src": "s8",
+            "dst": "s9",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 14
+          },
+          {
+            "src": "s9",
+            "dst": "s7",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 17
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S010",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
+        "cycle_start_state": "s7",
+        "rotated_nodes": [
+          "s7",
+          "s8",
+          "s9",
+          "s7"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject"
+        ],
+        "prefix_length": 3,
+        "repeat_count": 10,
+        "first_line": 13,
+        "last_line": 13,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 13,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 33
+          }
+        ]
+      },
+      {
+        "route_id": "S012",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 3,
+        "nodes": [
+          "s12",
+          "s13",
+          "s14",
+          "s12"
+        ],
+        "target_edge_ids": [
+          "E023",
+          "E025",
+          "E027"
+        ],
+        "edges": [
+          {
+            "src": "s12",
+            "dst": "s13",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 22
+          },
+          {
+            "src": "s13",
+            "dst": "s14",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 24
+          },
+          {
+            "src": "s14",
+            "dst": "s12",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 26
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S012",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 3,
+        "cycle_start_state": "s12",
+        "rotated_nodes": [
+          "s12",
+          "s13",
+          "s14",
+          "s12"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest"
+        ],
+        "prefix_length": 5,
+        "repeat_count": 10,
+        "first_line": 14,
+        "last_line": 15,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 14,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 35
+          },
+          {
+            "line_number": 15,
+            "loop_inputs": [
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 35
+          }
+        ]
+      },
+      {
+        "route_id": "S017",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 4,
+        "nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E005",
+          "E012",
+          "E014"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s7",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 4
+          },
+          {
+            "src": "s7",
+            "dst": "s8",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 11
+          },
+          {
+            "src": "s8",
+            "dst": "s1",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 13
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S017",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 4,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 16,
+        "last_line": 17,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 16,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 41
+          },
+          {
+            "line_number": 17,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 41
+          }
+        ]
+      },
+      {
+        "route_id": "S018",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 5,
+        "nodes": [
+          "s0",
+          "s1",
+          "s3",
+          "s7",
+          "s6",
+          "s0"
+        ],
+        "target_edge_ids": [
+          "E001",
+          "E003",
+          "E005",
+          "E013"
+        ],
+        "edges": [
+          {
+            "src": "s0",
+            "dst": "s1",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 0
+          },
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s7",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 4
+          },
+          {
+            "src": "s7",
+            "dst": "s6",
+            "label": "registrationRequestGUTI / identityRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "identityRequest",
+            "kind": "target",
+            "order": 12
+          },
+          {
+            "src": "s6",
+            "dst": "s0",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "closure",
+            "order": 75
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S018",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 5,
+        "cycle_start_state": "s0",
+        "rotated_nodes": [
+          "s0",
+          "s1",
+          "s3",
+          "s7",
+          "s6",
+          "s0"
+        ],
+        "prefix_inputs": [],
+        "prefix_length": 0,
+        "repeat_count": 10,
+        "first_line": 18,
+        "last_line": 18,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 18,
+            "loop_inputs": [
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "deregistrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 50
+          }
+        ]
+      },
+      {
+        "route_id": "S022",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 5,
+        "nodes": [
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s4"
+        ],
+        "target_edge_ids": [
+          "E008",
+          "E010",
+          "E023",
+          "E025",
+          "E029"
+        ],
+        "edges": [
+          {
+            "src": "s4",
+            "dst": "s5",
+            "label": "registrationComplete / configurationUpdateCommand",
+            "inputs": [
+              "registrationComplete"
+            ],
+            "output": "configurationUpdateCommand",
+            "kind": "target",
+            "order": 7
+          },
+          {
+            "src": "s5",
+            "dst": "s12",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 9
+          },
+          {
+            "src": "s12",
+            "dst": "s13",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 22
+          },
+          {
+            "src": "s13",
+            "dst": "s14",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 24
+          },
+          {
+            "src": "s14",
+            "dst": "s4",
+            "label": "securityModeComplete / registrationAccept",
+            "inputs": [
+              "securityModeComplete"
+            ],
+            "output": "registrationAccept",
+            "kind": "target",
+            "order": 28
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S022",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 5,
+        "cycle_start_state": "s4",
+        "rotated_nodes": [
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s4"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete"
+        ],
+        "prefix_length": 3,
+        "repeat_count": 10,
+        "first_line": 19,
+        "last_line": 20,
+        "variant_count": 2,
+        "variants": [
+          {
+            "line_number": 19,
+            "loop_inputs": [
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 53
+          },
+          {
+            "line_number": 20,
+            "loop_inputs": [
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeComplete"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 53
+          }
+        ]
+      },
+      {
+        "route_id": "S036",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 9,
+        "nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s15",
+          "s6",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E006",
+          "E008",
+          "E010",
+          "E011",
+          "E023",
+          "E025",
+          "E028",
+          "E031"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s4",
+            "label": "securityModeComplete / registrationAccept",
+            "inputs": [
+              "securityModeComplete"
+            ],
+            "output": "registrationAccept",
+            "kind": "target",
+            "order": 5
+          },
+          {
+            "src": "s4",
+            "dst": "s5",
+            "label": "registrationComplete / configurationUpdateCommand",
+            "inputs": [
+              "registrationComplete"
+            ],
+            "output": "configurationUpdateCommand",
+            "kind": "target",
+            "order": 7
+          },
+          {
+            "src": "s5",
+            "dst": "s12",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 9
+          },
+          {
+            "src": "s12",
+            "dst": "s13",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 22
+          },
+          {
+            "src": "s13",
+            "dst": "s14",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 24
+          },
+          {
+            "src": "s14",
+            "dst": "s15",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 27
+          },
+          {
+            "src": "s15",
+            "dst": "s6",
+            "label": "registrationRequestGUTI / identityRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "identityRequest",
+            "kind": "target",
+            "order": 30
+          },
+          {
+            "src": "s6",
+            "dst": "s1",
+            "label": "registrationRequest | identityResponse / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "identityResponse"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 10
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S036",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s12",
+          "s13",
+          "s14",
+          "s15",
+          "s6",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 21,
+        "last_line": 24,
+        "variant_count": 4,
+        "variants": [
+          {
+            "line_number": 21,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 22,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 23,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 24,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          }
+        ]
+      },
+      {
+        "route_id": "S037",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 9,
+        "nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s10",
+          "s17",
+          "s11",
+          "s16",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E005",
+          "E012",
+          "E015",
+          "E016",
+          "E020",
+          "E022",
+          "E032",
+          "E035"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s7",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 4
+          },
+          {
+            "src": "s7",
+            "dst": "s8",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 11
+          },
+          {
+            "src": "s8",
+            "dst": "s9",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 14
+          },
+          {
+            "src": "s9",
+            "dst": "s10",
+            "label": "registrationRequest | registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 15
+          },
+          {
+            "src": "s10",
+            "dst": "s17",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 19
+          },
+          {
+            "src": "s17",
+            "dst": "s11",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 34
+          },
+          {
+            "src": "s11",
+            "dst": "s16",
+            "label": "registrationRequestGUTI / identityRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "identityRequest",
+            "kind": "target",
+            "order": 21
+          },
+          {
+            "src": "s16",
+            "dst": "s1",
+            "label": "registrationRequest | identityResponse / authenticationRequest",
+            "inputs": [
+              "registrationRequest",
+              "identityResponse"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 31
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S037",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s10",
+          "s17",
+          "s11",
+          "s16",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 25,
+        "last_line": 28,
+        "variant_count": 4,
+        "variants": [
+          {
+            "line_number": 25,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequest",
+              "authenticationResponse",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 26,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequest",
+              "authenticationResponse",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 27,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          },
+          {
+            "line_number": 28,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "registrationRequestGUTI",
+              "authenticationResponse",
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "identityResponse"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          }
+        ]
+      },
+      {
+        "route_id": "S039",
+        "route_kind": "base_simple_cover",
+        "walk_type": "simple_directed_cycle",
+        "length": 9,
+        "nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s11",
+          "s10",
+          "s17",
+          "s15",
+          "s1"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E005",
+          "E012",
+          "E015",
+          "E017",
+          "E020",
+          "E021",
+          "E030",
+          "E036"
+        ],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s7",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 4
+          },
+          {
+            "src": "s7",
+            "dst": "s8",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 11
+          },
+          {
+            "src": "s8",
+            "dst": "s9",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 14
+          },
+          {
+            "src": "s9",
+            "dst": "s11",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 16
+          },
+          {
+            "src": "s11",
+            "dst": "s10",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 20
+          },
+          {
+            "src": "s10",
+            "dst": "s17",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 19
+          },
+          {
+            "src": "s17",
+            "dst": "s15",
+            "label": "securityModeReject / null_action",
+            "inputs": [
+              "securityModeReject"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 35
+          },
+          {
+            "src": "s15",
+            "dst": "s1",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 29
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "S039",
+        "cycle_kind": "base_simple_cover",
+        "loop_length": 9,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s11",
+          "s10",
+          "s17",
+          "s15",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 29,
+        "last_line": 29,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 29,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest",
+              "authenticationResponse",
+              "deregistrationRequest",
+              "registrationRequest",
+              "authenticationResponse",
+              "securityModeReject",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 91
+          }
+        ]
+      },
+      {
+        "route_id": "F001",
+        "route_kind": "base_fallback",
+        "walk_type": "composite_closed_walk",
+        "length": 4,
+        "nodes": [
+          "s11",
+          "s16",
+          "s11",
+          "s10",
+          "s11"
+        ],
+        "target_edge_ids": [
+          "E019",
+          "E021",
+          "E022",
+          "E033"
+        ],
+        "edges": [
+          {
+            "src": "s11",
+            "dst": "s16",
+            "label": "registrationRequestGUTI / identityRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "identityRequest",
+            "kind": "target",
+            "order": 21
+          },
+          {
+            "src": "s16",
+            "dst": "s11",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 32
+          },
+          {
+            "src": "s11",
+            "dst": "s10",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 20
+          },
+          {
+            "src": "s10",
+            "dst": "s11",
+            "label": "deregistrationRequest / null_action",
+            "inputs": [
+              "deregistrationRequest"
+            ],
+            "output": "null_action",
+            "kind": "target",
+            "order": 18
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "F001",
+        "cycle_kind": "base_fallback",
+        "loop_length": 4,
+        "cycle_start_state": "s10",
+        "rotated_nodes": [
+          "s10",
+          "s11",
+          "s16",
+          "s11",
+          "s10"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 30,
+        "last_line": 30,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 30,
+            "loop_inputs": [
+              "deregistrationRequest",
+              "registrationRequestGUTI",
+              "deregistrationRequest",
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 46
+          }
+        ]
+      },
+      {
+        "route_id": "F002",
+        "route_kind": "base_fallback",
+        "walk_type": "composite_closed_walk",
+        "length": 5,
+        "nodes": [
+          "s4",
+          "s5",
+          "s4",
+          "s1",
+          "s3",
+          "s4"
+        ],
+        "target_edge_ids": [
+          "E003",
+          "E006",
+          "E007",
+          "E008",
+          "E009"
+        ],
+        "edges": [
+          {
+            "src": "s4",
+            "dst": "s5",
+            "label": "registrationComplete / configurationUpdateCommand",
+            "inputs": [
+              "registrationComplete"
+            ],
+            "output": "configurationUpdateCommand",
+            "kind": "target",
+            "order": 7
+          },
+          {
+            "src": "s5",
+            "dst": "s4",
+            "label": "registrationRequestGUTI / registrationAccept",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "registrationAccept",
+            "kind": "target",
+            "order": 8
+          },
+          {
+            "src": "s4",
+            "dst": "s1",
+            "label": "registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "target",
+            "order": 6
+          },
+          {
+            "src": "s1",
+            "dst": "s3",
+            "label": "authenticationResponse / securityModeCommand",
+            "inputs": [
+              "authenticationResponse"
+            ],
+            "output": "securityModeCommand",
+            "kind": "target",
+            "order": 2
+          },
+          {
+            "src": "s3",
+            "dst": "s4",
+            "label": "securityModeComplete / registrationAccept",
+            "inputs": [
+              "securityModeComplete"
+            ],
+            "output": "registrationAccept",
+            "kind": "target",
+            "order": 5
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "F002",
+        "cycle_kind": "base_fallback",
+        "loop_length": 5,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s4",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 31,
+        "last_line": 31,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 31,
+            "loop_inputs": [
+              "authenticationResponse",
+              "securityModeComplete",
+              "registrationComplete",
+              "registrationRequestGUTI",
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 51
+          }
+        ]
+      },
+      {
+        "route_id": "L001",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s1",
+          "s1"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s1",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 12
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L001",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 32,
+        "last_line": 32,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 32,
+            "loop_inputs": [
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 11
+          }
+        ]
+      },
+      {
+        "route_id": "L002",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s1",
+          "s1"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s1",
+            "dst": "s1",
+            "label": "registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 13
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L002",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s1",
+        "rotated_nodes": [
+          "s1",
+          "s1"
+        ],
+        "prefix_inputs": [
+          "registrationRequest"
+        ],
+        "prefix_length": 1,
+        "repeat_count": 10,
+        "first_line": 33,
+        "last_line": 33,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 33,
+            "loop_inputs": [
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 11
+          }
+        ]
+      },
+      {
+        "route_id": "L003",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s10",
+          "s10"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s10",
+            "dst": "s10",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 120
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L003",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s10",
+        "rotated_nodes": [
+          "s10",
+          "s10"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 34,
+        "last_line": 34,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 34,
+            "loop_inputs": [
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 16
+          }
+        ]
+      },
+      {
+        "route_id": "L004",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s10",
+          "s10"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s10",
+            "dst": "s10",
+            "label": "registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 121
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L004",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s10",
+        "rotated_nodes": [
+          "s10",
+          "s10"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeReject",
+          "registrationRequest",
+          "authenticationResponse",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 35,
+        "last_line": 35,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 35,
+            "loop_inputs": [
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 16
+          }
+        ]
+      },
+      {
+        "route_id": "L005",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s13",
+          "s13"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s13",
+            "dst": "s13",
+            "label": "registrationRequest / authenticationRequest",
+            "inputs": [
+              "registrationRequest"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 156
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L005",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s13",
+        "rotated_nodes": [
+          "s13",
+          "s13"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 36,
+        "last_line": 36,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 36,
+            "loop_inputs": [
+              "registrationRequest"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 16
+          }
+        ]
+      },
+      {
+        "route_id": "L006",
+        "route_kind": "base_standalone_self_loop",
+        "walk_type": "simple_directed_cycle",
+        "length": 1,
+        "nodes": [
+          "s13",
+          "s13"
+        ],
+        "target_edge_ids": [],
+        "edges": [
+          {
+            "src": "s13",
+            "dst": "s13",
+            "label": "registrationRequestGUTI / authenticationRequest",
+            "inputs": [
+              "registrationRequestGUTI"
+            ],
+            "output": "authenticationRequest",
+            "kind": "closure",
+            "order": 157
+          }
+        ],
+        "embedded_self_loop": null,
+        "cycle_id": "L006",
+        "cycle_kind": "base_standalone_self_loop",
+        "loop_length": 1,
+        "cycle_start_state": "s13",
+        "rotated_nodes": [
+          "s13",
+          "s13"
+        ],
+        "prefix_inputs": [
+          "registrationRequest",
+          "authenticationResponse",
+          "securityModeComplete",
+          "registrationComplete",
+          "deregistrationRequest",
+          "registrationRequest"
+        ],
+        "prefix_length": 6,
+        "repeat_count": 10,
+        "first_line": 37,
+        "last_line": 37,
+        "variant_count": 1,
+        "variants": [
+          {
+            "line_number": 37,
+            "loop_inputs": [
+              "registrationRequestGUTI"
+            ],
+            "embedded_self_loop_input": null,
+            "input_count": 16
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "all_cycle_starts_reachable": true,
+      "all_lines_simulated_against_closure_dot": true,
+      "all_lines_close_after_each_iteration": true,
+      "single_space_delimited_nonempty_lines": true
+    },
+    "path": "D:\\state-learning-lab\\projects\\state-learning-experiments\\experiments\\open5gs\\ueransim-smc-context-pdu-selection\\h14-complete-teardown-20260801\\inputs\\base-cycle-repeat10.seq",
+    "bytes": 35826,
+    "sha256": "4b1f05b6e4a9030de0c0b0170124dc8ac635e03de7f872b6f4f3d1c987df9e2a"
+  },
+  "figure_layout": {
+    "mode": "fixed_group_layout",
+    "graphviz_layout_count": 1,
+    "canonical_edge_count": 44,
+    "canonical_svg_bytes": 33589,
+    "canonical_svg_sha256": "393a85c6c491e1762cac29b4ce9bb6e33f21ad331e2faa663c0a1e6fae43dab1",
+    "per_route_change": "edge_color_only"
+  },
+  "report_artifact": {
+    "path": "base-report.md",
+    "bytes": 2762,
+    "sha256": "d7b78baa3cb66b97e1a75b8ee93958e23b5d27abc04cc30b9f2c4975713b679f"
+  }
+}

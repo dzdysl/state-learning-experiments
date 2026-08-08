@@ -71,6 +71,7 @@ The original download directory was not modified or removed.
 
 ## Navigation
 
+- Series index: [README.md](../../../README.md)
 - Runtime/source provenance: [provenance.yaml](provenance.yaml)
 - External artifact inventory: [artifacts.yaml](artifacts.yaml)
 - Complete snapshot member hashes: [archive-manifest.json](archive-manifest.json)

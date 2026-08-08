@@ -1,0 +1,34 @@
+schema_version: 1
+artifacts:
+  - id: complete_run_snapshot
+    relevance: direct
+    original_path: D:\downloads\20260804T034905Z-2b7f2823
+    snapshot_path: D:\state-learning-lab\run-data\open5gs\20260804T034905Z-2b7f2823
+    appendable_after_snapshot: false
+    file_count: 250
+    total_bytes: 25245598
+    tree_sha256: 6b2811b0df34ed3a7696b754a058d7985511a212672f75d8801078264d7890e3
+    note: "保持原始相对目录、80 个 core-session 日志与全部 JSONL；目录树哈希按 relative_path、NUL、文件 SHA-256、换行顺序计算。"
+  - id: full_trace
+    relevance: direct
+    original_path: D:\downloads\20260804T034905Z-2b7f2823\statelearner_trace.jsonl
+    snapshot_path: D:\state-learning-lab\run-data\open5gs\20260804T034905Z-2b7f2823\statelearner_trace.jsonl
+    git_copy: evidence/statelearner_trace.jsonl
+    bytes: 4284444
+    sha256: cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6
+    note: "唯一用于序列完成度、模型一致性、覆盖率和寄存器推断的 trace。"
+  - id: cleaned_trace
+    relevance: indirect
+    original_path: D:\downloads\20260804T034905Z-2b7f2823\statelearner_trace.cleaned.jsonl
+    snapshot_path: D:\state-learning-lab\run-data\open5gs\20260804T034905Z-2b7f2823\statelearner_trace.cleaned.jsonl
+    bytes: 923569
+    sha256: 58393bce5038f97b902960f06a1a000d2830b2c9971fda3198e493138a7659fd
+    note: "派生筛选输出；本记录及后续推断不读取它。"
+  - id: console
+    relevance: supporting
+    original_path: D:\downloads\20260804T034905Z-2b7f2823\raw\console.log
+    snapshot_path: D:\state-learning-lab\run-data\open5gs\20260804T034905Z-2b7f2823\raw\console.log
+    git_copy: evidence/console.log
+    bytes: 527211
+    sha256: 519a3c95e7a4272c40006338cddf9cf781626c9188b66d2c97772964c075d02e
+    note: "记录 37 条逻辑序列完成、运行时合约告警及 launcher 退出码。"

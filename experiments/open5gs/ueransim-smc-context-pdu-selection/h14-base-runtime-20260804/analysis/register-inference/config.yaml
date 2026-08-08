@@ -1,0 +1,42 @@
+schema_version: 3
+inputs:
+  dot: "../../../h14-complete-teardown-20260801/evidence/hypotheses/hypothesis_14.dot"
+  trace: "../../evidence/statelearner_trace.jsonl"
+  cycle_cover: "../../../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json"
+  sequence_file: "../../inputs/base-cycle-repeat10.seq"
+mapping:
+  downlink_ksi_by_output:
+    authenticationRequest: "downlink_side.fields.auth_request_ksi_value"
+    securityModeCommand: "downlink_side.fields.smc_ksi_value"
+  numeric_input_definitions:
+    - id: registration_ngksi
+      input_register_id: ngksi_uplink
+      path: "ue_side.fields.registration_ksi_value"
+      value_type: integer
+      match:
+        input_symbols:
+          - registrationRequest
+          - registrationRequestGUTI
+      phase: before_register_updates
+  signal_definitions:
+    - id: isInitMsg
+      path: "ue_side.fields.isInitMsg"
+      value_type: boolean
+      match:
+        input_symbols:
+          - registrationRequest
+          - registrationRequestGUTI
+      phase: before_numeric_inputs
+  d_states: []
+analysis:
+  cycle_ids: ["S002", "S003", "S004", "S005", "S006", "S008", "S009", "S010", "S012", "S017", "S018", "S022", "S036", "S037", "S039", "F001", "F002", "L001", "L002", "L003", "L004", "L005", "L006"]
+  repetitions: [2, 10]
+  min_consecutive_support: 3
+  max_numeric_depth: 1
+  max_derived_signal_depth: 1
+  backward_inference:
+    enabled: true
+    value_domain: observed_global
+    predecessor_policy: nearest_no_downlink_predecessor
+    earlier_predecessor_policy: hold
+    signal_scope: matching_effective_signal_context

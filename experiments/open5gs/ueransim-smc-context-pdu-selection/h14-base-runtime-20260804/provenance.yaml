@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: experiment_followup
+platform: open5gs
+series: ueransim-smc-context-pdu-selection
+record_id: h14-base-runtime-20260804
+parent_record: ../h14-complete-teardown-20260801
+relationship: runtime_verification
+record_kind: h14_base_cycle_runtime_verification
+run:
+  id: 20260804T034905Z-2b7f2823
+  started_utc: "2026-08-04T03:49:05.472771Z"
+  mode: multi_sequence
+  status_from_manifest: finalized
+input:
+  path: inputs/base-cycle-repeat10.seq
+  bytes: 35826
+  sha256: 4b1f05b6e4a9030de0c0b0170124dc8ac635e03de7f872b6f4f3d1c987df9e2a
+  role: "H14 基础组分层环覆盖的 37 条 expand/repeat-10 输入；与父 H14 follow-up 输入同哈希。"
+model:
+  path: ../h14-complete-teardown-20260801/evidence/hypotheses/hypothesis_14.dot
+  sha256: 19fe51296d78d000d2ab7e9106d4555b0064ca7f5e7b78c608c39f05db5ca8d0
+  simulation_start_state: s0
+  excluded_states: [s2]
+runtime:
+  platform: open5gs
+  configured_core_path: /home/dzdysl/CoreCrisis/test_open5gs/open5gs
+  config_path: /home/dzdysl/CoreCrisis/test_open5gs/core.properties
+  config_sha256: 386d805fdc7fa4aa95c4586e5abc2d8a617e7713f77b3107daff0ad6890bfaf9
+  java_version: 11.0.27
+  os_name: Linux
+  component: multiSeq
+  build_repository: open5gs-state-learning
+  build_commit: 11453a35e1c1dba5b49ae2d487f9e48ff0b493a8
+  build_describe: runtime/2026-07-24/core-output-filter-v3-dirty
+  build_dirty: true
+  build_status_sha256: 29f714e56f15ae10c7eac1d658e3bba4a0d6a3021cb79da6a494edb128d630fc
+  artifact_path: /home/dzdysl/CoreCrisis/test_open5gs/Corelearner_SeqTest.jar
+  artifact_sha256: 4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+  runtime_contract_warning:
+    path: scripts/start_core.sh
+    expected_sha256: 840ef0af6893870090daf095a53f3435122accb71b4f23b3e1575d92e6284658
+    observed_sha256: 031fbab111baca97e1d910d8038ff4b07084fba888eafcce0d3173acc84f2d9c
+  open5gs_binary_provenance: "未随运行包冻结版本、commit 或二进制哈希；不得将参考快照认定为实际部署二进制。"
+analysis:
+  tool: D:\state-learning-lab\projects\state-learning-tools\analysis\cycle_cover\analyze_cycle_cover.py
+  tool_sha256: e0f993939cf138000d6d9bd587455f4e632c50d290403d7c7960411bc1d33fa1
+  method: "以完整 statelearner_trace.jsonl 的每条记录驱动 H14 原始 DOT；按每个会话的完整输入字唯一匹配 37 行输入，并比较每步抽象下行输出。"
+register_inference:
+  trace_materialization: analysis/register-inference/trace-materialization.json
+  trace_materialization_sha256: 34cbbcf8086153fa07636e71d9f563b05f199bb018b915329519ea23cc39f996
+  trace_materialization_tool: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\prepare_register_inference_trace.py
+  trace_materialization_tool_sha256: ddae2bebe319b2181f0dd2124727fabcfa4cc55aa1267d1dad25743dc6e531e3
+  trace_materialization_method: "prepare_register_inference_trace.py：冻结快照的完整 JSONL 与 evidence 副本字节一致；37 个选中循环变体逐一匹配 37 个 trace 组。"
+  tool: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\infer_cycle_ngksi_regions.py
+  tool_sha256: 6fb927246ff0349320c099e80796f668cd30fc757533a5f8d5df14a86c5e1d48
+  config: analysis/register-inference/config.yaml
+  config_sha256: 1a99fd6bcd442b42e7e6cfc544859731c854d506d83bc9ec442de7710b866f89
+  result: analysis/register-inference/candidates.json
+  result_sha256: a5d771b0978ec5bec77ef140ea01aba753026d2c4c0d29ce8c07c95fa3d1b13c
+  report: analysis/register-inference/summary.md
+  report_sha256: 6c75d93a22856440acbc4102ecfd889386cda137ddd7d1f1c78ef7266879b4e6
+  report_contract: h13-style-summary-v2
+  report_integrity:
+    edge_group_count: 52
+    cycle_count: 23
+    cycle_variant_count: 37
+    cycle_edge_usage_count: 90
+  historical_workbook:
+    path: analysis/register-inference/audit.xlsx
+    sha256: 871d59cbf16abc9416b7df54e572e2579196f4f05c6a2820e60d0a8bf319f3b5
+    note: "此前在用户明确要求 Excel 审计时生成；本轮仅将面向读者的信号名改为 isInitMsg 并生成 SVG 叠加图，未重生成工作簿。"
+  relatively_stable_inference:
+    inference_group_count: 3
+    hypothetical_target_edge_count: 9
+    hypothetical_target_partition_count: 22
+    migration_succeeded_partition_count: 4
+    no_matching_inference_partition_count: 17
+    migration_failed_partition_count: 1
+    dynamic_t_preference_values: [7]
+    preference_scope: "某个相对稳定推断首次产生 r_i==T 派生值分裂后，T 立即影响脚本剩余生命周期的新候选排序；精确 r'=T 最高，含相同派生值分裂者其次，既有候选不回排。"
+  backward_inference:
+    target_partition: E0073/S008
+    inferred_edge: E0002
+    held_edge: E0016
+    observed_global_value_domain: [0, 1, 2, 3, 4, 5, 6, 7]
+    allowed_outputs: [6, 7]
+    candidate_count: 6
+    interpretation: "带相对稳定推断迁移来源和保持假设的 hypothetical_candidate；不确认源码更新点。"
+  edge_category_overlay:
+    tool: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\render_edge_category_overlay.py
+    tool_sha256: de0f47ffe1286edda14a0c226f1867f08ccf7e4783f2aa35d71e066c0d382c3d
+    base_svg: ../h14-complete-teardown-20260801/analysis/model/smp.svg
+    base_svg_sha256: 7683a685e53fc926fc5c6d1508f8b949070d822cae6f782fac05e169197fc3e1
+    output: analysis/register-inference/edge-categories.svg
+    output_sha256: 1782f5045122438b7baf0e6963a0d516baaaf44200fb06f9c65b511e4d486dd5
+    visible_edge_count: 44
+    note: "直接叠加到固定 SMP SVG 布局；不重新运行 Graphviz，不将观察候选分类解释为源码更新点。"
+  command:
+    executable: D:\anaconda3\python.exe
+    script: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\infer_cycle_ngksi_regions.py
+    arguments:
+      - --config
+      - analysis/register-inference/config.yaml
+      - --output
+      - analysis/register-inference/candidates.json
+      - --report
+      - analysis/register-inference/summary.md
+  cycle_export: ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json
+  cycle_export_sha256: c600ebcd412db1134b0865dee357671bc833962149ce56de9442c0bd07fe6b80
+  trace_policy: "仅使用完整 evidence/statelearner_trace.jsonl；禁止使用 cleaned 派生视图。"
+reference_sources:
+  - snapshot_id: open5gs_old
+    snapshot_path: D:\state-learning-lab\sources\open5gs_old\open5gs
+    requested_version: v2.6.6
+    purpose: "仅用于解释与日志相同的 gmm-sm.c、nas-path.c 和线程终止诊断字符串；不是实际部署证明。"

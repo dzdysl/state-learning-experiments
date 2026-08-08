@@ -1,0 +1,5 @@
+No Open5GS test-core process is running from: /home/dzdysl/CoreCrisis/test_open5gs/open5gs
+Open5GS stopped and session log writes were flushed.
+[INFO] Launching Open5GS from: /home/dzdysl/CoreCrisis/test_open5gs/open5gs
+[INFO] Configuration: /home/dzdysl/CoreCrisis/test_open5gs/core.properties
+[INFO] Core log: /home/dzdysl/CoreCrisis/test_open5gs/runs/20260731T092950Z-e8ae5e2f/raw/open5gs/core-session-001/core.log

@@ -6,10 +6,10 @@
 
 ```text
 experiments/
-  open5gs/<series>/<iteration>/
-  free5gc/<series>/<iteration>/
-  oai/<series>/<iteration>/
-  cross-platform/<series>/<iteration>/
+  open5gs/<series>/<record-id>/
+  free5gc/<series>/<record-id>/
+  oai/<series>/<record-id>/
+  cross-platform/<series>/<record-id>/
 failures/
   open5gs/<failure-id>/
   free5gc/<failure-id>/
@@ -17,7 +17,7 @@ failures/
 sequences/canonical/
 ```
 
-临时序列放在对应 iteration 的 `inputs/`；少量长期稳定的主流程序列才进入 `sequences/canonical/`；导致崩溃的序列冻结为 failure 的 `reproducer.seq`。
+同一 series 的后续运行、复现和验证使用兄弟记录，并以 README/provenance 的相对链接表达关系。series 锚点后最多三层目录，Windows 完整路径最多 240 个字符。临时序列放在对应记录的 `inputs/`；少量长期稳定的主流程序列才进入 `sequences/canonical/`；导致崩溃的序列冻结为 failure 的 `reproducer.seq`。
 
 ## 分析所用源码
 
@@ -34,7 +34,7 @@ sequences/canonical/
 
 - [`open5gs/baseline-mdf-servreq/2026-07-17`](experiments/open5gs/baseline-mdf-servreq/2026-07-17/README.md)：Open5GS v2.6.6 baseline MDF / Service Request 主动学习运行；H23 分类、迭代细化和二分类回溯已完成，AB 聚类与寄存器推断待继续。
 - [`open5gs/ueransim-registration-state-init/open5gs266-buildfix-20260728`](experiments/open5gs/ueransim-registration-state-init/open5gs266-buildfix-20260728/README.md)：Open5GS v2.6.6、UERANSIM `learner-registration-state-init-buildfix` 主动学习运行；运行在 H20 后中断，完整证据已归档，最新 H20 的 SMP SVG 已生成。
-- [`open5gs/ueransim-smc-context-pdu-selection/open5gs266-smc-context-h13-interrupted-20260730`](experiments/open5gs/ueransim-smc-context-pdu-selection/open5gs266-smc-context-h13-interrupted-20260730/README.md)：Open5GS v2.6.6、UERANSIM `smc-context-pdu-selection` 主动学习运行；原 H13 冻结边界已归档，后续同一 run 已完成 H14/18-state 学习，但运行 finalizer 因 Open5GS launcher status 134 失败。
+- [`open5gs/ueransim-smc-context-pdu-selection`](experiments/open5gs/ueransim-smc-context-pdu-selection/README.md)：Open5GS v2.6.6、UERANSIM `smc-context-pdu-selection` 系列；包含 H13 冻结边界、H14 完成记录和 H14 基础环运行时验证。
 
 ## 失败记录
 

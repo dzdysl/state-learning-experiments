@@ -10,6 +10,39 @@ One record must describe one clearly bounded experiment run, experiment iteratio
 
 - README、provenance 的说明字段、分析报告、观察、假设、图注和其他面向读者的文字说明一律使用中文。文件名、路径、代码标识符、协议字段、公式、命令和原始日志内容可保留其原有语言；不得为了翻译而改写原始证据字节。
 
+## 术语纪律
+
+- 报告、实验流程和交付说明优先使用用户已经给出的术语，以及当前目录适用的专用 `AGENTS.md` 中定义的
+  规范术语。除非用户明确要求新命名，或原术语确有歧义且已先说明，否则不得自行创造近义术语、状态名或
+  分类名。代码中的兼容字段、内部枚举和临时变量不得未经解释直接提升为面向读者的概念。
+- 本仓库只记录实验输入、证据边界和交付结果。跨实验分析算法的术语与流程应链接其工具仓库的唯一规范，
+  不在多个实验报告或本文件中分别改写出不同版本。
+
+## 目录层级、路径与命名
+
+- 实验目录锚点为 `experiments/<platform>/<series>/`，失败目录锚点为
+  `failures/<platform>/`。锚点之后最多使用三层目录，文件名不计入层数。例如
+  `<record>/analysis/register-inference/candidates.json` 合规；不得继续创建
+  `analysis/derived/<tool>/<variant>/...` 一类流水线式层级。
+- 仓库内任何新增、移动或再生成文件的 Windows 完整绝对路径不得超过 240 个字符。
+  在运行生成命令前必须先解析最终绝对输出路径并检查层数与字符数；超限时先缩短记录名、
+  主题目录或文件名，不得生成后再留下长路径副本。
+- 同一 series 下的后续导出、复现、比较、验证和收尾记录使用兄弟记录目录，通过双方
+  README 和 `provenance.yaml` 中相对的 `parent_record` 或 `related_records` 表达关系；
+  不再新建嵌套 `followups/<id>/`。
+- 记录内优先使用 `inputs/`、`evidence/`、`raw/`、`analysis/`，每类目录最多再增加一层
+  有业务含义的主题目录，例如 `analysis/model/`、`analysis/cycle-cover/`、
+  `analysis/register-inference/` 或 `evidence/hypotheses/`。单个小结果直接放在分类目录。
+- 文件与目录使用简短、可读的 kebab-case 名称。父级已经表达的平台、series、记录 ID、
+  hypothesis 或分析主题不得在子文件名中机械重复；在主题目录内优先使用 `result.json`、
+  `report.md`、`config.yaml`、`audit.xlsx`、`smp.svg` 等角色名，必要的状态、边、循环或
+  轮次编号可以保留。
+- `raw/` 完整导出、原始日志、协议证据和外部快照保留原始文件名与字节；不得仅为缩短或
+  美化而改写。路径迁移时用清单核对移动前后的字节数与 SHA-256。
+- 未迁移的旧记录可以保留既有深层目录，但不得向超限目录新增文件。若需要再生成或替换
+  旧派生结果，应把同一结果族迁入合规主题目录，更新全部活动引用与 provenance 哈希，
+  并删除被完整取代的旧派生路径。
+
 ## 派生结果的替换与精简
 
 - 当新的分析或运行结果以同一问题、同一证据边界和可复现命令为基础，并且能完整取代旧的派生结果时，可以直接覆盖或移除旧的派生结果，使项目结构保持精简、不保留无意义的重复副本。替换前应确认新结果的输入、命令和结论均已记录；若旧结果仍具有独立的比较价值，应在新结果或记录说明中保留其来源关系。
@@ -17,10 +50,10 @@ One record must describe one clearly bounded experiment run, experiment iteratio
 
 ## 同一运行的后续材料与重复内容
 
-- 同一 `run_id` 的后续导出、完成结果或收尾异常，如果仍在解释同一次学习生命周期，应作为父记录的独立 `followups/<descriptive-id>/` 保存。父记录保留其原始证据边界；后续记录只保存该后续时间窗的最终证据、结论和派生物，并在双方 README 互相链接。
+- 同一 `run_id` 的后续导出、完成结果或收尾异常，如果仍在解释同一次学习生命周期，应作为同一 series 下的兄弟记录保存。父记录保留其原始证据边界；后续记录只保存该后续时间窗的最终证据、结论和派生物，并在双方 README 与 provenance 互相链接。
 - 不同运行、不同输入边界或不同验证问题（例如对部分序列的替换验证）也应各自作为 sibling follow-up，不得把新运行的 raw、provenance 或结论混入原运行。上层 README 必须明确哪个后续结果取代了哪一段**派生分析**，但不得声称取代原始证据。
 - 完整 `raw/` 导出中与 `evidence/` 的最终 DOT、manifest 或日志同哈希，或同一导出内同时含 `learnedModel.dot` 与最终 `hypothesis_N.dot`，属于可审计的角色重复：前者保存完整原始导出，后者提供最小直接证据。只要 `raw/` 是有界完整导出，两者均保留，并在 README/observations 记录哈希关系；不得为了节省空间删除 raw 成员。
-- 可再生成的 `analysis/derived/` 不保留旧名称的平行副本。分析范围扩大后，应把配置、结果、报告及其全部引用一起改为反映真实范围的名称；在可再生性、输入哈希和替代关系已记录后，可直接替换旧派生文件。
+- 可再生成的 `analysis/<topic>/` 不保留旧名称的平行副本。分析范围扩大后，应把配置、结果、报告及其全部引用一起改为反映真实范围的名称；在可再生性、输入哈希和替代关系已记录后，可直接替换旧派生文件。
 
 ## 报告交付前的可读性检查
 
@@ -33,10 +66,10 @@ One record must describe one clearly bounded experiment run, experiment iteratio
 
 ## Record types and IDs
 
-- Put ordinary, repeatable measurements under `experiments/<platform>/<series>/<iteration>/`.
+- Put ordinary, repeatable measurements under `experiments/<platform>/<series>/<record-id>/`.
 - Put a crash, query inconsistency, timeout, state explosion, non-deterministic output, or suspected learner/core defect under `failures/<platform>/<failure-id>/`.
 - Use `platform` values `open5gs`, `free5gc`, `oai`, or `cross-platform`.
-- Name an iteration or failure ID in lower-case kebab case. Include the platform/version, concise phenomenon, date, and optional round, for example `free5gc421-ttt-inconsistency-20260723-r14`.
+- Name a record or failure ID in lower-case kebab case. Avoid repeating platform/version/series context already expressed by parent directories; retain the concise phase or phenomenon, date and optional round.
 - Put only stable, broadly reused sequence families in `sequences/canonical/`. A one-off sequence belongs to its record's `inputs/`; a crash-inducing sequence belongs to the failure record and is never mixed into ordinary canonical sequences.
 
 ## Outcome classification
@@ -73,10 +106,7 @@ Use the same evidence model for both `experiments/` and `failures/`. A failure a
     observations.md         # facts with a path/line/time reference; no causal claims
     hypotheses.md           # explicitly labelled possible causes and confidence
     rendering.md            # source DOT, render command, output paths and hashes
-    figures/                # final SVG/PDF/PNG figures derived from evidence
-    derived/                # simplified DOT or other non-source analytical derivatives
-  followups/
-    .gitkeep                # reproducing, minimising, root-cause and fix-verification tasks
+    <topic>/                # optional single topic layer for final derivatives and figures
 ```
 
 Do not create every optional file before it has content. Preserve the top-level names when they exist so tools and later analysis remain predictable.
@@ -85,29 +115,27 @@ Do not create every optional file before it has content. Preserve the top-level 
 
 Treat the required layout as an evidence model, not a rule that every record must have the same directories. Inventory the supplied material before moving it and classify each item by the question it answers: original failure/experiment evidence, exact input, planned comparison, regression, reproduction or minimisation, root-cause analysis, fix verification, figure/derived output, or mixed/external artifact.
 
-The following is an optional pattern for a failure investigation that accumulates materially different later runs:
+The following is an optional pattern for an investigation that accumulates materially different later runs. Related records are siblings, not nested descendants:
 
 ```text
-<failure>/
-  README.md
-  inputs/                    # original failure input
-  evidence/                  # original failure evidence
-  analysis/                  # cross-investigation index and model analysis
-  followups/
-    <comparison-id>/
-      README.md
-      provenance.yaml
-      artifacts.yaml
-      inputs/
-      evidence/
-      raw/
-      analysis/
-    <reproduction-id>/
-      ...
+<collection>/
+  <parent-id>/
+    README.md
+    provenance.yaml
+    inputs/
+    evidence/
+    analysis/
+  <comparison-id>/
+    README.md
+    provenance.yaml          # parent_record: ../<parent-id>
+    evidence/
+    analysis/
+  <reproduction-id>/
+    ...
 ```
 
-- Use a separate `followups/<descriptive-id>/` when later material comes from a different run, build, test set, or question but still investigates the same parent failure. Give that follow-up its own status, provenance, artifacts and conclusion; create only the populated subdirectories.
-- Keep the parent `README.md` and, when useful, `analysis/README.md` as navigation and a confidence-aware synthesis. Do not copy a follow-up conclusion into the original evidence layer.
+- Use a separate sibling `<descriptive-id>/` when later material comes from a different run, build, test set, or question but still investigates the same parent record. Give it its own status, provenance, artifacts and conclusion; create only populated subdirectories and record the parent relation explicitly.
+- Keep the parent `README.md` and, when useful, a series-level `README.md` as navigation and a confidence-aware synthesis. Do not copy a related record's conclusion into the original evidence layer.
 - Create a new top-level experiment/failure record instead of a follow-up when the material is unrelated, has a different primary phenomenon, or needs an independent lifecycle.
 - A small one-off analysis may remain directly under `analysis/`; a single exact reproducer may remain under `inputs/`; a large frozen run may be only an external snapshot plus `artifacts.yaml`. Do not introduce nested structure merely for symmetry.
 - Preserve original bytes and SHA-256 values when reorganizing. Move complete raw files to `raw/`, compact direct excerpts to `evidence/`, exact commands/sequences/configs to `inputs/`, and interpretations or figures to `analysis/`.
@@ -140,13 +168,13 @@ For `failures/free5gc/free5gc421-ttt-inconsistency-20260723-r14`, original hypot
 evidence/hypotheses/hypothesis_1.dot ... hypothesis_13.dot
 ```
 
-Unless a request explicitly asks for a pure/original view, generate the SMP derivative by default. It does not modify the evidence DOT and writes its `_smp.dot` plus figure files under `analysis/derived/`:
+Unless a request explicitly asks for a pure/original view, generate the SMP derivative by default. It does not modify the evidence DOT and writes the simplified model plus figure files under `analysis/model/`:
 
 ```powershell
 $record = 'D:\state-learning-lab\projects\state-learning-experiments\failures\free5gc\free5gc421-ttt-inconsistency-20260723-r14'
 D:\anaconda3\python.exe D:\state-learning-lab\projects\state-learning-tools\rendering\mealy_to_pdf\render_graphviz.py `
   "$record\evidence\hypotheses\hypothesis_13.dot" `
-  --simplify --formats svg,pdf --output-dir "$record\analysis\derived"
+  --simplify --formats svg,pdf --output-dir "$record\analysis\model"
 ```
 
 For a pure/original view that preserves every DOT edge, omit `--simplify` and write the result under `analysis/figures/`:
@@ -157,7 +185,7 @@ D:\anaconda3\python.exe D:\state-learning-lab\projects\state-learning-tools\rend
   --formats svg,pdf --output-dir "$record\analysis\figures"
 ```
 
-The default command creates `hypothesis_13_smp.dot` and rendered files in `analysis/derived/`. Record the command, source relative path, source/output SHA-256 values, purpose, and visual conclusion in `analysis/rendering.md`. Keep only final figures in Git; place exploratory renders under `tmp/` or outside the repository.
+The default command creates the simplified DOT and rendered files in `analysis/model/`. Record the command, source relative path, source/output SHA-256 values, purpose, and visual conclusion in `analysis/rendering.md`. Keep only final figures in Git; place exploratory renders under `tmp/` or outside the repository.
 
 ### Cycle-cover sequence export
 
@@ -186,47 +214,28 @@ observations. The canonical semantics and CLI are documented in
 变体映射，并声明 `payload_transformation: none`。`cleaned`、筛选、重排、去重、CSV、
 日志/pcap 补字段或 live run 目录都不是合法推断输入；契约失败时停止推断，不得修补数据。
 
-schema v3 寄存器推断必须同时生成 JSON、H13 式 Markdown 摘要和完整 Excel 审计工作簿；`--report`
-与 `--workbook` 都不得省略。Markdown 以固定四列表覆盖全部具体 DOT 边组：循环、边与节点、边级
-候选、输入寄存器、候选等级。完整材料在 Excel 中按 `cycle_id` 分为边级协调、循环—边使用、变体、
-候选明细和协调证据；同一边被不同循环复用时必须分别出现。`expand` 变体显示稳定 `V01…` 及完整
-`loop_inputs`，不以物理 `.seq` 行号为阅读主键。工作簿必须单列精确候选类型
-`hypothetical_candidate` 或 `relatively_stable_candidate`，保留全部并列、交集、非共识、局部候选和
-直接冲突证据。原始区域与重复样本继续仅作为 JSON 的无损证据。Markdown 须使用固定布局 HTML、
-`colgroup` 列宽和 `/` 后换行；Excel 须冻结表头、启用筛选、换行和可读列宽；空交集不自动表述为
-矛盾，只有完整类型化观察键对应不同 `r_after` 时才是 `confirmed_observational_conflict`。
+schema v3 寄存器推断默认生成 JSON 与 H13 式 Markdown 摘要；`--report` 不得省略。只有用户明确要求
+Excel 时才提供 `--workbook` 并生成 Excel 审计工作簿。Markdown 以固定四列表覆盖全部具体 DOT 边组。Excel
+只保留“循环边使用”
+工作表，同一边被不同循环复用时必须分别出现；不显示环内序号，`expand` 变体使用稳定 `V01…`。
+工作表必须单列候选类型、本循环候选、最简交集或联合拟合、相对稳定推断、迁移检验和反推解释；
+并列公式使用 `① … ｜ ② …` 横向排列。全部单元格水平/垂直居中，A-I 使用紧凑列宽，并冻结表头、
+启用筛选和换行。完整公式树、各循环局部候选、最简交集、联合拟合、全部迁移与反推样本、原始区域和
+重复样本继续由 JSON 无损保存。
 
-Treat each generated `.seq` line as one concrete-cycle test. Keep the shortest
-prefix and repetition 1 as setup context, then align repetitions 2-10 by the
-same cycle edge, logical input, message direction/type and field path. Missing,
-extra, duplicate, retransmitted or reordered messages are anomalies and must
-not be hidden by shifting the alignment.
+寄存器推断的候选语言、区域构造、相对稳定推断、假设性候选协调、动态常数偏好、迁移检验和前序反推，
+只以 `state-learning-tools/analysis/register_inference/experiments/AGENTS.md` 为算法规范。本仓库不得复制、
+改写或另起名称描述同一算法；这里只规定冻结输入、证据边界和交付格式。若算法规范变化，应重新生成
+整个派生结果族并同步报告、provenance 与哈希。
 
-For every aligned field series, first try simple AMF logical-register
-candidates such as `r'=r`, `r'=0`, `r'=c`, `r'=r+1`, `r'=r-1`, fixed-step or
-modular increments, Boolean toggle and copy-from-input. Report all matching
-candidates from simplest to most specific. If no candidate fits all nine
-samples, report the first breaking repetition, the closest rule and the exact
-values. These are heuristic candidates, not confirmed internal variable
-names.
+报告或解释具体实例时，必须完整列出 EID、`src/dst`、`input/output`、上行与下行 KSI、信号量、数值
+输入以及映射后的观察区域。观察区域统一写成 `(r_before, ordered_observation_items, r_after)`；其中信号量
+使用 `{signal=value}`，数值输入使用 `[input=value]`，并保持真实事件顺序，不得只给公式或省略上下文。
 
-重复循环的类型化时序推断还必须遵守以下规则：
-
-- 区域统一表示为 `(r_before, ordered_observation_items, r_after)`。信号量和数值输入都要保留字段路径、逻辑输入、事件位置和出现序号；缺失、重复、乱序或槽位身份不一致必须报告对齐异常，不得移动其他观察量补位。
-- 信号只能通过通用 `mapping.signal_definitions` 配置，消息选择器支持任意列表和单独的 `"*"` 通配符；不得在推断代码中硬编码 `registrationRequest`、`registrationRequestGUTI` 或其他具体消息名。同一消息可携带多个信号，同一信号可应用于多个消息。
-- 区域内先按轨迹事件时间排序；同一事件的信号在数值输入之前；多个信号和多个数值输入分别按配置声明顺序排列。相同字段出现在不同消息中时仍是独立槽位。
-- 所有已配置并在区域中出现的信号都作为最外层 `signal_guard`，即使样本中的信号恒为 0 或恒为 1。未观察分支写为 `unknown/unobserved_signal_branch`，支持不足分支写为 `unknown/insufficient_support`；含未知叶子的候选只能标记为 `partial_observational_candidate`。
-- 严格区分三类节点：`signal_guard` 使用 `s == 0/1`；`threshold_guard` 只表示 `ite(x < T, f, 0)` 形式的回绕，`else` 必须是常数 0；`derived_value_guard` 只在基础公式和阈值树均失败后枚举输入槽的观测值。派生值的两侧必须非空并各自满足最小连续支持，不能仅凭数值 7 自动赋予协议语义。
-- 配置信号层数、`max_numeric_depth` 和 `max_derived_signal_depth` 独立计数。对 `r'=c`、`r'=r+k`、`r'=ij+k` 以及精确并列树不做任意取舍；候选索引使用有序 `guard_path + update_tree + status` 并维护具体 DOT 边集合。
-- `isInitMsg` 在文字中称为伴随 NAS 输入事件的“初始上行传输上下文信号”。它不是 NAS PDU 内的显式 IE，但 AMF 可通过 NGAP `InitialUEMessage` 与普通 `UplinkNASTransport` 的不同入口区分这一上下文。当前 C01–C05 仅验证门控结构和已观察分支，不得声称验证未知分支或泛化能力。
-
-Then inspect the exact experiment AMF source snapshot and UERANSIM/SUL revision
-for a matching context member and update/reset/copy site on that edge. Report
-the candidate equation, source location and high/medium/low confidence.
-Perform this exploration manually first; do not create a fixed script until
-real traces establish stable edge boundaries, message names and field paths.
-The full procedure is in
-`state-learning-tools/docs/mealy/cycle-cover-sequence-workflow.md`.
+完成候选推断后，再人工对照该实验对应的 AMF 源码快照和实际 UERANSIM/SUL revision，报告候选公式、
+源码位置、置信度和证据边界。源码对照只能作为后续低/中/高置信度说明，不得倒推为已经证实的内部变量
+或真实更新时间。完整工作流入口为
+`state-learning-tools/docs/mealy/cycle-cover-sequence-workflow.md`。
 
 ## From raw data to a complete record
 
@@ -245,14 +254,14 @@ When given a new set of logs, sequences, database files, screenshots, or learner
 5. Review file count, size, timestamps, and SHA-256. Then run the same command with `-Apply`. A total at most 10 MiB is copied to `<record>/raw/`; a larger total becomes an external immutable snapshot under `D:\state-learning-lab\run-data\<platform>\<run-id>`. Complete `artifacts.yaml` for every external/snapshot artifact.
 6. Copy the minimal exact sequence/query/config into `inputs/`; freeze direct excerpts and original hypothesis DOT files in `evidence/`. Add a `reproducer.seq` only after its multiSeq syntax and behaviour have been confirmed.
 7. Start objective analysis in `analysis/observations.md`; place candidate causes in `analysis/hypotheses.md`; create figures only from a documented source DOT or other recorded evidence.
-8. Add concrete remaining tasks to `followups/`. Update the README status only after each reproduction, minimisation, explanation, or fix-verification step.
+8. Create a sibling related record for each concrete reproduction, minimisation, explanation or fix verification, and link it from the parent README/provenance. Update status only after that work is complete.
 
 ## Submission-ready record normalization
 
 Before staging a new or substantially updated record, normalize the supplied material using this reusable decision process:
 
-1. Inventory every modified and untracked path, then group material by primary phenomenon and independent lifecycle. Planned measurements belong to `experiments/`; abnormal or unstable results belong to `failures/`; a later run remains a `followups/<descriptive-id>/` only when it answers a narrower question inside the same investigation.
-2. Give every top-level record and follow-up a descriptive kebab-case ID. A runtime-generated run ID belongs in `provenance.yaml`, the preserved raw directory name and evidence references; do not use a bare run ID as the follow-up ID.
+1. Inventory every modified and untracked path, then group material by primary phenomenon and independent lifecycle. Planned measurements belong to `experiments/`; abnormal or unstable results belong to `failures/`; a later run that answers a narrower question remains a sibling related record inside the same series or platform collection.
+2. Give every record a concise descriptive kebab-case ID. A runtime-generated run ID belongs in `provenance.yaml`, the preserved raw directory name and evidence references; do not use a bare run ID as the record ID.
 3. Keep each record README concise: status, scope, confirmed conclusion, evidence/analysis navigation, follow-up summaries and next actions. Move detailed, source-referenced facts to `analysis/observations.md`; keep only unconfirmed causal explanations and explicit confidence/boundaries in `analysis/hypotheses.md`.
 4. Add or update the repository README index for every top-level experiment or failure. Update parent links after renaming a follow-up, and verify that no old path or ID remains in active Markdown or metadata.
 5. Remove only disposable task-created output: unreferenced intermediate renders, temporary staging copies and `.gitkeep` files in directories that now contain real records. Preserve immutable evidence, raw snapshots, requested final figures and all user-existing material whose role is uncertain.

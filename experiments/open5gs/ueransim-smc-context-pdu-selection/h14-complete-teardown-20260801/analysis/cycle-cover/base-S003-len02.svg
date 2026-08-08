@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="3218pt" height="1413pt" viewBox="0.00 0.00 3218.00 1413.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 1395.14)">
+<ns0:title>g</ns0:title>
+<ns0:polygon fill="white" stroke="none" points="-18,18 -18,-1395.14 3200,-1395.14 3200,18 -18,18" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1591" y="-1354.14" font-family="Microsoft YaHei" font-size="20.00">hypothesis_14_base｜基础组固定底图</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="1591" y="-1327.14" font-family="Microsoft YaHei" font-size="20.00">彩色边=当前路线；黑色实线=SMP边；黑色虚线=本组补充边</ns0:text>
+
+<ns0:g id="node1" class="node">
+<ns0:title>s0</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="2685" cy="-1194.82" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2685" y="-1191.67" font-family="Microsoft YaHei" font-size="12.00">s0</ns0:text>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>s1</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1414" cy="-1081.86" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1414" y="-1078.71" font-family="Microsoft YaHei" font-size="12.00">s1</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-876e5383a93f652fd0b560cf" class="edge">
+<ns0:title>s0-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M2665.54,-1192.12C2521.52,-1179.55 1621.68,-1100.99 1444.33,-1085.5" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1444.72,-1082.73 1436.51,-1084.82 1444.23,-1088.31 1444.72,-1082.73" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2182.86" y="-1136.16" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>s6</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1773" cy="-19.11" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1773" y="-15.96" font-family="Microsoft YaHei" font-size="12.00">s6</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-a34b48d0b28b3d233fd19f9b" class="edge">
+<ns0:title>s0-&gt;s6</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M2704.17,-1191.31C2772.34,-1181.87 2999,-1145.73 2999,-1082.86 2999,-1082.86 2999,-1082.86 2999,-135.68 2999,-73.67 1991.95,-29.13 1803.26,-21.33" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1803.64,-18.54 1795.53,-21.01 1803.41,-24.14 1803.64,-18.54" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="3090.5" y="-623.21" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / identityRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-3e7282c929e708805adb6f8d" class="edge">
+<ns0:title>s1-&gt;s0</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1433.46,-1083.24C1527.85,-1085.23 1947.43,-1095.79 2289,-1131.96 2426.74,-1146.55 2589.69,-1175.85 2655.37,-1188.16" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2654.77,-1190.9 2663.15,-1189.63 2655.81,-1185.4 2654.77,-1190.9" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2462.57" y="-1136.16" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-6ad9daaaccc4fde5bd5016e1" class="edge">
+<ns0:title>s1-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1433.29,-1085.79C1455.06,-1088.49 1480.11,-1087.18 1480.11,-1081.86 1480.11,-1077.41 1462.6,-1075.76 1444.14,-1076.92" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1444.01,-1074.12 1436.3,-1077.65 1444.53,-1079.7 1444.01,-1074.12" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1575.36" y="-1079.68" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-fbaf2bce43854c517a7314f4" class="edge">
+<ns0:title>s1-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1433.21,-1086.11C1498.49,-1095.79 1670.61,-1094.38 1670.61,-1081.86 1670.61,-1069.97 1515.53,-1068.09 1443.94,-1076.21" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1443.78,-1073.41 1436.21,-1077.21 1444.5,-1078.96 1443.78,-1073.41" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1776.73" y="-1079.68" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>s3</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1511" cy="-968.89" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1511" y="-965.74" font-family="Microsoft YaHei" font-size="12.00">s3</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-fd99132370fdf7e7d683c3a7" class="edge">
+<ns0:title>s1-&gt;s3</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1394.38,-1079.42C1348.23,-1075.33 1239.25,-1061.05 1273.5,-1019 1299.36,-987.24 1423.06,-975.39 1480.97,-971.53" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1480.8,-974.35 1488.61,-971.05 1480.45,-968.76 1480.8,-974.35" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1382.25" y="-1023.2" font-family="Microsoft YaHei" font-size="9.00">authenticationResponse / securityModeCommand</ns0:text>
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>s2</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="2751" cy="-1296.04" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2751" y="-1292.89" font-family="Microsoft YaHei" font-size="12.00">s2</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-c3eb2d513fede4877b8d1c76" class="edge">
+<ns0:title>s3-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1510.96,-988.52C1510.07,-1001.7 1507.05,-1019.19 1498,-1031.75 1484.4,-1050.62 1461.12,-1063.4 1442.51,-1071.18" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1441.73,-1068.48 1435.29,-1074 1443.76,-1073.7 1441.73,-1068.48" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1657.08" y="-1023.2" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>s4</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1903" cy="-855.93" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1903" y="-852.78" font-family="Microsoft YaHei" font-size="12.00">s4</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-8fae4c52adda49d525284444" class="edge">
+<ns0:title>s3-&gt;s4</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1528.79,-960.37C1559.06,-947.8 1622.69,-922.29 1678.25,-906.03 1747.04,-885.9 1829.83,-869.86 1873.19,-862.07" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1873.46,-864.87 1880.85,-860.71 1872.49,-859.35 1873.46,-864.87" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1773.12" y="-910.23" font-family="Microsoft YaHei" font-size="9.00">securityModeComplete / registrationAccept</ns0:text>
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>s7</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1462" cy="-855.93" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1462" y="-852.78" font-family="Microsoft YaHei" font-size="12.00">s7</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-e698e206e1c1dbaa6b7f06ae" class="edge">
+<ns0:title>s3-&gt;s7</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1502.13,-951.74C1497.07,-942.26 1490.76,-929.98 1485.75,-918.78 1480.82,-907.76 1475.93,-895.37 1471.89,-884.59" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1474.6,-883.84 1469.2,-877.3 1469.34,-885.78 1474.6,-883.84" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1555.88" y="-910.23" font-family="Microsoft YaHei" font-size="9.00">securityModeReject / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-cabf11b0c357ef5d143493ed" class="edge">
+<ns0:title>s4-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1900.3,-875.48C1893.89,-912.15 1874.11,-993.63 1821,-1031.75 1760.67,-1075.05 1528.24,-1080.39 1444.39,-1080.88" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1444.59,-1078.08 1436.6,-1080.91 1444.61,-1083.68 1444.59,-1078.08" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1985.06" y="-966.72" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>s5</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="2164" cy="-742.96" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2164" y="-739.81" font-family="Microsoft YaHei" font-size="12.00">s5</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-feabd3850f9e10a5e5f8000d" class="edge">
+<ns0:title>s4-&gt;s5</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1922.52,-854.45C1961.59,-852.66 2050.97,-844.32 2113,-805.82 2127.65,-796.72 2140.07,-781.94 2148.98,-769.1" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2151.11,-770.96 2153.17,-762.74 2146.43,-767.88 2151.11,-770.96" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2246.48" y="-797.27" font-family="Microsoft YaHei" font-size="9.00">registrationComplete / configurationUpdateCommand</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-5989b2e94572f91112dc756f" class="edge">
+<ns0:title>s5-&gt;s4</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M2144.37,-744.72C2089.83,-747.27 1938.42,-757.48 1907,-793.07 1899.25,-801.84 1897.37,-814.32 1897.76,-825.78" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1894.97,-826 1898.5,-833.71 1900.54,-825.48 1894.97,-826" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2004.5" y="-797.27" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / registrationAccept</ns0:text>
+</ns0:g>
+
+<ns0:g id="node13" class="node">
+<ns0:title>s12</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="2254" cy="-625.39" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2254" y="-622.24" font-family="Microsoft YaHei" font-size="12.00">s12</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-e3d841461db427e0f5afe590" class="edge">
+<ns0:title>s5-&gt;s12</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M2175.4,-727.32C2189.85,-708.77 2215.03,-676.43 2233,-653.36" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2235.17,-655.13 2237.87,-647.1 2230.75,-651.69 2235.17,-655.13" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2287.07" y="-684.3" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-6a41c9bf8b30166ed3d23831" class="edge">
+<ns0:title>s6-&gt;s0</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1753.6,-22.6C1602.59,-42.29 614.99,-176.85 384,-357.32 335.69,-395.06 348.03,-424.98 320,-479.5 299.25,-519.86 308.84,-541.59 274,-570.68 236.73,-601.79 198.3,-562.78 169.25,-601.68 156.64,-618.56 163.94,-628.7 169.25,-649.1 203.87,-781.98 205.95,-842.32 320,-918.78 611.93,-1114.49 1545.53,-1025.41 1895,-1062.75 2193.8,-1094.67 2551.21,-1166.13 2655.25,-1187.6" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2654.5,-1190.3 2662.9,-1189.19 2655.63,-1184.82 2654.5,-1190.3" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="244.62" y="-623.21" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-78a9627c114191109c975f87" class="edge">
+<ns0:title>s6-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1753.39,-20.32C1559.92,-22.51 0,-43.09 0,-135.68 0,-969.89 0,-969.89 0,-969.89 0,-1065.06 111.15,-1015.94 205,-1031.75 441.94,-1071.65 1220.82,-1079.45 1383.89,-1080.66" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1383.51,-1083.46 1391.53,-1080.72 1383.55,-1077.86 1383.51,-1083.46" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="136.5" y="-562.13" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | identityResponse / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-dd9d8c67e571745dfb309f76" class="edge">
+<ns0:title>s7-&gt;s6</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1481.26,-852.32C1527.7,-844.85 1642,-818.85 1642,-743.96 1642,-743.96 1642,-743.96 1642,-563.3 1642,-482.53 1629,-462.8 1629,-382.03 1629,-382.03 1629,-382.03 1629,-135.68 1629,-77.27 1701.96,-43.46 1744.01,-28.82" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1744.88,-31.48 1751.6,-26.3 1743.12,-26.16 1744.88,-31.48" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1723.79" y="-439.95" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / identityRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>s8</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1184" cy="-742.96" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1184" y="-739.81" font-family="Microsoft YaHei" font-size="12.00">s8</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-579fd797c0cf4e7e37c5d003" class="edge">
+<ns0:title>s7-&gt;s8</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1442.48,-853.67C1388.92,-849.86 1241.26,-836.73 1205.5,-805.82 1196.05,-797.65 1190.75,-785.1 1187.78,-773.43" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1190.54,-772.93 1186.19,-765.65 1185.05,-774.05 1190.54,-772.93" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1300.75" y="-797.27" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-a0593b0338795ee0a1fd67c1" class="edge">
+<ns0:title>s8-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1177.15,-761.41C1165.6,-793.54 1145.32,-863.8 1164.75,-918.78 1186.26,-979.63 1202.6,-995.5 1256,-1031.75 1295.61,-1058.63 1350.61,-1071.33 1384.17,-1076.91" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1383.36,-1079.62 1391.69,-1078.08 1384.22,-1074.08 1383.36,-1079.62" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1317.38" y="-910.23" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>s9</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1225" cy="-625.39" rx="19.11" ry="19.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1225" y="-622.24" font-family="Microsoft YaHei" font-size="12.00">s9</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-315e8a3c2cd4bb812dd20f92" class="edge">
+<ns0:title>s8-&gt;s9</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1178.39,-724.08C1175.37,-711.42 1173.23,-694.25 1178.5,-680.1 1183.36,-667.05 1192.98,-655.06 1202.22,-645.74" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1204.02,-647.89 1207.91,-640.35 1200.17,-643.82 1204.02,-647.89" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1287.25" y="-684.3" font-family="Microsoft YaHei" font-size="9.00">authenticationResponse / securityModeCommand</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-455b4f88b086743fae593f58" class="edge">
+<ns0:title>s9-&gt;s7</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1244.75,-626.71C1281.02,-628.38 1358.59,-637.11 1403,-680.1 1443.43,-719.24 1456.15,-786.98 1460.16,-825.64" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1457.33,-825.45 1460.84,-833.17 1462.91,-824.95 1457.33,-825.45" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1517.88" y="-740.79" font-family="Microsoft YaHei" font-size="9.00">securityModeReject / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>s10</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1096" cy="-381.03" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1096" y="-377.88" font-family="Microsoft YaHei" font-size="12.00">s10</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-10b131e0886558ca91fa2ea8" class="edge">
+<ns0:title>s9-&gt;s10</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1237.47,-610.14C1265.3,-576.57 1326.84,-491.14 1285,-435.75 1266.45,-411.19 1180.15,-394.57 1130.82,-386.89" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1131.34,-384.14 1123.01,-385.71 1130.51,-389.68 1131.34,-384.14" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1451.78" y="-501.04" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>s11</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="884" cy="-503.21" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="884" y="-500.06" font-family="Microsoft YaHei" font-size="12.00">s11</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-6bd514d6dc228663a327e78b" class="edge">
+<ns0:title>s9-&gt;s11</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1206.67,-617.93C1151.53,-598.5 986.73,-540.41 916.39,-515.63" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="917.66,-513.11 909.19,-513.09 915.8,-518.39 917.66,-513.11" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1140.1" y="-562.13" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-d1a7289f55e68db754acd767" class="edge">
+<ns0:title>s10-&gt;s10</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1119.91,-385.66C1142.36,-388.07 1166.71,-386.52 1166.71,-381.03 1166.71,-376.42 1149.54,-374.6 1130.73,-375.55" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1130.68,-372.75 1122.93,-376.17 1131.12,-378.33 1130.68,-372.75" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1261.96" y="-378.86" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-2d1676cf249a76da61227f01" class="edge">
+<ns0:title>s10-&gt;s10</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1119.42,-386.18C1188.78,-396.05 1357.21,-394.34 1357.21,-381.03 1357.21,-368.38 1204.82,-366.21 1130.25,-374.53" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1130.01,-371.73 1122.42,-375.51 1130.71,-377.29 1130.01,-371.73" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1463.34" y="-378.86" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-b0d7845cd2d17982d8ee9c73" class="edge">
+<ns0:title>s10-&gt;s11</ns0:title>
+<ns0:path fill="none" stroke="#1E88E5" stroke-width="2" d="M1072.66,-387.89C1026.81,-399.55 928.38,-425.44 916.25,-435.75 905.97,-444.49 898.7,-457.27 893.69,-469.29" />
+<ns0:polygon fill="#1E88E5" stroke="#1E88E5" stroke-width="2" points="891.1,-468.23 890.92,-476.7 896.34,-470.19 891.1,-468.23" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="991.62" y="-439.95" font-family="Microsoft YaHei" font-size="9.00" fill="#1E88E5">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="node18" class="node">
+<ns0:title>s17</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1123" cy="-258.86" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1123" y="-255.71" font-family="Microsoft YaHei" font-size="12.00">s17</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-7afc791d580124ee1c522b51" class="edge">
+<ns0:title>s10-&gt;s17</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1072.41,-376.43C1045.36,-370.89 1002.21,-357.45 982.5,-326.32 979.47,-321.53 979.29,-318.24 982.5,-313.57 1006.11,-279.27 1054.83,-266.86 1088.21,-262.38" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1088.25,-265.19 1095.88,-261.49 1087.61,-259.63 1088.25,-265.19" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1091.25" y="-317.77" font-family="Microsoft YaHei" font-size="9.00">authenticationResponse / securityModeCommand</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-bd9bdae2466a7a9dc3e1a5f4" class="edge">
+<ns0:title>s11-&gt;s10</ns0:title>
+<ns0:path fill="none" stroke="#1E88E5" stroke-width="2" d="M908.19,-502.26C948.08,-501 1027.81,-492.69 1074,-448.5 1083.01,-439.88 1088.33,-427.49 1091.47,-415.74" />
+<ns0:polygon fill="#1E88E5" stroke="#1E88E5" stroke-width="2" points="1094.15,-416.63 1093.14,-408.21 1088.68,-415.42 1094.15,-416.63" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1178.37" y="-439.95" font-family="Microsoft YaHei" font-size="9.00" fill="#1E88E5">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node17" class="node">
+<ns0:title>s16</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="431" cy="-381.03" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="431" y="-377.88" font-family="Microsoft YaHei" font-size="12.00">s16</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-ad481f625f2393e1f5e58bd0" class="edge">
+<ns0:title>s11-&gt;s16</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M860.13,-498.18C814.59,-490.27 712.34,-471.49 628,-448.5 569.11,-432.45 502.06,-408.6 463.33,-394.26" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="464.5,-391.71 456.02,-391.54 462.54,-396.96 464.5,-391.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="719.5" y="-439.95" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / identityRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node14" class="node">
+<ns0:title>s13</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1936" cy="-503.21" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1936" y="-500.06" font-family="Microsoft YaHei" font-size="12.00">s13</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-8e1d379fca92b004432911b6" class="edge">
+<ns0:title>s12-&gt;s13</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M2229.89,-622.29C2156.72,-615.69 1940.91,-594.35 1920.75,-570.68 1912.03,-560.43 1914.05,-546.19 1919,-533.52" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1921.41,-534.98 1922.19,-526.55 1916.32,-532.66 1921.41,-534.98" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2073.38" y="-562.13" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-4f904ca10f221a8774ae0ded" class="edge">
+<ns0:title>s13-&gt;s12</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1960,-505.42C2023.23,-509.09 2192.29,-522.09 2233,-557.93 2242.39,-566.19 2247.62,-578.62 2250.52,-590.49" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2247.73,-590.82 2252,-598.14 2253.23,-589.76 2247.73,-590.82" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2317.69" y="-562.13" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-3525eda30178951cde8a7bc4" class="edge">
+<ns0:title>s13-&gt;s13</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1959.91,-507.84C1982.36,-510.24 2006.71,-508.7 2006.71,-503.21 2006.71,-498.6 1989.54,-496.77 1970.73,-497.73" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1970.68,-494.93 1962.93,-498.34 1971.12,-500.51 1970.68,-494.93" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2101.96" y="-501.04" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-f1dbf82c534eeac9499978ed" class="edge">
+<ns0:title>s13-&gt;s13</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,2" d="M1959.42,-508.36C2028.78,-518.23 2197.21,-516.51 2197.21,-503.21 2197.21,-490.56 2044.82,-488.39 1970.25,-496.7" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1970.01,-493.91 1962.42,-497.69 1970.71,-499.47 1970.01,-493.91" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2303.34" y="-501.04" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node15" class="node">
+<ns0:title>s14</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1917" cy="-381.03" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1917" y="-377.88" font-family="Microsoft YaHei" font-size="12.00">s14</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-04f096a2cc241c50995b8c21" class="edge">
+<ns0:title>s13-&gt;s14</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1924.3,-482.01C1919.29,-472.23 1914.02,-460.12 1911.5,-448.5 1909.18,-437.83 1909.32,-426.01 1910.41,-415.33" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1913.15,-416.01 1911.44,-407.71 1907.6,-415.27 1913.15,-416.01" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2020.25" y="-439.95" font-family="Microsoft YaHei" font-size="9.00">authenticationResponse / securityModeCommand</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-9e72598165a6294f6c277ab6" class="edge">
+<ns0:title>s14-&gt;s4</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1899.37,-397.18C1876.92,-418.25 1841,-458.76 1841,-502.21 1841,-743.96 1841,-743.96 1841,-743.96 1841,-778.52 1864.21,-812.33 1882.23,-833.37" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1880.11,-835.21 1887.53,-839.31 1884.29,-831.48 1880.11,-835.21" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1935.88" y="-623.21" font-family="Microsoft YaHei" font-size="9.00">securityModeComplete / registrationAccept</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-471836133e5ae69b1c264c08" class="edge">
+<ns0:title>s14-&gt;s12</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1941.28,-382.57C2042.05,-385.02 2423.77,-396.85 2459,-435.75 2502.47,-483.74 2451.57,-526.73 2404,-570.68 2371.78,-600.44 2321.92,-613.94 2288.64,-619.9" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="2288.46,-617.1 2281.02,-621.16 2289.37,-622.62 2288.46,-617.1" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2550.27" y="-501.04" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-1092309bb0be5f807a21b23a" class="edge">
+<ns0:title>s14-&gt;s13</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1941.16,-384.28C1992.96,-389.64 2111.96,-405.1 2136,-435.75 2180.28,-492.2 2039.39,-501.17 1971.02,-502.27" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1971.31,-499.47 1963.34,-502.36 1971.37,-505.07 1971.31,-499.47" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2295.75" y="-439.95" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="node16" class="node">
+<ns0:title>s15</ns0:title>
+<ns0:ellipse fill="none" stroke="#475569" stroke-width="1.4" cx="1834" cy="-136.68" rx="23.71" ry="23.71" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1834" y="-133.53" font-family="Microsoft YaHei" font-size="12.00">s15</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-2424d06baf63633175418740" class="edge">
+<ns0:title>s14-&gt;s15</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1909.49,-358.1C1894.8,-315.22 1862.23,-220.11 1845.07,-170" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1847.78,-169.26 1842.54,-162.6 1842.48,-171.08 1847.78,-169.26" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1952.51" y="-256.68" font-family="Microsoft YaHei" font-size="9.00">securityModeReject / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-5be315048cf469b0a83ab1e5" class="edge">
+<ns0:title>s15-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1857.99,-138.36C1999.03,-142.67 2714,-168.9 2714,-257.86 2714,-969.89 2714,-969.89 2714,-969.89 2714,-1035.76 1640.58,-1073.54 1444.54,-1079.9" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1444.57,-1077.09 1436.67,-1080.15 1444.75,-1082.69 1444.57,-1077.09" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="2809.25" y="-623.21" font-family="Microsoft YaHei" font-size="9.00">registrationRequest / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-6c616cd5e960ed191fc360f0" class="edge">
+<ns0:title>s15-&gt;s6</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1823.09,-115.02C1812.9,-95.71 1797.66,-66.82 1786.66,-45.99" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1789.27,-44.93 1783.06,-39.16 1784.31,-47.54 1789.27,-44.93" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1896.83" y="-73.42" font-family="Microsoft YaHei" font-size="9.00">registrationRequestGUTI / identityRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-b84cb455a1cd569f41aaef35" class="edge">
+<ns0:title>s16-&gt;s1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M413.37,-397.18C390.92,-418.25 355,-458.76 355,-502.21 355,-969.89 355,-969.89 355,-969.89 355,-1076.17 1209.56,-1081.05 1383.37,-1080.94" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1383.23,-1083.74 1391.23,-1080.93 1383.22,-1078.14 1383.23,-1083.74" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="491.5" y="-740.79" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | identityResponse / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-514a522f7374c81d7b009d8c" class="edge">
+<ns0:title>s16-&gt;s11</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M423.04,-403.79C419.29,-418.2 417.66,-436.59 428.25,-448.5 456.13,-479.85 746.66,-495.97 848.76,-500.7" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="848.56,-503.5 856.67,-501.06 848.81,-497.9 848.56,-503.5" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="503.62" y="-439.95" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-3e0b9538c5f5241b6f765231" class="edge">
+<ns0:title>s17-&gt;s10</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1146.03,-266.62C1176.57,-276.86 1224.68,-298.12 1207,-326.32 1190.28,-352.98 1156.16,-366.74 1130.14,-373.61" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1129.63,-370.86 1122.5,-375.45 1130.93,-376.3 1129.63,-370.86" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1363.42" y="-317.77" font-family="Microsoft YaHei" font-size="9.00">registrationRequest | registrationRequestGUTI / authenticationRequest</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-c91263f43aa1a00656f9ba24" class="edge">
+<ns0:title>s17-&gt;s11</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1099.02,-261.75C1050.67,-267.03 942.35,-286.58 898.25,-357.32 877.41,-390.75 876.66,-437.18 879.27,-468.39" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="876.46,-468.46 880.05,-476.14 882.03,-467.9 876.46,-468.46" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="973.62" y="-378.86" font-family="Microsoft YaHei" font-size="9.00">deregistrationRequest / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="cc-edge-1b1b971e50cc8159609c77c6" class="edge">
+<ns0:title>s17-&gt;s15</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="2" d="M1146.66,-253.86C1251.57,-236.12 1675.12,-164.53 1799.5,-143.51" />
+<ns0:polygon fill="black" stroke="black" stroke-width="2" points="1799.85,-146.29 1807.27,-142.2 1798.92,-140.77 1799.85,-146.29" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1569.94" y="-195.59" font-family="Microsoft YaHei" font-size="9.00">securityModeReject / null_action</ns0:text>
+</ns0:g>
+
+<ns0:g id="node19" class="node">
+<ns0:title>__start0</ns0:title>
+</ns0:g>
+
+<ns0:g id="edge37" class="edge">
+<ns0:title>__start0-&gt;s0</ns0:title>
+<ns0:path fill="none" stroke="black" d="M2685,-1294.96C2685,-1293.02 2685,-1252.25 2685,-1223.6" />
+<ns0:polygon fill="black" stroke="black" points="2687.8,-1223.94 2685,-1215.94 2682.2,-1223.94 2687.8,-1223.94" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

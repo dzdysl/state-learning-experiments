@@ -54,6 +54,7 @@ correlation, not proof that a particular UE binary was deployed.
 
 ## Navigation
 
+- Series index: [README.md](../../../README.md)
 - Runtime and source provenance: [provenance.yaml](provenance.yaml)
 - Frozen-copy member hashes: [archive-manifest.json](archive-manifest.json)
 - Exact two-line input: [inputs/c14-lines-27-28.seq](inputs/c14-lines-27-28.seq)

@@ -1,0 +1,735 @@
+RUN_PROVENANCE file=/home/dzdysl/CoreCrisis/test_open5gs/logs/run-provenance.json git.commit=11453a35e1c1dba5b49ae2d487f9e48ff0b493a8 git.branch=refactor/multiseq-mdf artifact.sha256=4ac7eda3981970478a3214f1a6d45d3dc99f140f7cd2bd4f7257acce9fb86116
+Loaded Learning Config correctly
+open5gs
+Jul 31, 2026 2:29:50 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Using Core SUL
+Selected UERANSIM profile: open5gs (UERANSIM-gnb-999-70-1)
+Starting Core & gNodeB & UE
+nr-gnb is not running.
+nr-ue is not running.
+No Open5GS test-core process is running from: /home/dzdysl/CoreCrisis/test_open5gs/open5gs
+Open5GS stopped and session log writes were flushed.
+RUNTIME_CONTRACT WARNING: Runtime file hash mismatch: scripts/start_core.sh expected=840ef0af6893870090daf095a53f3435122accb71b4f23b3e1575d92e6284658 actual=031fbab111baca97e1d910d8038ff4b07084fba888eafcce0d3173acc84f2d9c
+Could not persist runtime warning: /home/dzdysl/CoreCrisis/test_open5gs/runs/20260731T092950Z-e8ae5e2f/raw/open5gs/core-session-001/launcher.log
+[core][INFO] Launching Open5GS from: /home/dzdysl/CoreCrisis/test_open5gs/open5gs
+[core][INFO] Configuration: /home/dzdysl/CoreCrisis/test_open5gs/core.properties
+[core][INFO] Core log: /home/dzdysl/CoreCrisis/test_open5gs/runs/20260731T092950Z-e8ae5e2f/raw/open5gs/core-session-001/core.log
+Finished starting up Core & gNodeB
+Connecting to ue..
+Received = DONE
+Connected with UE.
+Sent Hello.
+Received = Hi
+Connected to ue.
+Done with initializing the connection with UE, gNodeB, and Core.
+=== Interactive SUL Console ===
+输入符号（空格分隔，且只能单空格）后回车执行 step。
+输入 reset 执行 sul.pre() 并清屏 + 清空历史。
+输入 show 展示自上次 reset 起的输入/输出两列历史。
+输入 exit/quit 退出。
+
+> Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+=== OUTPUT ===
+IN : registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI registrationRequest
+OUT: authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest
+=============
+> ---- Starting RESET ---- IMSI_OFFSET=1
+Stopping nr-ue: 12650
+nr-ue stopped.
+Stopping nr-gnb: 12631
+nr-gnb stopped.
+Connecting to ue..
+Connected with UE.
+[OK] Reset done. History cleared.
+> Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequest/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeComplete.
+Reading from ue
+Log executor: received(raw) registrationAccept from rrc.
+####securityModeComplete/registrationAccept####
+Log executor: sending registrationComplete.
+Reading from ue
+Log executor: received(raw) configurationUpdateCommand from rrc.
+####registrationComplete/configurationUpdateCommand####
+Log executor: sending deregistrationRequest.
+Reading from ue
+Timeout occured for deregistrationRequest
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####registrationRequestGUTI/authenticationRequest####
+Log executor: sending authenticationResponse.
+Reading from ue
+Log executor: received(raw) securityModeCommand from rrc.
+####authenticationResponse/securityModeCommand####
+Log executor: sending securityModeReject.
+Reading from ue
+Timeout occured for securityModeReject
+Log executor: sending registrationRequest.
+Reading from ue
+Log executor: received(raw) identityRequest from rrc.
+####registrationRequestGUTI/identityRequest####
+Log executor: sending identityResponse.
+Reading from ue
+Log executor: received(raw) authenticationRequest from rrc.
+####identityResponse/authenticationRequest####
+=== OUTPUT ===
+IN : registrationRequest authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse authenticationResponse securityModeComplete registrationComplete deregistrationRequest registrationRequestGUTI authenticationResponse securityModeReject registrationRequestGUTI identityResponse
+OUT: authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest securityModeCommand registrationAccept configurationUpdateCommand null_action authenticationRequest securityModeCommand null_action identityRequest authenticationRequest
+=============
+> 

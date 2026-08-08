@@ -9,7 +9,7 @@ run ends inside the second repetition of an unfinished query and contains no
 normal completion marker.
 
 Later material from the same run ID is frozen separately in
-[the H14 completion follow-up](followups/h14-learning-complete-finalizer-failed-20260801/README.md).
+[the H14 completion record](../h14-complete-teardown-20260801/README.md).
 It records an 18-state final learner hypothesis, while also preserving the
 finalizer failure caused by an Open5GS launcher exit with status 134. This
 parent remains the original H13 evidence boundary.
@@ -105,6 +105,7 @@ separately bounded failure investigation.
 
 ## Navigation
 
+- Series index: [README.md](../README.md)
 - Runtime and source provenance: [provenance.yaml](provenance.yaml)
 - External artifact inventory: [artifacts.yaml](artifacts.yaml)
 - Complete per-file hashes: [archive-manifest.json](archive-manifest.json)
@@ -125,7 +126,7 @@ separately bounded failure investigation.
 - C14 line 27/28 ngKSI event-sync replacement:
   [followups/c14-ngksi-sync-verify-20260731](followups/c14-ngksi-sync-verify-20260731/README.md)
 - H14 基础组运行时验证（37/37 条逻辑序列、1,656/1,656 步与 H14 一致；核心停止/重启异常独立记录）：
-  [followups/h14-base-cycle-cover-runtime-verify-20260804](followups/h14-base-cycle-cover-runtime-verify-20260804/README.md)
+  [h14-base-runtime-20260804](../h14-base-runtime-20260804/README.md)
 
 ## Next actions
 
