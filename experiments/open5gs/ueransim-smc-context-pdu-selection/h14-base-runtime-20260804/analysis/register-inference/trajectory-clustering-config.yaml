@@ -1,0 +1,11 @@
+gamma: 0.1
+position_weight: 0.3333333333333333
+direction_weight: 0.6666666666666666
+silhouette_threshold: 0.5
+merge_gap_threshold: 1.5
+max_clusters: 6
+signal_slice_id: isInitMsg
+period_length: 7
+completed_cycles: 2
+completion_policy: strict_same_phase
+low_discriminability_policy: exclude

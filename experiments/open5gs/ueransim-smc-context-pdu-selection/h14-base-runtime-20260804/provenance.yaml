@@ -95,6 +95,59 @@ register_inference:
     output_sha256: 1782f5045122438b7baf0e6963a0d516baaaf44200fb06f9c65b511e4d486dd5
     visible_edge_count: 44
     note: "直接叠加到固定 SMP SVG 布局；不重新运行 Graphviz，不将观察候选分类解释为源码更新点。"
+  trajectory_clustering:
+    tool_commit: a78f2bc21ead0f4603bf6ee85b416d0f4ed3bd79
+    tool_tag: register-trajectory-clustering-v2-20260812
+    core_module: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\trajectory_clustering.py
+    core_module_sha256: 8519c35d8c62afa1f62803d785c94b07131e3ff0b6dd9b732e8d26ed1f55df1a
+    cli: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\cluster_cycle_trajectories.py
+    cli_sha256: 8cb0a4b7eb4c9eb00f01b4bcd0894ddf151390c7063beddb0eb84bb1bc91f162
+    input: analysis/register-inference/candidates.json
+    input_sha256: a5d771b0978ec5bec77ef140ea01aba753026d2c4c0d29ce8c07c95fa3d1b13c
+    config: analysis/register-inference/trajectory-clustering-config.yaml
+    config_sha256: 09ccffbc010c49f2289145a93a53252bace36b6e05e6d141c4abafbc4c7ab626
+    result: analysis/register-inference/trajectory-clusters.json
+    result_sha256: 6a1d8f3b57536b3f88f4e7b56ecdac41549d99b96aacb7a1a87086f563a4ae48
+    report: analysis/register-inference/trajectory-clustering-report.md
+    report_sha256: fc5b6323179a110a20ba30e3f5bab39450d983150f3354df43c14fe3d2d26f43
+    schema: register-trajectory-clustering-v2
+    method: "保留 R3–R10 原始样本；严格核验 R3/R10 同相位并将 R3–R9 七点周期补齐为两轮 14 点；soft-DTW 只比较 (r_before,r_after,i) 的位置与方向，权重为 1/3 与 2/3；按 logical input/output/isInitMsg 切片独立执行平均连接层次聚类；s 不进入距离。"
+    trajectory_counts:
+      extracted_total: 86
+      relatively_stable_total: 57
+      hypothetical_total: 29
+      low_discriminability: 38
+      actually_clustered: 48
+      relatively_stable_clustered: 32
+      hypothetical_clustered: 16
+      migration_succeeded_total: 6
+      migration_succeeded_clustered: 4
+      migration_succeeded_not_clustered: 2
+      period_completion_failed: 0
+      mixed_signal_slice: 0
+    excluded_trajectory_counts:
+      unmatched_io: 5
+      migration_failed: 1
+    stable_internal_selected_k:
+      authenticationResponse_securityModeCommand_not_applicable: 4
+      registrationRequest_authenticationRequest_s0: 1
+      registrationRequestGUTI_authenticationRequest_s0: 3
+    selection_warning: "authenticationResponse/securityModeCommand 的 k=4 merge gap 为 3.231e12，来自零高度合并后的 1e-12 分母；保留标签，但不得将该数值放大解释为稳健的四种函数逻辑。"
+    visualization:
+      cli: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_cycle_trajectories.py
+      cli_sha256: f16d8f3a94904a77c5fdbb2821f6e1b680eab6feac41b864f7315ba1f68623e3
+      plotly_version: 5.24.1
+      matplotlib_version: 3.10.0
+      html: analysis/register-inference/trajectory-visualization.html
+      html_sha256: 080803032d2962a40be6a8fe81a04d833eb3624a06b1f4f430898d2f778bea6f
+      stable_svg: analysis/register-inference/trajectory-figures/stable.svg
+      stable_svg_sha256: 6a443d5da6f83abc78e95793a31d9cc0d1f50ce33c2e8dacb41fb715d21ef91b
+      hypothetical_svg: analysis/register-inference/trajectory-figures/hypothetical.svg
+      hypothetical_svg_sha256: 2d8cce023bee2e0c9416aa496cf48600264f96bf5dcf3e230c7a6c0c0a09bb7e
+      joint_svg: analysis/register-inference/trajectory-figures/joint.svg
+      joint_svg_sha256: 3808488dd7329b11b9a4960d029359c13456c134176406b51f3b5768d4fd25b3
+      note: "HTML 内联 Plotly，可离线旋转、筛选与悬浮；有数值输入的 I/O 使用三维面板，无数值输入的 I/O 使用二维面板。固定 Plotly div ID、SVG hashsalt 与日期元数据后连续复跑两次，四项输出 SHA-256 均一致。"
+    interpretation: "分簇是候选推断完成后的独立轨迹形状比较；不得反向改写相对稳定推断、迁移检验或前序反推结论，也不得把形状簇直接等同为函数逻辑簇。"
   command:
     executable: D:\anaconda3\python.exe
     script: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\infer_cycle_ngksi_regions.py

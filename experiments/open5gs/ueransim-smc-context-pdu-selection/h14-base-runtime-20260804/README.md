@@ -9,6 +9,9 @@ DOT 边组；完整公式树、循环局部候选、交集、联合拟合、迁�
 [寄存器推断摘要](analysis/register-inference/summary.md)、
 [机器可读候选](analysis/register-inference/candidates.json)与
 [边分类叠加图](analysis/register-inference/edge-categories.svg)。
+在推断完成后，另以有序直接区域为轨迹完成了独立的循环相似度与聚类后处理；结果见
+[轨迹聚类报告](analysis/register-inference/trajectory-clustering-report.md)与
+[机器可读聚类结果](analysis/register-inference/trajectory-clusters.json)。
 面向阅读的摘要与工作簿将 `unknown/<reason>` 显示为 `unknown`、将
 `r_i[ngksi_uplink]` 显示为 `r_i`，并省略输入更新的观察来源括号；完整原始枚举与证据仍保留在 JSON。
 该结果不扩展为对未覆盖边、额外短环组或 AMF 内部寄存器的证明。
@@ -84,6 +87,30 @@ S008 的完整链为
 这些结果仍是带相对稳定推断迁移来源、E0016 保持假设和最近前序边归因的
 `hypothetical_candidate`，不能确认 E0002 的真实实现更新，也不把 E0073 的联合拟合失败解释为源码事实。
 
+## 循环轨迹相似度与聚类
+
+独立后处理只读取完成反推后的 `candidates.json`，不修改候选。每个 `cycle_id + sequence_line` 保留
+R3–R10 八个原始样本；严格检查 R3/R10 同相位后，将 R3–R9 七点基本周期复制为两轮，形成 14 个
+`analysis_points`。其中第二轮只有 R10 是实测点，其余点明确标记为模式补齐，不作为 Open5GS 实测数据。
+82 条轨迹首尾严格一致；另外 4 条只使用 R10 的数值输入补齐 R3 同相位缺失值，没有进行趋势外推。
+
+共提取 57 条相对稳定推断轨迹和 29 条假设性候选轨迹。14 点的 `(r_before,r_after,i)` 完全一致时标记为
+`low_discriminability`：稳定轨迹 25 条、假设性轨迹 13 条，共 38 条。它们保留在 JSON 和图中作为灰色
+背景，但完全退出距离矩阵、层次聚类、簇数选择和迁移一致性统计。实际参与聚类的是稳定 32 条、假设性
+16 条，共 48 条。
+
+`isInitMsg` 仅作为 `s` 切片变量，不进入点距离或方向距离；`s=0`、`s=1` 与“不适用”分别聚类，不做
+跨 `s` 联合聚类或自动簇匹配。采用 14 点两轮周期后，`registrationRequest/authenticationRequest`
+的动态稳定轨迹在 `s=0` 切片内保持为 1 簇，不再因八点窗口重复了不同相位而拆分。
+
+`authenticationResponse/securityModeCommand` 当前自动选择 4 簇，但该候选的 merge gap 为
+`3.231×10^12`，来自前一合并高度为 0 时使用 `1e-12` 分母的数值放大。机器结果和标签暂时保留，
+交互图显示警告；不得把这 4 簇直接解释为 4 种稳健函数逻辑。
+
+原有 6 条迁移成功轨迹中，2 条因低辨别力退出一致性统计，另外 4 条只在各自 I/O 与 `s` 切片内报告
+聚类一致性。该检查是迁移完成后的独立轨迹形状比较，不修改原迁移状态。聚类形状簇尚不能等同于函数
+逻辑簇；本阶段也不据此实施跨 `s` 迁移。
+
 ## 材料与导航
 
 - 精确输入：[inputs/base-cycle-repeat10.seq](inputs/base-cycle-repeat10.seq)
@@ -95,6 +122,13 @@ S008 的完整链为
 - 边分类叠加图：[analysis/register-inference/edge-categories.svg](analysis/register-inference/edge-categories.svg)
 - ngKSI Excel 循环—边审计（此前明确要求时生成，未随本次术语改名刷新）：[analysis/register-inference/audit.xlsx](analysis/register-inference/audit.xlsx)
 - 机器可读候选：[analysis/register-inference/candidates.json](analysis/register-inference/candidates.json)
+- 轨迹聚类配置：[analysis/register-inference/trajectory-clustering-config.yaml](analysis/register-inference/trajectory-clustering-config.yaml)
+- 轨迹聚类报告：[analysis/register-inference/trajectory-clustering-report.md](analysis/register-inference/trajectory-clustering-report.md)
+- 机器可读轨迹与聚类：[analysis/register-inference/trajectory-clusters.json](analysis/register-inference/trajectory-clusters.json)
+- 离线交互式轨迹图：[analysis/register-inference/trajectory-visualization.html](analysis/register-inference/trajectory-visualization.html)
+- 相对稳定推断静态图：[analysis/register-inference/trajectory-figures/stable.svg](analysis/register-inference/trajectory-figures/stable.svg)
+- 假设性候选静态图：[analysis/register-inference/trajectory-figures/hypothetical.svg](analysis/register-inference/trajectory-figures/hypothetical.svg)
+- 稳定与假设联合静态图：[analysis/register-inference/trajectory-figures/joint.svg](analysis/register-inference/trajectory-figures/joint.svg)
 - 运行时异常假设与边界：[analysis/hypotheses.md](analysis/hypotheses.md)
 - 运行/工具溯源：[provenance.yaml](provenance.yaml)
 - H14 模型与基础组路线：[../h14-complete-teardown-20260801/README.md](../h14-complete-teardown-20260801/README.md)
@@ -118,6 +152,17 @@ D:\anaconda3\python.exe $tool `
   --config analysis/register-inference/config.yaml `
   --output analysis/register-inference/candidates.json `
   --report analysis/register-inference/summary.md
+$cluster = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\cluster_cycle_trajectories.py'
+$visualize = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_cycle_trajectories.py'
+D:\anaconda3\python.exe $cluster `
+  --candidates analysis/register-inference/candidates.json `
+  --config analysis/register-inference/trajectory-clustering-config.yaml `
+  --output analysis/register-inference/trajectory-clusters.json `
+  --report analysis/register-inference/trajectory-clustering-report.md
+D:\anaconda3\python.exe $visualize `
+  --input analysis/register-inference/trajectory-clusters.json `
+  --output-html analysis/register-inference/trajectory-visualization.html `
+  --output-svg-dir analysis/register-inference/trajectory-figures
 ```
 
 如明确要求 Excel，额外传入 `--workbook analysis/register-inference/audit.xlsx` 及本机
