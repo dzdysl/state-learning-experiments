@@ -124,6 +124,7 @@ R3–R10 八个原始样本；严格检查 R3/R10 同相位后，将 R3–R9 七
 - 机器可读候选：[analysis/register-inference/candidates.json](analysis/register-inference/candidates.json)
 - 轨迹聚类配置：[analysis/register-inference/trajectory-clustering-config.yaml](analysis/register-inference/trajectory-clustering-config.yaml)
 - 轨迹聚类报告：[analysis/register-inference/trajectory-clustering-report.md](analysis/register-inference/trajectory-clustering-report.md)
+- 轨迹聚类阶段性事实与后续研究问题：[analysis/register-inference/trajectory-clustering-research-notes.md](analysis/register-inference/trajectory-clustering-research-notes.md)
 - 机器可读轨迹与聚类：[analysis/register-inference/trajectory-clusters.json](analysis/register-inference/trajectory-clusters.json)
 - 离线交互式轨迹图：[analysis/register-inference/trajectory-visualization.html](analysis/register-inference/trajectory-visualization.html)
 - 相对稳定推断静态图：[analysis/register-inference/trajectory-figures/stable.svg](analysis/register-inference/trajectory-figures/stable.svg)

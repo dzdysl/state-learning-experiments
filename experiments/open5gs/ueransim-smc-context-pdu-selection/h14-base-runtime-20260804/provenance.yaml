@@ -110,6 +110,9 @@ register_inference:
     result_sha256: 6a1d8f3b57536b3f88f4e7b56ecdac41549d99b96aacb7a1a87086f563a4ae48
     report: analysis/register-inference/trajectory-clustering-report.md
     report_sha256: fc5b6323179a110a20ba30e3f5bab39450d983150f3354df43c14fe3d2d26f43
+    research_notes: analysis/register-inference/trajectory-clustering-research-notes.md
+    research_notes_sha256: 16336999b7a0d444c0ea37ced6ad61fcc612eb0231548e92a851455f9e6eebfc
+    research_notes_scope: "只整理当前事实与后续待比较问题；不修改算法、簇标签或候选推断结论。"
     schema: register-trajectory-clustering-v2
     method: "保留 R3–R10 原始样本；严格核验 R3/R10 同相位并将 R3–R9 七点周期补齐为两轮 14 点；soft-DTW 只比较 (r_before,r_after,i) 的位置与方向，权重为 1/3 与 2/3；按 logical input/output/isInitMsg 切片独立执行平均连接层次聚类；s 不进入距离。"
     trajectory_counts:
