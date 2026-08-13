@@ -139,18 +139,117 @@ register_inference:
     visualization:
       cli: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_cycle_trajectories.py
       cli_sha256: f16d8f3a94904a77c5fdbb2821f6e1b680eab6feac41b864f7315ba1f68623e3
-      plotly_version: 5.24.1
       matplotlib_version: 3.10.0
-      html: analysis/register-inference/trajectory-visualization.html
-      html_sha256: 080803032d2962a40be6a8fe81a04d833eb3624a06b1f4f430898d2f778bea6f
       stable_svg: analysis/register-inference/trajectory-figures/stable.svg
       stable_svg_sha256: 6a443d5da6f83abc78e95793a31d9cc0d1f50ce33c2e8dacb41fb715d21ef91b
       hypothetical_svg: analysis/register-inference/trajectory-figures/hypothetical.svg
       hypothetical_svg_sha256: 2d8cce023bee2e0c9416aa496cf48600264f96bf5dcf3e230c7a6c0c0a09bb7e
       joint_svg: analysis/register-inference/trajectory-figures/joint.svg
       joint_svg_sha256: 3808488dd7329b11b9a4960d029359c13456c134176406b51f3b5768d4fd25b3
-      note: "HTML 内联 Plotly，可离线旋转、筛选与悬浮；有数值输入的 I/O 使用三维面板，无数值输入的 I/O 使用二维面板。固定 Plotly div ID、SVG hashsalt 与日期元数据后连续复跑两次，四项输出 SHA-256 均一致。"
+      note: "保留旧聚类结果的三张静态 SVG；原聚类 HTML 已由下述有向折线族页面取代。"
     interpretation: "分簇是候选推断完成后的独立轨迹形状比较；不得反向改写相对稳定推断、迁移检验或前序反推结论，也不得把形状簇直接等同为函数逻辑簇。"
+  directed_polyline_visualization:
+    tool_commit: 67e62addbed726939657b9f77e7313afb7375b1d
+    tool_runtime_dirty: false
+    cli: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_directed_polyline_families.py
+    cli_sha256: c95401746e2acfc8579b1f605f13d3eb4dd7cad2967da9c86a9c98718252fc71
+    candidates: analysis/register-inference/candidates.json
+    candidates_sha256: a5d771b0978ec5bec77ef140ea01aba753026d2c4c0d29ce8c07c95fa3d1b13c
+    trajectory_scope: analysis/register-inference/trajectory-clusters.json
+    trajectory_scope_sha256: 6a1d8f3b57536b3f88f4e7b56ecdac41549d99b96aacb7a1a87086f563a4ae48
+    trace: evidence/statelearner_trace.jsonl
+    trace_sha256: cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6
+    cycle_cover: ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json
+    cycle_cover_sha256: c600ebcd412db1134b0865dee357671bc833962149ce56de9442c0bd07fe6b80
+    config: analysis/register-inference/config.yaml
+    config_sha256: 1a99fd6bcd442b42e7e6cfc544859731c854d506d83bc9ec442de7710b866f89
+    output: analysis/register-inference/trajectory-visualization.html
+    output_sha256: 65766df0d0364c1ab9548c2bc043025bb23808258a19b8fffd7e7fd905245101
+    plotly_version: 5.24.1
+    eid_count: 29
+    trajectory_count: 86
+    template_count: 49
+    static_trajectory_count: 38
+    dynamic_trajectory_count: 48
+    input_register_corrections:
+      - "E0019:S036:L22 R3 r_i=3，source=carried_from_R2"
+      - "E0019:S036:L24 R3 r_i=3，source=carried_from_R2"
+      - "E0019:S037:L26 R3 r_i=1，source=carried_from_R2"
+      - "E0019:S037:L28 R3 r_i=1，source=carried_from_R2"
+    method: "以旧聚类 JSON 仅限定 86 条成员；从候选、冻结 trace、cycle-cover 与配置重建 R3–R10 八点和公式归属；按八点有序三元组精确合并静态或动态模板；不计算距离或自动聚类。"
+    determinism: "连续生成两次，两个 HTML 的字节与 SHA-256 完全一致。"
+    visual_validation: "Microsoft Edge 无头检查：1600x1000 与 390x844 均无脚本错误或横向溢出；级联筛选、三个视图、公式、八点模板轨迹和成员逐点来源展开通过；E0019:F002:L31 的右上、右下和左上二维段方向与 Rn→R(n+1) 一致；点击成员图例后主折线、箭头与回绕层同步隐藏，再次点击同步恢复；全部与单成员筛选的固定全局范围一致，二维横纵单位像素长度相同，三维三轴按数据单位等比例。"
+  trajectory_formula_discovery:
+    display_name: 轨迹归类算法 B
+    schema: register-trajectory-formula-discovery-v4
+    tool_commit: 67e62addbed726939657b9f77e7313afb7375b1d
+    tool_runtime_dirty: false
+    core_module: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\trajectory_formula_discovery.py
+    core_module_sha256: b3905fd5f7ce0849a339aeec504ecad6a3ffb4af543ad8977d34e7026e25a809
+    cli: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\discover_trajectory_formula_candidates.py
+    cli_sha256: 6ee7228aadbe50e776c31638eba8dfbed9f38144ff4ace208af1fc71ee2b3503
+    visualization: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_trajectory_formula_candidates.py
+    visualization_sha256: 5977066bd0f54c2ce7cb92537e9e21d9b8e340854f86663773b0499bfe8f8797
+    candidates: analysis/register-inference/candidates.json
+    candidates_sha256: a5d771b0978ec5bec77ef140ea01aba753026d2c4c0d29ce8c07c95fa3d1b13c
+    trace: evidence/statelearner_trace.jsonl
+    trace_sha256: cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6
+    cycle_cover: ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json
+    cycle_cover_sha256: c600ebcd412db1134b0865dee357671bc833962149ce56de9442c0bd07fe6b80
+    config: analysis/register-inference/config.yaml
+    config_sha256: 1a99fd6bcd442b42e7e6cfc544859731c854d506d83bc9ec442de7710b866f89
+    result: analysis/register-inference/trajectory-formula-candidates.json
+    result_sha256: 53300f4ddbd679a1b13d23cac00ebb5b989ce9b69a3acbfed70ad30a889db1a4
+    report: analysis/register-inference/trajectory-formula-report.md
+    report_sha256: f72edc885899300be5f6c5d51abc076658966de8f9a1d2def0a3d3a6efba4191
+    html: analysis/register-inference/trajectory-formula-explorer.html
+    html_sha256: 28b7c3b6653b081a2ebbfbae7d9584cea9e552d5a31dfc257e9a9cb71195d197
+    scope:
+      input_outputs:
+        - authenticationResponse/securityModeCommand
+        - registrationRequest/authenticationRequest
+        - registrationRequestGUTI/authenticationRequest
+      candidate_type_filter: null
+      signal_filter: null
+      eid_count: 29
+      trajectory_count: 87
+      sample_count: 696
+      candidate_group_count: 6
+      display_formula_count: 4
+      by_input_output:
+        authenticationResponse/securityModeCommand: "4 EID / 39 trajectories / 312 points / 2 groups"
+        registrationRequest/authenticationRequest: "15 EID / 32 trajectories / 256 points / 2 groups"
+        registrationRequestGUTI/authenticationRequest: "10 EID / 16 trajectories / 128 points / 2 groups"
+    stable_aggregation:
+      eid_count: 20
+      trajectory_count: 57
+      sample_count: 456
+      final_candidate_count: 3
+      by_input_output:
+        authenticationResponse/securityModeCommand: "4 EID / 39 trajectories / 312 points / r'=r / 312 of 312"
+        registrationRequest/authenticationRequest: "8 EID / 9 trajectories / 72 points / s=0 / r'=ite(r<6,r+1,0) / 72 of 72"
+        registrationRequestGUTI/authenticationRequest: "8 EID / 9 trajectories / 72 points / s=0 / cross-projection r_i=7 tree / 72 of 72"
+    predecessor_repartition:
+      hypothetical_trajectory_count: 30
+      input_old_migration_statuses: "migration_succeeded=6 / migration_failed=1 / no_matching_relatively_stable_inference=23; audit only"
+      dynamic_length_two_trajectory_count: 6
+      stable_match_count: 5
+      reverse_preimage_count: 1
+      hold_edge_ids: [E0046, E0124, E0160, E0172]
+      repeated_support: "E0172 <- E0145:S012:L14 and E0146:S012:L15"
+      event_preimage: "E0085:S017:L17 predecessor event E0042: R3-R10 each {6,7}"
+      assignment_scenarios: [A6, A7]
+      assignment_scope: "只作用于 E0085:S017:L17 中的 E0042 事件，不推断 E0042 边级公式"
+      eligible_length_one_regions:
+        - E0050:S009:L12
+        - E0133:S003:L3
+        - E0145:S005:L6
+        - E0145:S012:L14
+        - E0146:S012:L15
+    method: "第一阶段以 EID 为基本对象分别分析 r_before–r_after 与 r_i–r_after；候选组按 input/output 与投影隔离。稳定性推断聚合只联合相对稳定推断 source_edge_ids：完整简单公式优先；否则只在唯一输入寄存器铅垂值处构造跨投影等值分裂，并对全部稳定样本逐点验证。第三阶段忽略旧迁移状态筛选，要求完整且动态的长度2区域；稳定三元组包含且主要方向一致时为具体前序 EID 建立条件性保持假设，否则在完整值域0..7求事件级集合前像，并用候选赋值方案执行一次假设性区域重划。信号只记录适用条件，不进入模型树。"
+    determinism: "连续生成两次，JSON、中文报告和离线 HTML 的字节及 SHA-256 分别完全一致。"
+    validation: "D:\\anaconda3\\python.exe -m unittest discover -s analysis\\register_inference\\tests -p test_*.py：91 tests OK。"
+    visual_validation: "Microsoft Edge 与 CDP 检查：候选类型、输入/输出、s、EID、投影、公式类型和候选组七项筛选按顺序物化；二维候选、稳定性推断聚合与前序最简重划可双向切换。第三模式默认A6并可切换A7，显示6条动态长度2、4个保持EID、E0172双轨迹支持、E0042逐轮{6,7}与5个新增长度1入口；A6/A7伪反向边界分别为八个6/7。第三模式固定范围[-0.5,7.5]^2，二维scaleanchor=y、scaleratio=1；390x844无横向溢出或脚本异常。HTML不显示边摘要、后台混合标签、候选证据或完整循环详情。"
   command:
     executable: D:\anaconda3\python.exe
     script: D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\infer_cycle_ngksi_regions.py

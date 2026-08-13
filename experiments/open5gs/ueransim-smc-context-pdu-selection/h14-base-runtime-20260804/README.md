@@ -111,6 +111,69 @@ R3–R10 八个原始样本；严格检查 R3/R10 同相位后，将 R3–R9 七
 聚类一致性。该检查是迁移完成后的独立轨迹形状比较，不修改原迁移状态。聚类形状簇尚不能等同于函数
 逻辑簇；本阶段也不据此实施跨 `s` 迁移。
 
+## 有向折线族交互页面
+
+新的离线页面沿用 `trajectory-clusters.json` 中 29 个 EID、86 条循环轨迹的成员边界，但不读取或展示
+距离、soft-DTW、自动簇及其评价指标。每条轨迹只使用真实的 R3→R10 八点；八个
+`(r_before,r_i,r_after)` 三元组全同者归为静态模板，其余归为动态模板。同一 EID、同一类型内的八点
+有序三元组逐点全等时合并，最终得到 49 个精确模板，完整保留全部 `cycle_id + sequence_line` 成员。
+
+页面按推断类型、I/O、`s`、EID、模板类型、模板和循环成员逐级筛选，并同步提供三维
+`r_before / r_i / r_after`、二维 `r_before–r_after` 与二维 `r_i–r_after` 三个有向视图。公式区只展示
+相对稳定推断的共享模型树、协调后的假设性候选公式或 E0073 的结构化“联合拟合失败，当前无公式”状态；
+不混入前序反推、迁移失败公式或未纳入 I/O。每张模板卡片直接列出公共的 R3→R10 八点三元组序列；
+其下每个循环成员可独立展开，查看该成员的 `s`、八个点和逐点来源。
+
+三个视图的坐标范围均由全部 86 条轨迹预先确定；改变筛选条件或通过图例隐藏成员不会触发局部自动缩放。
+两个二维视图的横纵轴单位长度相同，三维视图的三个轴也按数据单位等比例显示。
+
+页面生成时按 `sequence_id` 重放冻结 trace 中的输入寄存器保持状态。因此
+`E0019:S036:L22`、`E0019:S036:L24` 的 R3 `r_i` 为 3，
+`E0019:S037:L26`、`E0019:S037:L28` 的 R3 `r_i` 为 1，来源均标为 `carried_from_R2`。
+该局部修正不修改现有 `candidates.json` 或 `trajectory-clusters.json`，旧聚类报告、JSON 与静态 SVG
+仍按原语义保留。
+
+## 轨迹归类算法 B：二维公式候选、稳定性聚合与前序最简归因
+
+轨迹归类算法 B 合并分析 `authenticationResponse/securityModeCommand`、
+`registrationRequest/authenticationRequest` 与 `registrationRequestGUTI/authenticationRequest`，直接从
+候选观察区域、完整冻结 trace、cycle-cover 和推断配置重建 29 个 EID 的 87 条真实 R3–R10 轨迹，共
+696 点。三组 I/O 分别覆盖 `4/39/312`、`15/32/256` 和 `10/16/128` 个 EID／轨迹／点；每组产生两个
+I/O 内候选组，总计六个。它不读取算法 A 的 `trajectory-clusters.json`；第一阶段的候选等级和 `s=0/1`
+只作审计，不参与成员拆分或公式拟合。完整算法语义只由工具仓库的
+`analysis/register_inference/experiments/AGENTS.md` 维护。
+
+静态点轨迹和纯铅垂轨迹均不独立产生公式，只作为相容或未解决退化证据保留；顶层常数必须由单条轨迹内
+实际水平移动支持。因此 E0103 不再拥有两个弱常数，`registrationRequest/authenticationRequest` 只有
+E0085 在 `r_before–r_after` 投影拥有 `r'=0`。其余五组是 `r'=r`、两个 I/O 内独立的
+`r'=ite(r<6,r+1,0)`，以及两个 I/O 内独立的 `r'=ite(r_i<6,r_i+1,0)`。全部拥有者、相容退化轨迹、
+未解决点和 87 条具体轨迹由 JSON 与中文报告保存。
+
+稳定性推断聚合只联合现有相对稳定推断的源边，三组 I/O 分别使用 `4/39/312`、`8/9/72` 和
+`8/9/72` 个 EID／轨迹／点。`authResp/SMCmd` 得到 `r'=r`；`regReq/authReq` 在 `s=0` 条件下得到
+`r'=ite(r<6,r+1,0)`；`regReqGUTI/authReq` 自动发现唯一输入寄存器铅垂值 `r_i=7`，得到
+`r'=ite(r_i=7,ite(r<6,r+1,0),ite(r_i<6,r_i+1,0))`。三式分别逐点通过 `312/312`、`72/72`
+和 `72/72` 验证。`s=0` 只作为适用条件，不进入公式树；`authResp/SMCmd` 标记信号不适用。
+
+第三阶段扫描当前三组 I/O 的30条假设性轨迹，不以旧迁移成功、迁移失败或无匹配状态过滤。严格要求
+长度2、R3–R10完整且三元组循环内变化后，共有6条轨迹入选；5条完整落在同 I/O 稳定三元组并集内且
+主要方向一致，支持具体前序边 `E0046`、`E0124`、`E0160`、`E0172` 的条件性 `r'=r`。`E0172` 同时由
+`E0145:S012:L14` 与 `E0146:S012:L15` 两个不同末端 I/O 支持。唯一未落入的动态轨迹
+`E0085:S017:L17` 对其前序事件 `E0042` 逐轮得到集合前像 `{6,7}`；候选赋值方案 `A6/A7` 只在这条
+证据轨迹内分别采用一致的伪 `r_after`，不构成 `E0042` 的边级公式。
+
+用上述具体 EID 保持假设和事件级集合前像进行一次假设性区域重划后，去重得到5个真实、完整且动态的
+新增长度1入口：`E0050:S009:L12`、`E0133:S003:L3`、`E0145:S005:L6`、`E0145:S012:L14`、
+`E0146:S012:L15`。本阶段只标记其下一阶段可稳定性推断资格，不重新拟合；伪边界和静态长度1区域不作为
+独立稳定证据。
+
+独立 HTML 默认显示二维公式候选，可切换到稳定性推断聚合或前序最简与重划分。筛选栏依次为候选类型、输入/输出、`s`、EID、
+投影、公式类型和候选组；原边摘要和证据等级筛选已删除。聚合模式只显示相对稳定推断源边，筛选只改变
+画布可见内容，不重新计算聚合公式。页面继续固定全量视域、保持二维横纵单位长度一致，并使用统一公式
+颜色和联动图例。第三模式区分真实下行、伪保持和伪反向边界，并可切换候选赋值方案 `A6/A7`。
+
+本阶段不执行旧相对稳定推断迁移或旧前序反推，不进行全 DOT 推广，也不修改现有 `candidates.json` 或算法 A 产物。
+
 ## 材料与导航
 
 - 精确输入：[inputs/base-cycle-repeat10.seq](inputs/base-cycle-repeat10.seq)
@@ -126,7 +189,10 @@ R3–R10 八个原始样本；严格检查 R3/R10 同相位后，将 R3–R9 七
 - 轨迹聚类报告：[analysis/register-inference/trajectory-clustering-report.md](analysis/register-inference/trajectory-clustering-report.md)
 - 轨迹聚类阶段性事实与后续研究问题：[analysis/register-inference/trajectory-clustering-research-notes.md](analysis/register-inference/trajectory-clustering-research-notes.md)
 - 机器可读轨迹与聚类：[analysis/register-inference/trajectory-clusters.json](analysis/register-inference/trajectory-clusters.json)
-- 离线交互式轨迹图：[analysis/register-inference/trajectory-visualization.html](analysis/register-inference/trajectory-visualization.html)
+- 有向折线族交互页面：[analysis/register-inference/trajectory-visualization.html](analysis/register-inference/trajectory-visualization.html)
+- 轨迹归类算法 B 机器结果：[analysis/register-inference/trajectory-formula-candidates.json](analysis/register-inference/trajectory-formula-candidates.json)
+- 轨迹归类算法 B 中文报告：[analysis/register-inference/trajectory-formula-report.md](analysis/register-inference/trajectory-formula-report.md)
+- 轨迹归类算法 B 独立交互页面：[analysis/register-inference/trajectory-formula-explorer.html](analysis/register-inference/trajectory-formula-explorer.html)
 - 相对稳定推断静态图：[analysis/register-inference/trajectory-figures/stable.svg](analysis/register-inference/trajectory-figures/stable.svg)
 - 假设性候选静态图：[analysis/register-inference/trajectory-figures/hypothetical.svg](analysis/register-inference/trajectory-figures/hypothetical.svg)
 - 稳定与假设联合静态图：[analysis/register-inference/trajectory-figures/joint.svg](analysis/register-inference/trajectory-figures/joint.svg)
@@ -155,6 +221,8 @@ D:\anaconda3\python.exe $tool `
   --report analysis/register-inference/summary.md
 $cluster = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\cluster_cycle_trajectories.py'
 $visualize = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_cycle_trajectories.py'
+$polyline = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_directed_polyline_families.py'
+$formula = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\discover_trajectory_formula_candidates.py'
 D:\anaconda3\python.exe $cluster `
   --candidates analysis/register-inference/candidates.json `
   --config analysis/register-inference/trajectory-clustering-config.yaml `
@@ -162,12 +230,29 @@ D:\anaconda3\python.exe $cluster `
   --report analysis/register-inference/trajectory-clustering-report.md
 D:\anaconda3\python.exe $visualize `
   --input analysis/register-inference/trajectory-clusters.json `
-  --output-html analysis/register-inference/trajectory-visualization.html `
   --output-svg-dir analysis/register-inference/trajectory-figures
+D:\anaconda3\python.exe $polyline `
+  --candidates analysis/register-inference/candidates.json `
+  --trajectory-scope analysis/register-inference/trajectory-clusters.json `
+  --trace evidence/statelearner_trace.jsonl `
+  --cycle-cover ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json `
+  --config analysis/register-inference/config.yaml `
+  --output-html analysis/register-inference/trajectory-visualization.html
+D:\anaconda3\python.exe $formula `
+  --candidates analysis/register-inference/candidates.json `
+  --trace evidence/statelearner_trace.jsonl `
+  --cycle-cover ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json `
+  --config analysis/register-inference/config.yaml `
+  --output analysis/register-inference/trajectory-formula-candidates.json `
+  --report analysis/register-inference/trajectory-formula-report.md `
+  --html analysis/register-inference/trajectory-formula-explorer.html
 ```
 
 如明确要求 Excel，额外传入 `--workbook analysis/register-inference/audit.xlsx` 及本机
 workbook 渲染器参数；不得把该可选审计材料误写成每次推断的必需交付。
+
+本页及上述新增说明已检查长路径、公式和代码标识符的换行；说明未使用表格，窄屏页面按单列布局，
+不会因筛选器或公式产生横向溢出。
 
 ## 后续
 
