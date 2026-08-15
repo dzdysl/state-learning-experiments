@@ -133,7 +133,7 @@ R3–R10 八个原始样本；严格检查 R3/R10 同相位后，将 R3–R9 七
 该局部修正不修改现有 `candidates.json` 或 `trajectory-clusters.json`，旧聚类报告、JSON 与静态 SVG
 仍按原语义保留。
 
-## 轨迹归类算法 B：二维公式候选、稳定性聚合与前序最简归因
+## 轨迹归类算法 B：二维公式候选、稳定性聚合与新稳定推断
 
 轨迹归类算法 B 合并分析 `authenticationResponse/securityModeCommand`、
 `registrationRequest/authenticationRequest` 与 `registrationRequestGUTI/authenticationRequest`，直接从
@@ -167,12 +167,55 @@ E0085 在 `r_before–r_after` 投影拥有 `r'=0`。其余五组是 `r'=r`、�
 `E0146:S012:L15`。本阶段只标记其下一阶段可稳定性推断资格，不重新拟合；伪边界和静态长度1区域不作为
 独立稳定证据。
 
-独立 HTML 默认显示二维公式候选，可切换到稳定性推断聚合或前序最简与重划分。筛选栏依次为候选类型、输入/输出、`s`、EID、
+新增“新稳定推断”阶段只读取上述5条动态长度1轨迹。它们的三元组均落入对应 I/O 的旧稳定轨迹点集，
+去重有向段主要方向一致，且旧聚合树逐点精确，因此本次无需触发同信号联合重聚合：
+`registrationRequest/authenticationRequest` 的旧 `s=0` 72点与新 `s=1` 24点共同通过
+`r'=ite(r<6,r+1,0)`，验证 `96/96`；`registrationRequestGUTI/authenticationRequest` 的旧 `s=0`
+72点及新 `s=0/1` 共16点共同通过原跨投影树，验证 `88/88`。两个 I/O 的 `s=0/1` 分支公式分别相同，
+所以均化简为单一公式，不生成冗余 `signal_guard`；各信号分支的轨迹与样本来源仍在 JSON 中分别记录。
+
+在此基础上，全模型稳定性推断迁移审计把两棵完整树应用到同 input/output 的全部 H14 边。
+`registrationRequestGUTI/authenticationRequest` 覆盖10/10条；`registrationRequest/authenticationRequest`
+覆盖13/15条。本阶段新增迁移 E0085 `s7→s8`、E0181 `s15→s1`、E0193 `s16→s1`，三者均为
+`registrationRequest/authenticationRequest`，统一记为“稳定性推断（迁移）”；E0001 `s0→s1` 与
+E0073 `s6→s1` 的同 I/O 边仍有长度4或长度3反例，暂不迁移。
+
+E0085和E0181的9条完整长度2区域先由完整树在值域0…7上得到每轮前像 `{6,7}`，再依据旧稳定
+`r_i–r_after` 投影唯一核心铅垂成分 `r_i=7` 只选择前序事件伪 `r_after=7`。该选择是算法B的候选
+消歧规则，不把7表述成逆方程唯一解。冻结 trace 重放后，E0042 `s3→s7`
+`securityModeReject/null_action` 的动态水平轨迹在两个投影均得到 `r'=7`；E0114 `s9→s7` 和 E0210
+`s17→s15` 的同 I/O 前序边只有静态点，不独立产生公式。选择值7后，E0085与E0181的末端样本分别
+通过64/64和8/8验证；E0193的两个静态轨迹直接通过16/16验证。完整推导、全部边及R3–R10轨迹见独立
+迁移报告；本阶段不修改候选JSON或HTML。
+
+独立 HTML 默认显示二维公式候选，可切换到稳定性推断聚合或新稳定推断；“前序最简与重划分”按钮暂时
+置灰禁用，但其审计数据仍保留在 JSON。筛选栏依次为候选类型、输入/输出、`s`、EID、
 投影、公式类型和候选组；原边摘要和证据等级筛选已删除。聚合模式只显示相对稳定推断源边，筛选只改变
 画布可见内容，不重新计算聚合公式。页面继续固定全量视域、保持二维横纵单位长度一致，并使用统一公式
-颜色和联动图例。第三模式区分真实下行、伪保持和伪反向边界，并可切换候选赋值方案 `A6/A7`。
+颜色和联动图例。新稳定模式将旧稳定轨迹显示为弱化背景、新轨迹突出显示，并提供两个二维投影；EID
+选项同时给出 `EID、src/dst、input/output`。
 
 本阶段不执行旧相对稳定推断迁移或旧前序反推，不进行全 DOT 推广，也不修改现有 `candidates.json` 或算法 A 产物。
+
+## 全局可观察下行延伸与单轮重划叠加图
+
+`edge-categories.svg` 另行展示一次明确标为激进假设的图形化推演，不改变上述算法 B 边界。工具检查全部
+16 条完整长度2假设性区域（含动态和静态）：落入稳定三元组者的前序最简 I/O 是
+`deregistrationRequest/null_action` 和 `securityModeComplete/registrationAccept`，未落入者只有
+`securityModeReject/null_action`，两集合无交集。因此图中把前两个 I/O 在原始 H14 DOT 的全部 20 条对应边
+标记为条件性 `r'=r` 延伸能力，并据此对全部假设性 `direct_regions` 只做一轮结构重划。延伸边不是新的
+可观察下行锚点：它只把最近真实 KSI 下行的可观察值连续延伸到该边；中间一旦出现非延伸假设性边，
+连续性立即失效，后续延伸边不能自行恢复。
+
+收紧后重划得到 7 个完整长度1区域，其中5个动态、2个静态；本图只画派生角色，不为它们拟合公式。
+`E0001:S018:L18` 因 E0042、E0086 已中断从 E0019 开始的真实下行连续性而被排除，后续 E0076 不能
+重新建立锚点。每条 SMP 边只保留一条描边，派生角色按“新长度1、前序归因、全局延伸、原分类”优先级直接覆盖
+原色；E0133、E0145 最终显示为蓝色，其同时具有的前序归因角色只保留在元数据中。紫色实线表示由
+3 条匹配动态长度2区域的具体轨迹直接支持的前序最简延伸边，紫色虚线表示相同 I/O 在全 H14 的其他
+条件性延伸边；两者公式同为 `r'=r`，区别只在证据来源。现有 SMP 布局省略 11 条延伸语义边：7 条非自环
+回归 `s0` 边以源节点旁约 1 cm、指向左上角的紫色有向虚线短箭头表示，箭头头部固定为约 8 pt，不随
+线宽放大；`s0→s0`、`s2→s2`、`s11→s11`、`s12→s12` 四条自环只记录、不绘制。节点和原路径不移动，也不重跑
+Graphviz；图例和内嵌元数据均注明这些是派生标记，不是源码事实。
 
 ## 材料与导航
 
@@ -192,6 +235,7 @@ E0085 在 `r_before–r_after` 投影拥有 `r'=0`。其余五组是 `r'=r`、�
 - 有向折线族交互页面：[analysis/register-inference/trajectory-visualization.html](analysis/register-inference/trajectory-visualization.html)
 - 轨迹归类算法 B 机器结果：[analysis/register-inference/trajectory-formula-candidates.json](analysis/register-inference/trajectory-formula-candidates.json)
 - 轨迹归类算法 B 中文报告：[analysis/register-inference/trajectory-formula-report.md](analysis/register-inference/trajectory-formula-report.md)
+- 全模型稳定性推断迁移报告：[analysis/register-inference/stable-migration-report.md](analysis/register-inference/stable-migration-report.md)
 - 轨迹归类算法 B 独立交互页面：[analysis/register-inference/trajectory-formula-explorer.html](analysis/register-inference/trajectory-formula-explorer.html)
 - 相对稳定推断静态图：[analysis/register-inference/trajectory-figures/stable.svg](analysis/register-inference/trajectory-figures/stable.svg)
 - 假设性候选静态图：[analysis/register-inference/trajectory-figures/hypothetical.svg](analysis/register-inference/trajectory-figures/hypothetical.svg)
@@ -223,6 +267,8 @@ $cluster = 'D:\state-learning-lab\projects\state-learning-tools\analysis\registe
 $visualize = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_cycle_trajectories.py'
 $polyline = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\visualize_directed_polyline_families.py'
 $formula = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\discover_trajectory_formula_candidates.py'
+$migration = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\report_full_model_stable_migration.py'
+$overlay = 'D:\state-learning-lab\projects\state-learning-tools\analysis\register_inference\experiments\render_edge_category_overlay.py'
 D:\anaconda3\python.exe $cluster `
   --candidates analysis/register-inference/candidates.json `
   --config analysis/register-inference/trajectory-clustering-config.yaml `
@@ -246,6 +292,19 @@ D:\anaconda3\python.exe $formula `
   --output analysis/register-inference/trajectory-formula-candidates.json `
   --report analysis/register-inference/trajectory-formula-report.md `
   --html analysis/register-inference/trajectory-formula-explorer.html
+D:\anaconda3\python.exe $migration `
+  --candidates analysis/register-inference/candidates.json `
+  --trajectory-formulas analysis/register-inference/trajectory-formula-candidates.json `
+  --trace evidence/statelearner_trace.jsonl `
+  --cycle-cover ../h14-complete-teardown-20260801/analysis/cycle-cover/base-result.json `
+  --config analysis/register-inference/config.yaml `
+  --output analysis/register-inference/stable-migration-report.md
+D:\anaconda3\python.exe $overlay `
+  --base-svg ../h14-complete-teardown-20260801/analysis/model/smp.svg `
+  --dot ../h14-complete-teardown-20260801/evidence/hypotheses/hypothesis_14.dot `
+  --candidates analysis/register-inference/candidates.json `
+  --trajectory-formulas analysis/register-inference/trajectory-formula-candidates.json `
+  --output analysis/register-inference/edge-categories.svg
 ```
 
 如明确要求 Excel，额外传入 `--workbook analysis/register-inference/audit.xlsx` 及本机

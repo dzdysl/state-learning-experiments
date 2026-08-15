@@ -28885,6 +28885,569 @@
       ]
     }
   },
+  "new_stable_inference": {
+    "by_input_output": {
+      "registrationRequest/authenticationRequest": {
+        "final_candidates": [
+          {
+            "candidate_id": "NS-8932a7565e",
+            "formula": "r' = ite(r < 6, r + 1, 0)",
+            "formula_expanded": "r' = ite(r < 6, r + 1, 0)",
+            "formula_kind": "simple_formula",
+            "identical_signal_branches_simplified": true,
+            "signal_branch_formulas": {
+              "0": "r' = ite(r < 6, r + 1, 0)",
+              "1": "r' = ite(r < 6, r + 1, 0)"
+            },
+            "update_tree": {
+              "false": {
+                "formula": {
+                  "kind": "constant",
+                  "value": 0
+                },
+                "kind": "leaf"
+              },
+              "guard": {
+                "operator": "<",
+                "threshold": 6,
+                "variable": "r"
+              },
+              "kind": "threshold_guard",
+              "true": {
+                "formula": {
+                  "kind": "r_plus",
+                  "value": 1
+                },
+                "kind": "leaf"
+              }
+            },
+            "verification": {
+              "exact": true,
+              "failures": [],
+              "matched_sample_count": 96,
+              "root_branch_counts": {},
+              "sample_count": 96
+            }
+          }
+        ],
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "method": "reused_old_aggregation",
+        "new_member_ids": [
+          "E0133:S003:L3",
+          "E0145:S005:L6",
+          "E0145:S012:L14"
+        ],
+        "new_sample_count": 24,
+        "new_trajectory_count": 3,
+        "old_member_ids": [
+          "E0013:L001:L32",
+          "E0037:S002:L1",
+          "E0097:S017:L16",
+          "E0109:S037:L25",
+          "E0109:S037:L26",
+          "E0121:L003:L34",
+          "E0157:L005:L36",
+          "E0169:S006:L8",
+          "E0205:S004:L4"
+        ],
+        "old_sample_count": 72,
+        "old_trajectory_count": 9,
+        "signal_evidence": {
+          "0": {
+            "new_sample_count": 0,
+            "new_trajectory_ids": [],
+            "old_sample_count": 72,
+            "old_trajectory_ids": [
+              "E0013:L001:L32",
+              "E0037:S002:L1",
+              "E0097:S017:L16",
+              "E0109:S037:L25",
+              "E0109:S037:L26",
+              "E0121:L003:L34",
+              "E0157:L005:L36",
+              "E0169:S006:L8",
+              "E0205:S004:L4"
+            ],
+            "signal_context": {
+              "isInitMsg": 0
+            }
+          },
+          "1": {
+            "new_sample_count": 24,
+            "new_trajectory_ids": [
+              "E0133:S003:L3",
+              "E0145:S005:L6",
+              "E0145:S012:L14"
+            ],
+            "old_sample_count": 0,
+            "old_trajectory_ids": [],
+            "signal_context": {
+              "isInitMsg": 1
+            }
+          }
+        },
+        "status": "inferred",
+        "trajectory_validations": [
+          {
+            "complete_r3_r10": true,
+            "contained_in_old_stable_triples": true,
+            "direction": {
+              "r_before": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 36,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 6,
+                  "vertical": 0
+                }
+              },
+              "r_i": {
+                "active": false,
+                "matches": true,
+                "observed": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 7
+                },
+                "stable_reference": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 42
+                }
+              }
+            },
+            "direction_consistent": true,
+            "edge": {
+              "edge_id": "E0133",
+              "logical_input": "registrationRequest",
+              "logical_output": "authenticationRequest",
+              "source_state": "s11",
+              "target_state": "s10"
+            },
+            "eid": "E0133",
+            "matching_old_candidate_ids": [
+              "SB-be6bdd474f"
+            ],
+            "old_formula_exact": true,
+            "reuse_eligible": true,
+            "signal_context": {
+              "isInitMsg": 1
+            },
+            "trajectory_id": "E0133:S003:L3"
+          },
+          {
+            "complete_r3_r10": true,
+            "contained_in_old_stable_triples": true,
+            "direction": {
+              "r_before": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 36,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 6,
+                  "vertical": 0
+                }
+              },
+              "r_i": {
+                "active": false,
+                "matches": true,
+                "observed": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 7
+                },
+                "stable_reference": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 42
+                }
+              }
+            },
+            "direction_consistent": true,
+            "edge": {
+              "edge_id": "E0145",
+              "logical_input": "registrationRequest",
+              "logical_output": "authenticationRequest",
+              "source_state": "s12",
+              "target_state": "s13"
+            },
+            "eid": "E0145",
+            "matching_old_candidate_ids": [
+              "SB-be6bdd474f"
+            ],
+            "old_formula_exact": true,
+            "reuse_eligible": true,
+            "signal_context": {
+              "isInitMsg": 1
+            },
+            "trajectory_id": "E0145:S005:L6"
+          },
+          {
+            "complete_r3_r10": true,
+            "contained_in_old_stable_triples": true,
+            "direction": {
+              "r_before": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 36,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 6,
+                  "vertical": 0
+                }
+              },
+              "r_i": {
+                "active": false,
+                "matches": true,
+                "observed": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 7
+                },
+                "stable_reference": {
+                  "forward": 0,
+                  "majority": "mixed",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 0,
+                  "vertical": 42
+                }
+              }
+            },
+            "direction_consistent": true,
+            "edge": {
+              "edge_id": "E0145",
+              "logical_input": "registrationRequest",
+              "logical_output": "authenticationRequest",
+              "source_state": "s12",
+              "target_state": "s13"
+            },
+            "eid": "E0145",
+            "matching_old_candidate_ids": [
+              "SB-be6bdd474f"
+            ],
+            "old_formula_exact": true,
+            "reuse_eligible": true,
+            "signal_context": {
+              "isInitMsg": 1
+            },
+            "trajectory_id": "E0145:S012:L14"
+          }
+        ]
+      },
+      "registrationRequestGUTI/authenticationRequest": {
+        "final_candidates": [
+          {
+            "candidate_id": "NS-58d39d607f",
+            "formula": "r' = ite(r_i = 7, ite(r < 6, r + 1, 0), ite(r_i < 6, r_i + 1, 0))",
+            "formula_expanded": "r' = ite(r_i[ngksi_uplink] = 7, ite(r < 6, r + 1, 0), ite(r_i[ngksi_uplink] < 6, r_i[ngksi_uplink] + 1, 0))",
+            "formula_kind": "cross_projection_tree",
+            "identical_signal_branches_simplified": true,
+            "signal_branch_formulas": {
+              "0": "r' = ite(r_i = 7, ite(r < 6, r + 1, 0), ite(r_i < 6, r_i + 1, 0))",
+              "1": "r' = ite(r_i = 7, ite(r < 6, r + 1, 0), ite(r_i < 6, r_i + 1, 0))"
+            },
+            "update_tree": {
+              "false": {
+                "false": {
+                  "formula": {
+                    "kind": "constant",
+                    "value": 0
+                  },
+                  "kind": "leaf"
+                },
+                "guard": {
+                  "input_register_id": "ngksi_uplink",
+                  "operator": "<",
+                  "threshold": 6,
+                  "variable": "input_register"
+                },
+                "kind": "threshold_guard",
+                "true": {
+                  "formula": {
+                    "input_register_id": "ngksi_uplink",
+                    "kind": "input_register_plus",
+                    "value": 1
+                  },
+                  "kind": "leaf"
+                }
+              },
+              "guard": {
+                "input_register_id": "ngksi_uplink",
+                "operator": "==",
+                "value": 7,
+                "variable": "input_register"
+              },
+              "kind": "derived_value_guard",
+              "true": {
+                "false": {
+                  "formula": {
+                    "kind": "constant",
+                    "value": 0
+                  },
+                  "kind": "leaf"
+                },
+                "guard": {
+                  "operator": "<",
+                  "threshold": 6,
+                  "variable": "r"
+                },
+                "kind": "threshold_guard",
+                "true": {
+                  "formula": {
+                    "kind": "r_plus",
+                    "value": 1
+                  },
+                  "kind": "leaf"
+                }
+              }
+            },
+            "verification": {
+              "exact": true,
+              "failures": [],
+              "matched_sample_count": 88,
+              "root_branch_counts": {
+                "false": 80,
+                "true": 8
+              },
+              "sample_count": 88
+            }
+          }
+        ],
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "method": "reused_old_aggregation",
+        "new_member_ids": [
+          "E0050:S009:L12",
+          "E0146:S012:L15"
+        ],
+        "new_sample_count": 16,
+        "new_trajectory_count": 2,
+        "old_member_ids": [
+          "E0014:L002:L33",
+          "E0038:S002:L2",
+          "E0098:S017:L17",
+          "E0110:S037:L27",
+          "E0110:S037:L28",
+          "E0122:L004:L35",
+          "E0158:L006:L37",
+          "E0170:S006:L9",
+          "E0206:S004:L5"
+        ],
+        "old_sample_count": 72,
+        "old_trajectory_count": 9,
+        "signal_evidence": {
+          "0": {
+            "new_sample_count": 8,
+            "new_trajectory_ids": [
+              "E0050:S009:L12"
+            ],
+            "old_sample_count": 72,
+            "old_trajectory_ids": [
+              "E0014:L002:L33",
+              "E0038:S002:L2",
+              "E0098:S017:L17",
+              "E0110:S037:L27",
+              "E0110:S037:L28",
+              "E0122:L004:L35",
+              "E0158:L006:L37",
+              "E0170:S006:L9",
+              "E0206:S004:L5"
+            ],
+            "signal_context": {
+              "isInitMsg": 0
+            }
+          },
+          "1": {
+            "new_sample_count": 8,
+            "new_trajectory_ids": [
+              "E0146:S012:L15"
+            ],
+            "old_sample_count": 0,
+            "old_trajectory_ids": [],
+            "signal_context": {
+              "isInitMsg": 1
+            }
+          }
+        },
+        "status": "inferred",
+        "trajectory_validations": [
+          {
+            "complete_r3_r10": true,
+            "contained_in_old_stable_triples": true,
+            "direction": {
+              "r_before": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 24,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 4,
+                  "vertical": 7
+                }
+              },
+              "r_i": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 24,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 4,
+                  "vertical": 7
+                }
+              }
+            },
+            "direction_consistent": true,
+            "edge": {
+              "edge_id": "E0050",
+              "logical_input": "registrationRequestGUTI",
+              "logical_output": "authenticationRequest",
+              "source_state": "s4",
+              "target_state": "s1"
+            },
+            "eid": "E0050",
+            "matching_old_candidate_ids": [
+              "SB-966031b7f4"
+            ],
+            "old_formula_exact": true,
+            "reuse_eligible": true,
+            "signal_context": {
+              "isInitMsg": 0
+            },
+            "trajectory_id": "E0050:S009:L12"
+          },
+          {
+            "complete_r3_r10": true,
+            "contained_in_old_stable_triples": true,
+            "direction": {
+              "r_before": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 24,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 4,
+                  "vertical": 7
+                }
+              },
+              "r_i": {
+                "active": true,
+                "matches": true,
+                "observed": {
+                  "forward": 6,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 1,
+                  "vertical": 0
+                },
+                "stable_reference": {
+                  "forward": 24,
+                  "majority": "forward_majority",
+                  "policy": "deduplicated_directed_segments_per_eid",
+                  "reverse": 4,
+                  "vertical": 7
+                }
+              }
+            },
+            "direction_consistent": true,
+            "edge": {
+              "edge_id": "E0146",
+              "logical_input": "registrationRequestGUTI",
+              "logical_output": "authenticationRequest",
+              "source_state": "s12",
+              "target_state": "s13"
+            },
+            "eid": "E0146",
+            "matching_old_candidate_ids": [
+              "SB-966031b7f4"
+            ],
+            "old_formula_exact": true,
+            "reuse_eligible": true,
+            "signal_context": {
+              "isInitMsg": 1
+            },
+            "trajectory_id": "E0146:S012:L15"
+          }
+        ]
+      }
+    },
+    "counts": {
+      "final_candidate_count": 2,
+      "input_output_count": 2,
+      "new_sample_count": 40,
+      "new_trajectory_count": 5,
+      "old_sample_count": 144,
+      "old_trajectory_count": 18
+    },
+    "method": "new_stable_reuse_then_same_signal_joint_reaggregation",
+    "reuse_requirements": [
+      "complete_R3_R10",
+      "contained_in_old_stable_triples",
+      "deduplicated_segment_majority_direction_consistent",
+      "old_aggregate_tree_exact"
+    ],
+    "signal_tree_policy": "different_exact_branches_use_signal_guard_identical_branches_simplify"
+  },
   "predecessor_repartition": {
     "assignment_scenarios": [
       {
@@ -29105,7 +29668,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29123,7 +29686,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29141,7 +29704,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29159,7 +29722,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29177,7 +29740,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29195,7 +29758,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29213,7 +29776,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29231,7 +29794,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29467,7 +30030,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29485,7 +30048,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29503,7 +30066,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29521,7 +30084,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29539,7 +30102,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29557,7 +30120,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29575,7 +30138,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -29593,7 +30156,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -31992,7 +32555,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32010,7 +32573,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32028,7 +32591,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32046,7 +32609,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32064,7 +32627,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32082,7 +32645,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32100,7 +32663,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32118,7 +32681,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32354,7 +32917,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32372,7 +32935,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32390,7 +32953,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32408,7 +32971,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32426,7 +32989,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32444,7 +33007,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32462,7 +33025,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -32480,7 +33043,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -33051,7 +33614,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33069,7 +33632,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33087,7 +33650,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33105,7 +33668,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33123,7 +33686,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33141,7 +33704,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33159,7 +33722,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33177,7 +33740,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -33395,7 +33958,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33413,7 +33976,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33431,7 +33994,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33449,7 +34012,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33467,7 +34030,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33485,7 +34048,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33503,7 +34066,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33521,7 +34084,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -33766,7 +34329,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33784,7 +34347,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33802,7 +34365,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33820,7 +34383,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33838,7 +34401,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33856,7 +34419,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33874,7 +34437,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -33892,7 +34455,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34128,7 +34691,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34146,7 +34709,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34164,7 +34727,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34182,7 +34745,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34200,7 +34763,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34218,7 +34781,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34236,7 +34799,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34254,7 +34817,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -34662,7 +35225,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34680,7 +35243,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34698,7 +35261,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34716,7 +35279,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34734,7 +35297,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34752,7 +35315,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34770,7 +35333,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -34788,7 +35351,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -35006,7 +35569,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35024,7 +35587,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35042,7 +35605,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35060,7 +35623,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35078,7 +35641,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35096,7 +35659,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35114,7 +35677,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35132,7 +35695,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -35377,7 +35940,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35395,7 +35958,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35413,7 +35976,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35431,7 +35994,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35449,7 +36012,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35467,7 +36030,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35485,7 +36048,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35503,7 +36066,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35739,7 +36302,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35757,7 +36320,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35775,7 +36338,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35793,7 +36356,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35811,7 +36374,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35829,7 +36392,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35847,7 +36410,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -35865,7 +36428,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36885,7 +37448,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36903,7 +37466,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36921,7 +37484,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36939,7 +37502,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36957,7 +37520,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36975,7 +37538,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -36993,7 +37556,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37011,7 +37574,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37247,7 +37810,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37265,7 +37828,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37283,7 +37846,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37301,7 +37864,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37319,7 +37882,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37337,7 +37900,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37355,7 +37918,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -37373,7 +37936,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -39772,7 +40335,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39790,7 +40353,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39808,7 +40371,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39826,7 +40389,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39844,7 +40407,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39862,7 +40425,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39880,7 +40443,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -39898,7 +40461,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40134,7 +40697,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40152,7 +40715,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40170,7 +40733,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40188,7 +40751,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40206,7 +40769,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40224,7 +40787,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40242,7 +40805,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40260,7 +40823,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0124",
                   "logical_input": "deregistrationRequest",
@@ -40831,7 +41394,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40849,7 +41412,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40867,7 +41430,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40885,7 +41448,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40903,7 +41466,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40921,7 +41484,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40939,7 +41502,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -40957,7 +41520,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -41175,7 +41738,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41193,7 +41756,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41211,7 +41774,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41229,7 +41792,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41247,7 +41810,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41265,7 +41828,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41283,7 +41846,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41301,7 +41864,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -41546,7 +42109,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41564,7 +42127,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41582,7 +42145,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41600,7 +42163,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41618,7 +42181,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41636,7 +42199,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41654,7 +42217,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41672,7 +42235,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41908,7 +42471,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41926,7 +42489,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41944,7 +42507,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41962,7 +42525,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41980,7 +42543,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -41998,7 +42561,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -42016,7 +42579,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -42034,7 +42597,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -42442,7 +43005,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42460,7 +43023,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42478,7 +43041,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42496,7 +43059,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42514,7 +43077,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42532,7 +43095,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42550,7 +43113,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42568,7 +43131,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0160",
                   "logical_input": "deregistrationRequest",
@@ -42786,7 +43349,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42804,7 +43367,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42822,7 +43385,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42840,7 +43403,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42858,7 +43421,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42876,7 +43439,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42894,7 +43457,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -42912,7 +43475,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0172",
                   "logical_input": "deregistrationRequest",
@@ -43157,7 +43720,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43175,7 +43738,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43193,7 +43756,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43211,7 +43774,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43229,7 +43792,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43247,7 +43810,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43265,7 +43828,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43283,7 +43846,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43519,7 +44082,7 @@
             "region_length": 1,
             "samples": [
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43537,7 +44100,7 @@
                 "repetition": 3
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43555,7 +44118,7 @@
                 "repetition": 4
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43573,7 +44136,7 @@
                 "repetition": 5
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43591,7 +44154,7 @@
                 "repetition": 6
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43609,7 +44172,7 @@
                 "repetition": 7
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43627,7 +44190,7 @@
                 "repetition": 8
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -43645,7 +44208,7 @@
                 "repetition": 9
               },
               {
-                "assumption": "edge_level_conditional_hold",
+                "assumption": "continuous_observable_downlink_extension",
                 "boundary_edge": {
                   "edge_id": "E0046",
                   "logical_input": "securityModeComplete",
@@ -44449,7 +45012,10 @@
       }
     ],
     "boundaries": {
+      "hold_extends_preceding_real_downlink_only_while_continuous": true,
       "hold_is_conditional_and_refutable": true,
+      "interrupted_hold_does_not_create_a_new_observation_anchor": true,
+      "non_extension_hypothetical_edge_interrupts_hold_extension": true,
       "pseudo_boundaries_are_not_independent_stable_evidence": true,
       "repartition_is_single_pass_without_formula_fitting": true,
       "reverse_preimage_does_not_infer_edge_formula": true
@@ -46729,7 +47295,7 @@
       "sha256": "cbab627a7542e72733f2cd5576926bc8621f5e330067e43a985bf341a49a68c6"
     }
   },
-  "schema": "register-trajectory-formula-discovery-v4",
+  "schema": "register-trajectory-formula-discovery-v5",
   "settings": {
     "candidate_type_filter": null,
     "direction_policy": "deduplicated_directed_segments_per_eid",
@@ -46748,6 +47314,7 @@
       }
     ],
     "minimum_affine_distinct_x": 3,
+    "new_stable_inference_signal_policy": "different_exact_branches_use_signal_guard_identical_branches_simplify",
     "predecessor_repartition_passes": 1,
     "repetitions": [
       3,
@@ -59556,6 +60123,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S018",
+      "edge": {
+        "edge_id": "E0001",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s0",
+        "target_state": "s1"
+      },
       "eid": "E0001",
       "id": "E0001:S018:L18",
       "logical_input": "registrationRequest",
@@ -59674,6 +60248,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L001",
+      "edge": {
+        "edge_id": "E0013",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s1",
+        "target_state": "s1"
+      },
       "eid": "E0013",
       "id": "E0013:L001:L32",
       "logical_input": "registrationRequest",
@@ -59792,6 +60373,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L002",
+      "edge": {
+        "edge_id": "E0014",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s1",
+        "target_state": "s1"
+      },
       "eid": "E0014",
       "id": "E0014:L002:L33",
       "logical_input": "registrationRequestGUTI",
@@ -59910,6 +60498,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "F002",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:F002:L31",
       "logical_input": "authenticationResponse",
@@ -60010,6 +60605,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S002",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S002:L1",
       "logical_input": "authenticationResponse",
@@ -60110,6 +60712,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S002",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S002:L2",
       "logical_input": "authenticationResponse",
@@ -60210,6 +60819,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S009",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S009:L12",
       "logical_input": "authenticationResponse",
@@ -60310,6 +60926,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S017:L16",
       "logical_input": "authenticationResponse",
@@ -60410,6 +61033,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S017:L17",
       "logical_input": "authenticationResponse",
@@ -60510,6 +61140,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S018",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S018:L18",
       "logical_input": "authenticationResponse",
@@ -60610,6 +61247,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S036:L21",
       "logical_input": "authenticationResponse",
@@ -60710,6 +61354,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S036:L22",
       "logical_input": "authenticationResponse",
@@ -60810,6 +61461,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S036:L23",
       "logical_input": "authenticationResponse",
@@ -60910,6 +61568,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S036:L24",
       "logical_input": "authenticationResponse",
@@ -61010,6 +61675,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S037:L25",
       "logical_input": "authenticationResponse",
@@ -61110,6 +61782,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S037:L26",
       "logical_input": "authenticationResponse",
@@ -61210,6 +61889,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S037:L27",
       "logical_input": "authenticationResponse",
@@ -61310,6 +61996,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S037:L28",
       "logical_input": "authenticationResponse",
@@ -61410,6 +62103,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0019",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s1",
+        "target_state": "s3"
+      },
       "eid": "E0019",
       "id": "E0019:S039:L29",
       "logical_input": "authenticationResponse",
@@ -61510,6 +62210,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S002",
+      "edge": {
+        "edge_id": "E0037",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s3",
+        "target_state": "s1"
+      },
       "eid": "E0037",
       "id": "E0037:S002:L1",
       "logical_input": "registrationRequest",
@@ -61628,6 +62335,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S002",
+      "edge": {
+        "edge_id": "E0038",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s3",
+        "target_state": "s1"
+      },
       "eid": "E0038",
       "id": "E0038:S002:L2",
       "logical_input": "registrationRequestGUTI",
@@ -61746,6 +62460,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "F002",
+      "edge": {
+        "edge_id": "E0050",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s4",
+        "target_state": "s1"
+      },
       "eid": "E0050",
       "id": "E0050:F002:L31",
       "logical_input": "registrationRequestGUTI",
@@ -61864,6 +62585,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S009",
+      "edge": {
+        "edge_id": "E0050",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s4",
+        "target_state": "s1"
+      },
       "eid": "E0050",
       "id": "E0050:S009:L12",
       "logical_input": "registrationRequestGUTI",
@@ -61982,6 +62710,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S008",
+      "edge": {
+        "edge_id": "E0073",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s6",
+        "target_state": "s1"
+      },
       "eid": "E0073",
       "id": "E0073:S008:L10",
       "logical_input": "registrationRequest",
@@ -62100,6 +62835,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0073",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s6",
+        "target_state": "s1"
+      },
       "eid": "E0073",
       "id": "E0073:S036:L21",
       "logical_input": "registrationRequest",
@@ -62218,6 +62960,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0073",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s6",
+        "target_state": "s1"
+      },
       "eid": "E0073",
       "id": "E0073:S036:L23",
       "logical_input": "registrationRequest",
@@ -62336,6 +63085,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S010",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S010:L13",
       "logical_input": "registrationRequest",
@@ -62454,6 +63210,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S017:L16",
       "logical_input": "registrationRequest",
@@ -62572,6 +63335,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S017:L17",
       "logical_input": "registrationRequest",
@@ -62690,6 +63460,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S037:L25",
       "logical_input": "registrationRequest",
@@ -62808,6 +63585,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S037:L26",
       "logical_input": "registrationRequest",
@@ -62926,6 +63710,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S037:L27",
       "logical_input": "registrationRequest",
@@ -63044,6 +63835,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S037:L28",
       "logical_input": "registrationRequest",
@@ -63162,6 +63960,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0085",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s7",
+        "target_state": "s8"
+      },
       "eid": "E0085",
       "id": "E0085:S039:L29",
       "logical_input": "registrationRequest",
@@ -63280,6 +64085,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0097",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s8",
+        "target_state": "s1"
+      },
       "eid": "E0097",
       "id": "E0097:S017:L16",
       "logical_input": "registrationRequest",
@@ -63398,6 +64210,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S017",
+      "edge": {
+        "edge_id": "E0098",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s8",
+        "target_state": "s1"
+      },
       "eid": "E0098",
       "id": "E0098:S017:L17",
       "logical_input": "registrationRequestGUTI",
@@ -63516,6 +64335,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S010",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S010:L13",
       "logical_input": "authenticationResponse",
@@ -63616,6 +64442,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S037:L25",
       "logical_input": "authenticationResponse",
@@ -63716,6 +64549,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S037:L26",
       "logical_input": "authenticationResponse",
@@ -63816,6 +64656,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S037:L27",
       "logical_input": "authenticationResponse",
@@ -63916,6 +64763,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S037:L28",
       "logical_input": "authenticationResponse",
@@ -64016,6 +64870,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0103",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s8",
+        "target_state": "s9"
+      },
       "eid": "E0103",
       "id": "E0103:S039:L29",
       "logical_input": "authenticationResponse",
@@ -64116,6 +64977,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0109",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s9",
+        "target_state": "s10"
+      },
       "eid": "E0109",
       "id": "E0109:S037:L25",
       "logical_input": "registrationRequest",
@@ -64234,6 +65102,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0109",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s9",
+        "target_state": "s10"
+      },
       "eid": "E0109",
       "id": "E0109:S037:L26",
       "logical_input": "registrationRequest",
@@ -64352,6 +65227,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0110",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s9",
+        "target_state": "s10"
+      },
       "eid": "E0110",
       "id": "E0110:S037:L27",
       "logical_input": "registrationRequestGUTI",
@@ -64470,6 +65352,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0110",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s9",
+        "target_state": "s10"
+      },
       "eid": "E0110",
       "id": "E0110:S037:L28",
       "logical_input": "registrationRequestGUTI",
@@ -64588,6 +65477,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L003",
+      "edge": {
+        "edge_id": "E0121",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s10",
+        "target_state": "s10"
+      },
       "eid": "E0121",
       "id": "E0121:L003:L34",
       "logical_input": "registrationRequest",
@@ -64706,6 +65602,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L004",
+      "edge": {
+        "edge_id": "E0122",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s10",
+        "target_state": "s10"
+      },
       "eid": "E0122",
       "id": "E0122:L004:L35",
       "logical_input": "registrationRequestGUTI",
@@ -64824,6 +65727,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S004",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S004:L4",
       "logical_input": "authenticationResponse",
@@ -64924,6 +65834,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S004",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S004:L5",
       "logical_input": "authenticationResponse",
@@ -65024,6 +65941,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S037:L25",
       "logical_input": "authenticationResponse",
@@ -65124,6 +66048,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S037:L26",
       "logical_input": "authenticationResponse",
@@ -65224,6 +66155,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S037:L27",
       "logical_input": "authenticationResponse",
@@ -65324,6 +66262,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S037:L28",
       "logical_input": "authenticationResponse",
@@ -65424,6 +66369,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0127",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s10",
+        "target_state": "s17"
+      },
       "eid": "E0127",
       "id": "E0127:S039:L29",
       "logical_input": "authenticationResponse",
@@ -65524,6 +66476,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "F001",
+      "edge": {
+        "edge_id": "E0133",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s11",
+        "target_state": "s10"
+      },
       "eid": "E0133",
       "id": "E0133:F001:L30",
       "logical_input": "registrationRequest",
@@ -65642,6 +66601,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S003",
+      "edge": {
+        "edge_id": "E0133",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s11",
+        "target_state": "s10"
+      },
       "eid": "E0133",
       "id": "E0133:S003:L3",
       "logical_input": "registrationRequest",
@@ -65760,6 +66726,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0133",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s11",
+        "target_state": "s10"
+      },
       "eid": "E0133",
       "id": "E0133:S039:L29",
       "logical_input": "registrationRequest",
@@ -65878,6 +66851,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S005",
+      "edge": {
+        "edge_id": "E0145",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0145",
       "id": "E0145:S005:L6",
       "logical_input": "registrationRequest",
@@ -65996,6 +66976,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S012",
+      "edge": {
+        "edge_id": "E0145",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0145",
       "id": "E0145:S012:L14",
       "logical_input": "registrationRequest",
@@ -66114,6 +67101,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S022",
+      "edge": {
+        "edge_id": "E0145",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0145",
       "id": "E0145:S022:L19",
       "logical_input": "registrationRequest",
@@ -66232,6 +67226,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0145",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0145",
       "id": "E0145:S036:L21",
       "logical_input": "registrationRequest",
@@ -66350,6 +67351,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0145",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0145",
       "id": "E0145:S036:L22",
       "logical_input": "registrationRequest",
@@ -66468,6 +67476,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S005",
+      "edge": {
+        "edge_id": "E0146",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0146",
       "id": "E0146:S005:L7",
       "logical_input": "registrationRequestGUTI",
@@ -66586,6 +67601,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S012",
+      "edge": {
+        "edge_id": "E0146",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0146",
       "id": "E0146:S012:L15",
       "logical_input": "registrationRequestGUTI",
@@ -66704,6 +67726,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S022",
+      "edge": {
+        "edge_id": "E0146",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0146",
       "id": "E0146:S022:L20",
       "logical_input": "registrationRequestGUTI",
@@ -66822,6 +67851,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0146",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0146",
       "id": "E0146:S036:L23",
       "logical_input": "registrationRequestGUTI",
@@ -66940,6 +67976,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0146",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s12",
+        "target_state": "s13"
+      },
       "eid": "E0146",
       "id": "E0146:S036:L24",
       "logical_input": "registrationRequestGUTI",
@@ -67058,6 +68101,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L005",
+      "edge": {
+        "edge_id": "E0157",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s13",
+        "target_state": "s13"
+      },
       "eid": "E0157",
       "id": "E0157:L005:L36",
       "logical_input": "registrationRequest",
@@ -67176,6 +68226,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "L006",
+      "edge": {
+        "edge_id": "E0158",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s13",
+        "target_state": "s13"
+      },
       "eid": "E0158",
       "id": "E0158:L006:L37",
       "logical_input": "registrationRequestGUTI",
@@ -67294,6 +68351,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S006",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S006:L8",
       "logical_input": "authenticationResponse",
@@ -67394,6 +68458,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S006",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S006:L9",
       "logical_input": "authenticationResponse",
@@ -67494,6 +68565,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S012",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S012:L14",
       "logical_input": "authenticationResponse",
@@ -67594,6 +68672,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S012",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S012:L15",
       "logical_input": "authenticationResponse",
@@ -67694,6 +68779,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S022",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S022:L19",
       "logical_input": "authenticationResponse",
@@ -67794,6 +68886,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S022",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S022:L20",
       "logical_input": "authenticationResponse",
@@ -67894,6 +68993,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S036:L21",
       "logical_input": "authenticationResponse",
@@ -67994,6 +69100,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S036:L22",
       "logical_input": "authenticationResponse",
@@ -68094,6 +69207,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S036:L23",
       "logical_input": "authenticationResponse",
@@ -68194,6 +69314,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S036",
+      "edge": {
+        "edge_id": "E0163",
+        "logical_input": "authenticationResponse",
+        "logical_output": "securityModeCommand",
+        "source_state": "s13",
+        "target_state": "s14"
+      },
       "eid": "E0163",
       "id": "E0163:S036:L24",
       "logical_input": "authenticationResponse",
@@ -68294,6 +69421,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S006",
+      "edge": {
+        "edge_id": "E0169",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s14",
+        "target_state": "s13"
+      },
       "eid": "E0169",
       "id": "E0169:S006:L8",
       "logical_input": "registrationRequest",
@@ -68412,6 +69546,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S006",
+      "edge": {
+        "edge_id": "E0170",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s14",
+        "target_state": "s13"
+      },
       "eid": "E0170",
       "id": "E0170:S006:L9",
       "logical_input": "registrationRequestGUTI",
@@ -68530,6 +69671,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S039",
+      "edge": {
+        "edge_id": "E0181",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s15",
+        "target_state": "s1"
+      },
       "eid": "E0181",
       "id": "E0181:S039:L29",
       "logical_input": "registrationRequest",
@@ -68648,6 +69796,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0193",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s16",
+        "target_state": "s1"
+      },
       "eid": "E0193",
       "id": "E0193:S037:L25",
       "logical_input": "registrationRequest",
@@ -68766,6 +69921,13 @@
     {
       "candidate_grade": "hypothetical_candidate",
       "cycle_id": "S037",
+      "edge": {
+        "edge_id": "E0193",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s16",
+        "target_state": "s1"
+      },
       "eid": "E0193",
       "id": "E0193:S037:L27",
       "logical_input": "registrationRequest",
@@ -68884,6 +70046,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S004",
+      "edge": {
+        "edge_id": "E0205",
+        "logical_input": "registrationRequest",
+        "logical_output": "authenticationRequest",
+        "source_state": "s17",
+        "target_state": "s10"
+      },
       "eid": "E0205",
       "id": "E0205:S004:L4",
       "logical_input": "registrationRequest",
@@ -69002,6 +70171,13 @@
     {
       "candidate_grade": "relatively_stable_candidate",
       "cycle_id": "S004",
+      "edge": {
+        "edge_id": "E0206",
+        "logical_input": "registrationRequestGUTI",
+        "logical_output": "authenticationRequest",
+        "source_state": "s17",
+        "target_state": "s10"
+      },
       "eid": "E0206",
       "id": "E0206:S004:L5",
       "logical_input": "registrationRequestGUTI",

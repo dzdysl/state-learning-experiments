@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="3011pt" height="1075pt" viewBox="0.00 0.00 3011.00 1075.00">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1070.64)">
+<svg xmlns="http://www.w3.org/2000/svg" width="3011pt" height="1195pt" viewBox="0.00 -120.00 3011.00 1195.00">
+<defs><marker id="global-hold-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7570B3" /></marker></defs><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1070.64)">
 <title>g</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-1070.64 3006.86,-1070.64 3006.86,4 -4,4" />
 
-<g id="node1" class="node">
+<g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s1" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s1-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M922.48,-897.24 L902.43,-917.29" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s15" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s15-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M1375.22,-133.32 L1355.18,-153.36" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s3" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s3-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M1070.48,-806.52 L1050.43,-826.57" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s4" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s4-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M1520.48,-715.81 L1500.43,-735.86" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s6" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s6-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M1003.48,-34.74 L983.43,-54.79" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s7" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s7-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M797.48,-715.81 L777.43,-735.86" /></g><g class="edge register-overlay-s0-return-stub" data-overlay-role="global-hold" data-semantic-source="original-dot" data-register-inference-categories="global_hold" data-source-state="s8" data-target-state="s0" data-input-output="deregistrationRequest/null_action"><title>s8-&gt;s0: deregistrationRequest/null_action</title><path class="register-s0-return-stub" fill="none" stroke="#7570B3" stroke-width="4.4" stroke-dasharray="10,5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#global-hold-arrow)" data-stub-length-pt="28.35" d="M663.48,-625.09 L643.43,-645.14" /></g><g id="node1" class="node">
 <title>s0</title>
 <ellipse fill="none" stroke="black" cx="19.11" cy="-972.32" rx="19.11" ry="19.11" />
 <text xml:space="preserve" text-anchor="middle" x="19.11" y="-967.27" font-family="Times New Roman,serif" font-size="14.00">s0</text>
@@ -16,11 +16,11 @@
 <text xml:space="preserve" text-anchor="middle" x="938.11" y="-876.56" font-family="Times New Roman,serif" font-size="14.00">s1</text>
 </g>
 
-<g id="edge1" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0001">
+<g id="edge1" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0001" data-visible-role="hypothetical">
 <title>s0-&gt;s1</title>
-<path fill="none" stroke="#7570B3" d="M38.3,-969.47C154.51,-958.25 763.79,-899.43 907.65,-885.55" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="907.89,-889.04 917.51,-884.59 907.22,-882.07 907.89,-889.04" />
-<text xml:space="preserve" text-anchor="middle" x="679.05" y="-921.91" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest / authenticationRequest</text>
+<path fill="none" stroke="#D95F02" d="M38.3,-969.47C154.51,-958.25 763.79,-899.43 907.65,-885.55" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="907.89,-889.04 917.51,-884.59 907.22,-882.07 907.89,-889.04" />
+<text xml:space="preserve" text-anchor="middle" x="679.05" y="-921.91" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest / authenticationRequest</text>
 </g>
 
 <g id="node7" class="node">
@@ -29,11 +29,11 @@
 <text xml:space="preserve" text-anchor="middle" x="1019.11" y="-14.06" font-family="Times New Roman,serif" font-size="14.00">s6</text>
 </g>
 
-<g id="edge2" class="edge" data-register-inference-categories="backward_pair" data-register-inference-edge-ids="E0002">
+<g id="edge2" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0002" data-visible-role="hypothetical">
 <title>s0-&gt;s6</title>
-<path fill="none" stroke="#E7298A" d="M13.96,-953.48C9.28,-935.69 3.11,-907.49 3.11,-882.61 3.11,-882.61 3.11,-882.61 3.11,-113.43 3.11,-62.64 818.78,-27.94 988.43,-21.28" stroke-width="3.4" />
-<polygon fill="#E7298A" stroke="#E7298A" points="988.35,-24.78 998.21,-20.9 988.08,-17.79 988.35,-24.78" />
-<text xml:space="preserve" text-anchor="middle" x="119.73" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#E7298A">registrationRequestGUTI / identityRequest</text>
+<path fill="none" stroke="#D95F02" d="M13.96,-953.48C9.28,-935.69 3.11,-907.49 3.11,-882.61 3.11,-882.61 3.11,-882.61 3.11,-113.43 3.11,-62.64 818.78,-27.94 988.43,-21.28" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="988.35,-24.78 998.21,-20.9 988.08,-17.79 988.35,-24.78" />
+<text xml:space="preserve" text-anchor="middle" x="119.73" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / identityRequest</text>
 </g>
 
 <g id="node4" class="node">
@@ -42,11 +42,11 @@
 <text xml:space="preserve" text-anchor="middle" x="1086.11" y="-785.84" font-family="Times New Roman,serif" font-size="14.00">s3</text>
 </g>
 
-<g id="edge3" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0019">
+<g id="edge3" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0019" data-visible-role="relatively_stable">
 <title>s1-&gt;s3</title>
-<path fill="none" stroke="#1B9E77" d="M957.49,-879.75C1000.08,-877.43 1099.67,-869.39 1120.11,-844.5 1128.91,-833.78 1120.51,-820.69 1109.86,-810.25" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M957.49,-879.75C1000.08,-877.43 1099.67,-869.39 1120.11,-844.5 1128.91,-833.78 1120.51,-820.69 1109.86,-810.25" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1112.46,-807.88 1102.66,-803.87 1107.82,-813.12 1112.46,-807.88" />
-<text xml:space="preserve" text-anchor="middle" x="1259.91" y="-831.2" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">authenticationResponse / securityModeCommand</text>
+<text xml:space="preserve" text-anchor="middle" x="1259.91" y="-831.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">authenticationResponse / securityModeCommand</text>
 </g>
 
 <g id="node3" class="node">
@@ -55,11 +55,11 @@
 <text xml:space="preserve" text-anchor="middle" x="56.11" y="-1042.49" font-family="Times New Roman,serif" font-size="14.00">s2</text>
 </g>
 
-<g id="edge4" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0037,E0038">
+<g id="edge4" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0037,E0038" data-visible-role="relatively_stable">
 <title>s3-&gt;s1</title>
-<path fill="none" stroke="#1B9E77" d="M1067,-792.38C996.62,-794.36 754.73,-802.95 732.11,-828 727.19,-833.44 727.39,-838.88 732.11,-844.5 754.11,-870.69 855.29,-877.89 907.2,-879.86" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M1067,-792.38C996.62,-794.36 754.73,-802.95 732.11,-828 727.19,-833.44 727.39,-838.88 732.11,-844.5 754.11,-870.69 855.29,-877.89 907.2,-879.86" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="907.04,-883.36 917.16,-880.19 907.28,-876.36 907.04,-883.36" />
-<text xml:space="preserve" text-anchor="middle" x="924.11" y="-831.2" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="924.11" y="-831.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
 <g id="node5" class="node">
@@ -68,11 +68,11 @@
 <text xml:space="preserve" text-anchor="middle" x="1536.11" y="-695.13" font-family="Times New Roman,serif" font-size="14.00">s4</text>
 </g>
 
-<g id="edge6" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0046">
+<g id="edge6" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0046,securityModeComplete/registrationAccept" data-visible-role="global_hold">
 <title>s3-&gt;s4</title>
-<path fill="none" stroke="#D95F02" d="M1104.35,-784.79C1129.19,-777.84 1175.04,-764.97 1214.11,-753.78 1239.36,-746.55 1245.16,-742.74 1270.86,-737.28 1355.07,-719.41 1456.28,-708.5 1505.81,-703.83" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="1505.82,-707.34 1515.46,-702.94 1505.18,-700.37 1505.82,-707.34" />
-<text xml:space="preserve" text-anchor="middle" x="1390.48" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeComplete / registrationAccept</text>
+<path fill="none" stroke="#7570B3" d="M1104.35,-784.79C1129.19,-777.84 1175.04,-764.97 1214.11,-753.78 1239.36,-746.55 1245.16,-742.74 1270.86,-737.28 1355.07,-719.41 1456.28,-708.5 1505.81,-703.83" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="1505.82,-707.34 1515.46,-702.94 1505.18,-700.37 1505.82,-707.34" />
+<text xml:space="preserve" text-anchor="middle" x="1390.48" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeComplete / registrationAccept</text>
 </g>
 
 <g id="node8" class="node">
@@ -81,18 +81,18 @@
 <text xml:space="preserve" text-anchor="middle" x="813.11" y="-695.13" font-family="Times New Roman,serif" font-size="14.00">s7</text>
 </g>
 
-<g id="edge5" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0042">
+<g id="edge5" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0042" data-visible-role="hypothetical">
 <title>s3-&gt;s7</title>
-<path fill="none" stroke="#D95F02" d="M1070.79,-778.91C1053.3,-766.91 1023.46,-747.95 995.11,-737.28 943.91,-718.01 880.56,-708.42 843.7,-704.15" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1070.79,-778.91C1053.3,-766.91 1023.46,-747.95 995.11,-737.28 943.91,-718.01 880.56,-708.42 843.7,-704.15" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="844.1,-700.67 833.78,-703.06 843.34,-707.63 844.1,-700.67" />
-<text xml:space="preserve" text-anchor="middle" x="1119.79" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeReject / null_action</text>
+<text xml:space="preserve" text-anchor="middle" x="1119.79" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeReject / null_action</text>
 </g>
 
-<g id="edge7" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0050">
+<g id="edge7" class="edge" data-register-inference-categories="hypothetical,new_length_one" data-register-inference-edge-ids="E0050" data-visible-role="new_length_one">
 <title>s4-&gt;s1</title>
-<path fill="none" stroke="#7570B3" d="M1529.8,-718.34C1525.31,-729.17 1518.59,-743.08 1510.11,-753.78 1470.75,-803.45 1458.87,-820.77 1400.11,-844.5 1321.48,-876.25 1059.06,-880.19 968.86,-880.6" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="969.05,-877.09 959.06,-880.63 969.08,-884.09 969.05,-877.09" />
-<text xml:space="preserve" text-anchor="middle" x="1629.9" y="-785.84" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequestGUTI / authenticationRequest</text>
+<path fill="none" stroke="#1F78B4" d="M1529.8,-718.34C1525.31,-729.17 1518.59,-743.08 1510.11,-753.78 1470.75,-803.45 1458.87,-820.77 1400.11,-844.5 1321.48,-876.25 1059.06,-880.19 968.86,-880.6" class="register-visible-edge register-visible-edge-new-length-one" stroke-width="4.4" stroke-dasharray="13,6" />
+<polygon fill="#1F78B4" stroke="#1F78B4" points="969.05,-877.09 959.06,-880.63 969.08,-884.09 969.05,-877.09" />
+<text xml:space="preserve" text-anchor="middle" x="1629.9" y="-785.84" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / authenticationRequest</text>
 </g>
 
 <g id="node6" class="node">
@@ -101,18 +101,18 @@
 <text xml:space="preserve" text-anchor="middle" x="1888.11" y="-604.41" font-family="Times New Roman,serif" font-size="14.00">s5</text>
 </g>
 
-<g id="edge8" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0051">
+<g id="edge8" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0051" data-visible-role="hypothetical">
 <title>s4-&gt;s5</title>
-<path fill="none" stroke="#D95F02" d="M1542.8,-681.75C1548.36,-669.78 1557.49,-654.64 1570.61,-646.57 1618.18,-617.28 1787.42,-611.73 1857.44,-610.69" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1542.8,-681.75C1548.36,-669.78 1557.49,-654.64 1570.61,-646.57 1618.18,-617.28 1787.42,-611.73 1857.44,-610.69" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="1857.46,-614.19 1867.42,-610.57 1857.37,-607.19 1857.46,-614.19" />
-<text xml:space="preserve" text-anchor="middle" x="1718.36" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">registrationComplete / configurationUpdateCommand</text>
+<text xml:space="preserve" text-anchor="middle" x="1718.36" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationComplete / configurationUpdateCommand</text>
 </g>
 
-<g id="edge9" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0062">
+<g id="edge9" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0062" data-visible-role="hypothetical">
 <title>s5-&gt;s4</title>
-<path fill="none" stroke="#D95F02" d="M1885.31,-628.73C1882.51,-640.45 1876.97,-654.95 1866.11,-663.07 1819.3,-698.05 1639.61,-700.27 1566.91,-699.68" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1885.31,-628.73C1882.51,-640.45 1876.97,-654.95 1866.11,-663.07 1819.3,-698.05 1639.61,-700.27 1566.91,-699.68" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="1566.96,-696.18 1556.92,-699.57 1566.88,-703.18 1566.96,-696.18" />
-<text xml:space="preserve" text-anchor="middle" x="2002.59" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">registrationRequestGUTI / registrationAccept</text>
+<text xml:space="preserve" text-anchor="middle" x="2002.59" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / registrationAccept</text>
 </g>
 
 <g id="node13" class="node">
@@ -121,25 +121,25 @@
 <text xml:space="preserve" text-anchor="middle" x="1932.11" y="-509.09" font-family="Times New Roman,serif" font-size="14.00">s12</text>
 </g>
 
-<g id="edge10" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0064">
+<g id="edge10" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0064,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s5-&gt;s12</title>
-<path fill="none" stroke="#D95F02" d="M1895.97,-591.78C1901.96,-579.08 1910.36,-561.26 1917.56,-545.99" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="1920.56,-547.83 1921.66,-537.29 1914.23,-544.85 1920.56,-547.83" />
-<text xml:space="preserve" text-anchor="middle" x="2007.62" y="-559.05" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M1895.97,-591.78C1901.96,-579.08 1910.36,-561.26 1917.56,-545.99" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="1920.56,-547.83 1921.66,-537.29 1914.23,-544.85 1920.56,-547.83" />
+<text xml:space="preserve" text-anchor="middle" x="2007.62" y="-559.05" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
-<g id="edge11" class="edge" data-register-inference-categories="backward_pair,terminal_observable" data-register-inference-edge-ids="E0073,E0083">
+<g id="edge11" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0073,E0083" data-visible-role="hypothetical">
 <title>s6-&gt;s1</title>
-<path fill="none" stroke="#7570B3" stroke-width="7.2" stroke-dasharray="10,5" stroke-linecap="round" d="M1038.43,-20.15C1222.7,-20.71 2663.11,-27.8 2663.11,-113.43 2663.11,-791.89 2663.11,-791.89 2663.11,-791.89 2663.11,-880.27 1199.83,-881.11 968.69,-880.69" /><path fill="none" stroke="#E7298A" d="M1038.43,-20.15C1222.7,-20.71 2663.11,-27.8 2663.11,-113.43 2663.11,-791.89 2663.11,-791.89 2663.11,-791.89 2663.11,-880.27 1199.83,-881.11 968.69,-880.69" stroke-width="3.4" />
-<polygon fill="#E7298A" stroke="#E7298A" points="969,-877.19 958.99,-880.67 968.99,-884.19 969,-877.19" />
-<text xml:space="preserve" text-anchor="middle" x="2832.98" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#E7298A">registrationRequest | identityResponse / authenticationRequest</text>
+<path fill="none" stroke="#D95F02" d="M1038.43,-20.15C1222.7,-20.71 2663.11,-27.8 2663.11,-113.43 2663.11,-791.89 2663.11,-791.89 2663.11,-791.89 2663.11,-880.27 1199.83,-881.11 968.69,-880.69" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="969,-877.19 958.99,-880.67 968.99,-884.19 969,-877.19" />
+<text xml:space="preserve" text-anchor="middle" x="2832.98" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | identityResponse / authenticationRequest</text>
 </g>
 
-<g id="edge13" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0086">
+<g id="edge13" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0086" data-visible-role="hypothetical">
 <title>s7-&gt;s6</title>
-<path fill="none" stroke="#D95F02" d="M794.2,-696.28C769.16,-691.86 724.19,-681.91 690.11,-663.07 647.48,-639.51 646.05,-620.9 608.11,-590.35 464.38,-474.62 297.11,-499.81 297.11,-315.28 297.11,-315.28 297.11,-315.28 297.11,-113.43 297.11,-42.58 851.04,-24.25 988.51,-20.79" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M794.2,-696.28C769.16,-691.86 724.19,-681.91 690.11,-663.07 647.48,-639.51 646.05,-620.9 608.11,-590.35 464.38,-474.62 297.11,-499.81 297.11,-315.28 297.11,-315.28 297.11,-315.28 297.11,-113.43 297.11,-42.58 851.04,-24.25 988.51,-20.79" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="988.37,-24.29 998.28,-20.55 988.2,-17.3 988.37,-24.29" />
-<text xml:space="preserve" text-anchor="middle" x="420.37" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">registrationRequestGUTI / identityRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="420.37" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / identityRequest</text>
 </g>
 
 <g id="node9" class="node">
@@ -148,18 +148,18 @@
 <text xml:space="preserve" text-anchor="middle" x="679.11" y="-604.41" font-family="Times New Roman,serif" font-size="14.00">s8</text>
 </g>
 
-<g id="edge12" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0085">
+<g id="edge12" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0085" data-visible-role="hypothetical">
 <title>s7-&gt;s8</title>
-<path fill="none" stroke="#7570B3" d="M794.13,-697.03C771.09,-693.54 732.2,-684.69 706.86,-663.07 699.15,-656.49 693.28,-647.23 688.96,-638.31" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="692.21,-636.99 685.05,-629.18 685.77,-639.75 692.21,-636.99" />
-<text xml:space="preserve" text-anchor="middle" x="824.98" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest / authenticationRequest</text>
+<path fill="none" stroke="#D95F02" d="M794.13,-697.03C771.09,-693.54 732.2,-684.69 706.86,-663.07 699.15,-656.49 693.28,-647.23 688.96,-638.31" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="692.21,-636.99 685.05,-629.18 685.77,-639.75 692.21,-636.99" />
+<text xml:space="preserve" text-anchor="middle" x="824.98" y="-649.77" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest / authenticationRequest</text>
 </g>
 
-<g id="edge14" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0097,E0098">
+<g id="edge14" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0097,E0098" data-visible-role="relatively_stable">
 <title>s8-&gt;s1</title>
-<path fill="none" stroke="#1B9E77" d="M664.72,-622.69C637.5,-647.39 583.21,-705.02 607.11,-753.78 661.76,-865.31 835.97,-879.81 907.25,-880.95" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M664.72,-622.69C637.5,-647.39 583.21,-705.02 607.11,-753.78 661.76,-865.31 835.97,-879.81 907.25,-880.95" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="907.01,-884.45 917.04,-881.02 907.06,-877.45 907.01,-884.45" />
-<text xml:space="preserve" text-anchor="middle" x="799.11" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="799.11" y="-740.48" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
 <g id="node10" class="node">
@@ -168,18 +168,18 @@
 <text xml:space="preserve" text-anchor="middle" x="938.11" y="-509.09" font-family="Times New Roman,serif" font-size="14.00">s9</text>
 </g>
 
-<g id="edge15" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0103">
+<g id="edge15" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0103" data-visible-role="relatively_stable">
 <title>s8-&gt;s9</title>
-<path fill="none" stroke="#1B9E77" d="M670.57,-592.38C665.78,-580.91 662.3,-565.81 670.86,-555.85 701.1,-520.65 844.09,-515.54 907.6,-515.04" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M670.57,-592.38C665.78,-580.91 662.3,-565.81 670.86,-555.85 701.1,-520.65 844.09,-515.54 907.6,-515.04" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="907.33,-518.54 917.32,-515 907.3,-511.54 907.33,-518.54" />
-<text xml:space="preserve" text-anchor="middle" x="806.98" y="-559.05" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">authenticationResponse / securityModeCommand</text>
+<text xml:space="preserve" text-anchor="middle" x="806.98" y="-559.05" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">authenticationResponse / securityModeCommand</text>
 </g>
 
-<g id="edge18" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0114">
+<g id="edge18" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0114" data-visible-role="hypothetical">
 <title>s9-&gt;s7</title>
-<path fill="none" stroke="#D95F02" d="M944.99,-532.29C955.77,-562.2 972.5,-624.4 943.11,-663.07 931.09,-678.87 877.99,-689.58 843.48,-695.01" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M944.99,-532.29C955.77,-562.2 972.5,-624.4 943.11,-663.07 931.09,-678.87 877.99,-689.58 843.48,-695.01" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="843.01,-691.54 833.64,-696.48 844.05,-698.46 843.01,-691.54" />
-<text xml:space="preserve" text-anchor="middle" x="1050.34" y="-604.41" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeReject / null_action</text>
+<text xml:space="preserve" text-anchor="middle" x="1050.34" y="-604.41" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeReject / null_action</text>
 </g>
 
 <g id="node11" class="node">
@@ -188,11 +188,11 @@
 <text xml:space="preserve" text-anchor="middle" x="1260.11" y="-309.23" font-family="Times New Roman,serif" font-size="14.00">s10</text>
 </g>
 
-<g id="edge16" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0109,E0110">
+<g id="edge16" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0109,E0110" data-visible-role="relatively_stable">
 <title>s9-&gt;s10</title>
-<path fill="none" stroke="#1B9E77" d="M957.43,-510.92C997.48,-505.96 1087.67,-492.79 1110.11,-472.43 1138.6,-446.57 1107.39,-413.67 1138.11,-390.5 1169.37,-366.91 1463.13,-400.89 1490.11,-372.5 1495.16,-367.18 1494.82,-361.62 1490.11,-356 1465.67,-326.85 1353.56,-318.56 1295.38,-316.21" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M957.43,-510.92C997.48,-505.96 1087.67,-492.79 1110.11,-472.43 1138.6,-446.57 1107.39,-413.67 1138.11,-390.5 1169.37,-366.91 1463.13,-400.89 1490.11,-372.5 1495.16,-367.18 1494.82,-361.62 1490.11,-356 1465.67,-326.85 1353.56,-318.56 1295.38,-316.21" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1295.8,-312.72 1285.68,-315.86 1295.55,-319.72 1295.8,-312.72" />
-<text xml:space="preserve" text-anchor="middle" x="1330.11" y="-409.16" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="1330.11" y="-409.16" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
 <g id="node12" class="node">
@@ -201,18 +201,18 @@
 <text xml:space="preserve" text-anchor="middle" x="966.11" y="-409.16" font-family="Times New Roman,serif" font-size="14.00">s11</text>
 </g>
 
-<g id="edge17" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0112">
+<g id="edge17" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0112,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s9-&gt;s11</title>
-<path fill="none" stroke="#D95F02" d="M927.65,-498.2C920.79,-486.44 914.14,-469.78 920.36,-455.93 924.09,-447.6 930.46,-440.29 937.28,-434.24" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="939.18,-437.2 944.81,-428.22 934.81,-431.73 939.18,-437.2" />
-<text xml:space="preserve" text-anchor="middle" x="1015.23" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M927.65,-498.2C920.79,-486.44 914.14,-469.78 920.36,-455.93 924.09,-447.6 930.46,-440.29 937.28,-434.24" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="939.18,-437.2 944.81,-428.22 934.81,-431.73 939.18,-437.2" />
+<text xml:space="preserve" text-anchor="middle" x="1015.23" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
-<g id="edge19" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0124">
+<g id="edge19" class="edge" data-register-inference-categories="directly_supported_predecessor,global_hold,hypothetical" data-register-inference-edge-ids="E0124,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s10-&gt;s11</title>
-<path fill="none" stroke="#D95F02" d="M1239.12,-326.16C1229.85,-330.52 1218.67,-335.17 1208.11,-338 1139.1,-356.5 1115.11,-330.51 1048.36,-356 1036.52,-360.52 1035.49,-365.23 1025.11,-372.5 1015.24,-379.4 1004.41,-386.9 994.74,-393.56" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="993.05,-390.48 986.8,-399.03 997.02,-396.25 993.05,-390.48" />
-<text xml:space="preserve" text-anchor="middle" x="1143.23" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M1239.12,-326.16C1229.85,-330.52 1218.67,-335.17 1208.11,-338 1139.1,-356.5 1115.11,-330.51 1048.36,-356 1036.52,-360.52 1035.49,-365.23 1025.11,-372.5 1015.24,-379.4 1004.41,-386.9 994.74,-393.56" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" />
+<polygon fill="#7570B3" stroke="#7570B3" points="993.05,-390.48 986.8,-399.03 997.02,-396.25 993.05,-390.48" />
+<text xml:space="preserve" text-anchor="middle" x="1143.23" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
 <g id="node18" class="node">
@@ -221,18 +221,18 @@
 <text xml:space="preserve" text-anchor="middle" x="1194.11" y="-209.31" font-family="Times New Roman,serif" font-size="14.00">s17</text>
 </g>
 
-<g id="edge20" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0127">
+<g id="edge20" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0127" data-visible-role="relatively_stable">
 <title>s10-&gt;s17</title>
-<path fill="none" stroke="#1B9E77" d="M1239.12,-302.4C1229.85,-298.05 1218.67,-293.4 1208.11,-290.57 1173.49,-281.29 1071.74,-299.29 1047.86,-272.57 1014.24,-234.96 1105.6,-221.83 1158.85,-217.44" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M1239.12,-302.4C1229.85,-298.05 1218.67,-293.4 1208.11,-290.57 1173.49,-281.29 1071.74,-299.29 1047.86,-272.57 1014.24,-234.96 1105.6,-221.83 1158.85,-217.44" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1158.99,-220.94 1168.7,-216.7 1158.46,-213.96 1158.99,-220.94" />
-<text xml:space="preserve" text-anchor="middle" x="1183.98" y="-259.27" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">authenticationResponse / securityModeCommand</text>
+<text xml:space="preserve" text-anchor="middle" x="1183.98" y="-259.27" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">authenticationResponse / securityModeCommand</text>
 </g>
 
-<g id="edge21" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0133">
+<g id="edge21" class="edge" data-register-inference-categories="hypothetical,new_length_one,terminal_attribution" data-register-inference-edge-ids="E0133" data-visible-role="new_length_one">
 <title>s11-&gt;s10</title>
-<path fill="none" stroke="#7570B3" d="M989.66,-409.03C1016.74,-404.28 1062.57,-396.41 1102.11,-390.5 1132.26,-385.99 1214.17,-391.37 1238.11,-372.5 1245.59,-366.6 1250.53,-357.82 1253.79,-348.9" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="1257.07,-350.17 1256.56,-339.59 1250.36,-348.18 1257.07,-350.17" />
-<text xml:space="preserve" text-anchor="middle" x="1368.32" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest / authenticationRequest</text>
+<path fill="none" stroke="#1F78B4" d="M989.66,-409.03C1016.74,-404.28 1062.57,-396.41 1102.11,-390.5 1132.26,-385.99 1214.17,-391.37 1238.11,-372.5 1245.59,-366.6 1250.53,-357.82 1253.79,-348.9" class="register-visible-edge register-visible-edge-new-length-one" stroke-width="4.4" stroke-dasharray="13,6" />
+<polygon fill="#1F78B4" stroke="#1F78B4" points="1257.07,-350.17 1256.56,-339.59 1250.36,-348.18 1257.07,-350.17" />
+<text xml:space="preserve" text-anchor="middle" x="1368.32" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest / authenticationRequest</text>
 </g>
 
 <g id="node17" class="node">
@@ -241,11 +241,11 @@
 <text xml:space="preserve" text-anchor="middle" x="553.11" y="-309.23" font-family="Times New Roman,serif" font-size="14.00">s16</text>
 </g>
 
-<g id="edge22" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0134">
+<g id="edge22" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0134" data-visible-role="hypothetical">
 <title>s11-&gt;s16</title>
-<path fill="none" stroke="#D95F02" d="M942.16,-412.67C858.11,-410.51 580.24,-401.24 553.86,-372.5 547.97,-366.09 546.03,-357.36 546.01,-348.66" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M942.16,-412.67C858.11,-410.51 580.24,-401.24 553.86,-372.5 547.97,-366.09 546.03,-357.36 546.01,-348.66" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="549.48,-349.19 546.82,-338.94 542.51,-348.61 549.48,-349.19" />
-<text xml:space="preserve" text-anchor="middle" x="670.48" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">registrationRequestGUTI / identityRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="670.48" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / identityRequest</text>
 </g>
 
 <g id="node14" class="node">
@@ -254,18 +254,18 @@
 <text xml:space="preserve" text-anchor="middle" x="1726.11" y="-409.16" font-family="Times New Roman,serif" font-size="14.00">s13</text>
 </g>
 
-<g id="edge23" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0145,E0146">
+<g id="edge23" class="edge" data-register-inference-categories="hypothetical,new_length_one,terminal_attribution" data-register-inference-edge-ids="E0145,E0146" data-visible-role="new_length_one">
 <title>s12-&gt;s13</title>
-<path fill="none" stroke="#7570B3" d="M1908.58,-509.19C1878.59,-504.26 1825.12,-495.82 1779.11,-490.43 1755.96,-487.71 1585.87,-489.6 1570.11,-472.43 1533.51,-432.54 1634.39,-420.39 1690.86,-416.74" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="1690.88,-420.24 1700.66,-416.17 1690.47,-413.26 1690.88,-420.24" />
-<text xml:space="preserve" text-anchor="middle" x="1762.11" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<path fill="none" stroke="#1F78B4" d="M1908.58,-509.19C1878.59,-504.26 1825.12,-495.82 1779.11,-490.43 1755.96,-487.71 1585.87,-489.6 1570.11,-472.43 1533.51,-432.54 1634.39,-420.39 1690.86,-416.74" class="register-visible-edge register-visible-edge-new-length-one" stroke-width="4.4" stroke-dasharray="13,6" />
+<polygon fill="#1F78B4" stroke="#1F78B4" points="1690.88,-420.24 1700.66,-416.17 1690.47,-413.26 1690.88,-420.24" />
+<text xml:space="preserve" text-anchor="middle" x="1762.11" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
-<g id="edge24" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0160">
+<g id="edge24" class="edge" data-register-inference-categories="directly_supported_predecessor,global_hold,hypothetical" data-register-inference-edge-ids="E0160,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s13-&gt;s12</title>
-<path fill="none" stroke="#D95F02" d="M1749.96,-415.76C1803.03,-417.55 1928.23,-425.02 1954.11,-455.93 1961.28,-464.49 1958.87,-475.66 1953.53,-485.85" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="1950.58,-483.96 1948.26,-494.3 1956.52,-487.66 1950.58,-483.96" />
-<text xml:space="preserve" text-anchor="middle" x="2053.45" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M1749.96,-415.76C1803.03,-417.55 1928.23,-425.02 1954.11,-455.93 1961.28,-464.49 1958.87,-475.66 1953.53,-485.85" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" />
+<polygon fill="#7570B3" stroke="#7570B3" points="1950.58,-483.96 1948.26,-494.3 1956.52,-487.66 1950.58,-483.96" />
+<text xml:space="preserve" text-anchor="middle" x="2053.45" y="-459.13" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
 <g id="node15" class="node">
@@ -274,32 +274,32 @@
 <text xml:space="preserve" text-anchor="middle" x="1741.11" y="-309.23" font-family="Times New Roman,serif" font-size="14.00">s14</text>
 </g>
 
-<g id="edge25" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0163">
+<g id="edge25" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0163" data-visible-role="relatively_stable">
 <title>s13-&gt;s14</title>
-<path fill="none" stroke="#1B9E77" d="M1702.2,-412.72C1650.13,-410.8 1533.95,-401.44 1569.86,-356 1586.51,-334.92 1661.04,-323.59 1706.11,-318.56" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M1702.2,-412.72C1650.13,-410.8 1533.95,-401.44 1569.86,-356 1586.51,-334.92 1661.04,-323.59 1706.11,-318.56" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1706.35,-322.06 1715.92,-317.52 1705.61,-315.1 1706.35,-322.06" />
-<text xml:space="preserve" text-anchor="middle" x="1705.98" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">authenticationResponse / securityModeCommand</text>
+<text xml:space="preserve" text-anchor="middle" x="1705.98" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">authenticationResponse / securityModeCommand</text>
 </g>
 
-<g id="edge29" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0178">
+<g id="edge29" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0178,securityModeComplete/registrationAccept" data-visible-role="global_hold">
 <title>s14-&gt;s4</title>
-<path fill="none" stroke="#D95F02" d="M1717.45,-317.83C1673.8,-322.97 1582.86,-335.82 1559.11,-356 1538.22,-373.74 1536.11,-385.81 1536.11,-413.21 1536.11,-610.46 1536.11,-610.46 1536.11,-610.46 1536.11,-630.14 1536.11,-652.27 1536.11,-669.51" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="1532.61,-669.31 1536.11,-679.31 1539.61,-669.31 1532.61,-669.31" />
-<text xml:space="preserve" text-anchor="middle" x="1655.73" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeComplete / registrationAccept</text>
+<path fill="none" stroke="#7570B3" d="M1717.45,-317.83C1673.8,-322.97 1582.86,-335.82 1559.11,-356 1538.22,-373.74 1536.11,-385.81 1536.11,-413.21 1536.11,-610.46 1536.11,-610.46 1536.11,-610.46 1536.11,-630.14 1536.11,-652.27 1536.11,-669.51" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="1532.61,-669.31 1536.11,-679.31 1539.61,-669.31 1532.61,-669.31" />
+<text xml:space="preserve" text-anchor="middle" x="1655.73" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeComplete / registrationAccept</text>
 </g>
 
-<g id="edge27" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0172">
+<g id="edge27" class="edge" data-register-inference-categories="directly_supported_predecessor,global_hold,hypothetical" data-register-inference-edge-ids="E0172,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s14-&gt;s12</title>
-<path fill="none" stroke="#D95F02" d="M1765.07,-315.41C1859.46,-316.13 2202.04,-321.17 2234.11,-356 2239.07,-361.39 2238.05,-366.32 2234.11,-372.5 2223.89,-388.51 2209.12,-377.42 2195.36,-390.5 2165.51,-418.86 2185.28,-448.03 2152.11,-472.43 2123.24,-493.65 2021.75,-505.43 1967.28,-510.35" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="1967.26,-506.84 1957.61,-511.19 1967.87,-513.81 1967.26,-506.84" />
-<text xml:space="preserve" text-anchor="middle" x="2290.23" y="-409.16" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M1765.07,-315.41C1859.46,-316.13 2202.04,-321.17 2234.11,-356 2239.07,-361.39 2238.05,-366.32 2234.11,-372.5 2223.89,-388.51 2209.12,-377.42 2195.36,-390.5 2165.51,-418.86 2185.28,-448.03 2152.11,-472.43 2123.24,-493.65 2021.75,-505.43 1967.28,-510.35" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" />
+<polygon fill="#7570B3" stroke="#7570B3" points="1967.26,-506.84 1957.61,-511.19 1967.87,-513.81 1967.26,-506.84" />
+<text xml:space="preserve" text-anchor="middle" x="2290.23" y="-409.16" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
-<g id="edge26" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0169,E0170">
+<g id="edge26" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0169,E0170" data-visible-role="relatively_stable">
 <title>s14-&gt;s13</title>
-<path fill="none" stroke="#1B9E77" d="M1764.79,-318.97C1800.98,-325.66 1863.73,-342 1842.11,-372.5 1823.94,-398.13 1788.3,-407.75 1761.3,-411.29" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M1764.79,-318.97C1800.98,-325.66 1863.73,-342 1842.11,-372.5 1823.94,-398.13 1788.3,-407.75 1761.3,-411.29" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1761.04,-407.8 1751.47,-412.34 1761.79,-414.76 1761.04,-407.8" />
-<text xml:space="preserve" text-anchor="middle" x="2038.53" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="2038.53" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
 <g id="node16" class="node">
@@ -308,60 +308,60 @@
 <text xml:space="preserve" text-anchor="middle" x="1394.11" y="-109.38" font-family="Times New Roman,serif" font-size="14.00">s15</text>
 </g>
 
-<g id="edge28" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0174">
+<g id="edge28" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0174" data-visible-role="hypothetical">
 <title>s14-&gt;s15</title>
-<path fill="none" stroke="#D95F02" d="M1734,-291.23C1729.32,-279.56 1722.17,-265.69 1712.11,-256.07 1628.53,-176.13 1491.96,-137.08 1428.51,-122.48" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1734,-291.23C1729.32,-279.56 1722.17,-265.69 1712.11,-256.07 1628.53,-176.13 1491.96,-137.08 1428.51,-122.48" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="1429.54,-119.12 1419.02,-120.36 1428.02,-125.96 1429.54,-119.12" />
-<text xml:space="preserve" text-anchor="middle" x="1779.35" y="-209.31" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeReject / null_action</text>
+<text xml:space="preserve" text-anchor="middle" x="1779.35" y="-209.31" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeReject / null_action</text>
 </g>
 
-<g id="edge30" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0181">
+<g id="edge30" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0181" data-visible-role="hypothetical">
 <title>s15-&gt;s1</title>
-<path fill="none" stroke="#7570B3" d="M1417.96,-115.18C1570.15,-113.87 2399.11,-111.46 2399.11,-213.36 2399.11,-791.89 2399.11,-791.89 2399.11,-791.89 2399.11,-866.17 1180.08,-878.77 969.05,-880.4" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="969.14,-876.89 959.17,-880.47 969.2,-883.89 969.14,-876.89" />
-<text xml:space="preserve" text-anchor="middle" x="2517.23" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest / authenticationRequest</text>
+<path fill="none" stroke="#D95F02" d="M1417.96,-115.18C1570.15,-113.87 2399.11,-111.46 2399.11,-213.36 2399.11,-791.89 2399.11,-791.89 2399.11,-791.89 2399.11,-866.17 1180.08,-878.77 969.05,-880.4" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="969.14,-876.89 959.17,-880.47 969.2,-883.89 969.14,-876.89" />
+<text xml:space="preserve" text-anchor="middle" x="2517.23" y="-509.09" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest / authenticationRequest</text>
 </g>
 
-<g id="edge31" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0182">
+<g id="edge31" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0182" data-visible-role="hypothetical">
 <title>s15-&gt;s6</title>
-<path fill="none" stroke="#D95F02" d="M1370.93,-107.66C1305.74,-91.44 1120.81,-45.42 1048.55,-27.43" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1370.93,-107.66C1305.74,-91.44 1120.81,-45.42 1048.55,-27.43" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="1049.59,-24.09 1039.04,-25.07 1047.9,-30.88 1049.59,-24.09" />
-<text xml:space="preserve" text-anchor="middle" x="1345.68" y="-59.42" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">registrationRequestGUTI / identityRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="1345.68" y="-59.42" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequestGUTI / identityRequest</text>
 </g>
 
-<g id="edge32" class="edge" data-register-inference-categories="terminal_observable" data-register-inference-edge-ids="E0193,E0203">
+<g id="edge32" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0193,E0203" data-visible-role="hypothetical">
 <title>s16-&gt;s1</title>
-<path fill="none" stroke="#7570B3" d="M529.07,-315.52C469.02,-316.62 314.68,-322.68 278.11,-356 258.76,-373.63 264.11,-387.03 264.11,-413.21 264.11,-791.89 264.11,-791.89 264.11,-791.89 264.11,-857.7 775.71,-876.18 907.46,-879.84" stroke-width="3.4" />
-<polygon fill="#7570B3" stroke="#7570B3" points="907.06,-883.34 917.15,-880.11 907.25,-876.34 907.06,-883.34" />
-<text xml:space="preserve" text-anchor="middle" x="433.98" y="-604.41" font-family="Times New Roman,serif" font-size="14.00" fill="#7570B3">registrationRequest | identityResponse / authenticationRequest</text>
+<path fill="none" stroke="#D95F02" d="M529.07,-315.52C469.02,-316.62 314.68,-322.68 278.11,-356 258.76,-373.63 264.11,-387.03 264.11,-413.21 264.11,-791.89 264.11,-791.89 264.11,-791.89 264.11,-857.7 775.71,-876.18 907.46,-879.84" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
+<polygon fill="#D95F02" stroke="#D95F02" points="907.06,-883.34 917.15,-880.11 907.25,-876.34 907.06,-883.34" />
+<text xml:space="preserve" text-anchor="middle" x="433.98" y="-604.41" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | identityResponse / authenticationRequest</text>
 </g>
 
-<g id="edge33" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0196">
+<g id="edge33" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0196,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s16-&gt;s11</title>
-<path fill="none" stroke="#D95F02" d="M576.98,-315.98C620.43,-317.99 714.59,-325.79 787.11,-356 798.8,-360.87 798.87,-367.14 810.36,-372.5 849.83,-390.91 898.97,-401.99 931.38,-407.85" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="930.57,-411.26 941.02,-409.51 931.76,-404.36 930.57,-411.26" />
-<text xml:space="preserve" text-anchor="middle" x="905.23" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M576.98,-315.98C620.43,-317.99 714.59,-325.79 787.11,-356 798.8,-360.87 798.87,-367.14 810.36,-372.5 849.83,-390.91 898.97,-401.99 931.38,-407.85" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="930.57,-411.26 941.02,-409.51 931.76,-404.36 930.57,-411.26" />
+<text xml:space="preserve" text-anchor="middle" x="905.23" y="-359.2" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
-<g id="edge34" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0205,E0206">
+<g id="edge34" class="edge" data-register-inference-categories="relatively_stable" data-register-inference-edge-ids="E0205,E0206" data-visible-role="relatively_stable">
 <title>s17-&gt;s10</title>
-<path fill="none" stroke="#1B9E77" d="M1218.13,-215.29C1247.68,-216.67 1296.77,-224.01 1320.11,-256.07 1332.21,-272.7 1312.12,-288.58 1292,-299.38" stroke-width="3.4" />
+<path fill="none" stroke="#1B9E77" d="M1218.13,-215.29C1247.68,-216.67 1296.77,-224.01 1320.11,-256.07 1332.21,-272.7 1312.12,-288.58 1292,-299.38" class="register-visible-edge register-visible-edge-relatively-stable" stroke-width="3.2" />
 <polygon fill="#1B9E77" stroke="#1B9E77" points="1290.69,-296.12 1283.3,-303.72 1293.81,-302.38 1290.69,-296.12" />
-<text xml:space="preserve" text-anchor="middle" x="1515.77" y="-259.27" font-family="Times New Roman,serif" font-size="14.00" fill="#1B9E77">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
+<text xml:space="preserve" text-anchor="middle" x="1515.77" y="-259.27" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">registrationRequest | registrationRequestGUTI / authenticationRequest</text>
 </g>
 
-<g id="edge35" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0208">
+<g id="edge35" class="edge" data-register-inference-categories="global_hold,hypothetical" data-register-inference-edge-ids="E0208,deregistrationRequest/null_action" data-visible-role="global_hold">
 <title>s17-&gt;s11</title>
-<path fill="none" stroke="#D95F02" d="M1169.97,-214.78C1135.88,-215.31 1073.7,-221.4 1037.11,-256.07 997.69,-293.41 1026.22,-324.89 1000.11,-372.5 997.12,-377.95 993.34,-383.35 989.4,-388.36" stroke-width="3.4" />
-<polygon fill="#D95F02" stroke="#D95F02" points="986.98,-385.8 983.24,-395.71 992.35,-390.3 986.98,-385.8" />
-<text xml:space="preserve" text-anchor="middle" x="1110.94" y="-309.23" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">deregistrationRequest / null_action</text>
+<path fill="none" stroke="#7570B3" d="M1169.97,-214.78C1135.88,-215.31 1073.7,-221.4 1037.11,-256.07 997.69,-293.41 1026.22,-324.89 1000.11,-372.5 997.12,-377.95 993.34,-383.35 989.4,-388.36" class="register-visible-edge register-visible-edge-global-hold" stroke-width="4.4" stroke-dasharray="10,5" />
+<polygon fill="#7570B3" stroke="#7570B3" points="986.98,-385.8 983.24,-395.71 992.35,-390.3 986.98,-385.8" />
+<text xml:space="preserve" text-anchor="middle" x="1110.94" y="-309.23" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">deregistrationRequest / null_action</text>
 </g>
 
-<g id="edge36" class="edge" data-register-inference-categories="predecessor_minimal" data-register-inference-edge-ids="E0210">
+<g id="edge36" class="edge" data-register-inference-categories="hypothetical" data-register-inference-edge-ids="E0210" data-visible-role="hypothetical">
 <title>s17-&gt;s15</title>
-<path fill="none" stroke="#D95F02" d="M1215.13,-203.06C1250.39,-185.8 1321.62,-150.92 1362.79,-130.76" stroke-width="3.4" />
+<path fill="none" stroke="#D95F02" d="M1215.13,-203.06C1250.39,-185.8 1321.62,-150.92 1362.79,-130.76" class="register-visible-edge register-visible-edge-hypothetical" stroke-width="3.2" />
 <polygon fill="#D95F02" stroke="#D95F02" points="1364.26,-133.94 1371.7,-126.4 1361.18,-127.65 1364.26,-133.94" />
-<text xml:space="preserve" text-anchor="middle" x="1396.83" y="-159.34" font-family="Times New Roman,serif" font-size="14.00" fill="#D95F02">securityModeReject / null_action</text>
+<text xml:space="preserve" text-anchor="middle" x="1396.83" y="-159.34" font-family="Times New Roman,serif" font-size="14.00" fill="#111111">securityModeReject / null_action</text>
 </g>
 
 <g id="node19" class="node">
@@ -374,4 +374,4 @@
 <polygon fill="black" stroke="black" points="22.61,-1003.19 19.11,-993.19 15.61,-1003.19 22.61,-1003.19" />
 </g>
 </g>
-<g id="register-inference-legend"><rect x="24" y="20" width="1540" height="50" rx="6" fill="#FFFFFF" fill-opacity="0.94" stroke="#666666" stroke-width="1" /><line x1="42" y1="45" x2="72" y2="45" stroke="#1B9E77" stroke-width="5" stroke-linecap="round" /><text x="82" y="50" font-family="Arial, sans-serif" font-size="15" fill="#222222">相对稳定推断（14 条）</text><line x1="407" y1="45" x2="437" y2="45" stroke="#D95F02" stroke-width="5" stroke-linecap="round" /><text x="447" y="50" font-family="Arial, sans-serif" font-size="15" fill="#222222">前序最简假设性推断（18 条）</text><line x1="772" y1="45" x2="802" y2="45" stroke="#7570B3" stroke-width="5" stroke-linecap="round" /><text x="812" y="50" font-family="Arial, sans-serif" font-size="15" fill="#222222">前序归因（末端有可观察下行）的假设性推断（10 条）</text><line x1="1137" y1="45" x2="1167" y2="45" stroke="#E7298A" stroke-width="5" stroke-linecap="round" /><text x="1177" y="50" font-family="Arial, sans-serif" font-size="15" fill="#222222">前序反推组合（E0002 + E0073）（2 条）</text></g></svg>
+<g id="register-inference-legend"><rect x="20" y="-104" width="2940" height="92" rx="7" fill="#FFFFFF" fill-opacity="0.96" stroke="#555555" stroke-width="1" /><line x1="38" y1="-78" x2="72" y2="-78" stroke="#1B9E77" stroke-width="5" stroke-linecap="round" /><text x="82" y="-73" font-family="Arial, sans-serif" font-size="15" fill="#111111">相对稳定推断（20 个 EID）</text><line x1="430" y1="-78" x2="464" y2="-78" stroke="#D95F02" stroke-width="5" stroke-linecap="round" /><text x="474" y="-73" font-family="Arial, sans-serif" font-size="15" fill="#111111">假设性推断（32 个 EID）</text><line x1="800" y1="-78" x2="834" y2="-78" stroke="#7570B3" stroke-width="5" stroke-linecap="round" stroke-dasharray="10,5" /><text x="844" y="-73" font-family="Arial, sans-serif" font-size="15" fill="#111111">同 I/O 全 H14 可观察下行延伸 r'=r（紫色虚线，须连续有效）</text><line x1="1510" y1="-78" x2="1544" y2="-78" stroke="#7570B3" stroke-width="5" stroke-linecap="round" /><text x="1554" y="-73" font-family="Arial, sans-serif" font-size="15" fill="#111111">匹配动态长度2区域直接支持的前序最简边（紫色实线）</text><line x1="2090" y1="-78" x2="2124" y2="-78" stroke="#1F78B4" stroke-width="5" stroke-linecap="round" stroke-dasharray="13,6" /><text x="2134" y="-73" font-family="Arial, sans-serif" font-size="15" fill="#111111">连续可观察下行延伸假设下新长度1区域（派生标记，不拟合公式；7 个区域）</text><text x="38" y="-33" font-family="Arial, sans-serif" font-size="14" fill="#333333">派生颜色直接覆盖原边颜色；蓝色边可能同时具有前序归因角色。延伸边不能自建观察锚点，遇到非延伸假设性边即中断。20条延伸语义中，7条回归s0边显示为约1cm左上短箭头，4条缺失自环仅记录不绘制；标签保持黑色。</text></g><metadata id="register-overlay-derivation">{"complete_length_two_regions":[{"cycle_id":"S009","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0046","logical_input":"securityModeComplete","logical_output":"registrationAccept","source_state":"s3","target_state":"s4"},"predecessor_input_output":"securityModeComplete/registrationAccept","sequence_line":12,"terminal_edge":{"edge_id":"E0050","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s4","target_state":"s1"},"terminal_input_output":"registrationRequestGUTI/authenticationRequest","trajectory_id":"E0050:S009:L12","triple_points":[[2,2,3],[3,3,4],[4,4,5],[5,5,6],[6,6,0],[0,0,1],[1,1,2],[2,2,3]]},{"cycle_id":"S010","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0114","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s9","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":13,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S010:L13","triple_points":[[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0]]},{"cycle_id":"S017","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":16,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S017:L16","triple_points":[[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0]]},{"cycle_id":"S017","dynamic":true,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":17,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S017:L17","triple_points":[[2,7,0],[3,7,0],[4,7,0],[5,7,0],[6,7,0],[0,7,0],[1,7,0],[2,7,0]]},{"cycle_id":"S037","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":25,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S037:L25","triple_points":[[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0]]},{"cycle_id":"S037","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":26,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S037:L26","triple_points":[[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0]]},{"cycle_id":"S037","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":27,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S037:L27","triple_points":[[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0]]},{"cycle_id":"S037","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":28,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S037:L28","triple_points":[[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0],[2,7,0]]},{"cycle_id":"S039","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0042","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s3","target_state":"s7"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":29,"terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0085:S039:L29","triple_points":[[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0],[0,7,0]]},{"cycle_id":"S003","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0124","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s10","target_state":"s11"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":3,"terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0133:S003:L3","triple_points":[[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3],[3,7,4]]},{"cycle_id":"S039","dynamic":false,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0112","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s9","target_state":"s11"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":29,"terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0133:S039:L29","triple_points":[[0,7,1],[0,7,1],[0,7,1],[0,7,1],[0,7,1],[0,7,1],[0,7,1],[0,7,1]]},{"cycle_id":"S005","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0160","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":6,"terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0145:S005:L6","triple_points":[[2,7,3],[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3]]},{"cycle_id":"S012","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0172","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":14,"terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0145:S012:L14","triple_points":[[2,7,3],[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3]]},{"cycle_id":"S005","dynamic":false,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0160","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":7,"terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequestGUTI/authenticationRequest","trajectory_id":"E0146:S005:L7","triple_points":[[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1]]},{"cycle_id":"S012","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0172","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":15,"terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequestGUTI/authenticationRequest","trajectory_id":"E0146:S012:L15","triple_points":[[2,2,3],[3,3,4],[4,4,5],[5,5,6],[6,6,0],[0,0,1],[1,1,2],[2,2,3]]},{"cycle_id":"S039","dynamic":false,"inside_stable_triples":false,"predecessor_edge":{"edge_id":"E0210","logical_input":"securityModeReject","logical_output":"null_action","source_state":"s17","target_state":"s15"},"predecessor_input_output":"securityModeReject/null_action","sequence_line":29,"terminal_edge":{"edge_id":"E0181","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s15","target_state":"s1"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0181:S039:L29","triple_points":[[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0],[1,7,0]]}],"extension_policy":{"anchor":"preceding_real_ksi_downlink","extension_edge_does_not_create_anchor_after_interruption":true,"kind":"continuous_observable_downlink_extension","non_extension_hypothetical_edge_interrupts":true},"inside_predecessor_input_outputs":["deregistrationRequest/null_action","securityModeComplete/registrationAccept"],"matched_dynamic_length_two_regions":[{"cycle_id":"S003","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0124","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s10","target_state":"s11"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":3,"terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0133:S003:L3","triple_points":[[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3],[3,7,4]]},{"cycle_id":"S005","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0160","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":6,"terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0145:S005:L6","triple_points":[[2,7,3],[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3]]},{"cycle_id":"S012","dynamic":true,"inside_stable_triples":true,"predecessor_edge":{"edge_id":"E0172","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},"predecessor_input_output":"deregistrationRequest/null_action","sequence_line":14,"terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"},"terminal_input_output":"registrationRequest/authenticationRequest","trajectory_id":"E0145:S012:L14","triple_points":[[2,7,3],[3,7,4],[4,7,5],[5,7,6],[6,7,0],[0,7,1],[1,7,2],[2,7,3]]}],"new_structural_length_one_regions":[{"cycle_id":"S009","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0050:S009:L12","pseudo_boundary_edge":{"edge_id":"E0046","logical_input":"securityModeComplete","logical_output":"registrationAccept","source_state":"s3","target_state":"s4"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":12,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0050","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s4","target_state":"s1"}},{"cycle_id":"S003","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0133:S003:L3","pseudo_boundary_edge":{"edge_id":"E0124","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s10","target_state":"s11"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":3,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"}},{"cycle_id":"S039","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0133:S039:L29","pseudo_boundary_edge":{"edge_id":"E0112","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s9","target_state":"s11"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":29,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"}},{"cycle_id":"S005","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0145:S005:L6","pseudo_boundary_edge":{"edge_id":"E0160","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":6,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S012","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0145:S012:L14","pseudo_boundary_edge":{"edge_id":"E0172","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":14,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S005","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0146:S005:L7","pseudo_boundary_edge":{"edge_id":"E0160","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":7,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S012","extension_policy":"continuous_from_preceding_real_downlink","formula_fitted":false,"id":"E0146:S012:L15","pseudo_boundary_edge":{"edge_id":"E0172","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},"repetitions":[3,4,5,6,7,8,9,10],"sequence_line":15,"status":"structural_length_one_after_global_hold_repartition","terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}}],"outside_predecessor_input_outputs":["securityModeReject/null_action"],"overlap_predecessor_input_outputs":[],"propagated_dot_edges":[{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s0","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s1","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s2","target_state":"s2"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s3","target_state":"s0"},{"input_output":"securityModeComplete/registrationAccept","logical_input":"securityModeComplete","logical_output":"registrationAccept","source_state":"s3","target_state":"s4"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s4","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s5","target_state":"s12"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s6","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s7","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s8","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s9","target_state":"s11"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s10","target_state":"s11"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s11","target_state":"s11"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s12","target_state":"s12"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s13","target_state":"s12"},{"input_output":"securityModeComplete/registrationAccept","logical_input":"securityModeComplete","logical_output":"registrationAccept","source_state":"s14","target_state":"s4"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s14","target_state":"s12"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s15","target_state":"s0"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s16","target_state":"s11"},{"input_output":"deregistrationRequest/null_action","logical_input":"deregistrationRequest","logical_output":"null_action","source_state":"s17","target_state":"s11"}],"propagated_input_outputs":["deregistrationRequest/null_action","securityModeComplete/registrationAccept"],"rejected_non_continuous_extension_regions":[{"cycle_id":"S018","id":"E0001:S018:L18","samples":[{"boundary_index":null,"ignored_extension_edges":[{"edge_id":"E0076","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"},{"edge_id":"E0086","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":4,"valid_boundary_indices":[]}],"sequence_line":18,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0001","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s0","target_state":"s1"}},{"cycle_id":"F002","id":"E0050:F002:L31","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"},{"edge_id":"E0062","index":2,"input_output":"registrationRequestGUTI/registrationAccept"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":31,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0050","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s4","target_state":"s1"}},{"cycle_id":"S008","id":"E0073:S008:L10","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0002","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":10,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0073","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S036","id":"E0073:S036:L21","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0174","index":0,"input_output":"securityModeReject/null_action"},{"edge_id":"E0182","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[]}],"sequence_line":21,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0073","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S036","id":"E0073:S036:L23","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0174","index":0,"input_output":"securityModeReject/null_action"},{"edge_id":"E0182","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[]}],"sequence_line":23,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0073","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S008","id":"E0083:S008:L11","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0002","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":11,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0083","logical_input":"identityResponse","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S036","id":"E0083:S036:L22","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0174","index":0,"input_output":"securityModeReject/null_action"},{"edge_id":"E0182","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[]}],"sequence_line":22,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0083","logical_input":"identityResponse","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S036","id":"E0083:S036:L24","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0174","index":0,"input_output":"securityModeReject/null_action"},{"edge_id":"E0182","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[]}],"sequence_line":24,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0083","logical_input":"identityResponse","logical_output":"authenticationRequest","source_state":"s6","target_state":"s1"}},{"cycle_id":"S010","id":"E0085:S010:L13","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0114","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":13,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S017","id":"E0085:S017:L16","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":16,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S017","id":"E0085:S017:L17","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":17,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S037","id":"E0085:S037:L25","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":25,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S037","id":"E0085:S037:L26","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":26,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S037","id":"E0085:S037:L27","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":27,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S037","id":"E0085:S037:L28","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":28,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"S039","id":"E0085:S039:L29","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0042","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":29,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0085","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s7","target_state":"s8"}},{"cycle_id":"F001","id":"E0133:F001:L30","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0196","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0134","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":30,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0133","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s11","target_state":"s10"}},{"cycle_id":"S022","id":"E0145:S022:L19","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":19,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S036","id":"E0145:S036:L21","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":21,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S036","id":"E0145:S036:L22","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":22,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0145","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S022","id":"E0146:S022:L20","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":20,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S036","id":"E0146:S036:L23","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":23,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S036","id":"E0146:S036:L24","samples":[{"boundary_index":0,"ignored_extension_edges":[{"edge_id":"E0064","index":2,"input_output":"deregistrationRequest/null_action"}],"interruptions":[{"edge_id":"E0051","index":1,"input_output":"registrationComplete/configurationUpdateCommand"}],"repetition":3,"terminal_suffix_length":3,"valid_boundary_indices":[0]}],"sequence_line":24,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0146","logical_input":"registrationRequestGUTI","logical_output":"authenticationRequest","source_state":"s12","target_state":"s13"}},{"cycle_id":"S039","id":"E0181:S039:L29","samples":[{"boundary_index":null,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0210","index":0,"input_output":"securityModeReject/null_action"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[]}],"sequence_line":29,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0181","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s15","target_state":"s1"}},{"cycle_id":"S037","id":"E0193:S037:L25","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0134","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":25,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0193","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s16","target_state":"s1"}},{"cycle_id":"S037","id":"E0193:S037:L27","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0134","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":27,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0193","logical_input":"registrationRequest","logical_output":"authenticationRequest","source_state":"s16","target_state":"s1"}},{"cycle_id":"S037","id":"E0203:S037:L26","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0134","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":26,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0203","logical_input":"identityResponse","logical_output":"authenticationRequest","source_state":"s16","target_state":"s1"}},{"cycle_id":"S037","id":"E0203:S037:L28","samples":[{"boundary_index":0,"ignored_extension_edges":[],"interruptions":[{"edge_id":"E0134","index":1,"input_output":"registrationRequestGUTI/identityRequest"}],"repetition":3,"terminal_suffix_length":2,"valid_boundary_indices":[0]}],"sequence_line":28,"status":"rejected_non_continuous_observable_downlink_extension","terminal_edge":{"edge_id":"E0203","logical_input":"identityResponse","logical_output":"authenticationRequest","source_state":"s16","target_state":"s1"}}],"scope":"figure_only_no_formula_inference"}</metadata></svg>
